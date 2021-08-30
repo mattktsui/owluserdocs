@@ -71,7 +71,7 @@ Option A: Create New Destinations
 Record your domain resource ID e.g. 2xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx \(can be found in your URL\) for Step 1G
 {% endhint %}
 
-* Create New Business Asset Domain \(suggested domain type\) for DQ Metrics
+* Create New Business Asset Domain \(suggested domain type\) for DQ Dimensions
   * Global Create -&gt; Search for and select 'Business Asset Domain' under 'Business Asset Domain' -&gt; Select desired 'Community' e.g. 'Data Governance Council' -&gt; Input name of domain e.g. 'CDQ Dimensions'
   * Record your domain resource ID e.g. 2xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx \(can be found in your URL\)
 
