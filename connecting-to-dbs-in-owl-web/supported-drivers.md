@@ -33,7 +33,7 @@ The following is a list of drivers which are for test purposes \(not certified y
 | Presto | Simba JDBC | Preview |
 | BigQuery | Simba JDBC for Web / Bigquery Spark Connector in Core | Preview |
 | GCS \(Google Cloud Storage\) | Google Cloud SDK for Web / GCS Spark Connector in Core | Preview |
-| Azure Cloud Storage \(ADLS\) | Azure SDK for Web / Azure Data Explorer connector for Spark in Core | Preview |
+| Azure Cloud Storage \(ADLSv2\) | Azure SDK for Web / Azure Data Explorer connector for Spark in Core \(Authtypes are Key or Service-Prinicipal\) | Preview |
 | Solr | Solr JDBC | Preview |
 | Phoenix | Native | Preview |
 | Cassandra | Native | Preview |
