@@ -50,7 +50,7 @@ Additional Steps in Collibra DQ include:
 * Verify ‘Driver class name’ in DGC matches ‘Driver Name’ in Collibra DQ
 * Verify ‘Driver jar’ in DGC matches Driver used in ‘Driver Location’ in Collibra DQ \(may require SSH\)
 
-![Where: Settings -&amp;gt; Edge -&amp;gt; Select Edge site -&amp;gt; JDBC Connections -&amp;gt; Select &#x2018;Create connection&#x2019;](https://lh5.googleusercontent.com/-3FpYTn4vo4kWogSJNgPi4afMwty1a8pk-2_m-bYYTAz195caF4jRbB0OF2bC0U1t559jNLOvXVAgRLt32EpWL5IEjpB8nqUZ0R1A98ODxKmC9GGCavw0Ad5iXTHss0nhCtcsK1W)
+![Where: Settings &amp;gt; Edge &amp;gt; Select Edge site &amp;gt; JDBC Connections &amp;gt; Select &#x2018;Create connection&#x2019;](https://lh5.googleusercontent.com/-3FpYTn4vo4kWogSJNgPi4afMwty1a8pk-2_m-bYYTAz195caF4jRbB0OF2bC0U1t559jNLOvXVAgRLt32EpWL5IEjpB8nqUZ0R1A98ODxKmC9GGCavw0Ad5iXTHss0nhCtcsK1W)
 
 {% hint style="warning" %}
 **Important: Connection / System name \(in this example, ‘postgres-gcp’\) must exactly match the Connection / System Name in Collibra DQ**
