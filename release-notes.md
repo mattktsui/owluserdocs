@@ -26,6 +26,9 @@
 * Logging
   * Jobs log retention policy now configurable in Admin Console -&gt; App Config via "JOB\_LOG\_RETENTION\_HR" \(variable must be added along with value\). If not added, default to 72 hours
   * Platform logs retention policy now configurable in Admin Console -&gt; App Config via "PLATFORM\_LOG\_RETENTION\_HR" \(variable must be added along with value\). If not added, default to 24 hours
+* Outliers
+  * Fixed connection properties behavior given how multiple custom properties are handled in Hive
+  * Fixed outliers issue that ignored WHERE clause on remote files
 * Jobs
   * Job Template corrupt time portion of ${rd} on last run of replay
   * Refactor job actions column
