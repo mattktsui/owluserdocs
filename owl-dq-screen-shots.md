@@ -44,7 +44,7 @@ Owl will scan your data with the same frequency, that you load your data - Owl s
 
 **9. Shapes - infrequent formats**
 
-![](.gitbook/assets/shapes.jpg)
+![](.gitbook/assets/shapes%20%281%29.jpg)
 
 ## List View with Impact Analysis
 
