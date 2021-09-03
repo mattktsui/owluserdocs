@@ -13,7 +13,7 @@
 #### Enhancements
 
 * Profile
-  * When faced with a few errors e.g. 0.005% null, highlight issues more clearly and visibly instead  of the notion of rounding up to 100%
+  * When faced with a few errors e.g. 0.005% null, highlight issues more clearly and visibly instead  of the notion of rounding up to and displaying 100.0%
 * Connections
   * New templates for Redshift and Solr
 * Catalog

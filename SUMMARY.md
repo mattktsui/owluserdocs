@@ -223,15 +223,15 @@
 * [Smart Meter Data](smart-meter-data.md)
 * [Health Insurance Claims Data](insurance-data.md)
 
-## OBSERVATION ASSIGNMENTS
+## WORKFLOWS
 
-* [Assignment Queue\(s\)](observation-assignments/assignment-queue-s.md)
-* [Internal Assignment](observation-assignments/internal-assignment.md)
-* [External Assignment](observation-assignments/external-assignment.md)
-* [Business Units](observation-assignments/business-units.md)
-* [Assignment API](observation-assignments/assignmentapi.md)
-* [ERD](observation-assignments/erd.md)
-* [FAQ](observation-assignments/faq.md)
+* [Assignment Queue\(s\)](workflows/assignment-queue-s.md)
+* [Internal Assignment](workflows/internal-assignment.md)
+* [External Assignment](workflows/external-assignment.md)
+* [Business Units](workflows/business-units.md)
+* [Assignment API](workflows/assignmentapi.md)
+* [ERD](workflows/erd.md)
+* [FAQ](workflows/faq.md)
 
 ## Benchmarks
 

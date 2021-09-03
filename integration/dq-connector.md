@@ -127,7 +127,7 @@ Excellent! We've now completed the initial one-time configuration!
 
 **2A. Create System Asset Within Collibra Catalog To Connect To Edge**
 
-![Global Create -&amp;gt; &apos;System&apos; -&amp;gt; Select Domain -&amp;gt; Enter Name e.g. &apos;postgres-gcp&apos;](https://lh4.googleusercontent.com/e19f1vFffMGQDzgHD1m83C66pG9MwOeJwrd8-Jl42oC9ArjXaCGrwfu_baSzdP4u1xelfB0YWHYA90tsT9g3NFHIE2ULhIdWnkZRUYi8f1sq8EIltYnm_BhC-yVDSknI_9ndGpB0)
+![Global Create &amp;gt; &apos;System&apos; &amp;gt; Select Domain &amp;gt; Enter Name e.g. &apos;postgres-gcp&apos;](https://lh4.googleusercontent.com/e19f1vFffMGQDzgHD1m83C66pG9MwOeJwrd8-Jl42oC9ArjXaCGrwfu_baSzdP4u1xelfB0YWHYA90tsT9g3NFHIE2ULhIdWnkZRUYi8f1sq8EIltYnm_BhC-yVDSknI_9ndGpB0)
 
 {% hint style="warning" %}
 **Important: Connection / System name \(in this example, ‘postgres-gcp’\) must exactly match the Connection / System Name in Collibra DQ**
@@ -135,7 +135,7 @@ Excellent! We've now completed the initial one-time configuration!
 
 **2B. Register Edge Data Source to Collibra Catalog**
 
-![Where: Catalog -&amp;gt; Global &apos;Create&apos; -&amp;gt; Register Data Source with Edge](https://lh6.googleusercontent.com/NsIO-7QVn8gMLJi0YJmhC-gs-r26nPQWwQUY8-S2oQa-pWQAjMeJvo2ZvX5FYG3KqfrbuVE5U5aEeCj25kX19TuDL9MR4ves52EcMyadYgfbWIrC86rHinl7a_ZUnv2gW9IPRlIZ)
+![Catalog &amp;gt; Global &apos;Create&apos; &amp;gt; Register Data Source with Edge](https://lh6.googleusercontent.com/NsIO-7QVn8gMLJi0YJmhC-gs-r26nPQWwQUY8-S2oQa-pWQAjMeJvo2ZvX5FYG3KqfrbuVE5U5aEeCj25kX19TuDL9MR4ves52EcMyadYgfbWIrC86rHinl7a_ZUnv2gW9IPRlIZ)
 
 ## **Step 3: Start Ingesting Collibra Data Quality Into Catalog**
 
@@ -143,7 +143,7 @@ Excellent! We've now completed the initial one-time configuration!
 **Prerequisite: Catalog will have ingested schemas on Edge**
 {% endhint %}
 
-![Where: Catalog -&amp;gt; Data Sources -&amp;gt; Select Database e.g. &apos;postgres&apos; -&amp;gt; Configuration](https://lh6.googleusercontent.com/HgMjwe6cR3ne_GpzqhHQNdB5tMWhIsfg-mU5iLUq7oBZnuomANBVhPGdMSH8kCHBwonZQVp2EhFMQ6H4eH_P5t7lIGJrboU2y71Hy0HVvenK6uu8PeaxRCSQbEX1LbeKdSlBcdd7)
+![Catalog &amp;gt; Data Sources &amp;gt; Select Database e.g. &apos;postgres&apos; &amp;gt; Configuration](https://lh6.googleusercontent.com/HgMjwe6cR3ne_GpzqhHQNdB5tMWhIsfg-mU5iLUq7oBZnuomANBVhPGdMSH8kCHBwonZQVp2EhFMQ6H4eH_P5t7lIGJrboU2y71Hy0HVvenK6uu8PeaxRCSQbEX1LbeKdSlBcdd7)
 
 {% hint style="info" %}
 **Prerequisite: Ensure targeted schemas have User-defined Rules, Metrics, and/or Dimensions within Collibra DQ**
@@ -151,9 +151,13 @@ Excellent! We've now completed the initial one-time configuration!
 
 **3A. Synchronize Data Quality for Selected Schemas**
 
-![Catalog -&amp;gt; Data Sources -&amp;gt; Select Database -&amp;gt; Configuration -&amp;gt; Quality Extraction](https://lh4.googleusercontent.com/Xt8y_PfQ3UZAWBdW6PTWTSX0ZU2830Z-MJykaugTuaWIFIyJR3Hdy0WmijTlFn47yhozmxVe-idXGk7u8wVlfCbk7qIAJMItx44pYVvDIDgjeL62DZ3i38ZrnBjTfwKhB9qa8Irs)
+![Catalog &amp;gt; Data Sources &amp;gt; Select Database &amp;gt; Configuration &amp;gt; Quality Extraction](https://lh4.googleusercontent.com/Xt8y_PfQ3UZAWBdW6PTWTSX0ZU2830Z-MJykaugTuaWIFIyJR3Hdy0WmijTlFn47yhozmxVe-idXGk7u8wVlfCbk7qIAJMItx44pYVvDIDgjeL62DZ3i38ZrnBjTfwKhB9qa8Irs)
 
 **3B. Verify Data Quality Results in Collibra Catalog**
 
 ![](https://lh4.googleusercontent.com/syFKZtlFsc0QAv2OwFx10oVNSfgUaA6fe004elBAWo8DXKXDKUdCpsuOyVK5zVNmhKwnYLLQi_XdKV7B4BcTKLqtov4QCK2b_MoSHDneKm0abhXv0BE33pQjtOfWb2IE4nJIpWNd)
+
+{% hint style="success" %}
+**Success! Example Output**
+{% endhint %}
 
