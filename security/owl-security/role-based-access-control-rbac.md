@@ -18,7 +18,7 @@ ROLE\_CONNECTION\_MANAGER: Manage Connection to Role Mappings
 
 ROLE\_ADMIN: Access to the administration pages \(Create connections, roles, users, AD, etc.\)
 
-![Owl Core Roles](../../.gitbook/assets/screen-shot-2019-07-17-at-10.55.06-am%20%281%29.png)
+![Owl Core Roles](../../.gitbook/assets/screen-shot-2019-07-17-at-10.55.06-am%20%281%29%20%281%29.png)
 
 
 
