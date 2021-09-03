@@ -36,6 +36,13 @@
   * Fixed missing search results issue in list view for Patterns type
 * Export
   * Outlier tab in DQ Job page \(hoot page\) displays linkIds and included in the export
+* Connections
+  * Ticket Granting Ticket \(TGT\) authentication for HDFS & Hive
+    * You can now choose the TGT auth model for connections and point to a TGT file as an additional kerberos authentication model
+  * Kerberos Principal + Password Manager for Hive
+    * You can now use a password manager script to fetch a hive password for a princiapl to authenticate
+  * S3 SAML Auth \(TP\)
+    * DQ is configured to use SAML based authentication to S3 buckets with password manager or provided credentials. Testing is limited to OneLogin for SAML Provider in this tech preview release
 
 ## 2021.08 \(**08-2021\)**
 
