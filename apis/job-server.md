@@ -19,17 +19,17 @@ curl -X POST --data '
 
 ### Owl Job Dashboard
 
-![](../.gitbook/assets/owl-job-status%20%281%29.png)
+![](../.gitbook/assets/owl-job-status%20%281%29%20%281%29.png)
 
 ### Configure Multiple Clusters/Agents Per Tenant
 
 Each tenant of Owl can connect and push processing to 1 or more clusters.  Owl is capable of pushing workloads to any of the registered environments \(Agents\) that it knows about. 
 
-![](../.gitbook/assets/owl-tenant-agent%20%281%29.png)
+![](../.gitbook/assets/agenttenant.png)
 
 ### Add an Agent/Cluster to a Tenant
 
-![](../.gitbook/assets/owl-agent%20%281%29.png)
+![](../.gitbook/assets/owl-agent%20%281%29%20%281%29.png)
 
 ### Owl Scheduler - Built In
 
