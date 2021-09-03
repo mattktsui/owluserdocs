@@ -14,7 +14,7 @@ If you do not choose an assignee \(X\), it will mark the item as valid, but unas
 
 Your External Queues are where the source of the assignment should be tracked, OWDQ/JIRA/Serive Now are all options. OWLDQ is automatically configured, but you can configure others via the Admin Console and clicking on Assignment Queues. 
 
-![](../.gitbook/assets/screen-shot-2020-07-07-at-5.06.59-am.png)
+![](../.gitbook/assets/screen-shot-2020-07-07-at-5.06.59-am%20%281%29.png)
 
 
 
