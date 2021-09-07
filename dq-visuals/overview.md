@@ -18,5 +18,5 @@ Owl offers a full DQ suite to cover the unique challenges of each dataset.
 8. Dupes - Fuzzy matching, Identify similar but not exact entries
 9. Shapes - Typos and Formatting Anomalies
 
-[Check out our videos to Learn More](https://owldq.com/videos.html)
+[Check out our videos to learn more](https://www.youtube.com/channel/UCKMcJ5NRiCDZQxBvSsVtTXw/videos)
 
