@@ -1,6 +1,6 @@
 # Release Notes
 
-## 2021.09 \(09-2021\) In progress...
+## 2021.09 \(09-2021\)
 
 #### New Feature
 
