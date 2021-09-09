@@ -293,3 +293,22 @@ export SPARK_HOME=/opt/owl/spark
 export PATH=$SPARK_HOME/bin:$PATH
 ```
 
+```text
+### Starting Spark with Separate Workers
+/home/owldq/owl/spark/sbin/start-master.sh
+
+SPARK_WORKER_OPTS=" -Dspark.worker.cleanup.enabled=true -Dspark.worker.cleanup.interval=1799 -Dspark.worker.cleanup.appDataTtl=3600"
+SPARK_WORKER_INSTANCES=3;/home/owldq/owl/spark/sbin/start-slave.sh spark://$(hostname):7077 -c 5 -m 20g
+```
+
+```text
+### Starting Spark Standalone 
+
+cd /home/owldq/owl/spark/sbin
+./start-all.sh
+
+### Stopping Spark 
+cd /home/owldq/owl/spark/sbin
+./stop-all.sh
+```
+
