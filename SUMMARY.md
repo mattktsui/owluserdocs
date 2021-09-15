@@ -102,6 +102,7 @@
 
 ## Core Components <a id="dq-visuals"></a>
 
+* [Data Concepts and Semantics](dq-visuals/data-concepts-and-semantics.md)
 * [Overview](dq-visuals/overview.md)
 * [Profile](dq-visuals/profile/README.md)
   * [AutoProfile](dq-visuals/profile/autoprofile.md)
