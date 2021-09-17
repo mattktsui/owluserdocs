@@ -89,6 +89,8 @@ You have now established destinations for where Collibra should ingest your User
 
 **1E. Assign Permissions for New Domains of DQ Assets \(Rules, Metrics, Dimensions\) \(One-Time\)**
 
+Please assign your Edge user as a 'Technical Steward' in each of the domains specified in 1D such that  Edge can write create / update assets into each respective domain
+
 ![](https://lh3.googleusercontent.com/U5NnQT6ncu6XbL7YKWe8A0caumHxodHBCgU_vJeJjWCyxYSzvGsRWWzH2HjjeVKYih4hvGXvDM7J1_DB72EgdxoVLrRTNEQsg4enZotY7fEgjfxfI-cbz4vmFHxxzxEBQfUq_ZpF)
 
 {% hint style="success" %}
@@ -119,6 +121,10 @@ Remember from previous step 1D, you will need to provide your resource / UUIDs f
 
 ![](https://lh4.googleusercontent.com/nRWd59wkPl_yXKwCsgfvBuFMdiAwlW6nBoN1eV7c2YHN-Y2cHbC82TwGRiub297mQ0uBphUL4vewsBzFOKhesF5gaY6W3Beft2VC4ILmrJZuW8oiqEa45JrvHPFI1QiFtlC4kgs_)
 
+**Specify DQ Asset Destinations Within DQ Connector**
+
+![Input your UUIDs from Step 1D for Rules, Metrics, Dimensions](https://lh6.googleusercontent.com/x-JOYKbeDBzsSnKI5czFiBkUuitcxQeLte9MAsTSJL3sfyw8_3AwUog9HRyWdjUV9GpVdaUiM199dTf1NfNMGAfiANWmiW93VYAgZs_PNnogG1KnKa1JRLxJSkEjLrp6J57iQVn-=s0)
+
 {% hint style="success" %}
 Excellent! We've now completed the initial one-time configuration!
 {% endhint %}
@@ -146,7 +152,7 @@ Excellent! We've now completed the initial one-time configuration!
 ![Catalog &amp;gt; Data Sources &amp;gt; Select Database e.g. &apos;postgres&apos; &amp;gt; Configuration](https://lh6.googleusercontent.com/HgMjwe6cR3ne_GpzqhHQNdB5tMWhIsfg-mU5iLUq7oBZnuomANBVhPGdMSH8kCHBwonZQVp2EhFMQ6H4eH_P5t7lIGJrboU2y71Hy0HVvenK6uu8PeaxRCSQbEX1LbeKdSlBcdd7)
 
 {% hint style="info" %}
-**Prerequisite: Ensure targeted schemas have User-defined Rules, Metrics, and/or Dimensions within Collibra DQ**
+**Prerequisite: Ensure targeted schemas have User-defined Rules, Metrics, and/or Dimensions within Collibra DQ that have been Executed**
 {% endhint %}
 
 **3A. Synchronize Data Quality for Selected Schemas**
@@ -160,4 +166,52 @@ Excellent! We've now completed the initial one-time configuration!
 {% hint style="success" %}
 **Success! Example Output**
 {% endhint %}
+
+**Appendix: Synchronization For Single Table in Data Quality and Data Catalog**
+
+![View in Collibra Data Quality](../.gitbook/assets/image%20%283%29.png)
+
+![View in Collibra Catalog](../.gitbook/assets/image.png)
+
+## FAQ
+
+**Q: DQ Dashboard In DGC: I can verify the DQ Connector is synchronizing Data Quality Rules and Data Quality Metrics, but why don't Data Quality Dashboard Charts display?**
+
+A: Ensure correct **Aggregation Paths** and **Global Assignments** \(or create, if none exist\) for **Table** and **Column** below
+
+![Aggregation Path For Table \(Data Quality Rules\)](https://lh5.googleusercontent.com/74HV9oMYQkhBw-jrof1ubunkWPo8OZmgLrxHCM_J0fFmwS0JR5HoZgCN6-TeGCxyArM65jjjPJSMuUXkaog0qFBnthfOlIDZfZCvjQ-bj7dM_ALfcnFYENw_8u4UnJwDnDGlort3=s0)
+
+![Aggregation Path for Column \(Data Quality Rules\)](https://lh6.googleusercontent.com/Bo0xlZmY9-EbKc2nkbI8fOFX3IOdI2_HFkFDt-mw99H10ovIU-nD6m1Jd1pnnfvcHceynzV07NzoarH_AVbzFg90uyITf5PRM9bTWNHoPXGdVEgmJzR_MkQrjLVgRhcnTPh3pIj7=s0)
+
+![Global Assignments For Data Quality Rules](https://lh5.googleusercontent.com/9VHho9WDZhgDLAGYzZ-llIUWFJrLF6mis_BpDG5HI-I45mVgi5yOF7p74sONmnLZ9e4pY4GaaCyEIl4yCTVInzbBBjgpmPOUV0NQykcdkUmmx6s-6_DvoTpqs82jMO6AVBsM8_E1=s0)
+
+**Q: DQ Dashboard In DGC: Why won't my DQ Dimension charts display in my Dashboard?**
+
+A: Please 1\) add a new custom **Relation** 'Data Quality Metric classified by Data Quality Dimension',  2\) **Global Assignment** for 'Data Quality Metric', 3\) UUID of the new **Relation** into the **DQ Connector** setup in **Step 1G**, 4\) 
+
+![New Relation Type In Operating Model](https://lh5.googleusercontent.com/WqDQjGVtgHTGzDNwrb-yPZlhcAC11vAU2KxHox3QAZ4E1c-ThfbakEO9fjl2ZyqscPLB5a3FjBZvYQxxtYd89uv5YGEgCDTvIBUty9JoMsgTLl-I1dEtqo4vzIFKSas6rtXYpb5T=s0)
+
+![New Global Assignment Characteristic](https://lh6.googleusercontent.com/9fxsT4RRkyFDh93CyK6ceRpLYTxboAk3XwpxRWtmp5om9ViZutcuvcOzaHFVh-R02n0mSJhhcYzhvptAOeFT3lWK0HKtI_YLEaH1SUFgXN-5JQz532pdra-fsP2pD4w3XnDvNiEl=s0)
+
+![Copy Resource ID of New Relation Into DQ Connector Setup](https://lh4.googleusercontent.com/GNknIUuSsGe_CiIyA_eAymSeCvtQvQ7yHoqviqLcFWhF3MNQp5ynx_r1a3eDg4_Yw46gyegdJSlymUXxTZ91HOg5y_xIWbVGSjeXRreA3rXyHofkwLaJzDBZ8ZpgfUcFx-pAqtUN=s0)
+
+**Q: I've connected and configured data sources correctly, why aren't DQ Rules and DQ Metrics being synchronized?**
+
+A: Please ensure Connection / System Names between Collibra Data Quality, Collibra, and Edge exactly match
+
+**Q: How many DQ Connectors can I run simultaneously?**
+
+A: Currently, one.
+
+**Q: If I delete a rule from Collibra DQ that I have already synchronized into Collibra Catalog, will it be deleted from Catalog in the next synchronization?**
+
+A: No, the DQ Connector only upserts into Catalog. If a rule is deleted from Collibra DQ, it will not be automatically deleted in Catalog.
+
+**Q: Why are my scores different in Collibra DQ and Collibra Catalog?**
+
+A: Currently, the DQ DQ Connector pulls in the most recent user-defined rules from Collibra DQ. Other components that affect score such as Behaviors, Outliers, Patterns, Dupes, Source are not yet included.
+
+**Q: I've hit the synchronize button, how can I tell if my job is complete?**
+
+A: Check the Activities circle \(button on top right of menu\) for the status of your DQ Synchronization.
 

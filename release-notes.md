@@ -1,5 +1,18 @@
 # Release Notes
 
+## 2021.10 \(10-2021\) In Progress...
+
+#### Enhancements
+
+* Alerts
+  * Updated Alert Mailer to TLS 1.2 to resolve Third Party Error exception
+* Rules
+  * New searchable Rule Breaks Output Page
+* Connections
+  * Updated web model of saving additional connection properties
+* Shapes
+  * Fixed issue where custom values override even after toggling Shapes back to auto or off
+
 ## 2021.09 \(09-2021\)
 
 #### New Feature
@@ -75,7 +88,7 @@ _Please note updated Collibra release name methodology_
 * UI/UX
   * Updated with more distinct icon set
 
-## 2021.07   \(**07-09-2021\)**
+## 2021.07 \(**07-09-2021\)**
 
 _Please note updated Collibra release name methodology_
 
