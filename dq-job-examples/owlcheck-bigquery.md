@@ -1,4 +1,4 @@
-# OwlCheck BigQuery
+# DQ Job BigQuery
 
 ## Example CMD Line
 

@@ -4,10 +4,14 @@
 
 #### Enhancements
 
-* Alerts
-  * Updated Alert Mailer to TLS 1.2 to resolve Third Party Error exception
 * Rules
   * New searchable Rule Breaks Output Page
+* Alerts
+  * Updated Alert Mailer to TLS 1.2 to resolve Third Party Error exception
+* Behavior
+  * Fixed issue where user must refresh to have invalidated item removed from UI
+* Search
+  * Fixed search on Audit Datasets and Dataset Management page
 * Connections
   * Updated web model of saving additional connection properties
 * Shapes
