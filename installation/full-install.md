@@ -253,28 +253,40 @@ Click the clock icon in the navigation pane to navigate to the Jobs Page. Wait 1
 ### Helpful Commands
 
 ```text
+### Postgres data directly initialization failed 
+
 chmod -R 755 /home/owldq
 ```
 
 ```text
+### Spark standalone permission denied after using ./start-all.sh 
+
 ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
 ```text
+### Setting permissions on your pem file for ssh access
+
 chmod 400 ~/Downloads/ssh_pem_key
 ```
 
 ```text
+### Changin permissiongs on individual log files 
+
 sudo chmod 777 /home/owldq/owl/pids/owl-agent.pid
 sudo chmod 777 /home/owldq/owl/pids/owl-web.pid
 ```
 
 ```text
+### Getting the hostname of the instance
+
 hostname -f
 ```
 
 ```text
+### Checking PIDS for differnet components
+
 ps -aef|grep owl-web
 ps -aef|grep owl-agent
 ps -aef|grep spark
@@ -282,19 +294,24 @@ ps -aef|grep postgres
 ```
 
 ```text
+### Checking worker nodes disk space 
+
 sudo du -ah | sort -hr | head -5
-sudo find /home/centos/spark-3.0.2-bin-hadoop3.2/work/* -mtime +1 -type f -delete
+sudo find /home/owldq/owl/spark/work/* -mtime +1 -type f -delete
 ```
 
 ```text
+### Adding ENV variables to bash profile
+
 vi ~/.bash_profile
 
-export SPARK_HOME=/opt/owl/spark
+export SPARK_HOME=/home/owldq/owl/spark
 export PATH=$SPARK_HOME/bin:$PATH
 ```
 
 ```text
 ### Starting Spark with Separate Workers
+
 /home/owldq/owl/spark/sbin/start-master.sh
 
 SPARK_WORKER_OPTS=" -Dspark.worker.cleanup.enabled=true -Dspark.worker.cleanup.interval=1799 -Dspark.worker.cleanup.appDataTtl=3600"
@@ -310,5 +327,17 @@ cd /home/owldq/owl/spark/sbin
 ### Stopping Spark 
 cd /home/owldq/owl/spark/sbin
 ./stop-all.sh
+```
+
+```text
+### Restart different components 
+
+./owlmanage.sh start=postgres
+./owlmanage.sh start=owlagent
+./owlmanage.sh start=owlweb
+
+cd /home/owldq/owl/spark/sbin/
+./stop-all.sh
+./start-all.sh
 ```
 
