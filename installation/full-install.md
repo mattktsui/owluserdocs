@@ -253,6 +253,12 @@ Click the clock icon in the navigation pane to navigate to the Jobs Page. Wait 1
 ### Helpful Commands
 
 ```text
+### Setting permissions on your pem file for ssh access
+
+chmod 400 ~/Downloads/ssh_pem_key
+```
+
+```text
 ### Postgres data directly initialization failed 
 
 chmod -R 755 /home/owldq
@@ -263,12 +269,6 @@ chmod -R 755 /home/owldq
 
 ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-```
-
-```text
-### Setting permissions on your pem file for ssh access
-
-chmod 400 ~/Downloads/ssh_pem_key
 ```
 
 ```text
@@ -285,20 +285,13 @@ hostname -f
 ```
 
 ```text
-### Checking PIDS for differnet components
-
-ps -aef|grep owl-web
-ps -aef|grep owl-agent
-ps -aef|grep spark
-ps -aef|grep postgres
-```
-
-```text
 ### Checking worker nodes disk space 
 
 sudo du -ah | sort -hr | head -5
 sudo find /home/owldq/owl/spark/work/* -mtime +1 -type f -delete
 ```
+
+## Add Spark Home Environment Variables to Profile
 
 ```text
 ### Adding ENV variables to bash profile
@@ -309,24 +302,15 @@ export SPARK_HOME=/home/owldq/owl/spark
 export PATH=$SPARK_HOME/bin:$PATH
 ```
 
-```text
-### Starting Spark with Separate Workers
-
-/home/owldq/owl/spark/sbin/start-master.sh
-
-SPARK_WORKER_OPTS=" -Dspark.worker.cleanup.enabled=true -Dspark.worker.cleanup.interval=1799 -Dspark.worker.cleanup.appDataTtl=3600"
-SPARK_WORKER_INSTANCES=3;/home/owldq/owl/spark/sbin/start-slave.sh spark://$(hostname):7077 -c 5 -m 20g
-```
+## Check Processes are Running
 
 ```text
-### Starting Spark Standalone 
+### Checking PIDS for differnet components
 
-cd /home/owldq/owl/spark/sbin
-./start-all.sh
-
-### Stopping Spark 
-cd /home/owldq/owl/spark/sbin
-./stop-all.sh
+ps -aef|grep owl-web
+ps -aef|grep owl-agent
+ps -aef|grep spark
+ps -aef|grep postgres
 ```
 
 ## Starting Components
@@ -347,7 +331,7 @@ cd /home/owldq/owl/spark/sbin/
 
 {% embed url="https://spark.apache.org/docs/latest/spark-standalone.html\#cluster-launch-scripts" %}
 
-## Launch Scripts <a id="cluster-launch-scripts"></a>
+### Launch Scripts
 
 To launch a Spark standalone cluster with the launch scripts, you should create a file called conf/workers in your Spark directory, which must contain the hostnames of all the machines where you intend to start Spark workers, one per line. If conf/workers does not exist, the launch scripts defaults to a single machine \(localhost\), which is useful for testing. Note, the master machine accesses each of the worker machines via ssh. By default, ssh is run in parallel and requires password-less \(using a private key\) access to be setup. If you do not have a password-less setup, you can set the environment variable SPARK\_SSH\_FOREGROUND and serially provide a password for each worker.
 
@@ -363,4 +347,24 @@ Once you’ve set up this file, you can launch or stop your cluster with the fol
 * `sbin/stop-all.sh` - Stops both the master and the workers as described above.
 
 Note that these scripts must be executed on the machine you want to run the Spark master on, not your local machine.
+
+```text
+### Starting Spark Standalone 
+
+cd /home/owldq/owl/spark/sbin
+./start-all.sh
+
+### Stopping Spark 
+cd /home/owldq/owl/spark/sbin
+./stop-all.sh
+```
+
+```text
+### Starting Spark with Separate Workers
+
+/home/owldq/owl/spark/sbin/start-master.sh
+
+SPARK_WORKER_OPTS=" -Dspark.worker.cleanup.enabled=true -Dspark.worker.cleanup.interval=1799 -Dspark.worker.cleanup.appDataTtl=3600"
+SPARK_WORKER_INSTANCES=3;/home/owldq/owl/spark/sbin/start-slave.sh spark://$(hostname):7077 -c 5 -m 20g
+```
 
