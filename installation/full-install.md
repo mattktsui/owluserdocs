@@ -329,6 +329,8 @@ cd /home/owldq/owl/spark/sbin
 ./stop-all.sh
 ```
 
+## Starting Components
+
 ```text
 ### Restart different components 
 
@@ -340,4 +342,25 @@ cd /home/owldq/owl/spark/sbin/
 ./stop-all.sh
 ./start-all.sh
 ```
+
+## Starting Spark
+
+{% embed url="https://spark.apache.org/docs/latest/spark-standalone.html\#cluster-launch-scripts" %}
+
+## Launch Scripts <a id="cluster-launch-scripts"></a>
+
+To launch a Spark standalone cluster with the launch scripts, you should create a file called conf/workers in your Spark directory, which must contain the hostnames of all the machines where you intend to start Spark workers, one per line. If conf/workers does not exist, the launch scripts defaults to a single machine \(localhost\), which is useful for testing. Note, the master machine accesses each of the worker machines via ssh. By default, ssh is run in parallel and requires password-less \(using a private key\) access to be setup. If you do not have a password-less setup, you can set the environment variable SPARK\_SSH\_FOREGROUND and serially provide a password for each worker.
+
+Once you’ve set up this file, you can launch or stop your cluster with the following shell scripts, based on Hadoop’s deploy scripts, and available in `SPARK_HOME/sbin`:
+
+* `sbin/start-master.sh` - Starts a master instance on the machine the script is executed on.
+* `sbin/start-workers.sh` - Starts a worker instance on each machine specified in the `conf/workers` file.
+* `sbin/start-worker.sh` - Starts a worker instance on the machine the script is executed on.
+* `sbin/start-all.sh` - Starts both a master and a number of workers as described above.
+* `sbin/stop-master.sh` - Stops the master that was started via the `sbin/start-master.sh` script.
+* `sbin/stop-worker.sh` - Stops all worker instances on the machine the script is executed on.
+* `sbin/stop-workers.sh` - Stops all worker instances on the machines specified in the `conf/workers` file.
+* `sbin/stop-all.sh` - Stops both the master and the workers as described above.
+
+Note that these scripts must be executed on the machine you want to run the Spark master on, not your local machine.
 
