@@ -102,7 +102,6 @@
 
 ## Core Components <a id="dq-visuals"></a>
 
-* [Data Concepts and Semantics](dq-visuals/data-concepts-and-semantics.md)
 * [Overview](dq-visuals/overview.md)
 * [Profile](dq-visuals/profile/README.md)
   * [AutoProfile](dq-visuals/profile/autoprofile.md)
@@ -115,6 +114,7 @@
   * [Easier Rule Examples](dq-visuals/rules/easier-rule-examples.md)
   * [The best DQ rule, is the one you don't have to write](dq-visuals/rules/dq-rule-automation.md)
   * [Creating a Business Rule](dq-visuals/rules/creating-a-business-rule.md)
+* [Data Concepts and Semantics](dq-visuals/data-concepts-and-semantics.md)
 * [Duplicates](dq-visuals/duplicates.md)
 * [Explorer](dq-visuals/explorer.md)
 * [Explorer 2](dq-visuals/explorer-2.md)
@@ -180,6 +180,7 @@
 ## Advanced
 
 * [Add Date Column](advanced/add-date-column.md)
+* [Date Time Variable Options](advanced/date-time-variable-options.md)
 * [File Look Back](advanced/file-lookback.md)
 * [Filter & Filter Not](advanced/filter.md)
 * [Multiple Pattern Relationships](advanced/multiple-pattern-combinations.md)
