@@ -300,6 +300,12 @@ vi ~/.bash_profile
 
 export SPARK_HOME=/home/owldq/owl/spark
 export PATH=$SPARK_HOME/bin:$PATH
+
+### Add to owl-env.sh for standalone install 
+
+vi /home/owldq/owl/config/owl-env.sh 
+export SPARK_HOME=/home/owldq/owl/spark
+export PATH=$SPARK_HOME/bin:$PATH
 ```
 
 ## Check Processes are Running
@@ -318,6 +324,7 @@ ps -aef|grep postgres
 ```text
 ### Restart different components 
 
+cd /home/owldq/owl/bin/
 ./owlmanage.sh start=postgres
 ./owlmanage.sh start=owlagent
 ./owlmanage.sh start=owlweb
