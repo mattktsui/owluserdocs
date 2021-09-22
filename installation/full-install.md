@@ -39,14 +39,16 @@ gcloud compute ssh --zone "us-central1-a" --project "gcp-example-project" "cento
 Download full package tarball using the signed link to the full package tarball provided by the DQ Team. Replace `<signed-link-to-full-package>` with the link provided.
 
 ```text
-# Go to the OWL_BASE (home directory)
-cd ~/ 
+### Go to the OWL_BASE (home directory of the user is most common)
+### This example we will use /home/owldq installing as the user owldq
 
-# Download & untar
+cd /home/owldq 
+
+### Download & untar
 curl -o dq-full-package.tar.gz "<signed-link-to-full-package>"
 tar -xvf dq-full-package.tar.gz
 
-# Clean-up unnecessary tarball (optional)
+### Clean-up unnecessary tarball (optional)
 rm dq-full-package.tar.gz
 ```
 
@@ -62,9 +64,9 @@ rm dq-full-package.tar.gz
 First set some variables for `OWL_BASE` \(where to install DQ. In this tutorial, you are already in the directory that you want to install\), `OWL_METASTORE_USER` \(the Postgres username used by DQ Web Application  to access Postgres storage\), and `OWL_METASTORE_PASS` \(the Postgres password used by DQ Web Application  to access Postgres storage\). 
 
 ```text
-# base path that you want owl installed. No trailing
-export OWL_BASE=$(pwd)
+### base path that you want owl installed. No trailing
 
+export OWL_BASE=$(pwd)
 export OWL_METASTORE_USER=postgres
 export OWL_METASTORE_PASS=password
 ```
@@ -84,7 +86,8 @@ To control which components are installed, use `-options=...`parameter. The argu
 You must at minimum specify `-options=spark,owlweb,owlagent` if you independently installed Postgres or using an external Postgres connection \(as you can see in Step \#3 if you choose that installation route\)
 
 ```text
-# The following installs PostgresDB locally as part of OwlDQ install
+### The following installs PostgresDB locally as part of OwlDQ install
+
 ./setup.sh \
     -owlbase=$OWL_BASE \
     -user=$OWL_METASTORE_USER \
@@ -143,8 +146,8 @@ Refer to the Step \#2 for details on what `OWL_BASE`, `OWL_METASTORE_USER` , and
 
 ```text
 # base path that you want owl installed. No trailing
-export OWL_BASE=$(pwd)
 
+export OWL_BASE=$(pwd)
 export OWL_METASTORE_USER=postgres
 export OWL_METASTORE_PASS=password
 ```
@@ -260,8 +263,14 @@ chmod 400 ~/Downloads/ssh_pem_key
 
 ```text
 ### Postgres data directly initialization failed 
+### Postgres permission denied errors
+### sed: can't read /home/owldq/owl/postgres/data/postgresql.conf: Permission denied
 
+sudo rm -rf /home/owldq/owl/postgres
 chmod -R 755 /home/owldq
+
+### Reinstall just postgres
+./setup.sh -owlbase=$OWL_BASE -user=$OWL_METASTORE_USER -pgpassword=$OWL_METASTORE_PASS -options=postgres
 ```
 
 ```text
@@ -297,7 +306,6 @@ sudo find /home/owldq/owl/spark/work/* -mtime +1 -type f -delete
 ### Adding ENV variables to bash profile
 
 vi ~/.bash_profile
-
 export SPARK_HOME=/home/owldq/owl/spark
 export PATH=$SPARK_HOME/bin:$PATH
 
@@ -313,10 +321,11 @@ export PATH=$SPARK_HOME/bin:$PATH
 ```text
 ### Checking PIDS for differnet components
 
+ps -aef|grep postgres
 ps -aef|grep owl-web
 ps -aef|grep owl-agent
 ps -aef|grep spark
-ps -aef|grep postgres
+
 ```
 
 ## Starting Components
