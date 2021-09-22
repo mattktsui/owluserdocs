@@ -319,7 +319,7 @@ export PATH=$SPARK_HOME/bin:$PATH
 ## Check Processes are Running
 
 ```text
-### Checking PIDS for differnet components
+### Checking PIDS for different components
 
 ps -aef|grep postgres
 ps -aef|grep owl-web
