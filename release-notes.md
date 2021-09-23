@@ -62,6 +62,12 @@
   * S3 SAML Auth \(TP\)
     * DQ is configured to use SAML based authentication to S3 buckets with password manager or provided credentials. Testing is limited to OneLogin for SAML Provider in this tech preview release
 
+**Patches / Known Issues**
+
+* 2021.09.1 Validate Source
+* 2021.09.2 Validate Source Large DB load
+* 2021.09.3 Save on datashapes from new DQ Job
+
 ## 2021.08 \(**08-2021\)**
 
 _Please note updated Collibra release name methodology_
