@@ -24,24 +24,24 @@ The following is a list of drivers certified for production use.
 
 The following is a list of drivers which are for test purposes \(not certified yet for production usage\).
 
-| Connection Type | Driver | Certification |
-| :--- | :--- | :--- |
-| MongoDB | unityJDBC | Preview |
-| MapR Hive | MapR Hive Driver | Preview |
-| Redshift | Simba JDBC | Preview |
-| Athena | Simba JDBC | Preview |
-| Presto | Simba JDBC | Preview |
-| BigQuery | Simba JDBC for Web / Bigquery Spark Connector in Core | Preview |
-| GCS \(Google Cloud Storage\) | Google Cloud SDK for Web / GCS Spark Connector in Core | Preview |
-| Azure Cloud Storage \(ADLSv2\) | Azure SDK for Web / Azure Data Explorer connector for Spark in Core \(Authtypes are Key or Service-Prinicipal\) | Preview |
-| Solr | Solr JDBC | Preview |
-| Phoenix | Native | Preview |
-| Cassandra | Native | Preview |
-| MS SQL Data Warehouse | Native | Preview |
-| Delta Lake | Native | Preview |
-| SAP HANA | Native | Preview |
-| MariaDB | MySQL Driver | Preview |
-| Dremio | Dremio JDBC | Preview |
+| Connection Type | Driver | Certification | Grade |
+| :--- | :--- | :--- | :--- |
+| MongoDB | unityJDBC | Preview | B |
+| MapR Hive | MapR Hive Driver | Preview | C+ |
+| Redshift | Simba JDBC | Preview | B+ |
+| Athena | Simba JDBC | Preview | B+ |
+| Presto | Simba JDBC | Preview | B+ |
+| BigQuery | Simba JDBC for Web / Bigquery Spark Connector in Core | Preview | B+ |
+| GCS \(Google Cloud Storage\) | Google Cloud SDK for Web / GCS Spark Connector in Core | Preview | B |
+| Azure Cloud Storage \(ADLSv2\) | Azure SDK for Web / Azure Data Explorer connector for Spark in Core \(Authtypes are Key or Service-Prinicipal\) | Preview | B- |
+| Solr | Solr JDBC | Preview | B- |
+| Phoenix | Native | Preview | B |
+| Cassandra | Native | Preview | C+ |
+| MS SQL Data Warehouse | Native | Preview | B+ |
+| Delta Lake | Native | Preview | B- |
+| SAP HANA | Native | Preview | B+ |
+| MariaDB | MySQL Driver | Preview | B+ |
+| Dremio | Dremio JDBC | Preview | B |
 
 | File Type Support | Grade | Reason |
 | :--- | :--- | :--- |
