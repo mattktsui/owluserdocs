@@ -24,30 +24,164 @@ The following is a list of drivers certified for production use.
 
 The following is a list of drivers which are for test purposes \(not certified yet for production usage\).
 
-| Connection Type | Driver | Certification | Grade |
-| :--- | :--- | :--- | :--- |
-| MongoDB | unityJDBC | Preview | B |
-| MapR Hive | MapR Hive Driver | Preview | C+ |
-| Redshift | Simba JDBC | Preview | B+ |
-| Athena | Simba JDBC | Preview | B+ |
-| Presto | Simba JDBC | Preview | B+ |
-| BigQuery | Simba JDBC for Web / Bigquery Spark Connector in Core | Preview | B+ |
-| GCS \(Google Cloud Storage\) | Google Cloud SDK for Web / GCS Spark Connector in Core | Preview | B |
-| Azure Cloud Storage \(ADLSv2\) | Azure SDK for Web / Azure Data Explorer connector for Spark in Core \(Authtypes are Key or Service-Prinicipal\) | Preview | B- |
-| Solr | Solr JDBC | Preview | B- |
-| Phoenix | Native | Preview | B |
-| Cassandra | Native | Preview | C+ |
-| MS SQL Data Warehouse | Native | Preview | B+ |
-| Delta Lake | Native | Preview | B- |
-| SAP HANA | Native | Preview | B+ |
-| MariaDB | MySQL Driver | Preview | B+ |
-| Dremio | Dremio JDBC | Preview | B |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Connection Type</th>
+      <th style="text-align:left">Driver</th>
+      <th style="text-align:left">Certification</th>
+      <th style="text-align:left">Grade</th>
+      <th style="text-align:left"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><b>MongoDB</b>
+      </td>
+      <td style="text-align:left">unityJDBC</td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">B</td>
+      <td style="text-align:left">Depends which driver you use to turn a document store into a relational
+        view.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>MapR Hive</b>
+      </td>
+      <td style="text-align:left">MapR Hive Driver</td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">C+</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Redshift</b>
+      </td>
+      <td style="text-align:left">Simba JDBC</td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">B+</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Athena</b>
+      </td>
+      <td style="text-align:left">Simba JDBC</td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">B+</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Presto</b>
+      </td>
+      <td style="text-align:left">Simba JDBC</td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">B+</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>BigQuery</b>
+      </td>
+      <td style="text-align:left">
+        <p>Simba JDBC (Web)</p>
+        <p>Spark Connector (Core)</p>
+      </td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">B+</td>
+      <td style="text-align:left">requires 20 jars as compared to 1 jar and accepts pushdown but has nuances</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>GCS (Google Cloud Storage)</b>
+      </td>
+      <td style="text-align:left">
+        <p>Google Cloud SDK for Web /</p>
+        <p>GCS Spark Connector in Core</p>
+      </td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">B</td>
+      <td style="text-align:left">more config than usual</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Azure Cloud Storage (ADLSv2)</b>
+      </td>
+      <td style="text-align:left">
+        <p>Azure SDK for Web /</p>
+        <p>Azure Data Explorer connector for Spark in Core (Authtypes are Key or
+          Service-Prinicipal)</p>
+      </td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">B-</td>
+      <td style="text-align:left">more config than avg</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Solr</b>
+      </td>
+      <td style="text-align:left">Solr JDBC</td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">B-</td>
+      <td style="text-align:left">not a relational store so requires some understanding of Solr</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Phoenix</b>
+      </td>
+      <td style="text-align:left">Native</td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">B</td>
+      <td style="text-align:left">requires knowledge of phoenix and hbase</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Cassandra</b>
+      </td>
+      <td style="text-align:left">Native</td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">C+</td>
+      <td style="text-align:left">CQL vs SQL and other nuances</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>MS SQL Data Warehouse</b>
+      </td>
+      <td style="text-align:left">Native</td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">B+</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Delta Lake</b>
+      </td>
+      <td style="text-align:left">Native</td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">B-</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>SAP HANA</b>
+      </td>
+      <td style="text-align:left">Native</td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">B+</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>MariaDB</b>
+      </td>
+      <td style="text-align:left">MySQL Driver</td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">B+</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Dremio</b>
+      </td>
+      <td style="text-align:left">Dremio JDBC</td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">B</td>
+      <td style="text-align:left"></td>
+    </tr>
+  </tbody>
+</table>
 
 | File Type Support | Grade | Reason |
 | :--- | :--- | :--- |
-| Parquet | B+ | schema in file, less common but works well |
-| CSV \(and all delimiters\) | A+ | very common easy to use |
-| JSON | A- | works great depends how many levels nested |
-| XML | B | recommend json |
-| AVRO | B |  |
+| **Parquet** | B+ | schema in file, less common but works well |
+| **CSV** \(and all delimiters\) | A+ | very common easy to use |
+| **JSON** | A- | works great depends how many levels nested |
+| **XML** | B | recommend json |
+| **AVRO** | B |  |
 
