@@ -50,7 +50,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">MapR Hive Driver</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">C+</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">End of Life</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Redshift</b>
@@ -58,7 +58,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">Simba JDBC</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B+</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">A few unsupported data types</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Athena</b>
@@ -66,7 +66,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">Simba JDBC</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B+</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">A few unsupported data types</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Presto</b>
@@ -148,7 +148,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">Native</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B-</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Requires knowledge of databricks</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>SAP HANA</b>
@@ -156,7 +156,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">Native</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B+</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">works with most common data types</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>MariaDB</b>
@@ -164,7 +164,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">MySQL Driver</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B+</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Uses mysql driver, some nuances</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Dremio</b>
