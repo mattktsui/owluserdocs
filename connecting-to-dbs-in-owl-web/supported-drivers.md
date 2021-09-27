@@ -19,7 +19,7 @@ The following is a list of drivers certified for production use.
 | **MySql** | Native | Production | A+ | easy to use performs well |
 | **Kafka** | Native | Production | B+ | Most cases the group doesn't know enough about kafka administration, schema registry and other nuances. |
 | **DB2** | Native | Production | A- | easy to use performs well, fetch syntax vs limit and other nuances |
-| **GreenPlum** | Postgres | Production | A- |  |
+| **GreenPlum** | Postgres | Production | A- | easy to use performs well |
 | **HDFS** | HDFS connector | Production | B | works well but usually a few hadoop spark nuances to get right |
 
 The following is a list of drivers which are for test purposes \(not certified yet for production usage\).
