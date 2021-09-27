@@ -8,7 +8,7 @@ The following is a list of drivers certified for production use.
 
 | Connection Type | Driver | Certification | Grade | Reason |
 | :--- | :--- | :--- | :--- | :--- |
-| **Teradata** | Native | Production | B+ |  |
+| **Teradata** | Native | Production | B+ | Some sql nuances, fairly easy to use and performs well |
 | **Oracle** | Native | Production | A- | Performance based on how the DB is configured and fetch size in driver. |
 | **MS SQL Server** | Native | Production | A- | allows whitespace in column headers |
 | **Snowflake** | Native | Production | A+ | easy to use and performs well |
