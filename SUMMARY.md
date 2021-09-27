@@ -125,6 +125,7 @@
 ## Integration
 
 * [Collibra Native DQ Connector](integration/dq-connector.md)
+* [DQ Workflows in Collibra DIC](integration/dq-workflows-in-collibra-dic.md)
 
 ## Labeling / Training
 

@@ -32,7 +32,7 @@
 * Profile
   * When faced with a few errors e.g. 0.005% null, highlight issues more clearly and visibly instead  of the notion of rounding up to and displaying 100.0%
 * Jobs
-  * Enhanced query and file date templating and variable options. This allows easier scheduling and programmatic templating for common date variables
+  * Enhanced query and file date templating and variable options. This allows easier scheduling and programmatic templating for common date variables 
   * Job Template corrupt time portion of ${rd} on last run of replay
   * Refactor job actions column
 * Catalog
