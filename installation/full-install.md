@@ -228,7 +228,6 @@ Follow the steps on [How To Configure Agent via UI](https://docs.owl-analytics.c
 * Replace all occurrence of `/opt/owl` with your `$OWL_BASE/owl/`in **Base Path**, **Collibra DQ Core JAR**, **Collibra DQ Core Logs**, **Collibra DQ Script**, and **Collibra DQ Web Logs**.
   * Note that **Base Path** here does not refer to `OWL_BASE`
 * Replace **Default Master** value with the Spark URL from Fig 3
-* Replace **Default Client Mode** to "Cluster"
 * Replace **Number of Executors\(s\)**, **Executor Memory \(GB\)**, **Driver Memory \(GB\)** to a reasonable default \(depending on how large your instance is\)
 
 Refer to [Agent Configuration Parameters](https://docs.owl-analytics.com/installation/agent-configuration#agent-configuration-parameters) for parameters descriptions.

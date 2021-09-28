@@ -226,6 +226,10 @@
 * [Smart Meter Data](smart-meter-data.md)
 * [Health Insurance Claims Data](insurance-data.md)
 
+## Admin
+
+* [User Audit Trail](admin/user-audit-trail.md)
+
 ## WORKFLOWS
 
 * [Assignment Queue\(s\)](workflows/assignment-queue-s.md)
