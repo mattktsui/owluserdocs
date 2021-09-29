@@ -228,6 +228,8 @@
 
 ## Admin
 
+* [Dataset Audit Trail](admin/dataset-audit-trail.md)
+* [Security Audit Trail](admin/security-audit-trail.md)
 * [User Audit Trail](admin/user-audit-trail.md)
 
 ## WORKFLOWS

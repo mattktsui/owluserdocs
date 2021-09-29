@@ -193,6 +193,8 @@ A: Please 1\) add a new custom **Relation** 'Data Quality Metric classified by D
 
 ![New Global Assignment Characteristic](https://lh6.googleusercontent.com/9fxsT4RRkyFDh93CyK6ceRpLYTxboAk3XwpxRWtmp5om9ViZutcuvcOzaHFVh-R02n0mSJhhcYzhvptAOeFT3lWK0HKtI_YLEaH1SUFgXN-5JQz532pdra-fsP2pD4w3XnDvNiEl=s0)
 
+![Add &apos;classified by Data Quality Dimension&apos;](https://lh4.googleusercontent.com/Suo299gJGe1Y2tsK6rE4m6kca0XO1Dp7WoHvKfrswRUxxobQBI_AD0KfZswl5mcEtUVwm_W70Ws0OJp2-as62s9NfvuqUzBwqsntCATSsCbREHefpFTJ0TsSOlRsnHME210goEIJ=s0)
+
 ![Copy Resource ID of New Relation Into DQ Connector Setup](https://lh4.googleusercontent.com/GNknIUuSsGe_CiIyA_eAymSeCvtQvQ7yHoqviqLcFWhF3MNQp5ynx_r1a3eDg4_Yw46gyegdJSlymUXxTZ91HOg5y_xIWbVGSjeXRreA3rXyHofkwLaJzDBZ8ZpgfUcFx-pAqtUN=s0)
 
 **Q: I've connected and configured data sources correctly, why aren't DQ Rules and DQ Metrics being synchronized?**

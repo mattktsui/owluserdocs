@@ -1,6 +1,6 @@
 # User Audit Trail
 
-Available Features
+Available Data
 
 * Logins: Successful / Failed
 * Privileged User Access
