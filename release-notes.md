@@ -4,18 +4,35 @@
 
 #### Enhancements
 
+* Explorer
+  * _Fixed issue where permissions are checked on datasets that do not yet exist_
+* Connections
+  * Updated web model of saving additional connection properties
+  * _Fixed scenario where editing connection yields null instead of empty for multiple values_
+  * _Allows user to more easily specify an S3 subfolder in the connection url. Example: s3://bucket-path/sub-folder_
 * Rules
-  * New searchable Rule Breaks Output Page
+  * _New searchable Rule Breaks Output Page_
 * Alerts
   * Updated Alert Mailer to TLS 1.2 to resolve Third Party Error exception
 * Behavior
   * Fixed issue where user must refresh to have invalidated item removed from UI
+* DQ Job
+  * Refactored DQ Job Score to Gauge Chart
 * Search
   * Fixed search on Audit Datasets and Dataset Management page
-* Connections
-  * Updated web model of saving additional connection properties
+* Scorecards
+  * Date ranges are now customizable
+* Validate Source
+  * Added feature that provides 'trim' option on String columns when running source-target validation, extra spaces in the cell are trimmed on both ends \(left and right\)
+* Dupes
+  * Resolved issue with white spaces in column headers blocking duplicate detection
+* Security
+  * Added configuration for setting the SAML\_ENTITY\_BASEURL, which sets the Consumer service url for the SP Metadata
 * Shapes
   * Fixed issue where custom values override even after toggling Shapes back to auto or off
+* Console
+  * Fixed uncaught TypeError on login screen
+  * Fixed GET timeout error on registration page
 
 ## 2021.09 \(09-2021\)
 
