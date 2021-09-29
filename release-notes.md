@@ -34,6 +34,11 @@
   * Fixed uncaught TypeError on login screen
   * Fixed GET timeout error on registration page
 
+#### Known Limitations
+
+* Non-CSV Files in Explorer
+  * On non-csv files, Explorer will not automatically infer file types. Users must change file type to the required value and click Step 2 "Load File". Nothing will change in Step 1 "File Information". A future enhancement will be added to automatically check filetypes by reading the first file
+
 ## 2021.09 \(09-2021\)
 
 #### New Feature
