@@ -280,7 +280,7 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
 ```text
-### Changin permissiongs on individual log files 
+### Changing permissiongs on individual log files 
 
 sudo chmod 777 /home/owldq/owl/pids/owl-agent.pid
 sudo chmod 777 /home/owldq/owl/pids/owl-web.pid
