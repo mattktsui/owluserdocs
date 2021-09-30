@@ -185,3 +185,9 @@ The following is a list of drivers which are for test purposes \(not certified y
 | **XML** | B | recommend json |
 | **AVRO** | B |  |
 
+## FAQ / Tips
+
+**S3**
+
+* Please ensure no spaces in S3 connection name
+
