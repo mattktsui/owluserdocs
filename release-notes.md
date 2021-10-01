@@ -36,6 +36,7 @@
 
 #### Known Limitations
 
+* Pushdown profiling on Bigquery, Redshift, Athena and Presto is available for specific datatypes. 
 * Backrun option and flag will persist beyond the first run \(-br\).  Please remove this flag if you do not want to backrun again. 
 * QUARTER and WEEK are not supported time bins in this release. 
 * Out of the box semantic rules cannot be edited \(STATECHECK, GENDERCHECK, etc\). Users can still apply their own global rules which can be customized. 
