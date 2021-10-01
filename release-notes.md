@@ -47,6 +47,7 @@
 * Connection names should not contain spaces 
 * Dataset names should not contain special characters 
 * Complex Validate Source queries can only be edited from the CMD line or JSON directly before hitting Run.
+* LinkId does not support alias columns that are not part of the -LinkId definition
 
 ## 2021.09 \(09-2021\)
 
