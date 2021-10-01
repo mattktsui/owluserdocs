@@ -6,21 +6,21 @@ description: A list of supported data source connection types.
 
 The following is a list of drivers certified for production use.
 
-| Connection Type | Driver | Certification | Grade | Reason |
-| :--- | :--- | :--- | :--- | :--- |
-| **Teradata** | Native | Production | B+ | Some sql nuances, fairly easy to use and performs well |
-| **Oracle** | Native | Production | A- | Performance based on how the DB is configured and fetch size in driver. |
-| **MS SQL Server** | Native | Production | A- | allows whitespace in column headers |
-| **Snowflake** | Native | Production | A+ | easy to use and performs well |
-| **S3** | S3 SDK in Web / S3a connector in Core | Production | A | Supports bucket keys, IAM roles and caching |
-| **Hive** | Simba JDBC | Production | B+ | Too many variations of Tez, mapReduce and other nuances that make it difficult to get started. |
-| **Impala** | Simba JDBC | Production | A- | Tends to be a quicker start than Hive but still has many config nuances |
-| **Postgres** | Native | Production | A+ | easy to use performs well |
-| **MySql** | Native | Production | A+ | easy to use performs well |
-| **Kafka** | Native | Production | B+ | Most cases the group doesn't know enough about kafka administration, schema registry and other nuances. |
-| **DB2** | Native | Production | A- | easy to use performs well, fetch syntax vs limit and other nuances |
-| **GreenPlum** | Postgres | Production | A- | easy to use performs well |
-| **HDFS** | HDFS connector | Production | B | works well but usually a few hadoop spark nuances to get right |
+| Connection Type | Driver | Certification | Grade | Auth Type | Comments |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Teradata** | Native | Production | B+ | User / Pass | Some sql nuances, fairly easy to use and performs well |
+| **Oracle** | Native | Production | A- | User / Pass | Performance based on how the DB is configured and fetch size in driver. |
+| **MS SQL Server** | Native | Production | A- | User / Pass | allows whitespace in column headers |
+| **Snowflake** | Native | Production | A+ | User / Pass | easy to use and performs well |
+| **S3** | S3 SDK in Web / S3a connector in Core | Production | A | Secret / Key, Instance Profile, Assume Role | Supports bucket keys, IAM roles and caching |
+| **Hive** | Simba JDBC | Production | B+ | User / Pass, Kerberos | Too many variations of Tez, mapReduce and other nuances that make it difficult to get started. |
+| **Impala** | Simba JDBC | Production | A- | User / Pass | Tends to be a quicker start than Hive but still has many config nuances |
+| **Postgres** | Native | Production | A+ | User / Pass | easy to use performs well |
+| **MySql** | Native | Production | A+ | User / Pass | easy to use performs well |
+| **Kafka** | Native | Production | B+ |  | Most cases the group doesn't know enough about kafka administration, schema registry and other nuances. |
+| **DB2** | Native | Production | A- | User / Pass, Kerberos | easy to use performs well, fetch syntax vs limit and other nuances |
+| **GreenPlum** | Postgres | Production | A- | User / Pass | easy to use performs well |
+| **HDFS** | HDFS connector | Production | B | Kerberos | works well but usually a few hadoop spark nuances to get right |
 
 The following is a list of drivers which are for test purposes \(not certified yet for production usage\).
 
@@ -31,7 +31,8 @@ The following is a list of drivers which are for test purposes \(not certified y
       <th style="text-align:left">Driver</th>
       <th style="text-align:left">Certification</th>
       <th style="text-align:left">Grade</th>
-      <th style="text-align:left"></th>
+      <th style="text-align:left">Auth Type</th>
+      <th style="text-align:left">Comments</th>
     </tr>
   </thead>
   <tbody>
@@ -41,6 +42,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">unityJDBC</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B</td>
+      <td style="text-align:left">User / Pass</td>
       <td style="text-align:left">Depends which driver you use to turn a document store into a relational
         view.</td>
     </tr>
@@ -50,6 +52,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">MapR Hive Driver</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">C+</td>
+      <td style="text-align:left">User / Pass</td>
       <td style="text-align:left">End of Life</td>
     </tr>
     <tr>
@@ -58,6 +61,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">Simba JDBC</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B+</td>
+      <td style="text-align:left">User / Pass</td>
       <td style="text-align:left">A few unsupported data types</td>
     </tr>
     <tr>
@@ -66,6 +70,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">Simba JDBC</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B+</td>
+      <td style="text-align:left">User / Pass</td>
       <td style="text-align:left">A few unsupported data types</td>
     </tr>
     <tr>
@@ -74,6 +79,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">Simba JDBC</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B+</td>
+      <td style="text-align:left">User / Pass</td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -85,6 +91,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       </td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B+</td>
+      <td style="text-align:left">JSON service account</td>
       <td style="text-align:left">requires 20 jars as compared to 1 jar and accepts pushdown but has nuances</td>
     </tr>
     <tr>
@@ -96,6 +103,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       </td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B</td>
+      <td style="text-align:left">JSON service account</td>
       <td style="text-align:left">more config than usual</td>
     </tr>
     <tr>
@@ -103,11 +111,11 @@ The following is a list of drivers which are for test purposes \(not certified y
       </td>
       <td style="text-align:left">
         <p>Azure SDK for Web /</p>
-        <p>Azure Data Explorer connector for Spark in Core (Authtypes are Key or
-          Service-Prinicipal)</p>
+        <p>Azure Data Explorer connector for Spark in Core</p>
       </td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B-</td>
+      <td style="text-align:left">Key / Service Principal</td>
       <td style="text-align:left">more config than avg</td>
     </tr>
     <tr>
@@ -116,6 +124,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">Solr JDBC</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B-</td>
+      <td style="text-align:left">User / Pass</td>
       <td style="text-align:left">not a relational store so requires some understanding of Solr</td>
     </tr>
     <tr>
@@ -123,7 +132,8 @@ The following is a list of drivers which are for test purposes \(not certified y
       </td>
       <td style="text-align:left">Native</td>
       <td style="text-align:left">Preview</td>
-      <td style="text-align:left">B</td>
+      <td style="text-align:left">C+</td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">requires knowledge of phoenix and hbase</td>
     </tr>
     <tr>
@@ -132,6 +142,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">Native</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">C+</td>
+      <td style="text-align:left">User / Pass</td>
       <td style="text-align:left">CQL vs SQL and other nuances</td>
     </tr>
     <tr>
@@ -140,6 +151,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">Native</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B+</td>
+      <td style="text-align:left">User / Pass</td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -148,6 +160,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">Native</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B-</td>
+      <td style="text-align:left">User / Pass</td>
       <td style="text-align:left">Requires knowledge of databricks</td>
     </tr>
     <tr>
@@ -156,6 +169,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">Native</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B+</td>
+      <td style="text-align:left">User / Pass</td>
       <td style="text-align:left">works with most common data types</td>
     </tr>
     <tr>
@@ -164,6 +178,7 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">MySQL Driver</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B+</td>
+      <td style="text-align:left">User / Pass</td>
       <td style="text-align:left">Uses mysql driver, some nuances</td>
     </tr>
     <tr>
@@ -172,12 +187,13 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">Dremio JDBC</td>
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B</td>
+      <td style="text-align:left">User / Pass</td>
       <td style="text-align:left"></td>
     </tr>
   </tbody>
 </table>
 
-| File Type Support | Grade | Reason |
+| File Type Support | Grade | Comments |
 | :--- | :--- | :--- |
 | **Parquet** | B+ | schema in file, less common but works well |
 | **CSV** \(and all delimiters\) | A+ | very common easy to use |
@@ -190,4 +206,5 @@ The following is a list of drivers which are for test purposes \(not certified y
 **S3**
 
 * Please ensure no spaces in S3 connection name
+* Please remember to select 'Save Credentials' checkbox upon establishing connection
 

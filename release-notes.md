@@ -9,7 +9,7 @@
 * Connections
   * Updated web model of saving additional connection properties
   * _Fixed scenario where editing connection yields null instead of empty for multiple values_
-  * _Allows user to more easily specify an S3 subfolder in the connection url. Example: s3://bucket-path/sub-folder_
+  * _Allows user to more easily specify an S3 subfolder in the connection url. Example: s3://bucket-path/sub-folder \(AWS only\)_
 * Rules
   * Placeholder new searchable Rule Summary Page for Rule statistics / insights
 * Alerts
@@ -45,7 +45,7 @@
 * Non-CSV Files in Explorer
   * On non-csv files, Explorer will not automatically infer file types. Users must change file type to the required value and click Step 2 "Load File". Nothing will change in Step 1 "File Information". A future enhancement will be added to automatically check filetypes by reading the first file
 * Connection names should not contain spaces 
-* Dataset names should not contain special characters 
+* Dataset names should not contain special characters
 * Complex Validate Source queries can only be edited from the CMD line or JSON directly before hitting Run.
 * LinkId does not support alias columns that are not part of the -LinkId definition
 * Active Directory in Azure SQL can connect via LDAP \(basic auth\) or Kerberos. 
