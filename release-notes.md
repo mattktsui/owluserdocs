@@ -38,6 +38,7 @@
 
 * Backrun option and flag will persist beyond the first run \(-br\).  Please remove this flag if you do not want to backrun again. 
 * QUARTER and WEEK are not supported time bins in this release. 
+* Out of the box semantic rules cannot be edited \(STATECHECK, GENDERCHECK, etc\). Users can still apply their own global rules which can be customized. 
 * Non-CSV Files in Explorer
   * On non-csv files, Explorer will not automatically infer file types. Users must change file type to the required value and click Step 2 "Load File". Nothing will change in Step 1 "File Information". A future enhancement will be added to automatically check filetypes by reading the first file
 
