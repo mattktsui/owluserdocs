@@ -36,6 +36,8 @@
 
 #### Known Limitations
 
+* Individual files greater than 10gb will experience performance degradation in Explorer for Standalone installs. 
+* Individual files greater than 25gb will experience performance degradation in Core for Standalone installs. 
 * Pushdown profiling on Bigquery, Redshift, Athena and Presto is available for specific datatypes. 
 * Backrun option and flag will persist beyond the first run \(-br\).  Please remove this flag if you do not want to backrun again. 
 * QUARTER and WEEK are not supported time bins in this release. 
