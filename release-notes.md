@@ -5,10 +5,10 @@
 #### Enhancements
 
 * Explorer
-  * _Fixed issue where permissions are checked on datasets that do not yet exist_
+  * Fixed issue where permissions are checked on datasets that do not yet exist
 * Connections
   * Updated web model of saving additional connection properties
-  * _Fixed scenario where editing connection yields null instead of empty for multiple values_
+  * Fixed scenario where editing connection yields null instead of empty for multiple values
 * Rules
   * Placeholder new searchable Rule Summary Page for Rule statistics / insights
 * Alerts
