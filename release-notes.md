@@ -32,6 +32,8 @@
 * Console
   * Fixed uncaught TypeError on login screen
   * Fixed GET timeout error on registration page
+* Export/Import API 
+  * Users will be able to run the export/import API calls to conduct multiple promotions on the repo, schedule, and rule tables. 
 
 #### Known Limitations
 
