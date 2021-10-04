@@ -37,19 +37,25 @@
 
 #### Known Limitations
 
-* Individual files greater than 10gb will experience performance degradation in Explorer for Standalone installs. Best practice is to save in smaller chunks and use bypass schema in the Explorer if needed.
-* Individual files greater than 25gb will experience performance degradation in Core for Standalone installs. 
-* Pushdown profiling on Bigquery, Redshift, Athena and Presto is available for specific datatypes. 
-* Backrun option and flag will persist beyond the first run \(-br\).  Please remove this flag if you do not want to backrun again. 
-* QUARTER and WEEK are not supported time bins in this release. 
-* Out of the box semantic rules cannot be edited \(STATECHECK, GENDERCHECK, etc\). Users can still apply their own global rules which can be customized. 
-* Non-CSV Files in Explorer
+* File sizes
+  * Individual files greater than 10gb will experience performance degradation in Explorer for Standalone installs. Best practice is to save in smaller chunks and use bypass schema in the Explorer if needed.
+  * Individual files greater than 25gb will experience performance degradation in Core for Standalone installs. 
+* Profiling
+  * Pushdown profiling on Bigquery, Redshift, Athena and Presto is available for specific datatypes. 
+  * Backrun option and flag will persist beyond the first run \(-br\).  Please remove this flag if you do not want to backrun again. 
+* Explorer
+  * QUARTER and WEEK are not supported time bins in this release. 
   * On non-csv files, Explorer will not automatically infer file types. Users must change file type to the required value and click Step 2 "Load File". Nothing will change in Step 1 "File Information". A future enhancement will be added to automatically check filetypes by reading the first file
-* Connection names should not contain spaces 
-* Dataset names should not contain special characters
-* Complex Validate Source queries can only be edited from the CMD line or JSON directly before hitting Run.
-* LinkId does not support alias columns that are not part of the -LinkId definition
-* Active Directory in Azure SQL can connect via LDAP \(basic auth\) or Kerberos. 
+  * Dataset names should not contain special characters
+* Rules
+  * Out of the box semantic rules cannot be edited \(STATECHECK, GENDERCHECK, etc\). Users can still apply their own global rules which can be customized.
+  * LinkId does not support alias columns that are not part of the -LinkId definition
+* Connections
+  * Connection names should not contain spaces
+* Validate Source
+  * Complex Validate Source queries can only be edited from the CMD line or JSON directly before hitting Run.
+* Security
+  * Active Directory in Azure SQL can connect via LDAP \(basic auth\) or Kerberos. 
 
 ## 2021.09 \(09-2021\)
 
