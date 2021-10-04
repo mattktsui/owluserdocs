@@ -9,7 +9,6 @@
 * Connections
   * Updated web model of saving additional connection properties
   * _Fixed scenario where editing connection yields null instead of empty for multiple values_
-  * _Allows user to more easily specify an S3 subfolder in the connection url. Example: s3://bucket-path/sub-folder \(AWS only\)_
 * Rules
   * Placeholder new searchable Rule Summary Page for Rule statistics / insights
 * Alerts
