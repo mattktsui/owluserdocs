@@ -51,9 +51,15 @@ Query builder will help generate SQL for more complex rules. You can apply to on
 
 ### Native SQL
 
-![](../../.gitbook/assets/screen-shot-2019-09-04-at-12.57.24-pm.png)
+![](../../.gitbook/assets/image%20%2816%29.png)
 
 If you have rules already written in Oracle, Sybase, or DB2 syntax - Copy/Paste the rule directly into the Native SQL section. 
+
+When creating a Native SQL rule, keep the following in mind:
+
+* The SQL query must be a valid expression that can be run as a subquery. To avoid pulling large amounts of data into memory, Collibra DQ will wrap your expression so it only fetches the number of rows returned. Rules should be written such that the query returns the anomalous rows.
+* The SQL query must take less than 30 minutes to run. It is recommended to use partitioned columns for efficiency.
+* When testing the SQL query from the app, it is helpful if it take less than 30 seconds to run. You can add a limit to reduce query time, or test the query in your SQL Editor.
 
 ### Stat Rules
 
