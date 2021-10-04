@@ -1,6 +1,6 @@
 # Release Notes
 
-## 2021.10 \(10-2021\) In Progress...
+## 2021.10
 
 #### Enhancements
 
