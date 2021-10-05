@@ -4,9 +4,12 @@
 
 #### Enhancements
 
+* DQ Job
+  * Refactored DQ Job Score to Gauge Chart
 * Explorer
   * Fixed issue where permissions are checked on datasets that do not yet exist
 * Connections
+  * Sybase 'Test / Preview' now available
   * Updated web model of saving additional connection properties
   * Fixed scenario where editing connection yields null instead of empty for multiple values
 * Rules
@@ -15,8 +18,6 @@
   * Updated Alert Mailer to TLS 1.2 to resolve Third Party Error exception
 * Behavior
   * Fixed issue where user must refresh to have invalidated item removed from UI
-* DQ Job
-  * Refactored DQ Job Score to Gauge Chart
 * Search
   * Fixed search on Audit Datasets and Dataset Management page
 * Scorecards
