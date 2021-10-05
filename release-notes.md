@@ -56,6 +56,10 @@
   * Complex Validate Source queries can only be edited from the CMD line or JSON directly before hitting Run.
 * Security
   * Active Directory in Azure SQL can connect via LDAP \(basic auth\) or Kerberos. 
+* S3 / GS / ADLS
+  * Remote storage connections should be defined using the root bucket only.
+* Estimate Job is only available for files when Livy is being used.
+* Stop Job on jobs page is limited and does not work for all installation types.
 
 ## 2021.09 \(09-2021\)
 
