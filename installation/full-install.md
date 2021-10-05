@@ -252,6 +252,18 @@ Click the clock icon in the navigation pane to navigate to the Jobs Page. Wait 1
 
 ![](../.gitbook/assets/screenshot-2021-06-14-at-5.27.04-pm.png)
 
+## Generally Available Build Versions
+
+* Default Build = Spark 2.3.0
+* Spark 2.4.5
+* Spark 3.0.1
+* HDP 3
+* CDH5
+* CDH6-NOLOG
+* K8s
+
+
+
 ### Helpful Commands
 
 ```text
