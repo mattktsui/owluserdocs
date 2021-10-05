@@ -92,7 +92,8 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">Preview</td>
       <td style="text-align:left">B+</td>
       <td style="text-align:left">JSON service account</td>
-      <td style="text-align:left">requires 20 jars as compared to 1 jar and accepts pushdown but has nuances</td>
+      <td style="text-align:left">Requires 20 jars as compared to 1 jar and accepts pushdown but has nuances.
+        Views are not supported.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>GCS (Google Cloud Storage)</b>
