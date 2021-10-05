@@ -23,6 +23,8 @@ Let's proceed after gathering all prerequisites!
 
 ## Step 1: Download, Deploy and Start DQ Workflows <a id="step-1-create-and-configure-edge-and-dq-connector"></a>
 
-**1A. Create Edge site and Add Name e.g. 'Collibra-DQ-Edge' and Description \(One-Time\)**  
+**1A. Download Package from Collibra Marketplace and Untar Files**
+
+**1B. Deploy Workflows**   
 
 
