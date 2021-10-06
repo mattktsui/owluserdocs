@@ -27,6 +27,8 @@ Let's proceed after gathering all prerequisites!
 
 **1B. Deploy Workflows** 
 
+![](../.gitbook/assets/image%20%2820%29.png)
+
 **1C. Adjust Workflow Settings \(One-Time Setup\)**
 
 <table>
@@ -85,5 +87,35 @@ Let's proceed after gathering all prerequisites!
   </tbody>
 </table>
 
+![Example: DQ Rule Request ](../.gitbook/assets/image%20%2830%29.png)
 
+![Example: Manage DQ Subscriptions ](../.gitbook/assets/image%20%2817%29.png)
+
+## **Step 2: Create Data Quality Requests / Issues**
+
+### **2A. Create Data Quality Issues**
+
+Data Remediation
+
+## Step 3: Manage Data Quality Issues
+
+### 3A. Setup Data Helpdesk Filter
+
+**Data Helpdesk**
+
+* Select Issues
+* Navigate to 'Filters'
+* Properties &gt; Attributes &gt; Relations &gt; Issue **categorized by** Issue Category &gt; Input 'Data Quality Issue' &gt; Apply
+* Save button &gt; Save View as &gt; '**Data Quality Issues**'
+* Optional settings for View: Can pin, promote, make public, make default
+
+### 3B. Manage Issues From Data Helpdesk View
+
+![](../.gitbook/assets/image%20%2822%29.png)
+
+### 3C. Alternate: Manage Issues From Tasks
+
+![](../.gitbook/assets/image%20%2832%29.png)
+
+## Step 3: Receive Notifications Of DQ Issues And Metrics
 

@@ -232,7 +232,7 @@ Follow the steps on [How To Configure Agent via UI](https://docs.owl-analytics.c
 
 Refer to [Agent Configuration Parameters](https://docs.owl-analytics.com/installation/agent-configuration#agent-configuration-parameters) for parameters descriptions.
 
-![Fig 4: Expected final output of edited agent based on this tutorial](../.gitbook/assets/image%20%2817%29.png)
+![Fig 4: Expected final output of edited agent based on this tutorial](../.gitbook/assets/image%20%2840%29.png)
 
 ## Step 7. Create DB Connection for DQ Job
 
