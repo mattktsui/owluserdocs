@@ -23,8 +23,67 @@ Let's proceed after gathering all prerequisites!
 
 ## Step 1: Download, Deploy and Start DQ Workflows <a id="step-1-create-and-configure-edge-and-dq-connector"></a>
 
-**1A. Download Package from Collibra Marketplace and Untar Files**
+**1A. Download Package from Collibra Marketplace and Unzip Files**
 
-**1B. Deploy Workflows**   
+**1B. Deploy Workflows** 
+
+**1C. Adjust Workflow Settings \(One-Time Setup\)**
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Workflows</b>
+      </th>
+      <th style="text-align:left">Adjustments To Default Load Settings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">DQ Rule Request
+        <br />DQ Rule Modification
+        <br />DQ Sync Request</td>
+      <td style="text-align:left">
+        <p>Applies To: Edit: Global -&gt; <b>Asset</b>
+        </p>
+        <p>Asset Type: Add Rules: <b>Column, Table</b>
+        </p>
+        <p>Other: Any signed in user can start workflow (<b>Check</b>)</p>
+        <p>Other: This workflow can only run once at the same time on specific resource
+          (<b>Uncheck</b>)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">DQ Data Remediation</td>
+      <td style="text-align:left">
+        <p>Applies To: Edit: Global -&gt; <b>Asset</b>
+        </p>
+        <p>Asset Type: Add Rules: <b>Column, Table</b>
+        </p>
+        <p>Other: Any signed in user can start workflow (<b>Check</b>)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">DQ Issue Resolution</td>
+      <td style="text-align:left">
+        <p>Applies To: Edit: Global -&gt; <b>Asset</b>
+        </p>
+        <p>Asset Type: Add Rules: <b>Issue</b>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Manage DQ Subscriptions</td>
+      <td style="text-align:left">
+        <p>Other: Any signed in user can start workflow (<b>Check</b>)</p>
+        <p>Other: Show in global create (<b>Check</b>)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Notify of DQ Metrics</td>
+      <td style="text-align:left">None</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
