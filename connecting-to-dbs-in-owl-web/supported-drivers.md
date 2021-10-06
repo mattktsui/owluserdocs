@@ -208,9 +208,13 @@ The following is a list of drivers which are for test purposes \(not certified y
 
 * Files with more than 250 columns supported in File Explorer, unless you have Livy enabled.
 * Files larger than 5gb are not supported in File Explorer, unless you have Livy enabled. 
+* Smaller file sizes will allow for skip scanning and more efficient processing
+* Advanced features like replay, scheduling, and historical lookbacks require a date signature in the folder of file path
 
 **S3**
 
 * Please ensure no spaces in S3 connection name
 * Please remember to select 'Save Credentials' checkbox upon establishing connection
+
+
 
