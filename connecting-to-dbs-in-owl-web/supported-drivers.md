@@ -204,6 +204,12 @@ The following is a list of drivers which are for test purposes \(not certified y
 
 ## FAQ / Tips
 
+**File Sizes**
+
+Files with more than 250 columns supported in File Explorer, unless you have Livy enabled.
+
+Files larger than 5gb are not supported in File Explorer, unless you have Livy enabled. 
+
 **S3**
 
 * Please ensure no spaces in S3 connection name
