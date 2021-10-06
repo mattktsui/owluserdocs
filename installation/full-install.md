@@ -232,7 +232,7 @@ Follow the steps on [How To Configure Agent via UI](https://docs.owl-analytics.c
 
 Refer to [Agent Configuration Parameters](https://docs.owl-analytics.com/installation/agent-configuration#agent-configuration-parameters) for parameters descriptions.
 
-![Fig 4: Expected final output of edited agent based on this tutorial](../.gitbook/assets/dq-admin-console-5%20%281%29.png)
+![Fig 4: Expected final output of edited agent based on this tutorial](../.gitbook/assets/image%20%2817%29.png)
 
 ## Step 7. Create DB Connection for DQ Job
 
@@ -311,10 +311,12 @@ sudo du -ah | sort -hr | head -5
 sudo find /home/owldq/owl/spark/work/* -mtime +1 -type f -delete
 ```
 
-## Add Spark Home Environment Variables to Profile
+## Troubleshooting Tip: Add Spark Home Environment Variables to Profile
 
 ```text
 ### Adding ENV variables to bash profile
+
+### Variable 'owldq' below should be updated wherever installed e.g. centos
 
 vi ~/.bash_profile
 export SPARK_HOME=/home/owldq/owl/spark

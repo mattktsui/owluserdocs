@@ -175,6 +175,13 @@ Excellent! We've now completed the initial one-time configuration!
 
 ## FAQ
 
+**Q: Known Limitations**
+
+* Only 1 source tenant from Collibra DQ can be specified
+* On-demand ingestion \(vs. scheduled\)
+* Can only specify 1 domain destination for each of Rules, Metrics, and Dimensions
+* Only JDBC sources supported \(no file sources\)
+
 **Q: DQ Dashboard In DGC: I can verify the DQ Connector is synchronizing Data Quality Rules and Data Quality Metrics, but why don't Data Quality Dashboard Charts display?**
 
 A: Ensure correct **Aggregation Paths** and **Global Assignments** \(or create, if none exist\) for **Table** and **Column** below
