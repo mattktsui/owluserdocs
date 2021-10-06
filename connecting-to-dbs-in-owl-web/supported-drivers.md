@@ -215,6 +215,7 @@ The following is a list of drivers which are for test purposes \(not certified y
 
 * Please ensure no spaces in S3 connection name
 * Please remember to select 'Save Credentials' checkbox upon establishing connection
+* Please point to root bucket, not sub folders
 
 
 
