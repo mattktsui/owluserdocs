@@ -97,7 +97,10 @@ Let's proceed after gathering all prerequisites!
 
 | Workflow | Outcome |
 | :--- | :--- |
-| Data |  |
+| DQ Data Remediation | fdsfsdfsdfsdfsdfsdf |
+| DQ Rule Request |  |
+| DQ Rule Modification |  |
+| DQ Sync Request |  |
 
 Data Remediation
 
