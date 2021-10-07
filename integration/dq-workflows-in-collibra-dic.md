@@ -95,6 +95,10 @@ Let's proceed after gathering all prerequisites!
 
 ### **2A. Create Data Quality Issues**
 
+| Workflow | Outcome |
+| :--- | :--- |
+| Data |  |
+
 Data Remediation
 
 ## Step 3: Manage Data Quality Issues
