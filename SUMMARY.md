@@ -28,6 +28,7 @@
 ## DQ JOB Examples
 
 * [DQ Job JDBC](dq-job-examples/job-jdbc.md)
+* [DQ Job BigQuery](dq-job-examples/owlcheck-bigquery.md)
 * [DQ Job Hive](dq-job-examples/job-hive.md)
 * [DQ Job Files](dq-job-examples/job-files.md)
 * [DQ Job JSON](dq-job-examples/job-json.md)
@@ -54,7 +55,6 @@
 * [OwlCheck Databricks](dq-job-examples/owlcheck-databricks.md)
 * [OwlCheck Cron](dq-job-examples/owlcheck-cron.md)
 * [OwlCheck Snowflake](dq-job-examples/owlcheck-snowflake.md)
-* [DQ Job BigQuery](dq-job-examples/owlcheck-bigquery.md)
 * [OwlCheck S3](dq-job-examples/owlcheck-s3.md)
 * [OwlCheck HDFS](dq-job-examples/owlcheck-hdfs.md)
 * [OwlCheck MongoDB](dq-job-examples/owlcheck-mongodb.md)
