@@ -1,4 +1,4 @@
-# OwlCheck MongoDB
+# DQ Job MongoDB
 
 ## Browse MongoDB like any other relational database
 

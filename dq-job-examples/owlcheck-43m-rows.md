@@ -1,4 +1,4 @@
-# OwlCheck 43M rows
+# DQ Job 43M rows
 
 Owl commonly benchmarks on large daily datasets.  In this case a 43 million row table with 12 columns completes in under 6 mins \(5:30\).  The best balance for this dataset was 3 executors each with 10G of ram. 
 

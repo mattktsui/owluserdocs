@@ -1,4 +1,4 @@
-# OwlCheck S3
+# DQ Job S3
 
 S3 permissions need to be setup appropriately\) \(Needs appropriate driver\) [http://central.maven.org/maven2/org/apache/hadoop/hadoop-aws/](http://central.maven.org/maven2/org/apache/hadoop/hadoop-aws/) Hadoop AWS Driver hadoop-aws-2.7.3.2.6.5.0-292.jar
 

@@ -1,4 +1,4 @@
-# OwlCheck Databricks
+# DQ Job Databricks
 
 ### Lake vs Swamp
 

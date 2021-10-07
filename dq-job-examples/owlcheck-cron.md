@@ -2,7 +2,7 @@
 description: Template for Job Control
 ---
 
-# OwlCheck Cron
+# DQ Job Cron
 
 ### Cron / Autosys / Control M / Oozie
 

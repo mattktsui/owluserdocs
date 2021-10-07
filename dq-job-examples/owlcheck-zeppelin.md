@@ -2,7 +2,7 @@
 description: Configuration and Examples
 ---
 
-# OwlCheck Zeppelin
+# DQ Job Zeppelin
 
 ### Running OwlChecks from Zeppelin Shell
 

@@ -17,7 +17,6 @@ The following is a list of drivers certified for production use.
 | **Impala** | Simba JDBC | Production | A- | User / Pass | Tends to be a quicker start than Hive but still has many config nuances |
 | **Postgres** | Native | Production | A+ | User / Pass | easy to use performs well |
 | **MySql** | Native | Production | A+ | User / Pass | easy to use performs well |
-| **Kafka** | Native | Production | B+ |  | Most cases the group doesn't know enough about kafka administration, schema registry and other nuances. |
 | **DB2** | Native | Production | A- | User / Pass, Kerberos | easy to use performs well, fetch syntax vs limit and other nuances |
 | **GreenPlum** | Postgres | Production | A- | User / Pass | easy to use performs well |
 | **HDFS** | HDFS connector | Production | B | Kerberos | works well but usually a few hadoop spark nuances to get right |
@@ -190,6 +189,16 @@ The following is a list of drivers which are for test purposes \(not certified y
       <td style="text-align:left">B</td>
       <td style="text-align:left">User / Pass</td>
       <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Kafka</b>
+      </td>
+      <td style="text-align:left">Native</td>
+      <td style="text-align:left">Preview</td>
+      <td style="text-align:left">B-</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Most cases the group doesn&apos;t know enough about kafka administration,
+        schema registry and other nuances.</td>
     </tr>
   </tbody>
 </table>

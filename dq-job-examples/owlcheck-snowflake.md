@@ -1,4 +1,4 @@
-# OwlCheck Snowflake
+# DQ Job Snowflake
 
 ## Example CMD Line
 
