@@ -212,6 +212,10 @@ A: Please ensure Connection / System Names between Collibra Data Quality, Collib
 
 A: Currently, one.
 
+**Q: Does the DQ Connector work with On-Prem Collibra DGC?**
+
+A: No, any work with on-prem Collibra DGC would be custom API development via Collibra Professional Services or a partner SI.
+
 **Q: If I delete a rule from Collibra DQ that I have already synchronized into Collibra Catalog, will it be deleted from Catalog in the next synchronization?**
 
 A: No, the DQ Connector only upserts into Catalog. If a rule is deleted from Collibra DQ, it will not be automatically deleted in Catalog.
