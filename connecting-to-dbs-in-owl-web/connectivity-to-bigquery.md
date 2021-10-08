@@ -15,3 +15,9 @@ The above and explained there are actually a number of others steps which must b
 4. You may get a CLASSPATH conflict regarding the JAR files.
 5. Make sure the BigQuery connector Scala version matches your Spark Scala version.[![02%20PM](https://discourse-static.influitive.net/uploads/db_033c9cc6_3cea_4623_b4a8_52ebc3f9e8a1/optimized/2X/d/dfca73373275afb5f063f192a3aa7105caa76bd8_2_286x500.png)](https://discourse-static.influitive.net/uploads/db_033c9cc6_3cea_4623_b4a8_52ebc3f9e8a1/original/2X/d/dfca73373275afb5f063f192a3aa7105caa76bd8.png)
 
+### Permissions
+
+Make sure the project and account have appropriate permissions.  These are common permissions to provide to the account. 
+
+![](../.gitbook/assets/image%20%2869%29.png)
+

@@ -97,12 +97,10 @@ Let's proceed after gathering all prerequisites!
 
 | Workflow | Outcome |
 | :--- | :--- |
-| DQ Data Remediation | fdsfsdfsdfsdfsdfsdf |
+| DQ Data Remediation |  |
 | DQ Rule Request |  |
 | DQ Rule Modification |  |
 | DQ Sync Request |  |
-
-Data Remediation
 
 ## Step 3: Manage Data Quality Issues
 

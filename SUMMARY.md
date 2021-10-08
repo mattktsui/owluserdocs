@@ -5,7 +5,6 @@
 * [Our Approach](why-owl.md)
 * [Our Story](our-story.md)
 * [What is OwlDQ](what-is-owldq.md)
-* [Get Started](assessment.md)
 
 ## Installation
 
@@ -54,6 +53,7 @@
 * [Pattern Mining](dq-visuals/pattern-mining/README.md)
   * [Bloomberg Data](dq-visuals/pattern-mining/bloomberg-data.md)
 * [Missing Records](dq-visuals/missing-records.md)
+* [9 Dimensions of DQ](dq-visuals/owl-dq-screen-shots.md)
 
 ## DQ JOB Examples
 
@@ -96,19 +96,6 @@
 * [More...](dq-job-examples/owlcheck/README.md)
   * [OwlCheck JSON](dq-job-examples/owlcheck/owlcheck-json.md)
 
-## Security
-
-* [Authentication With Active Directory LDAP](security/authentication-with-active-directory-ldap/README.md)
-  * [AD Group to Owl Role Mapping](security/authentication-with-active-directory-ldap/ad-group-to-owl-role-mapping.md)
-* [Authentication with SAML IDP](security/authentication-with-saml-idp.md)
-* [Authentication With Local User Store](security/authentication-with-local-user-store/README.md)
-  * [Adding Local Users](security/authentication-with-local-user-store/adding-local-users.md)
-* [Role Based Access Control \(RBAC\)](security/role-based-access-control-rbac.md)
-* [Connection Security](security/connection-security.md)
-* [Dataset Security](security/dataset-security.md)
-* [Dataset Masking](security/dataset-masking.md)
-* [Owl Security](security/owl-security.md)
-
 ## Integration
 
 * [Collibra Native DQ Connector](integration/dq-connector.md)
@@ -120,6 +107,32 @@
 * [Group Scorecard](scorecards/group-scorecard.md)
 * [List View](scorecards/list-view.md)
 
+## Scheduler
+
+* [Schedule Management](scheduler/schedule-management.md)
+* [Schedule Owlchecks](scheduler/schedule-owlchecks.md)
+* [View/Re-Run Scheduled Jobs](scheduler/view-re-run-scheduled-jobs.md)
+
+## WORKFLOWS / ALERTS <a id="workflows"></a>
+
+* [Email Alerts](workflows/email-alerts.md)
+* [Assignment Queue\(s\)](workflows/assignment-queue-s.md)
+* [Internal Assignment](workflows/internal-assignment.md)
+* [External Assignment](workflows/external-assignment.md)
+* [Business Units](workflows/business-units.md)
+* [FAQ](workflows/faq.md)
+
+## Labeling / Training
+
+* [Item Labeling](labeling-training/item-labeling.md)
+* [Peak vs Off Peak](labeling-training/peak-vs-off-peak.md)
+
+## Catalog
+
+* [Catalog](catalog/catalog.md)
+* [Catalog Bulk Actions](catalog/catalog-bulk-actions.md)
+* [Cluster Health Report](catalog/cluster-health-report.md)
+
 ## Reports
 
 * [Completeness Report](reports/completeness-report.md)
@@ -127,18 +140,14 @@
 * [Dataset Report](reports/profile.md)
 * [Coverage Report](reports/coverage-report.md)
 
-## Labeling / Training
-
-* [Item Labeling](labeling-training/item-labeling.md)
-* [Peak vs Off Peak](labeling-training/peak-vs-off-peak.md)
-
 ## APIs
 
 * [REST APIs](apis/rest-apis.md)
 * [Swagger](apis/swagger.md)
 * [Job Server](apis/job-server.md)
 * [Custom Configurations](apis/custom-configurations.md)
-* [Owl Time Zone API](apis/owl-time-zone-api.md)
+* [Assignment API](apis/assignmentapi.md)
+* [Time Zone API](apis/owl-time-zone-api.md)
 * [Notebook API](apis/notebook-api/README.md)
   * [OwlOptions \(base\)](apis/notebook-api/owloptions-base.md)
 
@@ -153,13 +162,22 @@
 * [JWT](api/jwt.md)
 * [Cookie](api/cookie.md)
 
-## Catalog
+## API-MIGRATION <a id="migration-and-promoting"></a>
 
-* [Catalog](catalog/catalog.md)
-* [Catalog Bulk Actions](catalog/catalog-bulk-actions.md)
-* [Cluster Health Report](catalog/cluster-health-report.md)
+* [Export and Import API](migration-and-promoting/export-and-import-api.md)
+* [Rules Import Export](migration-and-promoting/rules-import-export.md)
 
-## Use-Cases
+## Advanced
+
+* [Add Date Column](advanced/add-date-column.md)
+* [Date Time Variable Options](advanced/date-time-variable-options.md)
+* [File Look Back](advanced/file-lookback.md)
+* [Filter & Filter Not](advanced/filter.md)
+* [Multiple Pattern Relationships](advanced/multiple-pattern-combinations.md)
+* [Nulls in Datasets](advanced/zero-if-null.md)
+* [Transform](advanced/owlcheck-transform.md)
+
+## Use Cases
 
 * [Bank Loans](use-cases/bank-loans.md)
 * [Financial FxRate Data](use-cases/financial-fxrate-data.md)
@@ -168,28 +186,20 @@
 * [Security Reference Data](use-cases/security-reference-data.md)
 * [Copying or Moving data](use-cases/copying-or-moving-data.md)
 * [Cyber Anomalies in Real-Time](use-cases/cyber-anomalies-in-real-time.md)
+* [Healthcare  Data Quality](use-cases/healthcare-dq-in-2-minutes.md)
+* [Smart Meter Data](use-cases/smart-meter-data.md)
+* [Health Insurance Claims Data](use-cases/insurance-data.md)
 
-## WORKFLOWS / ALERTS <a id="workflows"></a>
+## Solutions <a id="projects"></a>
 
-* [Email Alerts](workflows/email-alerts.md)
-* [Assignment Queue\(s\)](workflows/assignment-queue-s.md)
-* [Internal Assignment](workflows/internal-assignment.md)
-* [External Assignment](workflows/external-assignment.md)
-* [Business Units](workflows/business-units.md)
-* [Assignment API](workflows/assignmentapi.md)
-* [ERD](workflows/erd.md)
-* [FAQ](workflows/faq.md)
-
-## Admin
-
-* [Dataset Audit Trail](admin/dataset-audit-trail.md)
-* [Security Audit Trail](admin/security-audit-trail.md)
-* [User Audit Trail](admin/user-audit-trail.md)
-
-## Migration and Promoting
-
-* [Export and Import API](migration-and-promoting/export-and-import-api.md)
-* [Rules Import Export](migration-and-promoting/rules-import-export.md)
+* [Best Practices](projects/best-practices.md)
+* [Prescriptive Personas](projects/prescriptive-personas.md)
+* [Builds a Better DQ Dashboard](projects/builds-a-better-dq-dashboard.md)
+* [Ensures CCPA & GDPR](projects/ccpa-and-gdpr.md)
+* [Makes your Data Lake better.](projects/data-quality-monitoring.md)
+* [Speeds Migrations/Enables Replications](projects/migrations.md)
+* [Assists Data Aggregation](projects/assists-data-aggregation.md)
+* [DQ is the difference](projects/data-quality.md)
 
 ## Troubleshooting
 
@@ -197,47 +207,36 @@
 * [Performance Tuning](troubleshooting/performance-tuning.md)
 * [Deploy Mode](troubleshooting/deploy-mode.md)
 
-## Advanced
-
-* [Add Date Column](advanced/add-date-column.md)
-* [Time Based Data Retention](advanced/time-based-data-retention.md)
-* [Date Time Variable Options](advanced/date-time-variable-options.md)
-* [File Look Back](advanced/file-lookback.md)
-* [Filter & Filter Not](advanced/filter.md)
-* [Multiple Pattern Relationships](advanced/multiple-pattern-combinations.md)
-* [Nulls in Datasets](advanced/zero-if-null.md)
-* [Transform](advanced/owlcheck-transform.md)
-* [Prescriptive Personas](advanced/prescriptive-personas.md)
-
-## Multi-Tenant
-
-* [Multi-Tenancy](multi-tenant/multi-tenancy.md)
-
-## Scheduler
-
-* [Schedule Management](scheduler/schedule-management.md)
-* [Schedule Owlchecks](scheduler/schedule-owlchecks.md)
-* [View/Re-Run Scheduled Jobs](scheduler/view-re-run-scheduled-jobs.md)
-
-## Collibra DQ Use Cases <a id="projects"></a>
-
-* [Builds a Better DQ Dashboard](projects/builds-a-better-dq-dashboard.md)
-* [Ensures CCPA & GDPR](projects/ccpa-and-gdpr.md)
-* [Makes your Data Lake better.](projects/data-quality-monitoring.md)
-* [Speeds Migrations/Enables Replications](projects/migrations.md)
-* [Assists Data Aggregation](projects/assists-data-aggregation.md)
-
----
-
-* [DQ is the difference](data-quality.md)
-* [Owl's Scorecard and 9 Dimensions of DQ](owl-dq-screen-shots.md)
-* [Best Practices](best-practices.md)
-* [Healthcare  Data Quality](healthcare-dq-in-2-minutes.md)
-* [Smart Meter Data](smart-meter-data.md)
-* [Health Insurance Claims Data](insurance-data.md)
-
 ## Benchmarks
 
 * [Performance Tests](benchmarks/performance-tests.md)
 * [FAQ](benchmarks/benchmark-faq.md)
+
+## Architecture
+
+* [ERD](architecture/erd.md)
+* [Diagram](architecture/diagram.md)
+* [System Requirements](architecture/system-requirements.md)
+
+## Admin
+
+* [Admin Console Overview](admin/admin-console-overview.md)
+* [Dataset Audit Trail](admin/dataset-audit-trail.md)
+* [Security Audit Trail](admin/security-audit-trail.md)
+* [User Audit Trail](admin/user-audit-trail.md)
+* [Multi-Tenancy](admin/multi-tenancy.md)
+* [Time Based Data Retention](admin/time-based-data-retention.md)
+
+## Security
+
+* [Authentication With Active Directory LDAP](security/authentication-with-active-directory-ldap/README.md)
+  * [AD Group to Owl Role Mapping](security/authentication-with-active-directory-ldap/ad-group-to-owl-role-mapping.md)
+* [Authentication with SAML IDP](security/authentication-with-saml-idp.md)
+* [Authentication With Local User Store](security/authentication-with-local-user-store/README.md)
+  * [Adding Local Users](security/authentication-with-local-user-store/adding-local-users.md)
+* [Role Based Access Control \(RBAC\)](security/role-based-access-control-rbac.md)
+* [Connection Security](security/connection-security.md)
+* [Dataset Security](security/dataset-security.md)
+* [Dataset Masking](security/dataset-masking.md)
+* [Owl Security](security/owl-security.md)
 

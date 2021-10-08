@@ -2,7 +2,7 @@
 description: UTC + global DateTime standard
 ---
 
-# Owl Time Zone API
+# Time Zone API
 
 ### Background on common time issues
 
