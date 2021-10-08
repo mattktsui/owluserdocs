@@ -54,5 +54,25 @@ The following is an example of a connection string that uses the [account locato
 
 Note that this example uses an account in the AWS US West \(Oregon\) region. If the account is in a different region or if the account uses a different cloud provider, you need to [specify additional segments after the account locator](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#label-account-locator).
 
-[https://docs.snowflake.com/en/user-guide/jdbc-configure.html](https://docs.snowflake.com/en/user-guide/jdbc-configure.html)
+{% embed url="https://docs.snowflake.com/en/user-guide/jdbc-configure.html" %}
+
+### Private Link
+
+Please let us know if you are using private link for Snowflake.  Setup can vary depending on the endpoint that is created. In most cases, use the private endpoint as a normal JDBC connection.
+
+{% embed url="https://community.snowflake.com/s/article/AWS-PrivateLink-and-Snowflake-detailed-troubleshooting-Guide" %}
+
+#### Advanced Private Link and Proxy
+
+Here is an example JDBC string connection we used that take into account the following setup:
+
+* &lt;ACCOUNT\_NAME&gt; is the full link to the Snowflake instance with the private link.
+* DQ  installed on-prem in a private IaaS and DQ is behind a proxy.
+* If the Snowflake instance is using a private link, whitelist the private link URL to bypass the proxy.
+* In addition to connectivity to the Snowflake instance, the JDBC driver tries to access Snowflake Blob storage by connecting directly to some S3 buckets managed by Snowflake. 
+* Those need to be whitelisted as well.
+
+#### Example URL
+
+jdbc:snowflake://&lt;ACCOUNT\_NAME&gt;/?tracing=all&useProxy=true&proxyHost=10.142.22.37&proxyPort=8080&proxyUser=xyz&proxyPassword=xyz&nonProxyHosts=\*.[privatelink.snowflakecomputing.com](http://privatelink.snowflakecomputing.com/)%[7Csfc-eu-ds1-customer-stage.s3.eu-central-1.amazonaws.com](http://7csfc-eu-ds1-customer-stage.s3.eu-central-1.amazonaws.com/)
 

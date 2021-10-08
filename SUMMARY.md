@@ -21,16 +21,17 @@
 ## Connections <a id="connecting-to-dbs-in-owl-web"></a>
 
 * [Supported Drivers](connecting-to-dbs-in-owl-web/supported-drivers.md)
-* [Owl DB Connection](connecting-to-dbs-in-owl-web/owl-db-connection/README.md)
-  * [Connecting to CDH 5.16 Hive SSL/TLS/Kerberos Setup](connecting-to-dbs-in-owl-web/owl-db-connection/connecting-to-cdh-5.16-hive-ssl-tls-kerberos-setup.md)
+* [General](connecting-to-dbs-in-owl-web/owl-db-connection.md)
 * [Connectivity to Athena](connecting-to-dbs-in-owl-web/connectivity-to-athena.md)
 * [Connectivity to BigQuery](connecting-to-dbs-in-owl-web/connectivity-to-bigquery.md)
-* [Connectivity to Hive](connecting-to-dbs-in-owl-web/connectivity-to-hive.md)
+* [Connectivity to Hive](connecting-to-dbs-in-owl-web/connectivity-to-hive/README.md)
+  * [Connecting to CDH 5.16 Hive SSL/TLS/Kerberos Setup](connecting-to-dbs-in-owl-web/connectivity-to-hive/connecting-to-cdh-5.16-hive-ssl-tls-kerberos-setup.md)
 * [Connectivity to Oracle](connecting-to-dbs-in-owl-web/connectivity-to-oracle.md)
 * [Connectivity to Presto](connecting-to-dbs-in-owl-web/connectivity-to-presto.md)
 * [Connectivity to Redshift](connecting-to-dbs-in-owl-web/connectivity-to-redshift.md)
 * [Connectivity to Snowflake](connecting-to-dbs-in-owl-web/connectivity-to-snowflake.md)
 * [Connectivity to SQL Server](connecting-to-dbs-in-owl-web/connectivity-to-sql-server.md)
+* [Add Connection to Agent](connecting-to-dbs-in-owl-web/add-connection-to-agent.md)
 
 ## Core Components <a id="dq-visuals"></a>
 

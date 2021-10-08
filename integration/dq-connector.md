@@ -208,6 +208,10 @@ A: Please 1\) add a new custom **Relation** 'Data Quality Metric classified by D
 
 A: Please ensure Connection / System Names between Collibra Data Quality, Collibra, and Edge exactly match
 
+**Q: Is DQ Connector unidirectional?**
+
+A: Yes, from Collibra DQ to Collibra Catalog in Data Intelligence Cloud
+
 **Q: How many DQ Connectors can I run simultaneously?**
 
 A: Currently, one.
@@ -223,6 +227,10 @@ A: No, the DQ Connector only upserts into Catalog. If a rule is deleted from Col
 **Q: Why are my scores different in Collibra DQ and Collibra Catalog?**
 
 A: Currently, the DQ DQ Connector pulls in the most recent user-defined rules from Collibra DQ. Other components that affect score such as Behaviors, Outliers, Patterns, Dupes, Source are not yet included.
+
+**Q: Getting errors when trying to delete both domain that Edge created for DB and the Connection?**
+
+A: Please delete Edge created domain via API.
 
 **Q: I've hit the synchronize button, how can I tell if my job is complete?**
 
