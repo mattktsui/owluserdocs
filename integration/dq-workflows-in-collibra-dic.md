@@ -85,4 +85,4 @@ Let's proceed after gathering all prerequisites!
 
 ![](<../.gitbook/assets/image (72).png>)
 
-## Step 3: Receive Notifications Of DQ Issues And Metrics
+## Step 4: Receive Notifications Of DQ Issues And Metrics
