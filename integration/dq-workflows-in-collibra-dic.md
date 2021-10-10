@@ -107,3 +107,6 @@ Ensure that the DQ alerts set for you are providing helpful details
 
 ### 4C. Update Subscription Settings
 
+![](broken-reference)
+
+For every subscription set up, the Manage tDQ Subscriptio
