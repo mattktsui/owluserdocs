@@ -93,4 +93,6 @@ Who? Anyone can set up a DQ subscription, for yourself or for your teammates
 
 ![](broken-reference)
 
-B
+By default, alerts will be sent at 12pm local server time. This can be adjusted in Eclipse, workflow editor such as Eclipse.
+
+![](broken-reference)
