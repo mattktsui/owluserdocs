@@ -97,4 +97,4 @@ By default, alerts will be sent at 12pm local server time. This can be adjusted 
 
 ![](broken-reference)
 
-Assuming an e-mail is associated with the user within Collibra, the user 
+Assuming an e-mail is associated with the Subscriber within Collibra, the Subscriber will receive e-mail notifications by default at 12pm local server time. This can be adjusted.
