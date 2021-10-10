@@ -4,7 +4,7 @@
 
 During DQ setup you can transform columns such as Dates and Numbers to preferred formats.   It is a common need to replace N.A. with nulls or empty white space.  
 
-![](../.gitbook/assets/screen-shot-2021-03-29-at-5.11.02-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-03-29 at 5.11.02 PM.png>)
 
 
 
@@ -21,7 +21,7 @@ During DQ setup you can transform columns such as Dates and Numbers to preferred
 {% hint style="info" %}
 Submit an expression to transform a string to a particular type
 
-In this example, transform the purch\_amt column to a double
+In this example, transform the purch_amt column to a double
 {% endhint %}
 
 ```bash
@@ -35,4 +35,3 @@ Example of converting a string to a date
 ```bash
 -transform "RECEIVED_DATE=to_date(CAST(RECEIVED_DATE AS STRING), 'yyyyMMdd') as RECEIVED_DATE"
 ```
-

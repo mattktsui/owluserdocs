@@ -8,5 +8,4 @@ Available Data
 * Dataset deletion requests
 * Job schedule attempts
 
-![](../.gitbook/assets/image%20%2810%29.png)
-
+![](<../.gitbook/assets/image (64).png>)

@@ -2,7 +2,7 @@
 
 ## Scorecard
 
-![OwlCheck Score Card](../.gitbook/assets/image-2.png)
+![OwlCheck Score Card](<../.gitbook/assets/image (2) (1).png>)
 
 
 
@@ -10,61 +10,60 @@ Owl provides a data quality assessment that scans 9 dimensions of a data set to 
 
 Owl will scan your data with the same frequency, that you load your data - Owl scans 9 dimensions of DQ out of the box 
 
-## **1. Behavior** 
+## **1. Behavior **
 
 **Imagine a column going null, automatic row count checks - does your data behave/look/feel the same way it has in the past.**
 
-![](../.gitbook/assets/behavior.jpg)
+![](../.gitbook/assets/Behavior.jpg)
 
 ## **2. Rules**
 
-**Assures only values compliant with your data rules are allowed within a data object.** 
+**Assures only values compliant with your data rules are allowed within a data object. **
 
-![](../.gitbook/assets/rules.jpg)
+![](../.gitbook/assets/Rules.jpg)
 
 ## **3. Outliers**
 
 **Data points that differ significantly from other observations.**
 
-![](../.gitbook/assets/outliers.jpg)
+![](../.gitbook/assets/Outliers.jpg)
 
 ## **4. Pattern**
 
 **Recognizing relevant patterns between data examples.** 
 
-![](../.gitbook/assets/pattern.jpg)
+![](../.gitbook/assets/Pattern.jpg)
 
 ## **5. Source**
 
 **Validating source to target accuracy.**
 
-![](../.gitbook/assets/source.jpg)
+![](../.gitbook/assets/Source.jpg)
 
 ## **6. Record**
 
-**Deltas for a given column.** 
+**Deltas for a given column. **
 
-![](../.gitbook/assets/record.jpg)
+![](../.gitbook/assets/Record.jpg)
 
-## **7. Schema** 
+## **7. Schema **
 
 **Columns add or dropped.**
 
-![](../.gitbook/assets/schema.jpg)
+![](../.gitbook/assets/Schema.jpg)
 
 ## 8. Dupes 
 
 **Fuzzy matching to identify entries that have been added multiple times with similar but not exact detail.**
 
-![](../.gitbook/assets/dupes.jpg)
+![](../.gitbook/assets/Dupes.jpg)
 
 ## **9. Shapes**
 
 **Infrequent formats.**
 
-![](../.gitbook/assets/shapes%20%281%29.jpg)
+![](<../.gitbook/assets/shapes (1).jpg>)
 
 ## List View with Impact Analysis
 
-![](../.gitbook/assets/list-view-with-impact.jpg)
-
+![](<../.gitbook/assets/List View with impact.jpg>)

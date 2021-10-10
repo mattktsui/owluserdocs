@@ -1,24 +1,21 @@
 ---
-description: >-
-  Simple rules would be applied to filter a condition on a single column in a
-  single table.
+description: Simple rules would be applied to filter a condition on a single column in a single table.
 ---
-
 # Simple rule
 
-## Example \#1
+## Example #1
 
-In this example you can see how to create a simple SQL rule, with name **simple\_sql\_rule**.
+In this example you can see how to create a simple SQL rule, with name **simple_sql_rule**.
 
-| Code | Description |
-| :--- | :--- |
-| rule.setRuleNm\("**simple\_sql\_rule**"\) | Adding the name of the given rule |
-| rule.setRuleValue\("**startDate &lt; '2011-11-01'"\)** | Setting the simple SQL expression. No **JOIN** allowed between tables! |
-| rule.setRuleType\("**SQLG**"\) | Setting the rule type |
+| Code                                              | Description                                                                                   |
+| ------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| rule.setRuleNm("**simple_sql_rule**")             | Adding the name of the given rule                                                             |
+| rule.setRuleValue("**startDate < '2011-11-01'")** | <p>Setting the simple SQL expression.<br>No <strong>JOIN</strong> allowed between tables!</p> |
+| rule.setRuleType("**SQLG**")                      | Setting the rule type                                                                         |
 
 ### Code
 
-{% code title="example\_simple\_sql\_rule.scala" %}
+{% code title="example_simple_sql_rule.scala" %}
 ```scala
 import com.owl.core.Owl
 import com.owl.core.util.OwlUtils
@@ -104,44 +101,43 @@ simpleRuleNotebook()
 
 #### via Code
 
-You can do multiple assertion on the result of the OwlCheck process.  
-Using **owl.hoot** parameter will provide access to the execution results, in this case for the rule 
+You can do multiple assertion on the result of the OwlCheck process.\
+Using **owl.hoot **parameter will provide access to the execution results, in this case for the rule 
 
 #### via UI
 
-![Results of notebook execution on UI](../../../../.gitbook/assets/image%20%2828%29.png)
+![Results of notebook execution on UI](<../../../../.gitbook/assets/image (11).png>)
 
-## Example \#2
+## Example #2
 
-In this example you can see how to create a simple SQL with rule with **templates**, with name **simple\_sql\_rule\_with\_template**.
+In this example you can see how to create a simple SQL with rule with **templates**, with name **simple_sql_rule_with_template**.
 
 #### Steps
 
-1. Create the rule template, where the template column name should be marked with **$colNm** string.  
+1.  Create the rule template, where the template column name should be marked with **$colNm **string.\
 
 
-   ```scala
-   val ruleTemplate = RuleTemplateBll.createRuleTemplate(
-       "not_null_or_empty",
-       "Column cannot contain null or empty values", 
-       " $colNm is null or $colNm = \'\' or $colNm  = \'null\' "
-   )
-   ```
+    ```scala
+    val ruleTemplate = RuleTemplateBll.createRuleTemplate(
+        "not_null_or_empty",
+        "Column cannot contain null or empty values", 
+        " $colNm is null or $colNm = \'\' or $colNm  = \'null\' "
+    )
+    ```
+2.  Create the Rule instance, where value of **RuleValue** will be used to replace **$colNm** in the template expression.\
 
-2. Create the Rule instance, where value of **RuleValue** will be used to replace **$colNm** in the template expression.  
 
-
-   ```scala
-   val rule = RuleBll.createRule(opt.dataset)
-   rule.setRuleNm("is_city_not_null_or_empty")
-   rule.setRuleValue("city")
-   rule.setRuleType("CUSTOM") // legacy type required to look into rule repo
-   rule.setRuleRepo("not_null_or_empty") // custom rule name to pull rule value from rule repo
-   rule.setPerc(1.0)
-   rule.setPoints(1)
-   rule.setIsActive(1)
-   rule.setUserNm("admin")
-   ```
+    ```scala
+    val rule = RuleBll.createRule(opt.dataset)
+    rule.setRuleNm("is_city_not_null_or_empty")
+    rule.setRuleValue("city")
+    rule.setRuleType("CUSTOM") // legacy type required to look into rule repo
+    rule.setRuleRepo("not_null_or_empty") // custom rule name to pull rule value from rule repo
+    rule.setPerc(1.0)
+    rule.setPoints(1)
+    rule.setIsActive(1)
+    rule.setUserNm("admin")
+    ```
 
 ### Code
 
@@ -231,5 +227,4 @@ simpleRuleWithTemplate()
 
 #### via UI
 
-![](../../../../.gitbook/assets/image%20%2829%29.png)
-
+![](<../../../../.gitbook/assets/image (12).png>)

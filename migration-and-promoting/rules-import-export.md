@@ -1,14 +1,14 @@
 # Rules Import Export
 
 1. Find your dataset 
-2. Pass your table to the following api call - [http://&lt;url&gt;/v2/get-rules-export?dataset=public.transit\_6](http://localhost:9000/v2/get-export?dataset=public.transit_6)
-3. Run import on the desired environment, passing the output of the previous statement to the body of the request - [http://&lt;url&gt;/v2/run-import](http://35.202.14.58/v2/run-import)
+2. Pass your table to the following api call - [http://\<url>/v2/get-rules-export?dataset=public.transit\_6](http://localhost:9000/v2/get-export?dataset=public.transit\_6)
+3. Run import on the desired environment, passing the output of the previous statement to the body of the request - [http://\<url>/v2/run-import](http://35.202.14.58/v2/run-import)
 
 {% embed url="https://youtu.be/puXZwKi-CmM" %}
 
 The following stored procedure needs to be created in the Owl metastore before this can run. 
 
-```text
+```
 CREATE OR REPLACE FUNCTION public.dump(p_schema text, p_table text, p_where text)
  RETURNS SETOF text
  LANGUAGE plpgsql
@@ -94,41 +94,40 @@ Navigate to the API page
 
  
 
-![](../.gitbook/assets/image%20%2865%29.png)
+![](<../.gitbook/assets/image (47).png>)
 
 Find the Rest APIs link
 
-![](../.gitbook/assets/image%20%2859%29%20%281%29.png)
+![](<../.gitbook/assets/image (59).png>)
 
 Drill-in to the controller-scala section
 
-![](../.gitbook/assets/image%20%2863%29.png)
+![](<../.gitbook/assets/image (49).png>)
 
 Find the get-rules-export call
 
-![](../.gitbook/assets/image%20%2856%29.png)
+![](<../.gitbook/assets/image (50).png>)
 
 Click Try it out and enter a dataset name, Execute to run the call
 
-![](../.gitbook/assets/image%20%2857%29.png)
+![](<../.gitbook/assets/image (52).png>)
 
 Copy the response body 
 
-![](../.gitbook/assets/image%20%2866%29.png)
+![](<../.gitbook/assets/image (53).png>)
 
 Navigate to the controller-catalog section
 
-![](../.gitbook/assets/image%20%2864%29.png)
+![](<../.gitbook/assets/image (54).png>)
 
 Find run-import and Try it out 
 
-![](../.gitbook/assets/image%20%2862%29.png)
+![](<../.gitbook/assets/image (55).png>)
 
 Make any edits and paste in the response body from the previous step 
 
-![](../.gitbook/assets/image%20%2858%29.png)
+![](<../.gitbook/assets/image (56).png>)
 
 Visually validate the rules were transferred to another dataset successfully
 
-![](../.gitbook/assets/image%20%2860%29.png)
-
+![](<../.gitbook/assets/image (57).png>)

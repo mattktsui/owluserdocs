@@ -2,11 +2,11 @@
 
 ## Explore Database Connections and File systems
 
-Use the explorer tab to quickly see which tables are cataloged with Owl \(the square catalog icon\) and which have Owl's quality protection \(the owl icon\).
+Use the explorer tab to quickly see which tables are cataloged with Owl (the square catalog icon) and which have Owl's quality protection (the owl icon).
 
 Below you will see 48/48 database tables have been cataloged with Owl but only 21/48 have an owlcheck. This means that this particular database schema is 44% protected from future DQ issues.
 
-![](../.gitbook/assets/owl-explorer.png)
+![](<../.gitbook/assets/owl-explorer (1).png>)
 
 ## DQ coverage over time
 
@@ -14,7 +14,7 @@ As you add more datasets to Owl, you will see your bar chart increase over time 
 
 ## Job Estimator
 
-Before firing off a large ML job it can be helpful to understand the amount of cores and ram that the job requires to run efficiently. Right sizing jobs is often the best way to get the best performance out of each run. Click the \[Auto Estimate\] button for quick stats for both sizing and estimated runtime information.
+Before firing off a large ML job it can be helpful to understand the amount of cores and ram that the job requires to run efficiently. Right sizing jobs is often the best way to get the best performance out of each run. Click the \[Auto Estimate] button for quick stats for both sizing and estimated runtime information.
 
 ### Dynamic allocation
 
@@ -25,4 +25,3 @@ Many clusters offer the ability to scale up and down job containers. If Dynamic 
 Automatically tracks to the connection, database and table in the explorer and provides a quick way to ask the database simple questions like, counts, groupings and specific clauses.
 
 ![](../.gitbook/assets/owl-sql-editor.png)
-

@@ -53,7 +53,7 @@ A common JDBC connection is hive.resultset.use.unique.column.names=false
 
 This can be added directly to the JDBC connection url string or to the driver properties section
 
-![](../.gitbook/assets/image%20%2868%29.png)
+![](<../.gitbook/assets/image (60).png>)
 
 
 
@@ -75,11 +75,11 @@ jdbc:hive2://<HOST>:10000/default;principal=hive/cdh-instance1.us-east1-b.c.comp
 
 Notice the driver properties for kerberos and principals.
 
-![](../.gitbook/assets/screen-shot-2019-05-29-at-6.44.50-pm.png)
+![](<../.gitbook/assets/Screen Shot 2019-05-29 at 6.44.50 PM.png>)
 
 In very rare cases where you can't get the jar files to connect properly one workaround is to add this to the owl-web startup script
 
-```text
+```
 $JAVA_HOME/bin/java -Dloader.path=lib,/home/danielrice/owl/drivers/hive/ \
 -DowlAppender=owlRollingFile \
 -DowlLogFile=owl-web -Dlog4j.configurationFile=file://$INSTALL_PATH/config/log4j2.xml \
@@ -103,7 +103,6 @@ It is common for Hive to need a lot of .jar files to complete the driver setup.
 
 Sometimes it is helpful to look inside the jar and make sure it has all the needed files.
 
-```text
+```
 jar -tvf hive-jdbc.jar
 ```
-

@@ -1,7 +1,6 @@
 ---
 description: Using Owl on Spark
 ---
-
 # Spark - DQ Pipeline
 
 ## Programmatic Owl
@@ -12,7 +11,7 @@ Don't like leaving your notebook? Want to build Owl into your in-house data qual
 
 ### Rules
 
-Let's assume we were provided a file named "atm\_cust\_file" and want to load it into a database table as well as scan it for all possible errors.  We want to provide a couple levels of protection. 1\) A business rule checking if _a customer joined before before the company was founded_.  2\) Check if the file 100% matches to the DataFrame or db table we've created.  3\) Check for all possible outliers or anomalies in the dataset.  Each one of these 3 issues had a different impact to the business and causes a different flow to trigger in our pipeline.     
+Let's assume we were provided a file named "atm_cust_file" and want to load it into a database table as well as scan it for all possible errors.  We want to provide a couple levels of protection. 1) A business rule checking if _a customer joined before before the company was founded_.  2) Check if the file 100% matches to the DataFrame or db table we've created.  3) Check for all possible outliers or anomalies in the dataset.  Each one of these 3 issues had a different impact to the business and causes a different flow to trigger in our pipeline.     
 
 #### Add Rule
 
@@ -137,7 +136,7 @@ Here we illustrate an example of how to work with files when using Owl programma
     }
 ```
 
-![](../../.gitbook/assets/image%20%2824%29.png)
+![](<../../.gitbook/assets/image (13).png>)
 
 ### All Pipeline Activities in 1 Line
 
@@ -186,7 +185,7 @@ props.depth = 3
 props.dupeExcludeCols = "customer_id,card_number,customer_since_date,OWL_RUN_ID"
 ```
 
-![](../../.gitbook/assets/owl-spark-dq-pipeline.png)
+![](../../.gitbook/assets/owl-spark-dq=pipeline.png)
 
 ### Using Notebooks to build DQ Pipelines
 
@@ -194,5 +193,4 @@ For examples on how to do this, see our Notebook repository below.
 
 {% embed url="https://github.com/kirkhas/owl-notebooks" %}
 
-## 
-
+##

@@ -17,39 +17,39 @@ Here we walk through a scenario to detect anomalies with network traffic dataset
 
 Dataset contains Timestamp, Source Workgroup, Source IP, Source Port, Destination Workgroup, Destination IP, Destination Port, Application, Protocol and Packet size information.
 
-![](../.gitbook/assets/sample_infosec_data.png)
+![](../.gitbook/assets/sample_Infosec_Data.png)
 
 ##  IP Address format Validation
 
-| Business Check | OwlDQ Feature |  |
-| :--- | :--- | :--- |
-| Is a valid formatted IP | RULE | AUTO-IP detection |
-| Is the IP address NULL or Missing | BEHAVIOR | AUTO |
+| Business Check                    | OwlDQ Feature |                   |
+| --------------------------------- | ------------- | ----------------- |
+| Is a valid formatted IP           | RULE          | AUTO-IP detection |
+| Is the IP address NULL or Missing | BEHAVIOR      | AUTO              |
 
 ## Source and Destination Workgroups
 
-| Business Check | OwlDQ Feature |  |
-| :--- | :--- | :--- |
-| Does it a usual network traffic based on locations | PATTERN | Source\_Workgroup -&gt; Destination\_Workgroup |
+| Business Check                                     | OwlDQ Feature |                                           |
+| -------------------------------------------------- | ------------- | ----------------------------------------- |
+| Does it a usual network traffic based on locations | PATTERN       | Source_Workgroup -> Destination_Workgroup |
 
 ## Source and Destination IP Address validation
 
-| Business Check | OwlDQ Feature |  |
-| :--- | :--- | :--- |
-| Does it a usual network traffic based on source and destination IP | PATTERN | Source\_IP -&gt; Destination\_IP |
+| Business Check                                                     | OwlDQ Feature |                             |
+| ------------------------------------------------------------------ | ------------- | --------------------------- |
+| Does it a usual network traffic based on source and destination IP | PATTERN       | Source_IP -> Destination_IP |
 
 ## Packet Size
 
-| Business Check | OwlDQ Feature |  |
-| :--- | :--- | :--- |
-| Is the Packet Size NULL or Missing | BEHAVIOR | AUTO |
-| Packet Size within normal range | PATTERN | Source\_IP -&gt; Packet\_SizeB |
+| Business Check                     | OwlDQ Feature |                           |
+| ---------------------------------- | ------------- | ------------------------- |
+| Is the Packet Size NULL or Missing | BEHAVIOR      | AUTO                      |
+| Packet Size within normal range    | PATTERN       | Source_IP -> Packet_SizeB |
 
 
 
 ## Resulting OwlCheck
 
-```text
+```
 -f file:///home/danielrice/owl/bin/demos/infosec/ -d tab \
 -fullfile -fq "select * from dataset" -encoding UTF-8 -ds infosecv2 \
 -rd "2020-04-04" -dl -dlinc Destination_IP,Packet_SizeB,Source_IP \
@@ -64,19 +64,17 @@ OwlDQ address the issue of efficient network traffic classification by performin
 
 By providing Infosec dataset along with anomaly records, OwlDQ  outlier and pattern algorithms found the anomaly in the network traffic. It mainly detect the following anomalies.
 
-1. Traffic between Atlanta-&gt;Texas
-2. The packet size extremely low between Atlanta-&gt;Texas
+1. Traffic between Atlanta->Texas
+2. The packet size extremely low between Atlanta->Texas
 3. Atlanta source IP and Texas Destination IP. 
 
 Realtime OwlDQ can provide the alerts on network traffic anomalies which can help network admins to do further deep analysis and take preventative measure which is daunting task with huge amount of data.
 
-## Sample Dataset <a id="files-that-can-be-used-to-replicate-this-example"></a>
+## Sample Dataset <a href="files-that-can-be-used-to-replicate-this-example" id="files-that-can-be-used-to-replicate-this-example"></a>
 
 {% file src="../.gitbook/assets/infosec-anomaly.csv" %}
 
 
 
-## 
-
-
+##
 

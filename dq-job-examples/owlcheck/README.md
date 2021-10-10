@@ -1,6 +1,6 @@
 # More...
 
-An OwlCheck is bash script that is essentially the launch point for any owl job to scan a dataset. A dataset can be a flat file \(such as textfile, json file, parquet file, etc\), or a table from any number of Databases \(such as Oracle, Postgres, Mysql, Greenplum, DB2, SQLServer, Teradata, etc\).
+An OwlCheck is bash script that is essentially the launch point for any owl job to scan a dataset. A dataset can be a flat file (such as textfile, json file, parquet file, etc), or a table from any number of Databases (such as Oracle, Postgres, Mysql, Greenplum, DB2, SQLServer, Teradata, etc).
 
 Example Run a Data Quality check on any file by setting the file path.
 
@@ -53,9 +53,9 @@ echo $endDate
 -tbin MONTH
 ```
 
-## Monthly BackRun \(Using Owl's built in Monthly\)
+## Monthly BackRun (Using Owl's built in Monthly)
 
-Owl has 2 convenient features here: 1\) the use of built in ${rd} and ${rdEnd} removes the need for any shell scripting. 2\) using -br, Owl will replay 20 months of data using this template automatically.
+Owl has 2 convenient features here: 1) the use of built in ${rd} and ${rdEnd} removes the need for any shell scripting. 2) using -br, Owl will replay 20 months of data using this template automatically.
 
 ```bash
 ./owlcheck \
@@ -84,7 +84,7 @@ echo $runDate
 -tbin DAY
 ```
 
-## Daily Data \(Using Owl's built in Daily\)
+## Daily Data (Using Owl's built in Daily)
 
 ```bash
 ./owlcheck \
@@ -154,38 +154,24 @@ The above REST call returns the below OwlCheck. It is left up to the Job Control
 
 The easiest option is to use the **runtemplate** end point API call to make requests to from cmdLine or JobControl System.  This endpoint gets the OwlCheck saved in Owl instead of the client needing to know the OwlCheck details.
 
-{% api-method method="post" host="http://$host" path="/v2/runtemplate?dataset=lake.spotify" %}
-{% api-method-summary %}
-RunTemplate
-{% endapi-method-summary %}
+{% swagger baseUrl="http://$host" path="/v2/runtemplate?dataset=lake.spotify" method="post" summary="RunTemplate" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="dataset" type="string" required=true %}
+{% swagger-parameter in="path" name="dataset" type="string" %}
 name of dataset.    -ds OR opt.dataset
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="rd" type="string" required=false %}
+{% swagger-parameter in="path" name="rd" type="string" %}
 yyyy-MM-dd format can add time or timezone.  if note passed in it will use the current day
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="rdEnd" type="string" required=false %}
+{% swagger-parameter in="path" name="rdEnd" type="string" %}
 yyyy-MM-dd format can add time or timezone.  if not passed it will not be used
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
   "msg": "Success, Owl Check is Running as process 13996",
@@ -196,10 +182,8 @@ yyyy-MM-dd format can add time or timezone.  if not passed it will not be used
   "dataset": "lake.spotify"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Curl example for the above Rest Call
 
@@ -231,4 +215,3 @@ eval owlcheck $owlcheck_args
 ```
 
 For more Information on Owl's Scheduler check out the doc on **OwlCheck Cron** Page**.**
-

@@ -19,7 +19,7 @@ Connect to any database via JDBC.
 
 You can configure Owl to call a script file to retrieve a password from a password manager vault or other storage container. The customer is responsible for generating a script to pull just the password and Owl will use that value dynamically when the connection is needed for the UI or when kicking off an Owlcheck.
 
-![](../.gitbook/assets/screen-shot-2021-02-10-at-8.55.23-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-02-10 at 8.55.23 PM.png>)
 
 In the connection dialog, select Password Manager from the Auth Type dropdown, and supply a user name. The script is the path to the .sh script on the machine where the web application is running, and the user account that runs Owl-web should be allowed to execute the script. You can either use the optional parameters or pass any parameters your script needs directly inline on the Script value.
 
@@ -29,13 +29,13 @@ It is important to consider the drivers fetch size when loading greater than 1 M
 
 #### CMD line
 
-```text
+```
 -connectionprops "fetchsize=3000"
 ```
 
 #### Notebook
 
-```text
+```
 props.connectionProps.put("fetchsize", "3000")
 ```
 
@@ -58,5 +58,4 @@ For greater performance or moving large datasets across a network Owl supports p
 
 Owl also supports auto parallelization, which will configure the `numPartitions` parameter for you based on the size of your data. This is enabled in the UI when you create a dataset using the Owlcheck wizard.
 
-![](../.gitbook/assets/screen-shot-2019-10-17-at-4.38.04-pm.png)
-
+![](<../.gitbook/assets/Screen Shot 2019-10-17 at 4.38.04 PM.png>)

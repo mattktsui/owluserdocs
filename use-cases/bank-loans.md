@@ -12,136 +12,52 @@ It is common for banks to lend money in return for monthly payments with interes
 
 ![](../.gitbook/assets/bank-loan1.jpeg)
 
-![](../.gitbook/assets/screen-shot-2020-03-30-at-2.35.16-pm.png)
+![](<../.gitbook/assets/Screen Shot 2020-03-30 at 2.35.16 PM.png>)
 
 ## 1. Credit Score
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Business Check</th>
-      <th style="text-align:left">OwlDQ Feature</th>
-      <th style="text-align:left">Manual vs Auto</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">Is the credit score a whole number</td>
-      <td style="text-align:left">BEHAVIOR</td>
-      <td style="text-align:left">AUTO</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p>Is the credit score within a valid range</p>
-        <p>(between 300 - 850)</p>
-      </td>
-      <td style="text-align:left">RULE</td>
-      <td style="text-align:left">credit_score between 300 and 850</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Is the credit score NULL or Missing</td>
-      <td style="text-align:left">BEHAVIOR</td>
-      <td style="text-align:left">AUTO</td>
-    </tr>
-  </tbody>
-</table>
+| Business Check                                                             | OwlDQ Feature  | Manual vs Auto                   |
+| -------------------------------------------------------------------------- | -------------- | -------------------------------- |
+| Is the credit score a whole number                                         | BEHAVIOR       | AUTO                             |
+| <p>Is the credit score within a valid range </p><p>(between 300 - 850)</p> | RULE           | credit_score between 300 and 850 |
+| Is the credit score NULL or Missing                                        | BEHAVIOR       | AUTO                             |
 
 ##  2. SSN Validation
 
-| Business Check | OwlDQ Feature |  |
-| :--- | :--- | :--- |
-| Is a valid formatted SSN | RULE | AUTO-SSN detection |
-| SSN is PII | SENSITIVITY | AUTO-SSN labeled |
-| Is the SSN NULL or Missing | BEHAVIOR | AUTO |
-| Does the SSN belong to the Applicant | PATTERN | SSN -&gt; first\_name, last\_name |
+| Business Check                       | OwlDQ Feature |                              |
+| ------------------------------------ | ------------- | ---------------------------- |
+| Is a valid formatted SSN             | RULE          | AUTO-SSN detection           |
+| SSN is PII                           | SENSITIVITY   | AUTO-SSN labeled             |
+| Is the SSN NULL or Missing           | BEHAVIOR      | AUTO                         |
+| Does the SSN belong to the Applicant | PATTERN       | SSN -> first_name, last_name |
 
 ## 3. Loan to Value 
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Business Check</th>
-      <th style="text-align:left">OwlDQ Feature</th>
-      <th style="text-align:left"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p>Is Loan amount and</p>
-        <p>asset value (home or auto) valid numbers</p>
-      </td>
-      <td style="text-align:left">BEHAVIOR</td>
-      <td style="text-align:left">AUTO</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">95% loan to value ratio to approve</td>
-      <td style="text-align:left">RULE</td>
-      <td style="text-align:left">loan / asset_value &lt; .95</td>
-    </tr>
-  </tbody>
-</table>
+| Business Check                                                            | OwlDQ Feature |                          |
+| ------------------------------------------------------------------------- | ------------- | ------------------------ |
+| <p>Is Loan amount and </p><p>asset value (home or auto) valid numbers</p> | BEHAVIOR      | AUTO                     |
+| 95% loan to value ratio to approve                                        | RULE          | loan / asset_value < .95 |
 
 ## 4. Interest Rate
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Business Check</th>
-      <th style="text-align:left">OwlDQ Feature</th>
-      <th style="text-align:left"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <p>Interest rate between</p>
-        <p>min and max allowable range</p>
-        <p>for the loans credit rating.</p>
-      </td>
-      <td style="text-align:left">RULE COMPLEX</td>
-      <td style="text-align:left">
-        <p>loan l join rates r on l.credit_rating = r.credit_rating</p>
-        <p>where l.rate between r.min_rate and r.max_rate</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Business Check                                                                                      | OwlDQ Feature |                                                                                                                       |
+| --------------------------------------------------------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------- |
+| <p>Interest rate between </p><p>min and max allowable range </p><p>for the loans credit rating.</p> | RULE COMPLEX  | <p>loan l join rates r on l.credit_rating = r.credit_rating </p><p>where l.rate between r.min_rate and r.max_rate</p> |
 
 ## 5. Duplicate Loan Applications
 
 Can't give someone the same loan twice!
 
-| Business Check | OwlDQ Feature | Manual vs Auto |
-| :--- | :--- | :--- |
-| Ensure we don't issue the same loan twice | DUPE | first\_n, last\_n, SSN, Address |
+| Business Check                            | OwlDQ Feature | Manual vs Auto                |
+| ----------------------------------------- | ------------- | ----------------------------- |
+| Ensure we don't issue the same loan twice | DUPE          | first_n, last_n, SSN, Address |
 
 ## 6. Loan Amount
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Business Check</th>
-      <th style="text-align:left">OwlDQ Feature</th>
-      <th style="text-align:left">Manual vs Auto</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">Loan Amount within lendable range</td>
-      <td style="text-align:left">OUTLIER</td>
-      <td style="text-align:left">AUTO</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p>Loan Amount within lendable range</p>
-        <p>only lend money between 50K and 3M</p>
-      </td>
-      <td style="text-align:left">RULE</td>
-      <td style="text-align:left">loan_amount between 50000 and 3000000</td>
-    </tr>
-  </tbody>
-</table>
+| Business Check                                                                     | OwlDQ Feature | Manual vs Auto                        |
+| ---------------------------------------------------------------------------------- | ------------- | ------------------------------------- |
+| Loan Amount within lendable range                                                  | OUTLIER       | AUTO                                  |
+| <p>Loan Amount within lendable range </p><p>only lend money between 50K and 3M</p> | RULE          | loan_amount between 50000 and 3000000 |
 
 ### Resulting OwlCheck
 
@@ -171,7 +87,10 @@ We made use of Profiles, Duplicates, Outliers and Rules in this example.  The ex
 
 ## Files that can be used to replicate this example
 
-{% file src="../.gitbook/assets/interest\_rates.csv" caption="Interest Rates CSV" %}
+{% file src="../.gitbook/assets/interest_rates.csv" %}
+Interest Rates CSV
+{% endfile %}
 
-{% file src="../.gitbook/assets/owl-dataset-2.csv" caption="Loan Data CSV" %}
-
+{% file src="../.gitbook/assets/Owl  Dataset (2).csv" %}
+Loan Data CSV
+{% endfile %}

@@ -1,14 +1,13 @@
 ---
 description: Template for Job Control
 ---
-
 # DQ Job Cron
 
 ### Cron / Autosys / Control M / Oozie
 
 It is common for organization to need to run jobs on a schedule.  Below are a few shell tricks to get a date from bash and use an OwlCheck with template variables.
 
-Kinit and get run\_date from shell or job control variable, pass it into Owl using $run\_date
+Kinit and get run_date from shell or job control variable, pass it into Owl using $run_date
 
 ```bash
 %sh
@@ -59,5 +58,4 @@ The schedule is based on the OwlCheck Template.  This way the runtime variables 
 
 Under the jobs dashboard you can see an overview schedule with all running jobs and their status.
 
-![](../.gitbook/assets/owl-scheduler%20%281%29.png)
-
+![](../.gitbook/assets/owl-scheduler.png)

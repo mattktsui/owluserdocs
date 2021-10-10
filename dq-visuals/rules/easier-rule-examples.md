@@ -1,10 +1,14 @@
 # Easier Rule Examples
 
-## Cross-Table \(Guided\).  Use our wizard to do ad-hoc analysis and visual setup.
+{% hint style="info" %}
+Cross-dataset rules require -libsrc or -addlib (as of 2021.11) 
+{% endhint %}
+
+## Cross-Table (Guided).  Use our wizard to do ad-hoc analysis and visual setup.
 
 {% embed url="https://www.youtube.com/watch?v=uQ0tilvBUKc" %}
 
-## Join Example Example \(vs. cross-table guided seen above\).
+## Join Example Example (vs. cross-table guided seen above).
 
 {% embed url="https://www.youtube.com/watch?v=BFw5ZIzwewQ" %}
 
@@ -12,14 +16,14 @@
 
 {% embed url="https://www.youtube.com/watch?v=Zkw23umvf8o&feature=youtu.be&t=16" %}
 
-## In-Clause \(Single Column\)
+## In-Clause (Single Column)
 
 ```sql
 select * from @table1 where id 
 not in ( select id from @table2 )
 ```
 
-## Except \(Multi-Column\) 
+## Except (Multi-Column) 
 
 ```sql
 select id, app_id, email, guid_num from @table1
@@ -41,5 +45,4 @@ where
 
 ## Sample Results
 
-![](../../.gitbook/assets/image%20%2855%29.png)
-
+![](<../../.gitbook/assets/image (46).png>)

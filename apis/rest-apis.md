@@ -6,7 +6,7 @@ All REST APIs are available inside the application under admin section.  The API
 
 The product API is for end-users who want to interact with the official and supported API.  You can also generate a client side SDK from the API with 4 steps below.
 
-![](../.gitbook/assets/screen-shot-2021-08-02-at-5.25.08-pm.png)
+![](<../.gitbook/assets/Screen Shot 2021-08-02 at 5.25.08 PM.png>)
 
 ```bash
 #psuedo code example REST API
@@ -32,12 +32,12 @@ findings = /v3/jobs/{jobId}/findings
 
 ### Generate Client SDK
 
-1. Go to [https://editor.swagger.io/](https://editor.swagger.io/)
+1. Go to [https://editor.swagger.io/](https://editor.swagger.io)
 2. Click File Import URL
-3. Paste a URL that looks like this  [https://&lt;host&gt;/v2/api-docs?group=Product%20API](https://146.148.84.143/v2/api-docs?group=Product%20API)
-4. Click generate client \(python, java, scala, C\#\)
+3. Paste a URL that looks like this  [https://\<host>/v2/api-docs?group=Product%20API](https://146.148.84.143/v2/api-docs?group=Product%20API)
+4. Click generate client (python, java, scala, C#)
 
-![](../.gitbook/assets/screen-shot-2021-08-03-at-9.05.13-am.png)
+![](<../.gitbook/assets/Screen Shot 2021-08-03 at 9.05.13 AM.png>)
 
 ```python
 #Python SDK Example 
@@ -435,11 +435,11 @@ The JSON for the full dataset definition.  It can be more terse to send in the c
 
 
 
-![](../.gitbook/assets/image%20%2847%29%20%281%29.png)
+![](<../.gitbook/assets/image (37).png>)
 
 ### JWT Token For Auth
 
-```text
+```
 import requests
 import json
 url = "http://localhost:9000/auth/signin"
@@ -455,7 +455,7 @@ response = requests.request("POST", url, headers=headers, data=payload)
 print(response.text)
 ```
 
-```text
+```
 curl --location --request POST 'http://localhost:9000/auth/signin' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -470,8 +470,8 @@ curl --location --request POST 'http://localhost:9000/auth/signin' \
 Alternatively, you can use the rest endpoints directly. This example shows how it can be done with Python.
 
 1. Create a dataset def 
-   1. using the UI \(Explorer\) or 
-   2. using the dataset-def-api \(https://&lt;ip&gt;/swagger-ui.html\#/dataset-def-api\)
+   1. using the UI (Explorer) or 
+   2. using the dataset-def-api (https://\<ip>/swagger-ui.html#/dataset-def-api)
 2. Confirm your Python environment has the appropriate modules and imports 
 3. Fill-in the variables and customize to your preference
    1. url, user and pass 
@@ -540,7 +540,7 @@ This assumes you have created a dataset definition using the UI or from the temp
 
 #### Command Line instead of JSON dataset def
 
-You can run a similar job submission using the cmd line. Please note it is easiest to get the saved command line from the dataset-def-api **/v3/datasetDefs/{dataset}/cmdline** \(with proper escaping\) and passed to the **/v3/jobs/runCmdLine**.
+You can run a similar job submission using the cmd line. Please note it is easiest to get the saved command line from the dataset-def-api **/v3/datasetDefs/{dataset}/cmdline **(with proper escaping) and passed to the **/v3/jobs/runCmdLine**.
 
 ## Breaking Down The Sections
 
@@ -629,7 +629,6 @@ response = requests.get(url = owl + '/v3/jobs/'+jobId+'/findings', headers=owl_h
 
 Collibra DQ also exposes the internal API so that all potential operations are available.  The caveat is that these calls may change over time or expose underlying functionality.
 
-![](../.gitbook/assets/image%20%2844%29%20%281%29.png)
+![](<../.gitbook/assets/image (35).png>)
 
-![](../.gitbook/assets/image%20%2847%29%20%281%29.png)
-
+![](<../.gitbook/assets/image (37).png>)

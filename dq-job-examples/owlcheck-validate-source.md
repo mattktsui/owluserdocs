@@ -4,9 +4,9 @@
 
 Commonly data driven organizations have a need to ensure that 2 tables or a table and file match.  This match might be a daily reconciliation or any snapshot in time.  Owl calls this Source to Target or Left to Right matching.  It covers row differences, schema differences and all cell values. 
 
-![](../.gitbook/assets/screen-shot-2019-10-01-at-8.40.33-pm.png)
+![](<../.gitbook/assets/Screen Shot 2019-10-01 at 8.40.33 PM.png>)
 
-### Impala/Hive -&gt; DB2
+### Impala/Hive -> DB2
 
 Below is an example of comparing a table in DB2 to the same table in Impala.
 
@@ -31,7 +31,7 @@ Below is an example of comparing a table in DB2 to the same table in Impala.
 -sparkprinc user2@CW.COM
 ```
 
-### DB2 -&gt; Hive \(Native\)
+### DB2 -> Hive (Native)
 
 Most databases only expose data through a JDBC connection but Hive offers a second path which does not require a JDBC connection.  Hive has the ability to push down its processing to the local worker nodes and read directly from disk in the case when the processing is happening locally on a cluster.  If your processing is not happening local to the cluster then you must use HiveJDBC.  Take note of the -hive flag.
 
@@ -50,9 +50,9 @@ Most databases only expose data through a JDBC connection but Hive offers a seco
 -sparkkeytab /home/install/owl/bin/user2.keytab -sparkprinc user2@CW.COM 
 ```
 
-### MySQL -&gt; Oracle
+### MySQL -> Oracle
 
-This example compares the entire table instead of just a single day.  Notice the 3 part valsrckey EXCH,SYMBOL,TRADE\_DATE.  Adding the date field ensures our key is unique and won't create a cartesian product.  If the goal was to compare day over day with Oracle make sure to add TO\_DATE\('YYYY-MM-DD', '2019-10-01'\) to the where clause.  
+This example compares the entire table instead of just a single day.  Notice the 3 part valsrckey EXCH,SYMBOL,TRADE_DATE.  Adding the date field ensures our key is unique and won't create a cartesian product.  If the goal was to compare day over day with Oracle make sure to add TO_DATE('YYYY-MM-DD', '2019-10-01') to the where clause.  
 
 ```bash
 ./owlcheck \
@@ -72,7 +72,7 @@ This example compares the entire table instead of just a single day.  Notice the
 -numexecutors 2 -executormemory 5g -drivermemory 4g -master yarn -deploymode cluster \
 ```
 
-### File -&gt; MySQL Table
+### File -> MySQL Table
 
 Taking a file and loading it into a staging table or final table is a common part of every ETL process.  However it is extremely common that the file values do not match or coherence into the table properly and these silent errors are usually not caught until a business user sees the data far long down stream.
 
@@ -93,7 +93,7 @@ Taking a file and loading it into a staging table or final table is a common par
 -numexecutors 2 -executormemory 5g -drivermemory 4g -master yarn -deploymode cluster \
 ```
 
-### File -&gt; File
+### File -> File
 
 Owl can compare a File to a File.  This is common in landing zones and staging areas where a file might be moved or changed and you need to know if anything changed or is incorrect.
 
@@ -112,4 +112,3 @@ Owl can compare a File to a File.  This is common in landing zones and staging a
 -sparkprinc user2@CW.COM \
 -numexecutors 2 -executormemory 5g -drivermemory 4g -master yarn -deploymode cluster \
 ```
-

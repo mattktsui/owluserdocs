@@ -9,5 +9,4 @@ Available Data
 * Source IP
 * Timestamps
 
-![](../.gitbook/assets/image%20%286%29.png)
-
+![](<../.gitbook/assets/image (63).png>)

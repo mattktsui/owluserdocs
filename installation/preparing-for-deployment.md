@@ -25,7 +25,7 @@ Owl Web is the only required component that needs to be directly accessed from o
 
 If the target Kubernetes platform supports LoadBalancer service type, the Helm chart can be configured to directly deploy the externally accessible endpoint. It is also possible to configure the Helm Chart to deploy a NodePort service type, however, this is not recommended for anything other than testing purposes. 
 
-If the desired service type is Ingress, the recommended approach is to deploy OwlDQ without an externally accessible service and then attach the Ingress service separately. This applies when a third-party Ingress controller is being used \(NGINX, Contour, ect\). The Helm Chart is able to deploy an Ingress on GKE and EKS platforms, however, there is a wide variety of possible Ingress configurations that have not been tested.
+If the desired service type is Ingress, the recommended approach is to deploy OwlDQ without an externally accessible service and then attach the Ingress service separately. This applies when a third-party Ingress controller is being used (NGINX, Contour, ect). The Helm Chart is able to deploy an Ingress on GKE and EKS platforms, however, there is a wide variety of possible Ingress configurations that have not been tested.
 
 ## Obtaining Credentials
 
@@ -54,16 +54,16 @@ In order for Owl Agent and Spark driver to create and destroy compute containers
 
 In order to deploy anything to a Kubernetes cluster, the first step is to install the required client utilities and configure access. 
 
-* **kubectl** - the main method of communication with a Kubernetes cluster. All configuration or introspection tasks will be preformed using kubectl.
-* **helm** \(V3\) - used to deploy the OwlDQ helm chart without hand coding manifests.
+* **kubectl **- the main method of communication with a Kubernetes cluster. All configuration or introspection tasks will be preformed using kubectl.
+* **helm** (V3) - used to deploy the OwlDQ helm chart without hand coding manifests.
 
 After utilities are installed, the next step is to configure a kube-context that points to and authenticates to the target platform. On cloud platforms like GKE and EKS, this process is completely automated through their respective CLI utilities.
 
-```text
+```
 aws eks --region <region-code> update-kubeconfig --name <cluster_name>
 ```
 
-```text
+```
 gcloud container clusters get-credentials <cluster-name>
 ```
 
@@ -73,7 +73,7 @@ In private clouds, this process will vary from organization to organization, how
 
 Once access to the target platform is confirmed, namespace preparation can begin. Typically the namespace that OwlDQ is going to be deployed into will be pre-allocated by the platform team. 
 
-```text
+```
 kubectl create namespace <namespace>
 ```
 
@@ -81,7 +81,7 @@ There is a lot more that can go into namespace create such as resource quota all
 
 #### Create SSL Keystore Secret
 
-```text
+```
 kubectl create secret generic owldq-ssl-secret \
 --from-file /path/to/keystore.jks \
 --namespace <namespace>
@@ -93,7 +93,7 @@ The file name that is passed to the --from-file argument should be keystore.jks.
 
 #### Create Container Pull Secret
 
-```text
+```
 #Json Key file credential
 kubectl create secret docker-registry owldq-pull-secret \
 --docker-server=<owldq-registry-server> \
@@ -103,7 +103,7 @@ kubectl create secret docker-registry owldq-pull-secret \
 --namespace <namespace>
 ```
 
-```text
+```
 #Short lived access token
 kubectl create secret docker-registry owldq-pull-secret \
 --docker-server=<owldq-registry-server> \
@@ -119,7 +119,7 @@ GCP Oauth tokens are usually only good for 1 hour. This type of credential is ex
 
 #### Create GSC Credential Secret
 
-```text
+```
 kubectl create secret generic spark-gcs-secret \
 --from-file /path/to/keystore.jks \
 --namespace <namespace>
@@ -128,4 +128,3 @@ kubectl create secret generic spark-gcs-secret \
 {% hint style="warning" %}
 The file name that is passed to the --from-file argument should be spark-gcs-secret. If the file name is anything else, an additional argument specifying the gcs secret name must be included in the Helm command.
 {% endhint %}
-

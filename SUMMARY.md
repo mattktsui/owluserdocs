@@ -10,6 +10,7 @@
 
 * [Basic Install](installation/basic-install.md)
 * [Full Standalone Install](installation/full-install.md)
+* [Standalone Upgrade](installation/standalone-upgrade.md)
 * [Hadoop Integration](installation/hadoop-integration.md)
 * [Agent Configuration](installation/agent-configuration.md)
 * [EMR / Dataproc / HDI](installation/emr.md)
@@ -18,7 +19,7 @@
 * [Deploying Cloud Native OwlDQ](installation/deploying-cloud-native-owldq.md)
 * [AKS / EKS / GKE: Kubernetes Deployment](installation/aks-eks-gke-kubernetes-deployment.md)
 
-## Connections <a id="connecting-to-dbs-in-owl-web"></a>
+## Connections <a href="connecting-to-dbs-in-owl-web" id="connecting-to-dbs-in-owl-web"></a>
 
 * [Supported Drivers](connecting-to-dbs-in-owl-web/supported-drivers.md)
 * [General](connecting-to-dbs-in-owl-web/owl-db-connection.md)
@@ -33,7 +34,7 @@
 * [Connectivity to SQL Server](connecting-to-dbs-in-owl-web/connectivity-to-sql-server.md)
 * [Add Connection to Agent](connecting-to-dbs-in-owl-web/add-connection-to-agent.md)
 
-## Core Components <a id="dq-visuals"></a>
+## Core Components <a href="dq-visuals" id="dq-visuals"></a>
 
 * [Overview](dq-visuals/overview.md)
 * [Profile](dq-visuals/profile/README.md)
@@ -114,10 +115,10 @@
 * [Schedule Owlchecks](scheduler/schedule-owlchecks.md)
 * [View/Re-Run Scheduled Jobs](scheduler/view-re-run-scheduled-jobs.md)
 
-## WORKFLOWS / ALERTS <a id="workflows"></a>
+## WORKFLOWS / ALERTS <a href="workflows" id="workflows"></a>
 
 * [Email Alerts](workflows/email-alerts.md)
-* [Assignment Queue\(s\)](workflows/assignment-queue-s.md)
+* [Assignment Queue(s)](workflows/assignment-queue-s.md)
 * [Internal Assignment](workflows/internal-assignment.md)
 * [External Assignment](workflows/external-assignment.md)
 * [Business Units](workflows/business-units.md)
@@ -150,9 +151,9 @@
 * [Assignment API](apis/assignmentapi.md)
 * [Time Zone API](apis/owl-time-zone-api.md)
 * [Notebook API](apis/notebook-api/README.md)
-  * [OwlOptions \(base\)](apis/notebook-api/owloptions-base.md)
+  * [OwlOptions (base)](apis/notebook-api/owloptions-base.md)
 
-## API-Core <a id="api"></a>
+## API-Core <a href="api" id="api"></a>
 
 * [Notebook/Spark](api/notebook/README.md)
   * [Spark-shell Sample](api/notebook/spark-shell-sample.md)
@@ -163,7 +164,7 @@
 * [JWT](api/jwt.md)
 * [Cookie](api/cookie.md)
 
-## API-MIGRATION <a id="migration-and-promoting"></a>
+## API-MIGRATION <a href="migration-and-promoting" id="migration-and-promoting"></a>
 
 * [Export and Import API](migration-and-promoting/export-and-import-api.md)
 * [Rules Import Export](migration-and-promoting/rules-import-export.md)
@@ -191,7 +192,7 @@
 * [Smart Meter Data](use-cases/smart-meter-data.md)
 * [Health Insurance Claims Data](use-cases/insurance-data.md)
 
-## Solutions <a id="projects"></a>
+## Solutions <a href="projects" id="projects"></a>
 
 * [Best Practices](projects/best-practices.md)
 * [Prescriptive Personas](projects/prescriptive-personas.md)
@@ -216,28 +217,31 @@
 ## Architecture
 
 * [ERD](architecture/erd.md)
-* [Diagram](architecture/diagram.md)
+* [Architecture Diagram](architecture/diagram.md)
 * [System Requirements](architecture/system-requirements.md)
 
 ## Admin
 
 * [Admin Console Overview](admin/admin-console-overview.md)
+* [System Setup](admin/system-setup.md)
 * [Dataset Audit Trail](admin/dataset-audit-trail.md)
 * [Security Audit Trail](admin/security-audit-trail.md)
 * [User Audit Trail](admin/user-audit-trail.md)
 * [Multi-Tenancy](admin/multi-tenancy.md)
+* [SMTP Setup](admin/smtp-setup.md)
+* [SSL Setup (HTTPS)](admin/ssl-setup-https.md)
+* [Securing Passwords](admin/securing-passwords.md)
 * [Time Based Data Retention](admin/time-based-data-retention.md)
 
 ## Security
 
-* [Authentication With Active Directory LDAP](security/authentication-with-active-directory-ldap/README.md)
+* [Active Directory LDAP](security/authentication-with-active-directory-ldap/README.md)
   * [AD Group to Owl Role Mapping](security/authentication-with-active-directory-ldap/ad-group-to-owl-role-mapping.md)
-* [Authentication with SAML IDP](security/authentication-with-saml-idp.md)
-* [Authentication With Local User Store](security/authentication-with-local-user-store/README.md)
+* [SAML IDP](security/authentication-with-saml-idp.md)
+* [Local User Store Authentication](security/authentication-with-local-user-store/README.md)
   * [Adding Local Users](security/authentication-with-local-user-store/adding-local-users.md)
-* [Role Based Access Control \(RBAC\)](security/role-based-access-control-rbac.md)
+* [Role Based Access Control (RBAC)](security/role-based-access-control-rbac.md)
 * [Connection Security](security/connection-security.md)
 * [Dataset Security](security/dataset-security.md)
 * [Dataset Masking](security/dataset-masking.md)
 * [Owl Security](security/owl-security.md)
-

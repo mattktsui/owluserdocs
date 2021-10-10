@@ -1,7 +1,6 @@
 ---
 description: Owl Restful job server
 ---
-
 # Job Server
 
 ### Curl Example
@@ -19,21 +18,23 @@ curl -X POST --data '
 
 ### Owl Job Dashboard
 
-![](../.gitbook/assets/owl-job-status%20%281%29%20%281%29.png)
+![](../.gitbook/assets/owl-job-status.png)
 
 ### Run Template
 
 The most recommended way to run an Owl Check from outside the application is through the rest API detailed on the OwlCheck page using the link below.  The API is called RunTemplate
 
-{% page-ref page="../dq-job-examples/owlcheck/" %}
+{% content-ref url="../dq-job-examples/owlcheck/" %}
+[owlcheck](../dq-job-examples/owlcheck/)
+{% endcontent-ref %}
 
 ### Configure Multiple Clusters/Agents Per Tenant
 
-Each tenant of Owl can connect and push processing to 1 or more clusters.  Owl is capable of pushing workloads to any of the registered environments \(Agents\) that it knows about. 
+Each tenant of Owl can connect and push processing to 1 or more clusters.  Owl is capable of pushing workloads to any of the registered environments (Agents) that it knows about. 
 
 ### Add an Agent/Cluster to a Tenant
 
-![](../.gitbook/assets/owl-agent%20%281%29%20%281%29.png)
+![](<../.gitbook/assets/owl-agent (1).png>)
 
 ### Owl Scheduler - Built In
 
@@ -51,5 +52,4 @@ A quick way to schedule jobs is to use Owl's one click scheduler.
 
 ### Job Scheduler View
 
-![](../.gitbook/assets/owl-scheduler.png)
-
+![](<../.gitbook/assets/owl-scheduler (1).png>)

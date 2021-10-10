@@ -11,7 +11,7 @@ The most common check we encounter is a row count. However, a row count does not
 * Schema differences - Boolean to Int,  Decimal to Double with precision loss, Timestamps and Dates
 * Value differences - Char or Varchars with whitespace vs Strings, null chars, delimiter fields that cause shifting, and much more.
 
-![](../.gitbook/assets/screen-shot-2019-10-01-at-8.50.39-pm.png)
+![](<../.gitbook/assets/Screen Shot 2019-10-01 at 8.50.39 PM.png>)
 
 ## OwlCheck Created from Wizard
 
@@ -36,11 +36,10 @@ The Owl Wizard GUI creates the below OwlCheck which it can execute from the GUI 
 
 ### End of Day Stock Data from Oracle to Mysql
 
-In this example we loaded NYSE\_EOD data in both Oracle and Mysql and then used Owl's Source Validation feature.  We see 3 main classes of issues.  1\)  The row count is off by 1 row, this means a row was dropped or went missing when the data was copied.  2\)  The schemas don't exactly match.  3\) In 2 cases the values are different at the cell level.  NULL vs NYSE and 137.4 vs 137.42 
+In this example we loaded NYSE_EOD data in both Oracle and Mysql and then used Owl's Source Validation feature.  We see 3 main classes of issues.  1)  The row count is off by 1 row, this means a row was dropped or went missing when the data was copied.  2)  The schemas don't exactly match.  3) In 2 cases the values are different at the cell level.  NULL vs NYSE and 137.4 vs 137.42 
 
-![](../.gitbook/assets/screen-shot-2019-10-09-at-9.40.55-am.png)
+![](<../.gitbook/assets/Screen Shot 2019-10-09 at 9.40.55 AM.png>)
 
 ### Latest View in 2.13+
 
 ![](../.gitbook/assets/source.png)
-

@@ -1,9 +1,6 @@
 ---
-description: >-
-  It would be used when applying a complex condition across multiple
-  tables/columns and generally when more flexibility/customization is desired.
+description: It would be used when applying a complex condition across multiple tables/columns and generally when more flexibility/customization is desired.
 ---
-
 # Freeform SQL
 
 ## Individual statement
@@ -17,7 +14,7 @@ GROUP BY <group_by_expression>
 HAVING <having_expression>
 ```
 
-The base of the statement is given with **@&lt;dataset\_name&gt;** style. In general the &lt;dataset\_name&gt; is the same, where the rule is attached to, but basically you can use any valid dataset name in the expression.
+The base of the statement is given with **@\<dataset_name> **style. In general the \<dataset_name> is the same, where the rule is attached to, but basically you can use any valid dataset name in the expression.
 
 #### Examples
 
@@ -74,22 +71,25 @@ rule.setUserNm("admin")
 
 * WHERE tableA.id = tableB.id style
 * INNER JOIN
-* LEFT &lt;OUTER&gt; JOIN
-* RIGHT &lt;OUTER&gt; JOIN
+* LEFT \<OUTER> JOIN
+* RIGHT \<OUTER> JOIN
 
 #### **Joining other dataset**
 
-* Getting historical state of the same dataset  
-  
-  **Syntax:** **@t&lt;n&gt;**,  
-  where _n_ parameter means, how many days should we go back in the past at the base dataset \(marked with @&lt;dataset\_name&gt;\)  
-  
-  **Example:** 
+*   Getting historical state of the same dataset\
+    \
+    **Syntax:** **@t\<n>**,\
+    where _n _parameter means, how many days should we go back in the past at the base dataset (marked with @\<dataset_name>)\
+    \
+    **Example: **
 
-  * **@t1**, will point to the data which was used at yesterday's run
-  * **@t4**, will point to the data which was used 4 days ago
+    * **@t1**, will point to the data which was used at yesterday's run
+    * **@t4**, will point to the data which was used 4 days ago
 
-* Getting different dataset **Syntax: @&lt;other\_dataset\_name&gt;** 
+
+* Getting different dataset\
+  **Syntax: @\<other_dataset_name>**\
+  ****
 
 ### WHERE style
 
@@ -146,4 +146,3 @@ rule.setPoints(1)
 rule.setIsActive(1)
 rule.setUserNm("admin")
 ```
-

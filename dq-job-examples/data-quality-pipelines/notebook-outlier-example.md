@@ -1,10 +1,10 @@
 # Notebook Outlier Example
 
-This real life use-case is when you have a large file or data frame with many days of data but you want the run profile to be the current day so that it trends properly overtime.  Another nuance to this use-case is that the customer\_id is a unique field to the user and it should not show up in the analytics i.e. an outlier.  But the customer\_id should be available when the user wants to query the rest api end points.  The customer\_id is then used to link back the users original dataset.  A bloomberg\_Id \(BB\_ID\) is a common example.
+This real life use-case is when you have a large file or data frame with many days of data but you want the run profile to be the current day so that it trends properly overtime.  Another nuance to this use-case is that the customer_id is a unique field to the user and it should not show up in the analytics i.e. an outlier.  But the customer_id should be available when the user wants to query the rest api end points.  The customer_id is then used to link back the users original dataset.  A bloomberg_Id (BB_ID) is a common example.
 
 ### CSV File
 
-```text
+```
 fname,app_date,age,customer_id
 Kirk,2018-02-24,18,31
 Kirk,2018-02-23,11,4
@@ -13,7 +13,7 @@ Kirk,2018-02-21,12,2
 Kirk,2018-02-20,10,1
 ```
 
-### Notebook Code \(Spark Scala\)
+### Notebook Code (Spark Scala)
 
 ```scala
 val filePath = getClass.getResource("/notebooktest.csv").getPath
@@ -43,7 +43,7 @@ owl.owlCheck()
 
 ### Owl Web UI
 
-Score drops from 100 to 99 based on the single outlier in the file. Row count is 1 because there is only 1 row in the current data frame.  The historical data frame was provided for context and you can see those rows in the outlier drill-in.  The customer\_id is available in the data preview and can be used as an API hook to link back to the original dataset.  
+Score drops from 100 to 99 based on the single outlier in the file. Row count is 1 because there is only 1 row in the current data frame.  The historical data frame was provided for context and you can see those rows in the outlier drill-in.  The customer_id is available in the data preview and can be used as an API hook to link back to the original dataset.  
 
 ![](../../.gitbook/assets/owl-df-with-hist-customer_id.png)
 
@@ -70,7 +70,7 @@ if (hoot.dupeScore > 0) {
 }
 ```
 
-```text
+```
 +-------+---------+--------------------+--------+-----------+-------+------+
 |row_cnt|obs_score|             row_key|obs_type|customer_id|  fname|owl_id|
 +-------+---------+--------------------+--------+-----------+-------+------+
@@ -80,7 +80,7 @@ if (hoot.dupeScore > 0) {
 |     24|       60|41ea2d828b1a5fbf2...|    DUPE|         27|    Dan|     6|
 ```
 
-```text
+```
 +---------------+--------------------+--------+----------+--------------+--------+-------+-------+---+--------------------+-----------+-------+------+--------+
 |        dataset|              run_id|col_name|col_format|col_format_cnt|owl_rank|row_cnt|row_key|age|            app_date|customer_id|  fname|owl_id|time_bin|
 +---------------+--------------------+--------+----------+--------------+--------+-------+-------+---+--------------------+-----------+-------+------+--------+
@@ -88,34 +88,20 @@ if (hoot.dupeScore > 0) {
 +---------------+--------------------+--------+----------+--------------+--------+-------+-------+---+--------------------+-----------+-------+------+--------+
 ```
 
-{% api-method method="get" host="http://$host" path="/v2/getoutlier?dataset=dataset\_outlier&runId=2018-02-24" %}
-{% api-method-summary %}
-GetOutlier
-{% endapi-method-summary %}
+{% swagger baseUrl="http://$host" path="/v2/getoutlier?dataset=dataset_outlier&runId=2018-02-24" method="get" summary="GetOutlier" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="dataset" type="string" required=true %}
+{% swagger-parameter in="path" name="dataset" type="string" %}
 name of dataset
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="dataset" type="string" required=true %}
+{% swagger-parameter in="path" name="dataset" type="string" %}
 yyyy-MM-dd format can include time and timezone
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```bash
 {
   confidence: 77
@@ -130,44 +116,24 @@ yyyy-MM-dd format can include time and timezone
   ub: 0
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="http://$host" path="/v2/getdatashapes?dataset=dataset\_outlier&runId=2018-02-24" %}
-{% api-method-summary %}
-GetShape
-{% endapi-method-summary %}
+{% swagger baseUrl="http://$host" path="/v2/getdatashapes?dataset=dataset_outlier&runId=2018-02-24" method="get" summary="GetShape" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="dataset" type="string" required=true %}
+{% swagger-parameter in="path" name="dataset" type="string" %}
 name of dataset
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="runId" type="string" required=true %}
+{% swagger-parameter in="path" name="runId" type="string" %}
 yyyy-MM-dd format can include time and timezone
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

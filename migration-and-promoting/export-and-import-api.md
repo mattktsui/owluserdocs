@@ -1,7 +1,6 @@
 ---
 description: Promoting and moving datasets across environments
 ---
-
 # Export and Import API
 
 ### Step 1
@@ -15,9 +14,9 @@ T
 
 Examples:
 
-![1 Table](../.gitbook/assets/screen-shot-2021-04-26-at-10.02.12-am.png)
+![1 Table](<../.gitbook/assets/Screen Shot 2021-04-26 at 10.02.12 AM.png>)
 
-![Multiple Tables](../.gitbook/assets/screen-shot-2021-04-26-at-10.07.54-am.png)
+![Multiple Tables](<../.gitbook/assets/Screen Shot 2021-04-26 at 10.07.54 AM.png>)
 
 ### Step 2
 
@@ -29,7 +28,7 @@ http://<url>/v2/run-import
 
 This would be the body of the POST.
 
-![](../.gitbook/assets/screen-shot-2021-04-26-at-10.13.18-am.png)
+![](<../.gitbook/assets/Screen Shot 2021-04-26 at 10.13.18 AM.png>)
 
 #### Notes: 
 
@@ -46,13 +45,13 @@ http://<url>/v2/get-exports?dataset=public.dataset_scan_2,public.dataset_scan_1&
 T
 ```
 
-![](../.gitbook/assets/image%20%2867%29.png)
+![](<../.gitbook/assets/image (58).png>)
 
 ## Stored Procedure
 
 The following stored procedure needs to be created in the Owl metastore before this can run. 
 
-```text
+```
 CREATE OR REPLACE FUNCTION public.dump(p_schema text, p_table text, p_where text)
  RETURNS SETOF text
  LANGUAGE plpgsql
@@ -133,7 +132,6 @@ AS $function$
 
 This assignment needs added.
 
-```text
+```
 alter function dump(text, text, text) owner to ownername;
 ```
-

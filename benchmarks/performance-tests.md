@@ -1,107 +1,17 @@
 # Performance Tests
 
-## Cells Per Second Performance Theory \(9.5M CPS\)
+## Cells Per Second Performance Theory (9.5M CPS)
 
-![](../.gitbook/assets/screen-shot-2020-12-01-at-10.31.09-am.png)
+![](<../.gitbook/assets/Screen Shot 2020-12-01 at 10.31.09 AM.png>)
 
 ## Load and Profile
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <p>Dataset</p>
-        <p>Name</p>
-      </th>
-      <th style="text-align:left">
-        <p>GBs in</p>
-        <p>Memory</p>
-      </th>
-      <th style="text-align:left">
-        <p></p>
-        <p>Rows</p>
-      </th>
-      <th style="text-align:left">
-        <p></p>
-        <p>Cols</p>
-      </th>
-      <th style="text-align:left">
-        <p></p>
-        <p>Cells</p>
-      </th>
-      <th style="text-align:left">
-        <p>Num</p>
-        <p>Execs</p>
-      </th>
-      <th style="text-align:left">
-        <p>Num</p>
-        <p>Cores</p>
-      </th>
-      <th style="text-align:left">
-        <p>Exec</p>
-        <p>Memory</p>
-      </th>
-      <th style="text-align:left">
-        <p>Network</p>
-        <p>Time</p>
-      </th>
-      <th style="text-align:left">
-        <p>Total</p>
-        <p>Time</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">NYSE</td>
-      <td style="text-align:left">0.1G</td>
-      <td style="text-align:left">103K</td>
-      <td style="text-align:left">9</td>
-      <td style="text-align:left">816K</td>
-      <td style="text-align:left">1</td>
-      <td style="text-align:left">1</td>
-      <td style="text-align:left">1G</td>
-      <td style="text-align:left">00:00:15</td>
-      <td style="text-align:left">00:00:48</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">AUM</td>
-      <td style="text-align:left">14G</td>
-      <td style="text-align:left">9M</td>
-      <td style="text-align:left">48</td>
-      <td style="text-align:left">432M</td>
-      <td style="text-align:left">5</td>
-      <td style="text-align:left">1</td>
-      <td style="text-align:left">4G</td>
-      <td style="text-align:left">00:01:20</td>
-      <td style="text-align:left">00:03:50</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">ENERGY</td>
-      <td style="text-align:left">5G</td>
-      <td style="text-align:left">43M</td>
-      <td style="text-align:left">6</td>
-      <td style="text-align:left">258M</td>
-      <td style="text-align:left">8</td>
-      <td style="text-align:left">3</td>
-      <td style="text-align:left">3G</td>
-      <td style="text-align:left">00:00:00</td>
-      <td style="text-align:left">00:04:35</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">INVEST_DATA</td>
-      <td style="text-align:left">20G</td>
-      <td style="text-align:left">3.8M</td>
-      <td style="text-align:left">158</td>
-      <td style="text-align:left">590M</td>
-      <td style="text-align:left">3</td>
-      <td style="text-align:left">2</td>
-      <td style="text-align:left">3G</td>
-      <td style="text-align:left">00:00:40</td>
-      <td style="text-align:left">00:03:32</td>
-    </tr>
-  </tbody>
-</table>
+| <p>Dataset </p><p>Name</p> | <p>GBs in</p><p>Memory</p> | <p></p><p>Rows</p> | <p></p><p>Cols</p> | <p></p><p>Cells</p> | <p>Num </p><p>Execs</p> | <p>Num</p><p>Cores</p> | <p>Exec</p><p>Memory</p> | <p>Network </p><p>Time</p> | <p>Total </p><p>Time</p> |
+| -------------------------- | -------------------------- | ------------------ | ------------------ | ------------------- | ----------------------- | ---------------------- | ------------------------ | -------------------------- | ------------------------ |
+| NYSE                       | 0.1G                       | 103K               | 9                  | 816K                | 1                       | 1                      | 1G                       | 00:00:15                   | 00:00:48                 |
+| AUM                        | 14G                        | 9M                 | 48                 | 432M                | 5                       | 1                      | 4G                       | 00:01:20                   | 00:03:50                 |
+| ENERGY                     | 5G                         | 43M                | 6                  | 258M                | 8                       | 3                      | 3G                       | 00:00:00                   | 00:04:35                 |
+| INVEST_DATA                | 20G                        | 3.8M               | 158                | 590M                | 3                       | 2                      | 3G                       | 00:00:40                   | 00:03:32                 |
 
 ### NYSE
 
@@ -120,7 +30,7 @@ Postgres database call, no concurrent processing, simple case, small data.
 
 ### AUM
 
-Postgres database call uses parallel JDBC, split on aum\_id serial id.  
+Postgres database call uses parallel JDBC, split on aum_id serial id.  
 
 ```bash
 -owluser kirk 
@@ -165,4 +75,3 @@ HDFS file with 43 million rows, converting a string date to date type, deploy mo
 -rd "2020-10-27" -driver "org.postgresql.Driver" 
 -bhminoff -loglevel INFO -cxn postgres-gcp -bhmaxoff -agentjobid 7721 
 ```
-

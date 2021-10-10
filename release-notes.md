@@ -24,11 +24,11 @@
 * Scorecards
   * Date ranges are now customizable
 * Validate Source
-  * Added feature that provides 'trim' option on String columns when running source-target validation, extra spaces in the cell are trimmed on both ends \(left and right\)
+  * Added feature that provides 'trim' option on String columns when running source-target validation, extra spaces in the cell are trimmed on both ends (left and right)
 * Dupes
   * Resolved issue with white spaces in column headers blocking duplicate detection
 * Security
-  * Added configuration for setting the SAML\_ENTITY\_BASEURL, which sets the Consumer service url for the SP Metadata
+  * Added configuration for setting the SAML_ENTITY_BASEURL, which sets the Consumer service url for the SP Metadata
 * Shapes
   * Fixed issue where custom values override even after toggling Shapes back to auto or off
 * Console
@@ -43,30 +43,30 @@
   * Individual files greater than 5gb will experience performance degradation in Explorer for Standalone installs. Best practice is to save in smaller chunks and use bypass schema in the Explorer if needed.
   * Individual files greater than 25gb will experience performance degradation in Core for Standalone installs.
 * Files
-  * Explorer / browser will generally have difficulty supporting &gt; 250 columns in files
+  * Explorer / browser will generally have difficulty supporting > 250 columns in files
 * Profiling
   * Pushdown profiling on Bigquery, Redshift, Athena and Presto is available for specific datatypes. 
-  * Backrun option and flag will persist beyond the first run \(-br\).  Please remove this flag if you do not want to backrun again. 
+  * Backrun option and flag will persist beyond the first run (-br).  Please remove this flag if you do not want to backrun again. 
 * Explorer
   * QUARTER and WEEK are not supported time bins in this release. 
   * On non-csv files, Explorer will not automatically infer file types. Users must change file type to the required value and click Step 2 "Load File". Nothing will change in Step 1 "File Information". A future enhancement will be added to automatically check filetypes by reading the first file
   * Dataset names should not contain special characters
 * Rules
-  * Out of the box semantic rules cannot be edited \(STATECHECK, GENDERCHECK, etc\). Users can still apply their own global rules which can be customized.
+  * Out of the box semantic rules cannot be edited (STATECHECK, GENDERCHECK, etc). Users can still apply their own global rules which can be customized.
   * LinkId does not support alias columns that are not part of the -LinkId definition
 * Connections
   * Connection names should not contain spaces
 * Validate Source
   * Complex Validate Source queries can only be edited from the CMD line or JSON directly before hitting Run.
 * Security
-  * Active Directory in Azure SQL can connect via LDAP \(basic auth\) or Kerberos. 
+  * Active Directory in Azure SQL can connect via LDAP (basic auth) or Kerberos. 
 * S3 / GS / ADLS
   * Remote storage connections should be defined using the root bucket only.
 * Estimate Job is only available for files when Livy is being used.
 * Stop Job on jobs page is limited and does not work for all installation types.
 * Bigquery connector does not work with views 
 
-## 2021.09 \(09-2021\)
+## 2021.09 (09-2021)
 
 #### New Feature
 
@@ -87,15 +87,15 @@
 * Catalog
   * Completeness report refactor / consolidation to improve performance
 * Export
-  * Outlier tab in DQ Job page \(hoot page\) displays linkIds and included in the export
+  * Outlier tab in DQ Job page (hoot page) displays linkIds and included in the export
 * Security
   * Added property for authentication age to reduce token expiration
   * UI labels more generic when configuring a connection with password manager script
 * Agent
   * Agent no longer shows as red if services are correctly running
 * Logging
-  * Jobs log retention policy now configurable in Admin Console -&gt; App Config via "JOB\_LOG\_RETENTION\_HR" \(variable must be added along with value\). If not added, default to 72 hours
-  * Platform logs retention policy now configurable in Admin Console -&gt; App Config via "PLATFORM\_LOG\_RETENTION\_HR" \(variable must be added along with value\). If not added, default to 24 hours
+  * Jobs log retention policy now configurable in Admin Console -> App Config via "JOB_LOG_RETENTION_HR" (variable must be added along with value). If not added, default to 72 hours
+  * Platform logs retention policy now configurable in Admin Console -> App Config via "PLATFORM_LOG_RETENTION_HR" (variable must be added along with value). If not added, default to 24 hours
 * Outliers
   * Fixed connection properties behavior given how multiple custom properties are handled in Hive
   * Fixed outliers issue that ignored WHERE clause on remote files
@@ -104,11 +104,11 @@
 * Connections
   * New templates for Redshift and Solr
 * Connections Security
-  * Ticket Granting Ticket \(TGT\) authentication for HDFS & Hive
+  * Ticket Granting Ticket (TGT) authentication for HDFS & Hive
     * You can now choose the TGT auth model for connections and point to a TGT file as an additional kerberos authentication model
   * Kerberos Principal + Password Manager for Hive
     * You can now use a password manager script to fetch a hive password for a princiapl to authenticate
-  * S3 SAML Auth \(TP\)
+  * S3 SAML Auth (TP)
     * DQ is configured to use SAML based authentication to S3 buckets with password manager or provided credentials. Testing is limited to OneLogin for SAML Provider in this tech preview release
 
 **Patches / Known Issues**
@@ -117,7 +117,7 @@
 * 2021.09.2 Validate Source Large DB load
 * 2021.09.3 Save on datashapes from new DQ Job
 
-## 2021.08 \(**08-2021\)**
+## 2021.08 (**08-2021)**
 
 _Please note updated Collibra release name methodology_
 
@@ -129,15 +129,15 @@ _Please note updated Collibra release name methodology_
   * Improved error handling for unsupported java data types
   * Fix preview for uploaded temp files
 * Collibra DQ V3 REST APIs
-  * Additional rest APIs for easier programmatic job initiation, job response status, and job result decisioning \(used in pipelines\). Streamlined documentation and user inputs allow users to choose any language for their orchestration wrapper \(python, c\#, java, etc\). [More info on Collibra DQ Rest APIs](https://docs.owl-analytics.com/rest-api/apis)
+  * Additional rest APIs for easier programmatic job initiation, job response status, and job result decisioning (used in pipelines). Streamlined documentation and user inputs allow users to choose any language for their orchestration wrapper (python, c#, java, etc). [More info on Collibra DQ Rest APIs](https://docs.owl-analytics.com/rest-api/apis)
 * Patterns
   * Fix load query generation issue when WHERE clause is specified
 * Behaviors
   * Fix behavior score calculation after suppressing AR 
   * Fix percent change calculations in behavior AR after retrain
-  * Mean Value Drift \[New Feature\] [Behaviors](dq-visuals/behaviors.md#using-behavioral-analytics-change-detection)
+  * Mean Value Drift \[New Feature] [Behaviors](dq-visuals/behaviors.md#using-behavioral-analytics-change-detection)
 * Security
-  * Introduce new role of ROLE\_DATA\_GOVERNANCE\_MANAGER with ability to manage \(create / update / delete\) Business Units and Data Concepts. [More info on Collibra DQ Security Roles](https://docs.owl-analytics.com/v/2021.08/security/owl-security/role-based-access-control-rbac)
+  * Introduce new role of ROLE_DATA_GOVERNANCE_MANAGER with ability to manage (create / update / delete) Business Units and Data Concepts. [More info on Collibra DQ Security Roles](https://docs.owl-analytics.com/v/2021.08/security/owl-security/role-based-access-control-rbac)
   * Relaxed field requirements for password manager connections for App ID, Safe, and Password Manager Name
 * Scorecard
   * Enhanced page loading speeds for scorecard pages
@@ -148,7 +148,7 @@ _Please note updated Collibra release name methodology_
 * UI/UX
   * Updated with more distinct icon set
 
-## 2021.07 \(**07-09-2021\)**
+## 2021.07 (**07-09-2021)**
 
 _Please note updated Collibra release name methodology_
 
@@ -160,7 +160,7 @@ _Please note updated Collibra release name methodology_
   * Full redesign of web user experience and standardization to match Collibra layout
   * Search any dataset from any page
 * Hoot
-  * Rules Display with \[more\] links to better use the page space
+  * Rules Display with \[more] links to better use the page space
   * Auditing for changes per scan
 * Explorer
   * JDBC Filter enablement by just search input
@@ -168,7 +168,7 @@ _Please note updated Collibra release name methodology_
   * Add more support for data-concepts from UI or future release
 * Behaviors
   * Down-training per issue type
-  * AR user feedback loop \(pass/fail\) for learning phase
+  * AR user feedback loop (pass/fail) for learning phase
 * Scheduler
   * [Time based cleanup routine](https://docs.owl-analytics.com/data-retention/time-based-data-retention)
 * Security
@@ -176,7 +176,7 @@ _Please note updated Collibra release name methodology_
 * Reports
   * OTB completeness reports from reports section. [Completeness Report](reports/completeness-report.md)
 
-## 2.15.0   \(**05-31-2021\)**
+## 2.15.0   (**05-31-2021)**
 
 #### Enhancements
 
@@ -204,7 +204,7 @@ _Please note updated Collibra release name methodology_
 * Multi-Tenant
   * Support for an alternate display name for each tenant to be displayed in the UI and login tenant selection
 
-## 2.14.0   \(**03-31-2021\)**
+## 2.14.0   (**03-31-2021)**
 
 #### Enhancements
 
@@ -215,22 +215,22 @@ _Please note updated Collibra release name methodology_
 * Explorer
   * ValSrc auto Save
   * Remote File
-    * Support for Google Cloud Storage \(GCS\)
+    * Support for Google Cloud Storage (GCS)
     * Support for Google Big Query
     * Folder Scans in Val Src
     * Auto generate ds name
     * FullFile for S3
     * {rd} in file path naming
-    * Estimate Jobs \(Only on K8s\)
-    * Analyze Days \(Only on K8s\)
-    * Preview Data \(Only on K8s\)
+    * Estimate Jobs (Only on K8s)
+    * Analyze Days (Only on K8s)
+    * Preview Data (Only on K8s)
 * Connection
   * Store source name to connect a column to its source db/table/schema
   * Custom driver props for remote file connection
 * Profile
   * Filtergrams for Password Manager connections
   * Filtergrams for Alternate agent path connections
-  * Filtergrams on S3/GCS data source \(Only on K8s\)
+  * Filtergrams on S3/GCS data source (Only on K8s)
 * Rules
   * UX on page size options
 * Scheduler
@@ -241,7 +241,7 @@ _Please note updated Collibra release name methodology_
   * Expanded options for numeric/alpha
   * Expanded options for length on alphanumerics
 
-## 2.13.0   \(**12-20-2020\)**
+## 2.13.0   (**12-20-2020)**
 
 #### Enhancements
 
@@ -256,7 +256,7 @@ _Please note updated Collibra release name methodology_
   * Menu driven selections on existing datasets
   * Run remote file scans at parent folder level
 * Scheduler
-  * Allow scheduling based on dataset timezone \(previously all UTC\)
+  * Allow scheduling based on dataset timezone (previously all UTC)
 * Profile
   * Enhanced Drill in display including new AR view & Shape Top-N values
   * Data Preview Filtergram Export of distinct column values
@@ -275,7 +275,7 @@ _Please note updated Collibra release name methodology_
 * Performance
   * 2X faster on data loading activity based on revised caching and surrogate ID.
 
-## 2.12.1   \(11-1-2020\)
+## 2.12.1   (11-1-2020)
 
 #### Stability Enhancements
 
@@ -316,12 +316,12 @@ _Please note updated Collibra release name methodology_
 * Install
   * Version bump and rpm style installation for a local postgres in the Owl install script
 
-## 2.12.0     \(10-01-2020\) 
+## 2.12.0     (10-01-2020) 
 
 **Enhancements**
 
 * Rule Page Builder Enhancements 
-  * Native Rule Updates \(push-down\)
+  * Native Rule Updates (push-down)
   * Rule Freeform Section Usability
   * Run with default Agent
 * AWS S3 Role Based Authorization 
@@ -329,9 +329,9 @@ _Please note updated Collibra release name methodology_
 * Enable LinkID in Owlcheck Explorer 
   * Designate a column that contains a unique record identifier. The value contained in this column will be captured and stored along with DQ findings. This identifier enables data stewards to quickly find and remediate DQ findings in the source data.
 * Wizard driven windowed aggregates on datasets 
-  * A user can apply a SUM\(DURATION\) OVER \(PARTITION BY GRADE\)
+  * A user can apply a SUM(DURATION) OVER (PARTITION BY GRADE)
 * Bulk Delete From CatalogSecurity admin role 
-  * A user can bulk delete based on time since last run, \# of total runs.
+  * A user can bulk delete based on time since last run, # of total runs.
 * Rule Breaks to allow for different columns 
   * A user can apply a rule that has different columns and we catch exception gracefully
 * Edit OwlCheck created from CLI 
@@ -339,10 +339,10 @@ _Please note updated Collibra release name methodology_
 * Explorer Edit on File Data Source 
   * Ability to edit existing Olwchecks created on remote and local files. Expanded capabilities for editing Owlchecks on JDBC sources
 * Edit Score Card capabilities
-* Search and index dataset\_schema col in CATALOG
+* Search and index dataset_schema col in CATALOG
 * Notebook API - Expanded Outliers and Patterns Results Outliers output displays 
   * Key Column names and an aggregate view that merges duplicate Outlier findings to display the number of occurrences. Patterns aggregate output denotes columns not relevant to a given finding.
-* TECH PREVIEW - Kubernetes Support \(V1\) 
+* TECH PREVIEW - Kubernetes Support (V1) 
   * Deploy OwlDQ and run Owlchecks on Kubernetes 
 * TECH PREVIEW - Streaming Owlchecks - SSL Authentication 
   * Run Streaming Owlchecks on Kafka topics protected by 2-Way SSL 
@@ -351,7 +351,7 @@ _Please note updated Collibra release name methodology_
 
 
 
-## 2.11.0     \(8-1-2020\) 
+## 2.11.0     (8-1-2020) 
 
 **Enhancements**
 
@@ -369,77 +369,77 @@ _Please note updated Collibra release name methodology_
 
 
 
-## 2.10.1   \(6-1-2020\)
+## 2.10.1   (6-1-2020)
 
 **Enhancements**
 
-* Scheduler Enhancements \([docs](https://docs.owl-analytics.com/scheduler/schedule-management)\)
+* Scheduler Enhancements ([docs](https://docs.owl-analytics.com/scheduler/schedule-management))
   * Manage Schedule Restricted Times
   * Schedule Jobs By quarter
   * UX Mods on Schedule Template Save From Hoot
   * Optional Schedule Save with custom Run Date for Reporting/Charting
-* Alert Enhancements \([docs](https://docs.owl-analytics.com/alerts/email-alerts)\)
+* Alert Enhancements ([docs](https://docs.owl-analytics.com/alerts/email-alerts))
   * Setup alert batches for quick distribution list and consolidated alerts per dataset
   * Configure all alerts to run via OwlWeb
-* Behaviors \([docs](https://docs.owl-analytics.com/dq-visuals/behaviors)\)
+* Behaviors ([docs](https://docs.owl-analytics.com/dq-visuals/behaviors))
   * Ability to suppress behavior items
-  * UX modal enhancement for additional display values \(chart/top-N/functions\)  
-* Jobs \([docs](https://docs.owl-analytics.com/apis/job-server)\)
-  * Export All \(export all checkbox\)
-  * Detailed logging per job \(click jobs link\)
+  * UX modal enhancement for additional display values (chart/top-N/functions)  
+* Jobs ([docs](https://docs.owl-analytics.com/apis/job-server))
+  * Export All (export all checkbox)
+  * Detailed logging per job (click jobs link)
 * Scorecard Pages
   * Require Page Name
-* Rules UX Enhancements \([docs](https://docs.owl-analytics.com/dq-visuals/rules)\)
+* Rules UX Enhancements ([docs](https://docs.owl-analytics.com/dq-visuals/rules))
   * Required/Non-Required Styling
   * Display with ellipsis on long rule names in hoot findings
 
 **Known Issues**
 
-* Auto Profile AGENT status indicator \(GREEN/RED\) missing
+* Auto Profile AGENT status indicator (GREEN/RED) missing
 * Can not run multiple patterns or outliers from UX on Tech Preview explorer2
 
-## 2.10.0    \(5-1-2020\)
+## 2.10.0    (5-1-2020)
 
 **Features**
 
-* Assignment Queue \([docs](https://docs.owl-analytics.com/observation-assignments/assignment-queue-s)\)
+* Assignment Queue ([docs](https://docs.owl-analytics.com/observation-assignments/assignment-queue-s))
   * Assign review and resolution of data quality issues to responsible users
   * Push assignments to Service Now
-* Rules Features \([docs](https://docs.owl-analytics.com/dq-visuals/rules)\)
+* Rules Features ([docs](https://docs.owl-analytics.com/dq-visuals/rules))
   * Enriched Regex Builder to assist in Rule definition
-* Auto Profile Phase 2 \([docs](https://docs.owl-analytics.com/dq-visuals/profile/autoprofile)\)
-  * Schema filter \(option to limit fields profiled per table\)
-  * Profile Pushdown \(push compute to data warehouse\)
-  * Scan concurrency throttle \(limit number of simultaneous Profiling jobs\)
-  * Date filter \(option to focus profiling to a date orange per table\)
-* Profile UX Enhancements \([docs](https://docs.owl-analytics.com/dq-visuals/profile)\)
+* Auto Profile Phase 2 ([docs](https://docs.owl-analytics.com/dq-visuals/profile/autoprofile))
+  * Schema filter (option to limit fields profiled per table)
+  * Profile Pushdown (push compute to data warehouse)
+  * Scan concurrency throttle (limit number of simultaneous Profiling jobs)
+  * Date filter (option to focus profiling to a date orange per table)
+* Profile UX Enhancements ([docs](https://docs.owl-analytics.com/dq-visuals/profile))
   * Add Business terms/descriptions to profiled columns
-  * PII/MNPI designations automagically identified by Owl \(Profile Semantic\) can be removed by the user from the dataset Profile screen
+  * PII/MNPI designations automagically identified by Owl (Profile Semantic) can be removed by the user from the dataset Profile screen
   * One click to create a rule based on TopN values
-* Catalog UX Enhancements \([docs](https://docs.owl-analytics.com/catalog/catalog)\)
+* Catalog UX Enhancements ([docs](https://docs.owl-analytics.com/catalog/catalog))
   * List of Actions to edit/govern datasets
   * Publish Dataset
-* Explorer 2 Enhancements \([docs](https://docs.owl-analytics.com/dq-visuals/explorer-2)\)
+* Explorer 2 Enhancements ([docs](https://docs.owl-analytics.com/dq-visuals/explorer-2))
   * Support for HDFS
   * Support for ad-hoc files
-* Pushdown Processing to the Data Warehouse storing the data \([docs](https://docs.owl-analytics.com/dq-visuals/profile)\)
+* Pushdown Processing to the Data Warehouse storing the data ([docs](https://docs.owl-analytics.com/dq-visuals/profile))
   * Push compute of Profile to the Data Warehouse where the data is stored
   * Push compute of Validate Source to the Data Warehouse where the data is stored. Schema and Row Counts only, validate values functionality not supported when pushdown is enabled
-* Outliers \([docs](https://docs.owl-analytics.com/dq-visuals/outliers)\)
-  * Functionality \(Categorical Outliers\)
+* Outliers ([docs](https://docs.owl-analytics.com/dq-visuals/outliers))
+  * Functionality (Categorical Outliers)
     * Categorical Outliers take history into account when date column is provided
     * Categorical Outliers offers visualization of Most frequent along side of the Outlier for context
-  * Performance \(Numerical Outliers\)
+  * Performance (Numerical Outliers)
     * Improved performance when limit on number of Outliers is increased
     * improved performance when No Date and/or Key is provided
-    * Outlier key values are delimited by a user defined delimiter \(~~ by default\)
-* Validate Source \([docs](https://docs.owl-analytics.com/dq-visuals/validate-source)\)
+    * Outlier key values are delimited by a user defined delimiter (\~\~ by default)
+* Validate Source ([docs](https://docs.owl-analytics.com/dq-visuals/validate-source))
   * Improved performance when validate values function is enabled
-* Behaviors \([docs](https://docs.owl-analytics.com/dq-visuals/behaviors)\)
+* Behaviors ([docs](https://docs.owl-analytics.com/dq-visuals/behaviors))
   * Control behavior module by subtype
 * Notebook API
-  * option.keyDelimiter - Outlier key values are delimited by a user defined delimiter \(~~ by default\)
-  * option.coreMaxActiveConnections - Maximum number of threads that an Owlcheck metastore connection pool contain. This option is only honored when the connection pool first initializes \(Typically when the Spark Session first initializes\).
+  * option.keyDelimiter - Outlier key values are delimited by a user defined delimiter (\~\~ by default)
+  * option.coreMaxActiveConnections - Maximum number of threads that an Owlcheck metastore connection pool contain. This option is only honored when the connection pool first initializes (Typically when the Spark Session first initializes).
   * option.profile.behaviorRowCheck - Controls if behavioral model factors in row count stats
   * option.profile.behaviorTimeCheck - Controls if behavioral model factors in load time stats
   * option.profile.behaviorMinValueCheck - Controls if behavioral model factors in min value stats
@@ -454,7 +454,7 @@ _Please note updated Collibra release name methodology_
 
 * Estimate Jobs function may produce suboptimal configuration
 * Kerberos Exception when attempting to generate preview for JSON/XML files on HDF
-* Auto Profile AGENT status indicator \(GREEN/RED\) missing
+* Auto Profile AGENT status indicator (GREEN/RED) missing
 
 ## **2.9.0 = 4.5.2020**
 
@@ -500,12 +500,12 @@ _Please note updated Collibra release name methodology_
 
 * Scoring Updates
 * Item level training
-* Full Automated Rules \(AR\) list exposed
+* Full Automated Rules (AR) list exposed
 
 **Jobs**
 
 * Additional logging stages
-* Show YARN Job Id \(If YARN Job\)
+* Show YARN Job Id (If YARN Job)
 
 **UX: Explorer/Hoot/Profile**
 
@@ -539,7 +539,7 @@ _Please note updated Collibra release name methodology_
 **UX: Explorer/Hoot/Profile**
 
 * Record observation keys will be delimited with \*\*\*
-* Records will have key -&gt; value \*\*\* for each element
+* Records will have key -> value \*\*\* for each element
 * UX Enhancements to Tenant Administration
 * Remote Agent Password Manager execution
 * Validate source file to file custom column selection support
@@ -591,7 +591,7 @@ _Please note updated Collibra release name methodology_
 
 #### Setup/Flyway
 
-* Enhanced DB schema upgrade support: Upgrade from version &gt;= 2.5, install SQL script is not required
+* Enhanced DB schema upgrade support: Upgrade from version >= 2.5, install SQL script is not required
 * Multi-Tenant admin support to sync schema tables plus flyway alter scripts
 
 **General**
@@ -600,7 +600,7 @@ _Please note updated Collibra release name methodology_
   *  A separate non-jdbc hive driver package is required
   *  For assistance with this scenario please contact support.
 * Rules that apply the @t1 parameter is not supported from backrun or continuous sparkOwl api
-* If upgrading from &lt;2.5.0 → 2.6.2, the upgrade script must be used
+* If upgrading from <2.5.0 → 2.6.2, the upgrade script must be used
 
 ## **2.6.0 = 12.9.2019**
 
@@ -611,7 +611,7 @@ _Please note updated Collibra release name methodology_
 
 #### Remote File System
 
-* Information - RFS - Any role used to access S3 must contain the following permissions on the selected bucket \(List Bucket, Get Bucket Location, Get Object \(on the desired prefix\)
+* Information - RFS - Any role used to access S3 must contain the following permissions on the selected bucket (List Bucket, Get Bucket Location, Get Object (on the desired prefix)
 * Tech Preview - RFS - Analyze date column will not display graph
 * Tech Preview - RFS - Estimate job will not estimate for remote file system
 * Tech Preview - RFS - Validate source on remote file system is supported when Target dataset is a remote file system
@@ -619,7 +619,7 @@ _Please note updated Collibra release name methodology_
 * Tech Preview - RFS - Validate source preview and Outlier preview
 * Tech Preview - RFS - Lookback preview on Explorer will not display for S3 for Outliers or Pattern sections
 * Tech Preview - RFS - Owl schedule infrastructure will not work with temporary credentials
-* Tech Preview - RFS - Listing contents on S3 is limited to 1000 results per directory \(Paging will be supported in future releases\)
+* Tech Preview - RFS - Listing contents on S3 is limited to 1000 results per directory (Paging will be supported in future releases)
 * Tech Preview - XML Support - Deeply nested complex structures are not supported
 * Not Supported - RFS - Rerunning on S3 from Hoot page is not supported
 * Not Supported - RFS - Filtergram for S3 datasets is not supported
@@ -641,22 +641,22 @@ _Please note updated Collibra release name methodology_
 * Performance enhancements for Duplicate detection
 * Additional UI support in Wizard for Files
 * DB Wizard Enhancements/Fixes
-* Added Admin Flags for features \(catalog, logging\)
+* Added Admin Flags for features (catalog, logging)
 * UI Audit logging and export
 * JWT AD Auth
 * Parallel JDBC auto for Teradata
 * Hive Recognition by Connection
-* Hoot Page UI Enhancements and validation on input type \(UTF-8\)
+* Hoot Page UI Enhancements and validation on input type (UTF-8)
 
 ### Change Log / Fixes
 
 * OWL-826 Hive JDBC Kerberos User/Pass Authentication 
-* OWL-639 OwlCheck All \(like Catalog All\) 
-* OWL-741 How to read data from MySQL or another DataBase into a DataBricks notebook \(have to add to CP\) 
+* OWL-639 OwlCheck All (like Catalog All) 
+* OWL-741 How to read data from MySQL or another DataBase into a DataBricks notebook (have to add to CP) 
 * OWL-675 This epic is to track Jira's associated with OWL notebook execution 
 * OWL-921 FileQuery rewrite in Load Activity causes string case to change, breaking case sensitive queries 
 * OWL-920 Add DAO for ColMatchOpt 
-* OWL-919 Adding OwlOptBLL to be able to persist OwlOption \(with nested objects\) 
+* OWL-919 Adding OwlOptBLL to be able to persist OwlOption (with nested objects) 
 * OWL-914 remove unnecessary encryption initialization in Pattern Activity 
 * OWL-912 Build new Model methods that expose files from S3 to the View 
 * OWL-911 Build new Controller methods that expose files from S3 to the View 
@@ -674,9 +674,9 @@ _Please note updated Collibra release name methodology_
 * OWL-897 Behavioral Dimension method in Profile calls collectAsMap mutiple times 
 * OWL-896 MSSQL - wizard date picker failure 
 * OWL-895 DqItems.datashapes does not match data stored in metastore datashape table 
-* OWL-894 Rename dataset foreign key columns to dataset\_fk 
+* OWL-894 Rename dataset foreign key columns to dataset_fk 
 * OWL-893 example options is not correct in the upgrade.sh 
-* OWL-892 Correlation Matrix includes owl\_id column 
+* OWL-892 Correlation Matrix includes owl_id column 
 * OWL-891 $rdEnd Monthly Scheduler to use rdEnd 
 * OWL-890 Refactor Dupe Table to Allow Overflow 
 * OWL-889 Dupe Table Greater Than 200 start to break page 
@@ -703,7 +703,7 @@ _Please note updated Collibra release name methodology_
 * OWL-854 Add DAO for EnvOpt 
 * OWL-853 Add DAO for SchemaOpt 
 * OWL-852 Add DAO for RecordOpt 
-* OWL-848 \[Tech Debt\] How to add 'dataset' field as named parameter where table doesn't have this column 
+* OWL-848 \[Tech Debt] How to add 'dataset' field as named parameter where table doesn't have this column 
 * OWL-847 Adding DAO for RuleOpt 
 * OWL-839 Implement user defined NullValue replacement for Parquet 
 * OWL-833 Model method to enable Kerberos User/Pass Prompt Authentication Connection Type 
@@ -714,7 +714,7 @@ _Please note updated Collibra release name methodology_
 * OWL-819 Bulk delete option for removing datasets from Catalog page 
 * OWL-813 Prep Sample Data Files 
 * OWL-812 Updated security documentation on new roles and ACLs 
-* OWL-808 \[Tech Debt\] Instantiating \*\*Opt fields only if there are any changes in default values 
+* OWL-808 \[Tech Debt] Instantiating \*\*Opt fields only if there are any changes in default values 
 * OWL-802 patterns showing observations for mismatch soucre and schema 
 * OWL-798 Char conversion in db2 - recreate to fix 
 * OWL-797 Test cases for role mappings 
@@ -742,8 +742,8 @@ _Please note updated Collibra release name methodology_
 * OWL-765 Working owlcheck command line example 
 * OWL-763 Store login/logout information in PG 
 * OWL-760 Flyway - DB migration between version of software 
-* OWL-759 OPT\_LOAD, OPT\_OUTLIER, OPT\_all9tabactivities 
-* OWL-750 Behavior page \(pie char\) hitting getprofiledeltasbyrunid shows 500 
+* OWL-759 OPT_LOAD, OPT_OUTLIER, OPT_all9tabactivities 
+* OWL-750 Behavior page (pie char) hitting getprofiledeltasbyrunid shows 500 
 * OWL-733 DB Notebook execution against a DB that is not Postgres 
 * OWL-706 Outlier limits are not enforced for categorical outliers 
 * OWL-687 Show the time when an owlcheck was kicked off in the UI 
@@ -763,7 +763,7 @@ _Please note updated Collibra release name methodology_
 * OWL-884 Add Unicode to the Wizard Builder 
 * OWL-599 Discover that target file is encoded as something other than UTF-8 in Explorer 
 * OWL-973 Default initial scorecard page 
-* OWL-971 Spinner on barchart load after date selection \(ScopeTab\) 
+* OWL-971 Spinner on barchart load after date selection (ScopeTab) 
 * OWL-959 App Props for DB Logging on auth and page acceess 
 * OWL-945 "Get Started" tab of Explorer on DB connection does not present a form to edit dataset name or date 
 * OWL-927 Wizard should inject schema.tablename for default query when building Owlcheck for Hive/Impala datasource 
@@ -771,7 +771,7 @@ _Please note updated Collibra release name methodology_
 * OWL-851 Modify Connection page to include a check box called "Hive Direct Eligible" 
 * OWL-849 Add Auto Parallel JDBC support for Teradata 
 * OWL-846 Manual override of Parallel JDBC partitions on Wizard Parallel JDBC tab 
-* OWL-820 Double code mirror on Explorer \(See Attached\) 
+* OWL-820 Double code mirror on Explorer (See Attached) 
 * OWL-686 Default settings for show Views and Stats in Explorer OWL-941 Login/Logout/User Interaction DB Logging 
 * OWL-939 Fix Validate Source Inputs 
 * OWL-929 User Audit UI Page with Export 
@@ -787,8 +787,8 @@ _Please note updated Collibra release name methodology_
 * OWL-960 Catalog Search Ranked Order by RUNs 
 * OWL-958 Adding upsert method to PatternOptDao by ID field 
 * OWL-957 Adding upsert method to OutlierOptDao by ID field 
-* OWL-946 When Date is present in the where clause, Wizard adds TO\_DATE\(\) function even when database is not Oracle 
-* OWL-944 Validate Source with Oracle as source or target adds TO\_DATE\(\) to predicate of both source and target. 
+* OWL-946 When Date is present in the where clause, Wizard adds TO_DATE() function even when database is not Oracle 
+* OWL-944 Validate Source with Oracle as source or target adds TO_DATE() to predicate of both source and target. 
 * OWL-940 -srcq displays the incorrect selection 
 * OWL-936 Multiple OwlCheck Command Lines 
 * OWL-932 Adding unit tests to check each \*Opt. mapping 
@@ -810,14 +810,13 @@ _Please note updated Collibra release name methodology_
 
 ### Miscellaneous
 
-1. If running on agent, make sure the directory that stores you driver jars is mapped to the exact location stored in the web.
+1.  If running on agent, make sure the directory that stores you driver jars is mapped to the exact location stored in the web.
 
-   Web: -lib /opt/owl/drivers/oracle/
+    Web: -lib /opt/owl/drivers/oracle/
 
-   Agent: -lib /opt/owl/drivers/oracle/
+    Agent: -lib /opt/owl/drivers/oracle/
 
-   \[agent directory structure needs to map exactly to the web connection directory structure\]
-
+    \[agent directory structure needs to map exactly to the web connection directory structure]
 2. Reduced sensitivity of Load Time behavior detection
 3. Different locations for Explorer and Connection in blue navigation panel
 4. Explorer Expands to Full Screen upon entering dataset scope tab
@@ -826,9 +825,9 @@ _Please note updated Collibra release name methodology_
 
 1. opt.source.map map is not available in Notebook api
 2. Cluster restart required when adding nodes to re-initialize static app configs.
-3. if opt.outlier.on = true and not using Owl Load\(\) to load dataframes, dfHist.createOrReplace\("historical"\)
-4. If opt.pattern.on = true, pattern needs a date column to run \(-adddc -fpgdc OWL\_RUN\_ID or define -fpgdc as actual date column\)
-5. spark.catalog.clearCache\(\) should be called to clear rdd storage \(rdd build-up can occur if not routinely clearing legacy cached rdds\)
+3. if opt.outlier.on = true and not using Owl Load() to load dataframes, dfHist.createOrReplace("historical")
+4. If opt.pattern.on = true, pattern needs a date column to run (-adddc -fpgdc OWL_RUN_ID or define -fpgdc as actual date column)
+5. spark.catalog.clearCache() should be called to clear rdd storage (rdd build-up can occur if not routinely clearing legacy cached rdds)
 6. LinkId should be a unique row identifier
 
 ## **2.4.2 = 10.2.2019**
@@ -839,7 +838,7 @@ _Please note updated Collibra release name methodology_
 
 ### Change Log / Fixes
 
-* OWL-732 Owl.owlCheck\(\) fails if props.cardOff set to true 
+* OWL-732 Owl.owlCheck() fails if props.cardOff set to true 
 * OWL-743 Add test notebook on DataBricks 
 * OWL-730 Cover Dupes activity with test notebooks on DataBricks 
 * OWL-744 Cover Profile activity with test notebooks on DataBricks 
@@ -847,20 +846,22 @@ _Please note updated Collibra release name methodology_
 * OWL-701 long running fpg - review fpg buckets - not adhering to 50k limit 
 * OWL-681 Catalog hangs from spark where 1 =0 wrapper 
 * OWL-431 Additional User Activity Logging 
-* OWL-626 Create DATA\_PREVIEW role to control who can see stored customer data 
+* OWL-626 Create DATA_PREVIEW role to control who can see stored customer data 
 * OWL-735 When filequery is enabled, data is cached but then dropped from memory before Profile
 
 ### **Known Issues**
 
-* Validate Source if Oracle is Target TO\_DATE is applied and breaks  -- work around remove TO\_DATE from Source  -- impala and certain databases that do not support TO\_DATE
+* Validate Source if Oracle is Target TO_DATE is applied and breaks \
+  \-- work around remove TO_DATE from Source \
+  \-- impala and certain databases that do not support TO_DATE
 * Back run -br does not warn you that ${rd} does not exist on wizard
-* ~\| as a file delimiter does not work in the UI \(works via OwlCheck\)
+* \~| as a file delimiter does not work in the UI (works via OwlCheck)
 * Estimate Job does not always take. You can only click it while on Config Tab first
 * Patterns large data long compute cycle
 * If Run Date doesn't match to where clause date you run the risk of misaligned data, most notably in outliers and FPG
 * Job Scheduler start time is based on JVM start.  If time is set to start job at 12:00:00 it may start at 12:00:59 if the JVM started on the 59th second.
 * Agent Edit page doesn't allow for edit of script location or name.
-* Creating a tenant will need an admin to login and sync schema after creating \(should be done immediately after creation\).
+* Creating a tenant will need an admin to login and sync schema after creating (should be done immediately after creation).
 * Job Estimator will be enhanced with additional parameters to generate more accurate estimates
 * postgres username cannot contain a "-" during setup
 * password with a $ in it need to be escaped
@@ -897,7 +898,7 @@ _Please note updated Collibra release name methodology_
 * OWL-586 Cannot log into to MT enabled UI trying owlhub 
 * OWL-511 DB notebook error in UI. UI shows 1 column added no matter what dataset I run against 
 * OWL-708 Fix CMD wrap 
-* OWL-707 Validate CMD to throw error when no 'TO\_DATE' for Oracle 
+* OWL-707 Validate CMD to throw error when no 'TO_DATE' for Oracle 
 * OWL-652 dlexc dlinc added for categorical outliers 
 * OWL-532 Documentation on SQL Editor
 * OWL-263 Implement Kerb Principal and Keytab handling in Owlcheck 
@@ -905,7 +906,7 @@ _Please note updated Collibra release name methodology_
 * OWL-658 Expand Owlcheck to handle multiple Principals/Keytabs for different purposes 
 * OWL-498 Test Case - Match All Hoot Components for FPG and Validate Source to Hoot BLL and Sub Scoring Components to Scores BLL 
 * OWL-691 Handle Web UI for endpoints that return a 403 for no Data Preview Access 
-* OWL-690 Refactor Hoot Page Permissions for DATA\_PREVIEW Role 
+* OWL-690 Refactor Hoot Page Permissions for DATA_PREVIEW Role 
 * OWL-657 Kerberos Connect-As for JDBC connections 
 * OWL-693 Upload File to Rule Truthset OWL-618 HOOT job ERROR MSG display 
 * OWL-689 opts doesn't seem to have pguser/pgpassword or host parameters 
@@ -931,7 +932,7 @@ _Please note updated Collibra release name methodology_
 * OWL-610 Testing validate source from UI 
 * OWL-685 Bin Month By Month fix date parsing 
 * OWL-553 Stress Test Concurrent tenant logins 
-* OWL-552 "Web Scheduled Tasks by Schema \(cache job schedule\)" 
+* OWL-552 "Web Scheduled Tasks by Schema (cache job schedule)" 
 * OWL-632 Refactor Outlier History and Preview 
 * OWL-555 Owl setup with option to enable multi tenant with app props 
 * OWL-554 Owlcheck web custom -h flag if MT enabled 
@@ -939,33 +940,35 @@ _Please note updated Collibra release name methodology_
 * OWL-361 Create new table/DAO/Domain Object for Col Masking 
 * OWL-209 New log4j2.xml file changes the owlcheck parameters 
 * OWL-593 MT with the use of agents 
-* OWL-671 Misleading example/hint SQL statements on Rule -&gt; FreeformSQL -&gt; SQL Editor page 
+* OWL-671 Misleading example/hint SQL statements on Rule -> FreeformSQL -> SQL Editor page 
 * OWL-715 "Hive emits columns formated table.colum breaks ValSrc auto mapping" 
 * OWL-557 JWT/Cookie CURL in multi tenant mode 
 * OWL-439 New dataset runs do not show schema labels 
-* OWL-633 explorer wizard &lt;= replaces with &gt;= 
-* OWL-515 regular -dl outlier \(take outlierLimit\) cap data preview inserts 
+* OWL-633 explorer wizard <= replaces with >= 
+* OWL-515 regular -dl outlier (take outlierLimit) cap data preview inserts 
 * OWL-559 Default configuration of tenant admin on enable MT 
-* OWL-635 file explorer wizard \(local file don't add yarn parameters\) 
+* OWL-635 file explorer wizard (local file don't add yarn parameters) 
 * OWL-558 Alt login path if entering owl hub 
 * OWL-676 Inject Kerberos Principal and Keytab required to submit Owlcheck via agent configs 
 * OWL-678 Hive -jdbcprinc -jdbckeytab patch 
-* OWL-673 Shape DataPreview Batch Insert fails if preview row column value is NULL \(DB NULL constraint\) 
+* OWL-673 Shape DataPreview Batch Insert fails if preview row column value is NULL (DB NULL constraint) 
 * OWL-479 Run OwlCheck Cluster mode when Hive JDBC is the Source 
-* OWL-600 "Handle Tab and ""~\|"" delimiter for file ingest in Owlcheck" 
+* OWL-600 "Handle Tab and ""\~|"" delimiter for file ingest in Owlcheck" 
 * OWL-674 MIN/MAX stats = NULL causes NPE in Histograms
 
 ### **Known Issues**
 
-* Validate Source if Oracle is Target TO\_DATE is applied and breaks  -- work around remove TO\_DATE from Source  -- impala and certain databases that do not support TO\_DATE
+* Validate Source if Oracle is Target TO_DATE is applied and breaks \
+  \-- work around remove TO_DATE from Source \
+  \-- impala and certain databases that do not support TO_DATE
 * Back run -br does not warn you that ${rd} does not exist on wizard
-* ~\| as a file delimiter does not work in the UI \(works via OwlCheck\)
+* \~| as a file delimiter does not work in the UI (works via OwlCheck)
 * Estimate Job does not always take. You can only click it while on Config Tab first
 * Patterns large data long compute cycle
 * If Run Date doesn't match to where clause date you run the risk of misaligned data, most notably in outliers and FPG
 * Job Scheduler start time is based on JVM start.  If time is set to start job at 12:00:00 it may start at 12:00:59 if the JVM started on the 59th second.
 * Agent Edit page doesn't allow for edit of script location or name.
-* Creating a tenant will need an admin to login and sync schema after creating \(should be done immediately after creation\).
+* Creating a tenant will need an admin to login and sync schema after creating (should be done immediately after creation).
 * Job Estimator will be enhanced with additional parameters to generate more accurate estimates
 * postgres username cannot contain a "-" during setup
 * password with a $ in it need to be escaped
@@ -998,9 +1001,9 @@ _Please note updated Collibra release name methodology_
 * OWL-556 Customize Login page to select tenant before login 
 * OWL-592 Compute Stats in DQRowCheck routine to optimize Profile Activity 
 * OWL-614 Don't down score for Schema Evolution on first run 
-* OWL-591 MultiTenant \(MT\) creation of more then one tenant spawns duplicates 
+* OWL-591 MultiTenant (MT) creation of more then one tenant spawns duplicates 
 * OWL-598 Enable core to handle non-UTF-8 encoding when parsing target and source files 
-* OWL-600 "Handle Tab and ""~\|"" delimiter for file ingest in Owlcheck" 
+* OWL-600 "Handle Tab and ""\~|"" delimiter for file ingest in Owlcheck" 
 * OWL-596 setup.sh when only installing Postgres misses creation of owl-env.sh script 
 * OWL-545 setup.sh script all parameterized for unattended installations of owl 
 * OWL-130 Agent Documentation
@@ -1014,7 +1017,7 @@ _Please note updated Collibra release name methodology_
 
 * Job Scheduler start time is based on JVM start.  If time is set to start job at 12:00:00 it may start at 12:00:59 if the JVM started on the 59th second.
 * Agent Edit page doesn't allow for edit of script location or name.
-* Creating a tenant will need an admin to login and sync schema after creating \(should be done immediately after creation\).
+* Creating a tenant will need an admin to login and sync schema after creating (should be done immediately after creation).
 * Job Estimator will be enhanced with additional parameters to generate more accurate estimates
 * postgres username cannot contain a "-" during setup
 * password with a $ in it need to be escaped
@@ -1046,7 +1049,7 @@ _Please note updated Collibra release name methodology_
 * OWL-538 Performance tuning of Histogram String when low number of rows and high number of columns 
 * OWL-536 datashapes drill in with preview update
 * OWL-535 template creation with $rd parameter support. 
-* OWL-534 Break Load\(\).execute\(\) into modular methods to better control loading and caching 
+* OWL-534 Break Load().execute() into modular methods to better control loading and caching 
 * OWL-533 change setup.sh script to pull hostname and add to owl-env.sh in place of localhost 
 * OWL-527 Only look for data shapes on columns that have not been tagged as a semantic schema type 
 * OWL-523 Dupe Slider in Wizard 
@@ -1057,9 +1060,9 @@ _Please note updated Collibra release name methodology_
 * OWL-504 256Bit Encryption on internal Enc Method 
 * OWL-503 log encryption for Spark UI 
 * OWL-502 Agent add exports in owl.properties specifically for agent due to shade of postgres 
-* OWL-501 Clean Activity fix \(VizErrors.Clean\(\) test case fix\) 
+* OWL-501 Clean Activity fix (VizErrors.Clean() test case fix) 
 * OWL-500 Load Phase Build Historical breaks when dataCol predicate comes after where statement 
-* OWL-497 Alter table commands between versions of owl - \(Postgres release\) 
+* OWL-497 Alter table commands between versions of owl - (Postgres release) 
 * OWL-495 Databricks notebook execution have to manual update the application.properties file for it to write back to DB 
 * OWL-494 Hoot Page Always Show 'Processing' for Hourly and Minute Run Ids 
 * OWL-493 2019-06-18T11:08:00.000 0000 Date Parser Format Support 
@@ -1093,17 +1096,17 @@ _Please note updated Collibra release name methodology_
 * Support for XML/ORC
 * Disable/Enable Notebook & Orient features for the UI
 * Admin Delegate sub-authorities for Managing User Access to Various Functions 
-* owlcheck support of --conf \(in owl-env.sh\)
+* owlcheck support of --conf (in owl-env.sh)
 * Connection Templates for common drivers
 
 ### **Change Log/Fix**
 
 * OWL-453 Reference Record for Record Added Dropped
-* OWL-285 rule history -&gt; removeAllRules, 
+* OWL-285 rule history -> removeAllRules, 
 * OWL-486 Dupes on an integer column causes dupes to NOT be found, 
 * OWL-460 owlcheck examples on gitbook, 
-* OWL-459 documentation: add information about the scheduler \(screenshots\) and how to use it.,
-* OWL-457 backrun \(-br\) using cluster mode is failing do to what seems to be a spark context issue,
+* OWL-459 documentation: add information about the scheduler (screenshots) and how to use it.,
+* OWL-457 backrun (-br) using cluster mode is failing do to what seems to be a spark context issue,
 * OWL-446 Any time the timezone is updated it generates more behaviors, 
 * OWL-445 Setup.sh script to include all drivers at install time, 
 * OWL-426 OwlCheck cannot run in Cluster mode when Hive JDBC is the Source, 
@@ -1128,7 +1131,7 @@ _Please note updated Collibra release name methodology_
 * OWL-435 Shapes drill in preview does not scroll horizontal
 * OWL-433 Batch insert for DAO DataPreview by Executor
 * OWL-430 Change support email address
-* OWL-400 Validate Passfail limit &lt; 75 fails runs
+* OWL-400 Validate Passfail limit < 75 fails runs
 * OWL-393 Application Status Endpoint
 * OWL-25 Owlcheck on XML file format
 * OWL-24 Owlcheck on ORC file format
@@ -1137,7 +1140,7 @@ _Please note updated Collibra release name methodology_
 * OWL-349 Alert Form Validation
 * OWL-487 Add Hive Warehouse Connector to support "Hive Native" on HDP3.x
 * OWL-485 Support Owlcheck on XML files
-* OWL-473 Outlier Binned Timeseries \(HOUR/MIN\) does not calculate correct time range \(startdate time missing\), 
+* OWL-473 Outlier Binned Timeseries (HOUR/MIN) does not calculate correct time range (startdate time missing), 
 * OWL-472 Migrate Notebook API to use Load activity 
 * OWL-470 Use New DAO batch methods to better control Shapes Issues written to metastore,
 
@@ -1145,7 +1148,7 @@ _Please note updated Collibra release name methodology_
 
 * Job Estimator will be enhanced with additional parameters to generate more accurate estimates
 * postgres username cannot contain a "-" during setup
-* Agent logic has issues with shaded jar \(com.owl.org.postgresql.Driver\) that is rectified in next version OWL-501.
+* Agent logic has issues with shaded jar (com.owl.org.postgresql.Driver) that is rectified in next version OWL-501.
 
 ## 2.0 = 6.27.2019
 
@@ -1156,11 +1159,11 @@ _Please note updated Collibra release name methodology_
 * Rules Src Validate Function
 * Explorer search and custom filters
 * Profile and Hoot UI Enhancements
-* New App props [\(see all\)](https://app.gitbook.com/@owl-analytics/s/user-guide/installing#configuration-env-settings-within-owl-env-sh)
+* New App props [(see all)](https://app.gitbook.com/@owl-analytics/s/user-guide/installing#configuration-env-settings-within-owl-env-sh)
   * Key 2.0 Additions for custom configuration of the meta-store DB in owl-env.sh:
-    * SPRING\_DATASOURCE\_URL
-    * SPRING\_DATASOURCE\_USERNAME
-    * SPRING\_DATASOURCE\_PASSWORD
+    * SPRING_DATASOURCE_URL
+    * SPRING_DATASOURCE_USERNAME
+    * SPRING_DATASOURCE_PASSWORD
   * Matching configuration properties for owlcheck in owl.properties
     * spring.datasource.url
     * spring.datasource.password
@@ -1169,24 +1172,24 @@ _Please note updated Collibra release name methodology_
 ### **Change Log/Fix**
 
 * OWL-292 Create Agent Component on Wizard Page 
-* OWL-293 Refactor Owlcheck submission for agent/agent\_group as agent and agent\_group use Serial/Integer 
+* OWL-293 Refactor Owlcheck submission for agent/agent_group as agent and agent_group use Serial/Integer 
 * OWL-294 LOG Files CLUSTER Mode 
-* OWL-296 Spark options \(bounds/colname/partition\) 
+* OWL-296 Spark options (bounds/colname/partition) 
 * OWL-298 Owl-env.sh script use Lib option 
 * OWL-303 Cloudera Test Env Setup 
 * OWL-304 Rules Refactor Speed Increase 
 * OWL-305 Rules Score Update 
 * OWL-306 Cloudera Env infrastructure support 
-* OWL-307 Rules HOOT shows \(5\) when nothing breached 
+* OWL-307 Rules HOOT shows (5) when nothing breached 
 * OWL-309 Job Status . FINISHED, RUN ALL in UI table 
 * OWL-310 Rule page to use a runId for toggling 
 * OWL-311 Profile Page to Use new Datapreview and Histogram expand fullscreen 
-* OWL-312 Current date selected in hoot page heatmap chart \(top chart \#2\) not showing for long runId 
+* OWL-312 Current date selected in hoot page heatmap chart (top chart #2) not showing for long runId 
 * OWL-313 Profile Page Rework all sections 
 * OWL-314 null in filtergram check and replace with string 'null' 
 * OWL-315 cascading and repeating names in scorecard page 
-* OWL-317 Spark Tuning R&D 
-* OWL-323 Rules Current vs Last Run \(t1\) usability enhancement 
+* OWL-317 Spark Tuning R\&D 
+* OWL-323 Rules Current vs Last Run (t1) usability enhancement 
 * OWL-334 Rules Performance 
 * OWL-336 Rules UI Error Handling 
 * OWL-337 Rules CodeMirror Syntax Validation 
@@ -1194,7 +1197,7 @@ _Please note updated Collibra release name methodology_
 * OWL-340 Application User Logs 
 * OWL-341 AgentQ Table for issuing agent job requests 
 * OWL-342 Job Status Page Enhancements for all owlChecks 
-* OWL-345 Ability to change all default passwords \(such as orient/postgres\) 
+* OWL-345 Ability to change all default passwords (such as orient/postgres) 
 * OWL-350 HOOT TimeZone Edit button 
 * OWL-356 Security Configuration option for type of encryption to be used 
 * OWL-357 Configuration Setting for where to get public encryption key for encryption/decryption 
@@ -1213,16 +1216,16 @@ _Please note updated Collibra release name methodology_
 * OWL-381 HOOT timezone says TRUE 
 * OWL-382 Item Label Outlier 
 * OWL-383 Install and test v2.0 of Owl with Postgres version 9.6.5 
-* OWL-384 Encrypt data within postgres Data\_Preview table \(decrypt automatically\) 
-* OWL-385 dataset\_field table encryption using java encryption key held in owl 
-* OWL-388 encryption of the dataset\_field\_value table 
-* OWL-389 dataset\_hist table doing columns hist\_values 
-* OWL-395 ItemLabel table encryption of column item\_values 
+* OWL-384 Encrypt data within postgres Data_Preview table (decrypt automatically) 
+* OWL-385 dataset_field table encryption using java encryption key held in owl 
+* OWL-388 encryption of the dataset_field_value table 
+* OWL-389 dataset_hist table doing columns hist_values 
+* OWL-395 ItemLabel table encryption of column item_values 
 * OWL-396 Explorer RUN Tab UI 
 * OWL-397 Load Time Alert 
 * OWL-398 ReTrain Changes Score on behavior item for previous runs 
 * OWL-401 DuplicateLabels added anytime I down train an item 
-* OWL-402 observation table - encrypted \(out\_column, out\_value, out\_median\) 
+* OWL-402 observation table - encrypted (out_column, out_value, out_median) 
 * OWL-403 outlier table encryption at rest in postgres 
 * OWL-404 Once you label something as ignore it cannot be set back to - not be ignored 
 * OWL-413 Owl web app fails to restart with error below 
@@ -1233,7 +1236,7 @@ _Please note updated Collibra release name methodology_
 * OWL-419 PG Connections encryption pwd 
 * OWL-420 PG Credentials in props and Batch Insert for Executor Insert Model 
 * OWL-421 Oracle mod to filtergram needs wrapper for rownum where clause limit 
-* OWL-422 Filtergrams with Oracle not working \(SQL Exception: Unable to execute sql for this dataset\) 
+* OWL-422 Filtergrams with Oracle not working (SQL Exception: Unable to execute sql for this dataset) 
 * OWL-424 Add agent start/stop to owlmanage.sh 
 * OWL-425 val src observations inserts 
 * OWL-427 Audit Trail Timestamp conversion from epoch long to a readable date 
@@ -1246,4 +1249,3 @@ _Please note updated Collibra release name methodology_
 ### **Known Issues**
 
 * Default notification email "To" email address is not customizable
-

@@ -8,9 +8,9 @@ Owl automatically profiles datasets over time to enable drill-in for detailed in
 
 Owl creates a detailed profile of each dataset under management. This profile will later be used to both provide insight and automatically identify data quality issues.
 
-![](../../.gitbook/assets/screen-shot-2020-07-08-at-12.45.19-am.png)
+![](<../../.gitbook/assets/Screen Shot 2020-07-08 at 12.45.19 AM.png>)
 
-Owl can compute the Profile of a dataset either via Spark \(No Pushdown\) or the Data Warehouse \(Profile Pushdown\) where the data lives as the engine. When the Profile is computed using the datasource DBMS the user can choose two levels of pushdown: 
+Owl can compute the Profile of a dataset either via Spark (No Pushdown) or the Data Warehouse (Profile Pushdown) where the data lives as the engine. When the Profile is computed using the datasource DBMS the user can choose two levels of pushdown: 
 
 * Full Profile - Perform full profile calculation except for TopN 
 * Count - Only perform row and column counts
@@ -31,11 +31,11 @@ The following DBMS systems are supported for "Profile Pushdown"
 * DB2 
 {% endhint %}
 
-![](../../.gitbook/assets/screen-shot-2020-05-07-at-7.28.25-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2020-05-07 at 7.28.25 PM.png>)
 
 ## Profile Insights
 
-![](../../.gitbook/assets/screen-shot-2020-05-07-at-7.33.16-pm.png)
+![](<../../.gitbook/assets/Screen Shot 2020-05-07 at 7.33.16 PM.png>)
 
 By gathering a variety of different statistics, Owl's profile can provide a great deal of insight about the dataset.  
 
@@ -55,7 +55,7 @@ Profile includes a range of statistics
 * Value Quartiles
 {% endhint %}
 
-## Sensitive Data Detection \(Semantic\)
+## Sensitive Data Detection (Semantic)
 
 Owl can automatically identify any types of common PII columns. 
 
@@ -73,13 +73,13 @@ Owl is able to detect the following types of PII
 * EIN
 {% endhint %}
 
-![](../../.gitbook/assets/screen-shot-2020-07-08-at-12.37.10-am.png)
+![](<../../.gitbook/assets/Screen Shot 2020-07-08 at 12.37.10 AM.png>)
 
 Once detected, Owl will tag the column in the Profile as the discovered type as well as automatically apply a rule. If the user can choose to decline any discovered tag by simply clicking on it and confirming the delete action. This action can also remove the rule associated with the tag.
 
-![](../../.gitbook/assets/screen-shot-2020-07-08-at-12.39.13-am.png)
+![](<../../.gitbook/assets/Screen Shot 2020-07-08 at 12.39.13 AM.png>)
 
-## Correlation Matrix \(Relationship\)
+## Correlation Matrix (Relationship)
 
 Discover hidden relationships and measure the strength of those relationships.
 
@@ -93,9 +93,7 @@ Often the first step in a data science project is to segment the data. Owl autom
 
 ## Data Preview
 
-After profiling the data, for those users with appropriate rights, Owl provides a glimpse of the dataset. The Data preview tab also provides a some basic insights such as highlights of Data Shape issues and Outliers \(if enabled\), and Column Filtergram visualization.
+After profiling the data, for those users with appropriate rights, Owl provides a glimpse of the dataset. The Data preview tab also provides a some basic insights such as highlights of Data Shape issues and Outliers (if enabled), and Column Filtergram visualization.
 
-![](../../.gitbook/assets/screen-shot-2020-05-07-at-7.57.29-pm.png)
-
-
+![](<../../.gitbook/assets/Screen Shot 2020-05-07 at 7.57.29 PM.png>)
 
