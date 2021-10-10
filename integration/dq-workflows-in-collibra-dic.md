@@ -86,3 +86,7 @@ Let's proceed after gathering all prerequisites!
 ![](<../.gitbook/assets/image (72).png>)
 
 ## Step 4: Receive Notifications Of DQ Issues And Metrics
+
+### 4A. Set Up DQ Metric Subscription
+
+Anyone an
