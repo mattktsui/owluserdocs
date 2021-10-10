@@ -89,4 +89,8 @@ Let's proceed after gathering all prerequisites!
 
 ### 4A. Set Up DQ Metric Subscription
 
-Anyone an
+Who? Anyone can set up a DQ subscription, for yourself or for your teammates
+
+![](broken-reference)
+
+B
