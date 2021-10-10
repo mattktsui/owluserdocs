@@ -109,4 +109,6 @@ Ensure that the DQ alerts set for you are providing helpful details
 
 ![](broken-reference)
 
-For every subscription set up for a Subscriber, the Manage DQ Subscriptions modal will cycle through for your review. You can update **Threshold**, add or delete **Notification Days**, add or delete Tables or
+For every subscription set up for a Subscriber, the Manage DQ Subscriptions modal will cycle through for your review. You can update **Threshold**, add or delete **Notification Days**, add or delete **Tables** or **Columns**, rename the **Subscription title**, **Save the new settings**, or simply **Unsubscribe**. 
+
+![](broken-reference)
