@@ -4,109 +4,15 @@ description: Guide for tuning
 
 # Performance Tuning
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Storage Format</th>
-      <th style="text-align:left">
-        <p>Num</p>
-        <p>Rows</p>
-      </th>
-      <th style="text-align:left">
-        <p>Num</p>
-        <p>Columns</p>
-      </th>
-      <th style="text-align:left">Bytes Disk</th>
-      <th style="text-align:left">
-        <p>Num</p>
-        <p>Executors</p>
-      </th>
-      <th style="text-align:left">Executor Memory</th>
-      <th style="text-align:left">Total RAM</th>
-      <th style="text-align:left">Transfer Time</th>
-      <th style="text-align:left">Process Time</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">Local File</td>
-      <td style="text-align:left">1M</td>
-      <td style="text-align:left">50</td>
-      <td style="text-align:left">1G</td>
-      <td style="text-align:left">1</td>
-      <td style="text-align:left">3G</td>
-      <td style="text-align:left">3G</td>
-      <td style="text-align:left">0 mins</td>
-      <td style="text-align:left">2 mins</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">HDFS File</td>
-      <td style="text-align:left">10M</td>
-      <td style="text-align:left">50</td>
-      <td style="text-align:left">5G</td>
-      <td style="text-align:left">3</td>
-      <td style="text-align:left">8G</td>
-      <td style="text-align:left">24G</td>
-      <td style="text-align:left">0 mins</td>
-      <td style="text-align:left">4 mins</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Hive Table</td>
-      <td style="text-align:left">10M</td>
-      <td style="text-align:left">50</td>
-      <td style="text-align:left">5G</td>
-      <td style="text-align:left">3</td>
-      <td style="text-align:left">8G</td>
-      <td style="text-align:left">24G</td>
-      <td style="text-align:left">0 mins</td>
-      <td style="text-align:left">4 mins</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">JDBC Table</td>
-      <td style="text-align:left">50M</td>
-      <td style="text-align:left">50</td>
-      <td style="text-align:left">25G</td>
-      <td style="text-align:left">8</td>
-      <td style="text-align:left">10G</td>
-      <td style="text-align:left">80G</td>
-      <td style="text-align:left">3 mins</td>
-      <td style="text-align:left">8 mins</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">JDBC Table</td>
-      <td style="text-align:left">10M</td>
-      <td style="text-align:left">100</td>
-      <td style="text-align:left">10G</td>
-      <td style="text-align:left">3</td>
-      <td style="text-align:left">12G</td>
-      <td style="text-align:left">36G</td>
-      <td style="text-align:left">3 mins</td>
-      <td style="text-align:left">6 mins</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">JDBC Table</td>
-      <td style="text-align:left">250M</td>
-      <td style="text-align:left">9</td>
-      <td style="text-align:left">10G</td>
-      <td style="text-align:left">5</td>
-      <td style="text-align:left">7G</td>
-      <td style="text-align:left">35G</td>
-      <td style="text-align:left">14 mins</td>
-      <td style="text-align:left">15 mins</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">JDBC Table</td>
-      <td style="text-align:left">250M</td>
-      <td style="text-align:left">145</td>
-      <td style="text-align:left">70G</td>
-      <td style="text-align:left">17</td>
-      <td style="text-align:left">12G</td>
-      <td style="text-align:left">204G</td>
-      <td style="text-align:left">28 mins</td>
-      <td style="text-align:left">30 mins</td>
-    </tr>
-  </tbody>
-</table>
+| Storage Format | <p>Num</p><p>Rows</p> | <p>Num</p><p>Columns</p> | Bytes Disk | <p>Num</p><p>Executors</p> | Executor Memory | Total RAM | Transfer Time | Process Time |
+| -------------- | --------------------- | ------------------------ | ---------- | -------------------------- | --------------- | --------- | ------------- | ------------ |
+| Local File     | 1M                    | 50                       | 1G         | 1                          | 3G              | 3G        | 0 mins        | 2 mins       |
+| HDFS File      | 10M                   | 50                       | 5G         | 3                          | 8G              | 24G       | 0 mins        | 4 mins       |
+| Hive Table     | 10M                   | 50                       | 5G         | 3                          | 8G              | 24G       | 0 mins        | 4 mins       |
+| JDBC Table     | 50M                   | 50                       | 25G        | 8                          | 10G             | 80G       | 3 mins        | 8 mins       |
+| JDBC Table     | 10M                   | 100                      | 10G        | 3                          | 12G             | 36G       | 3 mins        | 6 mins       |
+| JDBC Table     | 250M                  | 9                        | 10G        | 5                          | 7G              | 35G       | 14 mins       | 15 mins      |
+| JDBC Table     | 250M                  | 145                      | 70G        | 17                         | 12G             | 204G      | 28 mins       | 30 mins      |
 
 Using a 10/1 ratio of RAM to Executors is often a good rule of thumb, another and more simple option is to turn on dynamic.allocation and allow the resources to be provided as needed on demand.  
 
@@ -129,22 +35,22 @@ In most cased there are a large number of columns that go unused by the business
 
 ## JDBC vs Local Data
 
-#### Co-Located data  \(local data\)
+#### Co-Located data  (local data)
 
 It is always a good performance practice to colocate data and processing.  That doesn't mean that you tech organization chooses to do this in it's architecture and design which is why Owl accounts for both.  If the data is located on the cluster that is doing the processing use options like -hive for non JDBC and native file access.  Skip tuning for JDBC as moving data to the cluster first will routinely reduce 50% of the performance bottleneck.
 
 #### JDBC
 
-**Set fetchsize**   
-1M rows   -connectionprops fetchsize=1000  
-5M rows   -connectionprops fetchsize=5000  
+**Set fetchsize **\
+1M rows   -connectionprops fetchsize=1000\
+5M rows   -connectionprops fetchsize=5000\
 10M rows   -connectionprops fetchsize=10000
 
-**Set DriverMemory**  
-add more memory to the driver node as it will be responsible for the initial landing of data.  
+**Set DriverMemory**\
+add more memory to the driver node as it will be responsible for the initial landing of data.\
 
 
-```text
+```
 --driver-memory 7g
 ```
 
@@ -154,13 +60,12 @@ add more memory to the driver node as it will be responsible for the initial lan
 
 ### Limit Features, Turn Flags Off
 
-```text
--corroff    //only losing visuals
--histoff    //only losing visuals 
--statsoff   //only losing visuals
+```
+-corroff    //only losing visuals, 5% speed gain
+-histoff    //only losing visuals, 4% speed gain 
 -hootonly   //speeds up 1% based on less logging
--cardoff    //losing a portion of behavior detection 10% gain
 -readonly   //remove owl webapp read writes, 1% gain
+-datashapeoff //removes Shape Detection 3% speed gain
 ```
 
 ### Real World Scenario
@@ -223,4 +128,3 @@ By setting the below configs this same job ran in 6 mins.
   "runTime": "00:05:23",
   }
 ```
-
