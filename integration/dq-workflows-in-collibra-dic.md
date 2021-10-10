@@ -93,6 +93,8 @@ Who? Anyone can set up a DQ subscription, for yourself or for your teammates
 
 ![](broken-reference)
 
-By default, alerts will be sent at 12pm local server time. This can be adjusted in Eclipse, workflow editor such as Eclipse.
+By default, alerts will be sent at 12pm local server time. This can be adjusted in Eclipse, the main workflow editor.
 
 ![](broken-reference)
+
+Assuming an e-mail is associated with the user within Collibra, the user 
