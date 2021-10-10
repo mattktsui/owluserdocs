@@ -93,10 +93,14 @@ Who? Anyone can set up a DQ subscription, for yourself or for your teammates
 
 ![](broken-reference)
 
+Alerts will be sent by reviewing rules and metrics associated with **Tables** or **Columns**
+
 ![](broken-reference)
 
 Assuming an e-mail is associated with the Subscriber within Collibra, the Subscriber will receive e-mail notifications by default at 12pm local server time. This, along with other settings within the provided workflow, can be adjusted in Eclipse, Collibra's recommended workflow editor.
 
 ### 4B. Review Received Alerts
+
+
 
 ![](broken-reference)
