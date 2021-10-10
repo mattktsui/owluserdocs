@@ -101,6 +101,9 @@ Assuming an e-mail is associated with the Subscriber within Collibra, the Subscr
 
 ### 4B. Review DQ Metric Alerts
 
-Please ensure that the DQ alerts are accurate
+Ensure that the DQ alerts set for you are providing helpful details
 
 ![](broken-reference)
+
+### 4C. Update Subscription Settings
+
