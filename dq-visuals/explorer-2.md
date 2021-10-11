@@ -11,7 +11,7 @@ This page can be accessed by clicked the Explorer option (the compass icon).
 ![](<../.gitbook/assets/image (87).png>)
 
 {% hint style="info" %}
-Explorer tech preview is now GA
+All UI functionality has corresponding API endpoints to define, run, and get results programmatically.
 {% endhint %}
 
 ## Select Your Data Source
