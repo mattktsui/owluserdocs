@@ -1,4 +1,8 @@
-# Duplicates
+# Duplicates (advanced)
+
+{% hint style="info" %}
+This is an advanced opt-in feature
+{% endhint %}
 
 ## General Ledger.  Accounting use-case
 

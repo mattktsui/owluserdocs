@@ -33,19 +33,19 @@ Column Level
 
 Now imagine if you could classify your datasets as concepts, then automatically have all the columns be recognized semantically(with validation rules in place) as well as have the columns labeled with sensitivity tags.  It might look something like the below.
 
-![](../.gitbook/assets/screen-shot-2021-09-15-at-1.11.06-pm.png)
+![](../../.gitbook/assets/screen-shot-2021-09-15-at-1.11.06-pm.png)
 
 ## Administering Data Concepts
 
 Setup your data concepts once and let the entire organization benefit by unifying all datasets to a common understanding in the admin Data Concepts page. 
 
-![](../.gitbook/assets/screen-shot-2021-09-15-at-1.14.42-pm.png)
+![](../../.gitbook/assets/screen-shot-2021-09-15-at-1.14.42-pm.png)
 
 ## Physical Schemas to Semantics
 
 Below you can see the benefit of organized metadata.  PDEs or `physical data elements` organized/tagged by semantics.  This allows for sub-second searches while in catalog or searching for data to figure out where all your PII data lives, or what systems have "loan data".
 
-![](../.gitbook/assets/screen-shot-2021-09-15-at-4.32.09-pm.png)
+![](../../.gitbook/assets/screen-shot-2021-09-15-at-4.32.09-pm.png)
 
 Above you can see Data Concepts in Yellow, Semantics in Gray and Sensitive labels in Orange.  Enabling you to organize all your data in classes, search and discover types no matter what system they live in or what the PDE column name is.  Transforming technical types into business metadata.
 
@@ -53,4 +53,4 @@ Above you can see Data Concepts in Yellow, Semantics in Gray and Sensitive label
 
 Now that we have all PDEs discovered and tagged and rolled up into business terms, we can roll up technical assets like database tables and files into business reports across departments and non technical concepts.
 
-![](../.gitbook/assets/screen-shot-2021-09-15-at-5.17.14-pm.png)
+![](../../.gitbook/assets/screen-shot-2021-09-15-at-5.17.14-pm.png)

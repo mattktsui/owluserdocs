@@ -1,6 +1,6 @@
 # Business Units
 
-OwlDq allows its users to run large sets of Owl Checks. Business units provide a way to categorize Owl Checks. 
+Collibra DQ allows its users to run large sets of DQ jobs. Business units provide a way to categorize and group these. 
 
 Through the admin console the user can navigate to the business units management page. This page will contain a table of your business units and a button to create new units. 
 

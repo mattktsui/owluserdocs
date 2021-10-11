@@ -27,9 +27,15 @@ Below is a list of one click rules that can be added to any dataset.  It is impo
 * Int
 * Double
 
+### More Information on Rule Library
+
+{% content-ref url="dq-rule-automation.md" %}
+[dq-rule-automation.md](dq-rule-automation.md)
+{% endcontent-ref %}
+
 ### Global Shareable Rules
 
-Owl allows a user to define a custom rule and expose it to other users to apply.
+Owl allows a user to define a custom rule and expose it for other users to apply.
 
 ### Rule Templates
 

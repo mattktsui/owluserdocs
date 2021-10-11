@@ -37,24 +37,24 @@
 ## Core Components <a href="dq-visuals" id="dq-visuals"></a>
 
 * [Overview](dq-visuals/overview.md)
+* [Explorer](dq-visuals/explorer-2.md)
 * [Profile](dq-visuals/profile/README.md)
   * [AutoProfile](dq-visuals/profile/autoprofile.md)
 * [Behaviors](dq-visuals/behaviors.md)
-* [Schema Evolution](dq-visuals/schema-evolution.md)
-* [Outliers](dq-visuals/outliers.md)
-* [Shapes](dq-visuals/shapes.md)
-* [Validate Source](dq-visuals/validate-source.md)
 * [Rules](dq-visuals/rules/README.md)
   * [Creating a Rule](dq-visuals/rules/creating-a-business-rule.md)
   * [Rule Library](dq-visuals/rules/dq-rule-automation.md)
   * [Cross-Dataset Rules](dq-visuals/rules/easier-rule-examples.md)
-* [Data Concepts and Semantics](dq-visuals/data-concepts-and-semantics.md)
-* [Duplicates](dq-visuals/duplicates.md)
-* [Explorer](dq-visuals/explorer.md)
-* [Explorer](dq-visuals/explorer-2.md)
-* [Pattern Mining](dq-visuals/pattern-mining/README.md)
+  * [Data Concepts and Semantics](dq-visuals/rules/data-concepts-and-semantics.md)
+* [Schema Evolution](dq-visuals/schema-evolution.md)
+* [Shapes](dq-visuals/shapes.md)
+* [Duplicates (advanced)](dq-visuals/duplicates.md)
+* [Outliers (advanced)](dq-visuals/outliers.md)
+* [Patterns (advanced)](dq-visuals/pattern-mining/README.md)
   * [Bloomberg Data](dq-visuals/pattern-mining/bloomberg-data.md)
-* [Missing Records](dq-visuals/missing-records.md)
+* [Records (advanced)](dq-visuals/missing-records.md)
+* [Validate Source (advanced)](dq-visuals/validate-source.md)
+* [Explorer (cont'd)](dq-visuals/explorer.md)
 * [9 Dimensions of DQ](dq-visuals/owl-dq-screen-shots.md)
 
 ## DQ JOB Examples
@@ -121,7 +121,6 @@
 * [Assignment Queue(s)](workflows/assignment-queue-s.md)
 * [Internal Assignment](workflows/internal-assignment.md)
 * [External Assignment](workflows/external-assignment.md)
-* [Business Units](workflows/business-units.md)
 * [FAQ](workflows/faq.md)
 
 ## Labeling / Training
@@ -131,6 +130,7 @@
 
 ## Catalog
 
+* [Business Units](catalog/business-units.md)
 * [Catalog](catalog/catalog.md)
 * [Catalog Bulk Actions](catalog/catalog-bulk-actions.md)
 * [Cluster Health Report](catalog/cluster-health-report.md)
@@ -138,7 +138,7 @@
 ## Reports
 
 * [Completeness Report](reports/completeness-report.md)
-* [Owl Summary Reports](reports/owl-summary-reports.md)
+* [Summary Reports](reports/owl-summary-reports.md)
 * [Dataset Report](reports/profile.md)
 * [Coverage Report](reports/coverage-report.md)
 

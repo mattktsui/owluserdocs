@@ -20,8 +20,8 @@ Owl's semantic scanning self identifies standard columns and automatically provi
 
 The rule library hosts out of the box and custom global rules. See data concepts and semantics for advanced use of global rules. 
 
-{% content-ref url="../data-concepts-and-semantics.md" %}
-[data-concepts-and-semantics.md](../data-concepts-and-semantics.md)
+{% content-ref url="data-concepts-and-semantics.md" %}
+[data-concepts-and-semantics.md](data-concepts-and-semantics.md)
 {% endcontent-ref %}
 
 ![](<../../.gitbook/assets/owl-rule-repo (3).png>)

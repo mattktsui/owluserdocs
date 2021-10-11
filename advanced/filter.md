@@ -4,6 +4,10 @@ description: Similar to a grep for limiting a dataframe to rows containing a sub
 
 # Filter & Filter Not
 
+{% hint style="info" %}
+This feature should only be used when -q (query) and -fq (filequery) are not applicable.  This feature is primarily used with raw files for limited filtering and not advanced conditional logic.
+{% endhint %}
+
 ## Example
 
 ```bash
@@ -28,6 +32,4 @@ If file.csv contained multiple strings, but you only wanted rows containing "201
 
 To exclude rows containing "2018-07-23"
 {% endhint %}
-
-
 

@@ -1,4 +1,8 @@
-# Outliers
+# Outliers (advanced)
+
+{% hint style="info" %}
+This is an advanced opt-in feature
+{% endhint %}
 
 ## Numerical Outliers
 

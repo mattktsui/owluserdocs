@@ -1,4 +1,8 @@
-# Validate Source
+# Validate Source (advanced)
+
+{% hint style="info" %}
+This is an advanced opt-in feature
+{% endhint %}
 
 ## Does your data-lake reconcile with your upstream system?
 

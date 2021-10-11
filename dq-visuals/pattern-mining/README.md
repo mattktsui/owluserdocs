@@ -1,4 +1,8 @@
-# Pattern Mining
+# Patterns (advanced)
+
+{% hint style="info" %}
+This is an advanced opt-in feature
+{% endhint %}
 
 Owl uses the latest advancements in data science and ML to find deep patterns across millions of rows and columns. In the example below it noticed that Valerie is likely the same user as she has the same customer_id and card_number but recently showed up with a different last name. Possible misspelling or data quality issue?
 

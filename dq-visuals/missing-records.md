@@ -1,4 +1,8 @@
-# Missing Records
+# Records (advanced)
+
+{% hint style="info" %}
+This is an advanced opt-in feature
+{% endhint %}
 
 ## Where'd my rows go?
 
