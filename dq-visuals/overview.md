@@ -8,11 +8,11 @@ Owl offers a full DQ suite to cover the unique challenges of each dataset.
 
 **9 Dimensions of DQ**
 
-1. Behavior - Data observability
+1. Behaviors - Data observability
 2. Rules - SQL-based rules engine
 3. Schema - When columns are added or dropped
 4. Shapes - Typos and Formatting Anomalies
-5. Dupes - Fuzzy matching, Identify similar but not exact entries
+5. Duplicates - Fuzzy matching, Identify similar but not exact entries
 6. Outliers - Anomalous records, clustering, time-series, categorical
 7. Pattern - Classification, cross-column & parent/child anomalies 
 8. Record - Deltas for a given column(s)

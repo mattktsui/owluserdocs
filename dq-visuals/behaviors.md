@@ -1,3 +1,7 @@
+---
+description: This is commonly referred to as data observability or metadata monitoring.
+---
+
 # Behaviors
 
 ## Evolution of Rule based Data Quality

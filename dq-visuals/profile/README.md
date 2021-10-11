@@ -1,4 +1,12 @@
+---
+description: Custom profiles based on a table, view, or file.
+---
+
 # Profile
+
+{% hint style="info" %}
+Users have the option to scan the entire dataset or users can apply custom filtering to select the depth (row filtering) and width (columns). 
+{% endhint %}
 
 ## Automatically Profile
 

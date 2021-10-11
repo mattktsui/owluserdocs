@@ -1,3 +1,7 @@
+---
+description: Users can apply custom monitoring with SQL checks.
+---
+
 # Rules
 
 ### Rules.  Can't live with them, can't live without them.
@@ -10,7 +14,7 @@ Quick rules are another great way to apply rules at the click of a button in the
 
 ![](<../../.gitbook/assets/image (49).png>)
 
-### Current Rule Set
+### OOTB Rule Library
 
 Below is a list of one click rules that can be added to any dataset.  It is important to note that Owl often self identifies these columns and automatically provides the proper protection.
 

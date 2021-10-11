@@ -1,5 +1,5 @@
 ---
-description: Quick tour of features and functionality
+description: A no-code screen to get started quickly.
 ---
 
 # Explorer
