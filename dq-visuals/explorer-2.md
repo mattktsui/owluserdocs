@@ -18,7 +18,7 @@ This is being released as a tech preview and supports JDBC sources
 
 ![Navigate the tree explorer and browser your pre defined connections](../.gitbook/assets/screen-shot-2020-05-07-at-7.02.13-pm.png)
 
-## Create a new OwlCheck by clicking +Create OwlCheck
+## Create a new DQ Job by clicking +Create DQ Job
 
 ![The edit icon indicates this OwlCheck can be edited and resumed.](../.gitbook/assets/screen-shot-2020-05-07-at-7.04.56-pm.png)
 
@@ -34,7 +34,7 @@ This is being released as a tech preview and supports JDBC sources
 
 #### Click Build Model -> to Save and Continue 
 
-## Transform Tab (optional)
+## Transform Tab (advanced / optional)
 
 ![The Transform (gear icons) allow you to perform common transformation functions ](../.gitbook/assets/screen-shot-2020-05-07-at-7.12.13-pm.png)
 
@@ -46,15 +46,7 @@ This is being released as a tech preview and supports JDBC sources
 
 #### Click Save to and Click Records to Continue 
 
-## Records
-
-![Click a column checkbox to apply record deltas](../.gitbook/assets/screen-shot-2020-05-07-at-7.15.19-pm.png)
-
-#### This should be applied to low cardinality columns 
-
-#### Click Save to and Click Pattern to Continue 
-
-## Pattern (optional)
+## Pattern (advanced / optional)
 
 Toggle on Pattern to enable this layer
 
@@ -64,19 +56,19 @@ Click +Add to define a group and series of columns
 
 #### Click Save to and Click Outlier to Continue 
 
-## Outlier (optional)
+## Outlier (advanced / optional)
 
 ![](../.gitbook/assets/screen-shot-2020-05-07-at-7.19.25-pm.png)
 
 #### Click Save to and Click Dupe to Continue 
 
-## Dupe (optional)
+## Dupe (advanced / optional)
 
 ![The Dupe Score slider determines the amount of fuzzy match](../.gitbook/assets/screen-shot-2020-05-07-at-7.21.11-pm.png)
 
 #### Click Save to and Click Source to Continue 
 
-## Source (optional)
+## Source (advanced / optional)
 
 Navigate to the source dataset
 
