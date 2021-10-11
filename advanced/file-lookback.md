@@ -1,5 +1,9 @@
 # File Look Back
 
+{% hint style="info" %}
+File look back (-fllb) should only be used when a SQL layer is not available.  This is considered for advanced use cases, but may not be suitable for all file types and folder structures.  Best practice is to expose a date signature somewhere in the file or directory naming convention. 
+{% endhint %}
+
 ## Example
 
 ```
