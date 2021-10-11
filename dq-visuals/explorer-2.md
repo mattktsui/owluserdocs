@@ -2,25 +2,25 @@
 description: Quick tour of features and functionality
 ---
 
-# Explorer 2
+# Explorer
 
 ## Getting Started
 
-This page can be accessed by clicked the Explorer option, within the compass icon 
+This page can be accessed by clicked the Explorer option, within the compass icon
 
-![](../.gitbook/assets/screen-shot-2020-05-07-at-6.59.08-pm.png)
+![](<../.gitbook/assets/image (87).png>)
 
 {% hint style="info" %}
-This is being released as a tech preview and supports JDBC sources
+Explorer tech preview is now GA
 {% endhint %}
 
 ## Select Your Data Source
 
-![Navigate the tree explorer and browser your pre defined connections](../.gitbook/assets/screen-shot-2020-05-07-at-7.02.13-pm.png)
+![](<../.gitbook/assets/image (89).png>)
 
 ## Create a new DQ Job by clicking +Create DQ Job
 
-![The edit icon indicates this OwlCheck can be edited and resumed.](../.gitbook/assets/screen-shot-2020-05-07-at-7.04.56-pm.png)
+![](<../.gitbook/assets/image (92).png>)
 
 #### **View Data is an interactive option to run queries and explore the data**
 
@@ -28,11 +28,13 @@ This is being released as a tech preview and supports JDBC sources
 
 ## Select The Scope and Define a Query
 
-![The orange SQL Editor icon allows you to test a query](../.gitbook/assets/screen-shot-2020-05-07-at-7.07.24-pm.png)
+![](<../.gitbook/assets/image (98).png>)
 
 #### Pick Date Column if your dataset contains an appropriate time filter 
 
 #### Click Build Model -> to Save and Continue 
+
+![](<../.gitbook/assets/image (99).png>)
 
 ## Transform Tab (advanced / optional)
 
@@ -44,7 +46,7 @@ This is being released as a tech preview and supports JDBC sources
 
 ![Various options can be applied to customize analysis](../.gitbook/assets/screen-shot-2020-05-07-at-7.13.49-pm.png)
 
-#### Click Save to and Click Records to Continue 
+#### Use the drop-downs to enable different analysis. Best practice is to leave the defaults.
 
 ## Pattern (advanced / optional)
 
@@ -82,16 +84,22 @@ Manually map the columns by dragging left to right or deselect columns
 
 ## Run
 
-Select an agent
+1. Select an agent
+2. Click Estimate Job
+3. Click Run to start the job
 
+__![](<../.gitbook/assets/image (90).png>)__
+
+__![](<../.gitbook/assets/image (100).png>)__
+
+{% hint style="info" %}
 \*Note if you do not see your agent, please verify the agent has been assigned to your connection via:
+{% endhint %}
+
+{% content-ref url="../connecting-to-dbs-in-owl-web/add-connection-to-agent.md" %}
+[add-connection-to-agent.md](../connecting-to-dbs-in-owl-web/add-connection-to-agent.md)
+{% endcontent-ref %}
 
 _Admin Console-->Remote Agent--> (Link icon on far right)-->Map connections to this agent and then reload the explorer page_
-
-Click Estimate Job
-
-Click Run to start the job
-
-![Advanced deployment optimizations are available in Parallel JDBC and Deployment Mode](../.gitbook/assets/screen-shot-2020-05-07-at-7.24.45-pm.png)
 
 ## ****

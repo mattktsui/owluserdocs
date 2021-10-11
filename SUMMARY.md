@@ -51,7 +51,7 @@
 * [Data Concepts and Semantics](dq-visuals/data-concepts-and-semantics.md)
 * [Duplicates](dq-visuals/duplicates.md)
 * [Explorer](dq-visuals/explorer.md)
-* [Explorer 2](dq-visuals/explorer-2.md)
+* [Explorer](dq-visuals/explorer-2.md)
 * [Pattern Mining](dq-visuals/pattern-mining/README.md)
   * [Bloomberg Data](dq-visuals/pattern-mining/bloomberg-data.md)
 * [Missing Records](dq-visuals/missing-records.md)

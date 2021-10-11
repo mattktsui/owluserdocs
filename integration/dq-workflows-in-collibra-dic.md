@@ -63,7 +63,7 @@ Let's proceed after gathering all prerequisites!
 
 ![Completed Data Quality Rule Modification Example](<../.gitbook/assets/image (95) (1).png>)
 
-![Example: DQ Synchronization Request with Rules Request optional checkbox](<../.gitbook/assets/image (98) (1).png>)
+![Example: DQ Synchronization Request with Rules Request optional checkbox](<../.gitbook/assets/image (98) (1) (1).png>)
 
 ## Step 3: Manage Data Quality Issues
 
@@ -91,7 +91,7 @@ Let's proceed after gathering all prerequisites!
 
 Who? Anyone can set up a DQ subscription, for yourself or for your teammates
 
-![](<../.gitbook/assets/image (99).png>)
+![](<../.gitbook/assets/image (99) (1).png>)
 
 Alerts will be sent based on reviewing rules and metrics associated with **Tables** or **Columns** that violate the specified **Threshold**
 
@@ -103,7 +103,7 @@ Assuming an e-mail is associated with the Subscriber within Collibra, the Subscr
 
 Ensure that the DQ alerts set for you are providing helpful details
 
-![](<../.gitbook/assets/image (98).png>)
+![](<../.gitbook/assets/image (98) (1).png>)
 
 ### 4C. Update Subscription Settings
 
