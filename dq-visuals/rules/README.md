@@ -31,6 +31,10 @@ select * from @DATASET_NAME where
 email_address is not null and email_address != '' 
 ```
 
+{% hint style="info" %}
+All built-in spark functions are available to use. ([https://spark.apache.org/docs/2.3.0/api/sql/](https://spark.apache.org/docs/2.3.0/api/sql/)) for simple and freeform sql rules.‌
+{% endhint %}
+
 #### Native
 
 Native rules use the SQL dialect of the underlying connection and database.  Files are not eligible for native SQL rules.  This is ideal if you want to use push-down profiling and you want to use existing SQL logic.  When coupled with push-down profiling, you can achieve a very minimal infrastructure footprint.
@@ -53,7 +57,13 @@ See the [rule library section](dq-rule-automation.md) for more details.
 Customized discovery routines can be run using the [rule library](./#rule-library) together with [data concepts and semantics.](data-concepts-and-semantics.md)
 {% endhint %}
 
-### OOTB Rule Library
+### Rule Library
+
+Owl shares all of it's out of the box rules with each user/tenant.  This makes it easy to get started quickly and let the team add common rules for specific use-cases. See Rule Library for more information.
+
+![](../../.gitbook/assets/owl-rule-repo.png)
+
+#### OOTB Rule Library
 
 Below is a list of one click rules that can be added to any dataset.  It is important to note that Owl often self identifies these columns and automatically provides the proper protection.
 
@@ -70,29 +80,23 @@ Below is a list of one click rules that can be added to any dataset.  It is impo
 * Int
 * Double
 
-Quick rules are another great way to apply rules at the click of a button in the preview tab.
+The quick rule drop-down offers another great way to apply rules at the click of a button in the preview tab.
 
 ![](<../../.gitbook/assets/image (49).png>)
 
-### More Information on Rule Library
+#### Add to The Rule Library
+
+Create a rule once using our rule template builder and re-use the rule across any column on any dataset.  Owl will substitute the dataset and column that the rule applies to at runtime. This commonly saves hundreds of redundant rules that do the same thing but on different column names.
+
+#### More Information on Rule Library
 
 {% content-ref url="dq-rule-automation.md" %}
 [dq-rule-automation.md](dq-rule-automation.md)
 {% endcontent-ref %}
 
-### Add to The Rule Library
-
-Create a rule once using our rule template builder and re-use the rule across any column on any dataset.  Owl will substitute the dataset and column that the rule applies to at runtime. This commonly saves hundreds of redundant rules that do the same thing but on different column names.
-
-### Rule Library
-
-Owl shares all of it's out of the box rules with each user/tenant.  This makes it easy to get started quickly and let the team add common rules for specific use-cases. See Rule Library for more information.
-
-![](../../.gitbook/assets/owl-rule-repo.png)
-
 ### Query Builder
 
-Query builder will help generate SQL for more complex rules. You can apply to one or two tables (Table A on left and Table B on right). For different joins, you can apply a key or matching condition as well. 
+Query builder will help generate SQL for more complex rules. You can apply to one or two tables (Table A on left and Table B on right). 
 
 ![(Optional)  Start by searching for table B on the right, to set a key for the join condition](../../.gitbook/assets/screen-shot-2019-09-04-at-12.39.17-pm.png)
 
@@ -167,9 +171,12 @@ gender['Male'].$uniquePercent between 40 and 60
 
 ### Quick Tips
 
-If joining more than one data source, make sure both sets of drivers are in the -lib. Or separately supply a -libsrc pointing to the appropriate directory/jar file location.
+If joining more than one data source, make sure both sets of drivers are in the -lib. Or separately supply a -libsrc pointing to the appropriate directory/jar file location. Version 2021.11 and forward will use the -addlib for additional directories to add to the classpath.
 
-SQL Freeform uses Spark sql syntax. 
+Native SQL uses your native DB syntax. The score is total break records / rows from owlchectotal k scaof DQ job. 
 
-Native SQL uses your native DB syntax. The score is total break records / rows from owlcheck scan. 
+ Spark SQL syntax.  
 
+This complete list of Spark SQL operlators and functions
+
+l
