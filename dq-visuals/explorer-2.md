@@ -38,13 +38,15 @@ Explorer tech preview is now GA
 
 ## Transform Tab (advanced / optional)
 
-![The Transform (gear icons) allow you to perform common transformation functions ](../.gitbook/assets/screen-shot-2020-05-07-at-7.12.13-pm.png)
+{% content-ref url="../advanced/owlcheck-transform.md" %}
+[owlcheck-transform.md](../advanced/owlcheck-transform.md)
+{% endcontent-ref %}
 
 #### Click Build Model -> to Save and Continue 
 
 ## Profile
 
-![Various options can be applied to customize analysis](../.gitbook/assets/screen-shot-2020-05-07-at-7.13.49-pm.png)
+![](<../.gitbook/assets/image (88).png>)
 
 #### Use the drop-downs to enable different analysis. Best practice is to leave the defaults.
 
@@ -54,19 +56,25 @@ Toggle on Pattern to enable this layer
 
 Click +Add to define a group and series of columns 
 
-![A key indicates a sub grouping or bucketing](../.gitbook/assets/screen-shot-2020-05-07-at-7.17.54-pm.png)
+{% content-ref url="pattern-mining/" %}
+[pattern-mining](pattern-mining/)
+{% endcontent-ref %}
 
 #### Click Save to and Click Outlier to Continue 
 
 ## Outlier (advanced / optional)
 
-![](../.gitbook/assets/screen-shot-2020-05-07-at-7.19.25-pm.png)
+{% content-ref url="outliers.md" %}
+[outliers.md](outliers.md)
+{% endcontent-ref %}
 
 #### Click Save to and Click Dupe to Continue 
 
 ## Dupe (advanced / optional)
 
-![The Dupe Score slider determines the amount of fuzzy match](../.gitbook/assets/screen-shot-2020-05-07-at-7.21.11-pm.png)
+{% content-ref url="duplicates.md" %}
+[duplicates.md](duplicates.md)
+{% endcontent-ref %}
 
 #### Click Save to and Click Source to Continue 
 
@@ -78,7 +86,9 @@ Click Preview to interlace the columns
 
 Manually map the columns by dragging left to right or deselect columns 
 
-![](../.gitbook/assets/screen-shot-2020-05-07-at-7.22.31-pm.png)
+{% content-ref url="validate-source.md" %}
+[validate-source.md](validate-source.md)
+{% endcontent-ref %}
 
 #### Click Save to and Click Save/Run to Continue 
 
