@@ -1,8 +1,8 @@
 ---
-description: Custom profiles based on a table, view, or file.
+description: Create profiles based on a table, view, or file
 ---
 
-# Profile
+# Profile (no-code)
 
 {% hint style="info" %}
 Users have the option to scan the entire dataset or users can apply custom filtering to select the depth (row filtering) and width (columns). 
@@ -14,13 +14,17 @@ See [selecting the scope section](https://dq-docs.collibra.com/dq-visuals/explor
 
 Owl automatically profiles datasets over time to enable drill-in for detailed insights an automated data quality. A profile is just the first step towards an amazing amount of auto discovery. Visualize segments of the dataset and how how the dataset is changing over time.
 
+Collibra DQ offers click or code options to run profiling. 
+
 ## Dataset Profile
 
 Owl creates a detailed profile of each dataset under management. This profile will later be used to both provide insight and automatically identify data quality issues.
 
 ![](../../.gitbook/assets/screen-shot-2020-07-08-at-12.45.19-am.png)
 
-Owl can compute the Profile of a dataset either via Spark (No Pushdown) or the Data Warehouse (Profile Pushdown) where the data lives as the engine. When the Profile is computed using the datasource DBMS the user can choose two levels of pushdown: 
+### Pushdown Profiling
+
+Collibra DQ can compute the Profile of a dataset either via Spark (default) or the Data Warehouse (Profile Pushdown) where the data lives as the engine. When the Profile is computed using the datasource DBMS the user can choose two levels of pushdown: 
 
 * Full Profile - Perform full profile calculation except for TopN 
 * Count - Only perform row and column counts

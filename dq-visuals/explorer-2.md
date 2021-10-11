@@ -1,8 +1,8 @@
 ---
-description: A no-code screen to get started quickly.
+description: A no-code option to get started quickly and onboard a dataset.
 ---
 
-# Explorer
+# Explorer (no-code)
 
 ## Getting Started
 

@@ -1,5 +1,5 @@
 ---
-description: Users can apply custom monitoring with SQL checks.
+description: Users can apply custom monitoring with SQL
 ---
 
 # Rules
@@ -10,13 +10,17 @@ Owl takes a strong stance that data should first be profiled, auto-discovered an
 
 ![](<../../.gitbook/assets/image (48).png>)
 
+{% hint style="info" %}
+Monitoring is done through user-defined SQL statements.
+{% endhint %}
+
 ### Types of Rules 
 
 Depending on the complexity, users can choose from short form or long form rules. 
 
 #### **Simple** 
 
-Just the condition (short form).  For example, using the column email_address. This runs against the dataframe and uses spark SQL syntax 
+Just the condition (short form).  For example, using the column email_address. This runs against the dataframe and uses Spark SQL syntax.  An easy way to think about Simple rules is 'everything after the where clause'. 
 
 ```
 email_address is not null and email_address != '' 
@@ -24,7 +28,7 @@ email_address is not null and email_address != ''
 
 #### Freeform
 
-This is the fully spelled out SQL. When more complex SQL is required, you can express more with Freeform including joins, CTE's and window statements.
+Where 'Simple' rules just use the condition, 'Freeform' rules use the complete SQL statement. When more complex SQL is required, you can express more with Freeform including joins, CTE's and window statements.
 
 ```
 select * from @DATASET_NAME where 
@@ -49,7 +53,7 @@ See the [stat rules section](./#stat-rules) for more details.
 
 #### Template
 
-Templated rules can be found in the 'type' dropdown as well as the 'quick rules' drop-down.  These are global rules that are ideal for code sets, compliance checks, and regex checks.
+Templated rules can be found in the 'type' dropdown as well as the 'quick rules' drop-down.  The complete list of template rules is located in the Rule Library section. These meant for global rules that are ideal for code sets, compliance checks, and regex checks. These are ideal for checks that apply to many tables.
 
 See the [rule library section](dq-rule-automation.md) for more details. 
 
@@ -96,11 +100,15 @@ Create a rule once using our rule template builder and re-use the rule across an
 
 ### Query Builder
 
-Query builder will help generate SQL for more complex rules. You can apply to one or two tables (Table A on left and Table B on right). 
+Query builder will help generate SQL for more complex rules. You can apply to one or two tables (Table A on left and Table B on right). The query builder can help build up multi-part conditions.  
 
 ![(Optional)  Start by searching for table B on the right, to set a key for the join condition](../../.gitbook/assets/screen-shot-2019-09-04-at-12.39.17-pm.png)
 
 ![Input conditions and click SQL statement to generate example syntax](../../.gitbook/assets/screen-shot-2019-09-04-at-12.46.02-pm.png)
+
+{% hint style="info" %}
+As with any SQL generator, there are limitations for more complex scenarios.
+{% endhint %}
 
 ### Native SQL
 
@@ -113,6 +121,10 @@ When creating a Native SQL rule, keep the following in mind:
 * The SQL query must be a valid expression that can be run as a subquery. To avoid pulling large amounts of data into memory, Collibra DQ will wrap your expression so it only fetches the number of rows returned. Rules should be written such that the query returns the anomalous rows.
 * The SQL query must take less than 30 minutes to run. It is recommended to use partitioned columns for efficiency.
 * When testing the SQL query from the app, it is helpful if it take less than 30 seconds to run. You can add a limit to reduce query time, or test the query in your SQL Editor.
+
+{% hint style="info" %}
+Testing native rules can be done quickly by limiting the results or using an external SQL IDE as well.
+{% endhint %}
 
 ### Stat Rules
 
@@ -177,6 +189,4 @@ Native SQL uses your native DB syntax. The score is total break records / rows f
 
  Spark SQL syntax.  
 
-This complete list of Spark SQL operlators and functions
-
-l
+This complete list of Spark SQL operators and functions

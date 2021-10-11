@@ -2,11 +2,15 @@
 description: This is commonly referred to as data observability or metadata monitoring.
 ---
 
-# Behaviors
+# Behaviors (observability)
 
 ## Evolution of Rule based Data Quality
 
 The main goal of OwlDQ is to provide enterprise data quality insight while greatly reducing the volume of Rules that need to be written manually. When a dataset is brought under management, Owl profiles the data and builds a model for each dataset. This allows Owl to learn what "normal" means within the context of each dataset. As the data changes, the definition of "normal" will change as well. Instead of requiring the user to adjust rule settings, Owl continues to adjust its model. This approach enable Owl to provide automated, enterprise grade DQ coverage that removes the need to write dozens or even hundreds of rules per dataset.
+
+{% hint style="info" %}
+Behaviors is turned on by default.  Monitoring will calibrate and detect DQ observations, based on the profiling activity. 
+{% endhint %}
 
 ## Using Behavioral Analytics (Change Detection)
 

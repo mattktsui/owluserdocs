@@ -37,15 +37,15 @@
 ## Core Components <a href="dq-visuals" id="dq-visuals"></a>
 
 * [Overview](dq-visuals/overview.md)
-* [Explorer](dq-visuals/explorer-2.md)
-* [Profile](dq-visuals/profile/README.md)
+* [Explorer (no-code)](dq-visuals/explorer-2.md)
+* [Profile (no-code)](dq-visuals/profile/README.md)
   * [AutoProfile](dq-visuals/profile/autoprofile.md)
+* [Behaviors (observability)](dq-visuals/behaviors.md)
 * [Rules](dq-visuals/rules/README.md)
   * [Creating a Rule](dq-visuals/rules/creating-a-business-rule.md)
   * [Rule Library](dq-visuals/rules/dq-rule-automation.md)
   * [Cross-Dataset Rules](dq-visuals/rules/easier-rule-examples.md)
   * [Data Concepts and Semantics](dq-visuals/rules/data-concepts-and-semantics.md)
-* [Behaviors (observability)](dq-visuals/behaviors.md)
 * [Schema](dq-visuals/schema-evolution.md)
 * [Shapes](dq-visuals/shapes.md)
 * [Duplicates (advanced)](dq-visuals/duplicates.md)
