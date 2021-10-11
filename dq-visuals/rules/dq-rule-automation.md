@@ -1,5 +1,5 @@
 ---
-description: The best DQ rule, is the one you don't have to write
+description: Ideal for rules that apply to more than one dataset. Write once, apply many.
 ---
 
 # Rule Library

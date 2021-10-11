@@ -10,9 +10,48 @@ Owl takes a strong stance that data should first be profiled, auto-discovered an
 
 ![](<../../.gitbook/assets/image (48).png>)
 
-Quick rules are another great way to apply rules at the click of a button in the preview tab.
+### Types of Rules 
 
-![](<../../.gitbook/assets/image (49).png>)
+Depending on the complexity, users can choose from short form or long form rules. 
+
+#### **Simple** 
+
+Just the condition (short form).  For example, using the column email_address. This runs against the dataframe and uses spark SQL syntax 
+
+```
+email_address is not null and email_address != '' 
+```
+
+#### Freeform
+
+This is the fully spelled out SQL. When more complex SQL is required, you can express more with Freeform including joins, CTE's and window statements.
+
+```
+select * from @DATASET_NAME where 
+email_address is not null and email_address != '' 
+```
+
+#### Native
+
+Native rules use the SQL dialect of the underlying connection and database.  Files are not eligible for native SQL rules.  This is ideal if you want to use push-down profiling and you want to use existing SQL logic.  When coupled with push-down profiling, you can achieve a very minimal infrastructure footprint.
+
+See the [native rules section](../../dq-job-examples/data-quality-pipelines/owl-rules-dq-pipeline/sql-based-rules/native-sql.md) for more details.
+
+#### Stat
+
+Write rules against meta data and profiling stats.  Complex counts and ratios can be referenced with simple syntax.  
+
+See the [stat rules section](./#stat-rules) for more details.
+
+#### Template
+
+Templated rules can be found in the 'type' dropdown as well as the 'quick rules' drop-down.  These are global rules that are ideal for code sets, compliance checks, and regex checks.
+
+See the [rule library section](dq-rule-automation.md) for more details. 
+
+{% hint style="info" %}
+Customized discovery routines can be run using the [rule library](./#rule-library) together with [data concepts and semantics.](data-concepts-and-semantics.md)
+{% endhint %}
 
 ### OOTB Rule Library
 
@@ -31,23 +70,23 @@ Below is a list of one click rules that can be added to any dataset.  It is impo
 * Int
 * Double
 
+Quick rules are another great way to apply rules at the click of a button in the preview tab.
+
+![](<../../.gitbook/assets/image (49).png>)
+
 ### More Information on Rule Library
 
 {% content-ref url="dq-rule-automation.md" %}
 [dq-rule-automation.md](dq-rule-automation.md)
 {% endcontent-ref %}
 
-### Global Shareable Rules
-
-Owl allows a user to define a custom rule and expose it for other users to apply.
-
-### Rule Templates
+### Add to The Rule Library
 
 Create a rule once using our rule template builder and re-use the rule across any column on any dataset.  Owl will substitute the dataset and column that the rule applies to at runtime. This commonly saves hundreds of redundant rules that do the same thing but on different column names.
 
-### Rule Repository
+### Rule Library
 
-Owl shares all of it's out of the box rules with each user/tenant.  This makes it easy to get started quickly and let the team add common rules for specific use-cases.
+Owl shares all of it's out of the box rules with each user/tenant.  This makes it easy to get started quickly and let the team add common rules for specific use-cases. See Rule Library for more information.
 
 ![](../../.gitbook/assets/owl-rule-repo.png)
 
