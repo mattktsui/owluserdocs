@@ -54,8 +54,7 @@
   * [Bloomberg Data](dq-visuals/pattern-mining/bloomberg-data.md)
 * [Records (advanced)](dq-visuals/missing-records.md)
 * [Validate Source (advanced)](dq-visuals/validate-source.md)
-* [Explorer (cont'd)](dq-visuals/explorer.md)
-* [9 Dimensions of DQ](dq-visuals/owl-dq-screen-shots.md)
+* [Explorer (advanced)](dq-visuals/explorer.md)
 
 ## DQ JOB Examples
 
@@ -108,6 +107,7 @@
 * [Dataset Scorecard](scorecards/dataset-scorecard.md)
 * [Group Scorecard](scorecards/group-scorecard.md)
 * [List View](scorecards/list-view.md)
+* [DQ Scoring](scorecards/owl-dq-screen-shots.md)
 
 ## Scheduler
 

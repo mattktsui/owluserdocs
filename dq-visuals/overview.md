@@ -8,14 +8,70 @@ Owl offers a full DQ suite to cover the unique challenges of each dataset.
 
 **9 Dimensions of DQ**
 
-1. Behavior - Metadata monitoring
+1. Behavior - Data observability
 2. Rules - SQL-based rules engine
-3. Outliers - Anomalous records, clustering, time-series, categorical
-4. Pattern - Classification, cross-column & parent/child anomalies 
-5. Source - Source to target reconciliation
-6. Record - Deltas for a given column(s)
-7. Schema - When columns are added or dropped
-8. Dupes - Fuzzy matching, Identify similar but not exact entries
-9. Shapes - Typos and Formatting Anomalies
+3. Schema - When columns are added or dropped
+4. Shapes - Typos and Formatting Anomalies
+5. Dupes - Fuzzy matching, Identify similar but not exact entries
+6. Outliers - Anomalous records, clustering, time-series, categorical
+7. Pattern - Classification, cross-column & parent/child anomalies 
+8. Record - Deltas for a given column(s)
+9. Source - Source to target reconciliation
 
 [Check out our videos to learn more](https://www.youtube.com/channel/UCKMcJ5NRiCDZQxBvSsVtTXw/videos)
+
+## **Behavior **
+
+**Imagine a column going null, automatic row count checks - does your data behave/look/feel the same way it has in the past.**
+
+![](../.gitbook/assets/behavior.jpg)
+
+## **Rules**
+
+**Assures only values compliant with your data rules are allowed within a data object. **
+
+![](../.gitbook/assets/rules.jpg)
+
+## **Schema **
+
+**Columns add or dropped.**
+
+![](../.gitbook/assets/schema.jpg)
+
+## **Shapes**
+
+**Infrequent formats.**
+
+![](<../.gitbook/assets/shapes (1).jpg>)
+
+## Dupes 
+
+**Fuzzy matching to identify entries that have been added multiple times with similar but not exact detail.**
+
+![](../.gitbook/assets/dupes.jpg)
+
+## **Outliers**
+
+**Data points that differ significantly from other observations.**
+
+![](../.gitbook/assets/outliers.jpg)
+
+## **Pattern**
+
+**Recognizing relevant patterns between data examples.** 
+
+![](../.gitbook/assets/pattern.jpg)
+
+## **Source**
+
+**Validating source to target accuracy.**
+
+![](../.gitbook/assets/source.jpg)
+
+## **Record**
+
+**Deltas for a given column. **
+
+![](../.gitbook/assets/record.jpg)
+
+##
