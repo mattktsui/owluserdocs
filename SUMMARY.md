@@ -53,7 +53,7 @@
 * [Patterns (advanced)](dq-visuals/pattern-mining/README.md)
   * [Bloomberg Data](dq-visuals/pattern-mining/bloomberg-data.md)
 * [Records (advanced)](dq-visuals/missing-records.md)
-* [Validate Source (advanced)](dq-visuals/validate-source.md)
+* [Source (advanced)](dq-visuals/validate-source.md)
 * [Explorer (advanced)](dq-visuals/explorer.md)
 
 ## DQ JOB Examples
