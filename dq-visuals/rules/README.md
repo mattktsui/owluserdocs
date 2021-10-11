@@ -104,7 +104,7 @@ Query builder will help generate SQL for more complex rules. You can apply to on
 
 ### Native SQL
 
-![](<../../.gitbook/assets/image (16).png>)
+![](<../../.gitbook/assets/image (89).png>)
 
 If you have rules already written in Oracle, Sybase, or DB2 syntax - Copy/Paste the rule directly into the Native SQL section. 
 

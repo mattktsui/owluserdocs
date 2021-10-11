@@ -1,20 +1,8 @@
 # Cross-Dataset Rules
 
 {% hint style="info" %}
-Cross-dataset rules require -libsrc or -addlib (as of 2021.11) 
+Cross-dataset rules require -libsrc or -addlib (prior to 2021.11) 
 {% endhint %}
-
-## Cross-Table (Guided).  Use our wizard to do ad-hoc analysis and visual setup.
-
-{% embed url="https://www.youtube.com/watch?v=uQ0tilvBUKc" %}
-
-## Join Example Example (vs. cross-table guided seen above).
-
-{% embed url="https://www.youtube.com/watch?v=BFw5ZIzwewQ" %}
-
-## Multi-part condition rules with the rule builder.  Combines profiling metrics & builder in one screen.
-
-{% embed url="https://www.youtube.com/watch?v=Zkw23umvf8o&feature=youtu.be&t=16" %}
 
 ## In-Clause (Single Column)
 
@@ -42,6 +30,18 @@ FROM
 where
     B.id is null OR (A.email != B.email)
 ```
+
+## Cross-Table (Guided).  Use our wizard to do ad-hoc analysis and visual setup.
+
+{% embed url="https://www.youtube.com/watch?v=uQ0tilvBUKc" %}
+
+## Join Example Example (vs. cross-table guided seen above).
+
+{% embed url="https://www.youtube.com/watch?v=BFw5ZIzwewQ" %}
+
+## Multi-part condition rules with the rule builder.  Combines profiling metrics & builder in one screen.
+
+{% embed url="https://www.youtube.com/watch?v=Zkw23umvf8o&feature=youtu.be&t=16" %}
 
 ## Sample Results
 

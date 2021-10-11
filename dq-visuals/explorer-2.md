@@ -16,7 +16,7 @@ Explorer tech preview is now GA
 
 ## Select Your Data Source
 
-![](<../.gitbook/assets/image (89).png>)
+![](<../.gitbook/assets/image (89) (1).png>)
 
 ## Create a new DQ Job by clicking +Create DQ Job
 
