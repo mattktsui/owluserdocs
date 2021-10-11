@@ -4,11 +4,11 @@
 
 Owl takes a strong stance that data should first be profiled, auto-discovered and learned before applying basic rules.  This methodology commonly removes thousands of rules that will never need to be written and evolve naturally overtime.  However there are still many cases to add a simple rule, complex rule or domain specific rule.  Simply search for any dataset and add a rule. You can use the optional Column Name/Category/Description to add meta-data to your rules for future reporting.
 
-![](<../../.gitbook/assets/image (40).png>)
+![](<../../.gitbook/assets/image (48).png>)
 
 Quick rules are another great way to apply rules at the click of a button in the preview tab.
 
-![](<../../.gitbook/assets/image (41).png>)
+![](<../../.gitbook/assets/image (49).png>)
 
 ### Current Rule Set
 
@@ -45,13 +45,13 @@ Owl shares all of it's out of the box rules with each user/tenant.  This makes i
 
 Query builder will help generate SQL for more complex rules. You can apply to one or two tables (Table A on left and Table B on right). For different joins, you can apply a key or matching condition as well. 
 
-![(Optional)  Start by searching for table B on the right, to set a key for the join condition](<../../.gitbook/assets/Screen Shot 2019-09-04 at 12.39.17 PM.png>)
+![(Optional)  Start by searching for table B on the right, to set a key for the join condition](../../.gitbook/assets/screen-shot-2019-09-04-at-12.39.17-pm.png)
 
-![Input conditions and click SQL statement to generate example syntax](<../../.gitbook/assets/Screen Shot 2019-09-04 at 12.46.02 PM.png>)
+![Input conditions and click SQL statement to generate example syntax](../../.gitbook/assets/screen-shot-2019-09-04-at-12.46.02-pm.png)
 
 ### Native SQL
 
-![](<../../.gitbook/assets/image (66).png>)
+![](<../../.gitbook/assets/image (16).png>)
 
 If you have rules already written in Oracle, Sybase, or DB2 syntax - Copy/Paste the rule directly into the Native SQL section. 
 
@@ -97,7 +97,7 @@ fname.$type != 'String' AND $rowCount < 800
 | **.$mixedTypePercent**         | nc.$mixedTypeRatio > 20                  | <p>alert when the percent of mixed data types </p><p>no longer falls within acceptable range. </p><p> i.e. Strings and Ints in the same field</p> |
 | **.$mixedTypeCount**           | id.$mixedTypeCount >= 1                  |                                                                                                                                                   |
 
-![](../../.gitbook/assets/colStatRules.png)
+![](../../.gitbook/assets/colstatrules.png)
 
 Known limitation.  Cannot combine stat rules or distribution rules with regex rules in the same rule.  Example car\__vin rlike '$\[asdf]\[0-9]' and car_vin.$uniqueCount_
 
@@ -114,7 +114,7 @@ gender['Male'].$uniquePercent between 40 and 60
 | **.$uniqueCount**   | credit_rating\['FAIR'].$uniqueCount > 7                |
 | **.$uniquePercent** | credit_rating\['GOOD'].uniquePercent between 40 and 60 |
 
-![](<../../.gitbook/assets/Screen Shot 2021-05-10 at 2.24.51 PM.png>)
+![](../../.gitbook/assets/screen-shot-2021-05-10-at-2.24.51-pm.png)
 
 ### Quick Tips
 

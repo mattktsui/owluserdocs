@@ -27,7 +27,7 @@ Let's proceed after gathering all prerequisites!
 
 **1B. Deploy Workflows **
 
-![](<../.gitbook/assets/image (68).png>)
+![](<../.gitbook/assets/image (20).png>)
 
 **1C. Adjust Workflow Settings (One-Time Setup)**
 
@@ -40,9 +40,9 @@ Let's proceed after gathering all prerequisites!
 | Manage DQ Subscriptions                   | <p>Other: Any signed in user can start workflow (<strong>Check</strong>)</p><p>Other: Show in global create (<strong>Check</strong>)</p>                                                                                                                                                                                           |
 | Notify of DQ Metrics                      | None                                                                                                                                                                                                                                                                                                                               |
 
-![Example: DQ Rule Request ](<../.gitbook/assets/image (69).png>)
+![Example: DQ Rule Request ](<../.gitbook/assets/image (30).png>)
 
-![Example: Manage DQ Subscriptions ](<../.gitbook/assets/image (70).png>)
+![Example: Manage DQ Subscriptions ](<../.gitbook/assets/image (17).png>)
 
 ## **Step 2: Create Data Quality Requests / Issues**
 
@@ -79,11 +79,11 @@ Let's proceed after gathering all prerequisites!
 
 ### 3B. Manage Issues From Data Helpdesk View
 
-![](<../.gitbook/assets/image (71).png>)
+![](<../.gitbook/assets/image (22).png>)
 
 ### 3C. Alternate: Manage Issues From Tasks
 
-![](<../.gitbook/assets/image (72).png>)
+![](<../.gitbook/assets/image (32).png>)
 
 ## Step 4: Receive Notifications Of DQ Issues And Metrics
 

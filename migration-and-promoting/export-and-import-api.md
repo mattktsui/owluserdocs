@@ -15,9 +15,9 @@ T
 
 Examples:
 
-![1 Table](<../.gitbook/assets/Screen Shot 2021-04-26 at 10.02.12 AM.png>)
+![1 Table](../.gitbook/assets/screen-shot-2021-04-26-at-10.02.12-am.png)
 
-![Multiple Tables](<../.gitbook/assets/Screen Shot 2021-04-26 at 10.07.54 AM.png>)
+![Multiple Tables](../.gitbook/assets/screen-shot-2021-04-26-at-10.07.54-am.png)
 
 ### Step 2
 
@@ -29,7 +29,7 @@ http://<url>/v2/run-import
 
 This would be the body of the POST.
 
-![](<../.gitbook/assets/Screen Shot 2021-04-26 at 10.13.18 AM.png>)
+![](../.gitbook/assets/screen-shot-2021-04-26-at-10.13.18-am.png)
 
 #### Notes: 
 
@@ -46,7 +46,7 @@ http://<url>/v2/get-exports?dataset=public.dataset_scan_2,public.dataset_scan_1&
 T
 ```
 
-![](<../.gitbook/assets/image (58).png>)
+![](<../.gitbook/assets/image (67).png>)
 
 ## Stored Procedure
 

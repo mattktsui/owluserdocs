@@ -14,7 +14,7 @@ Out of the box OwlDQ comes with a connection template for Databricks.  To connec
 
 Quickly explore DB assets that are cataloged in Delta Lake the same way you would any database (file tree explorer).  Use OwlDQ wizard to add data quality to any Databricks table or file.  Create a modern DQ program using machine learning in minutes.
 
-![](<../.gitbook/assets/Screen Shot 2020-01-30 at 7.22.56 PM.png>)
+![](../.gitbook/assets/screen-shot-2020-01-30-at-7.22.56-pm.png)
 
 ## 9 dimensions of Data Quality
 

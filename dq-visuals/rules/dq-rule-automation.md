@@ -1,16 +1,20 @@
-# The best DQ rule, is the one you don't have to write
+---
+description: The best DQ rule, is the one you don't have to write
+---
+
+# Rule Library
 
 Owl's semantic scanning self identifies standard columns and automatically provides the proper protection. This makes it easy to get started adding common rules for specific use-cases. 
 
 **Owl offers out of the box rules for 1-click rule creation**
 
-![](<../../.gitbook/assets/Auto Rules.png>)
+![](../../.gitbook/assets/auto-rules.png)
 
 
 
 #### The catalog offers a global view to see PII exists
 
-![ You can also view globally via the catalog to see PII exists](<../../.gitbook/assets/Screen Shot 2019-11-04 at 2.10.11 PM (1).png>)
+![ You can also view globally via the catalog to see PII exists](../../.gitbook/assets/screen-shot-2019-11-04-at-2.10.11-pm-1.png)
 
 ## Rule Library
 

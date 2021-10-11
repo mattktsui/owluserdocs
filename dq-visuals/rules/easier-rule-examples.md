@@ -1,4 +1,4 @@
-# Easier Rule Examples
+# Cross-Dataset Rules
 
 {% hint style="info" %}
 Cross-dataset rules require -libsrc or -addlib (as of 2021.11) 
@@ -45,4 +45,4 @@ where
 
 ## Sample Results
 
-![](<../../.gitbook/assets/image (46).png>)
+![](<../../.gitbook/assets/image (55).png>)

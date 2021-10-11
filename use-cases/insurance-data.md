@@ -22,7 +22,7 @@ Improve claim processing speed
 
 The revenue cycle includes all the administrative and clinical functions that contribute to the capture, management and collection of patient service revenue, according to the Healthcare Financial Management Association
 
-![](<../.gitbook/assets/RCM Process.png>)
+![](../.gitbook/assets/rcm-process.png)
 
 ```
 Preregistration - Collecting preregistration information

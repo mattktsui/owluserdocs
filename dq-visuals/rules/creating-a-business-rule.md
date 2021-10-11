@@ -1,12 +1,12 @@
-# Creating a Business Rule
+# Creating a Rule
 
 Navigate to the Rule page as shown in the screenshot below. By selecting the  icon on the top left corner under the Owl icon and select “Rule”. You will see a page as shown below. 
 
-![](<../../.gitbook/assets/Screen Shot 2019-12-24 at 9.08.27 AM.png>)
+![](../../.gitbook/assets/screen-shot-2019-12-24-at-9.08.27-am.png)
 
 You can get to rules from the hoot page by clicking on Rules under the dataset name and score in the top right of the screen.‌
 
-![](<../../.gitbook/assets/Screen Shot 2019-12-24 at 9.07.59 AM.png>)
+![](../../.gitbook/assets/screen-shot-2019-12-24-at-9.07.59-am.png)
 
 ##  Instructions                                                
 
@@ -57,19 +57,19 @@ Let’s create a simple rule using the below information. The dataset name.
 6. Percentage = 1
 7. Click “Submit”
 
-![](<../../.gitbook/assets/Screen Shot 2019-09-04 at 1.32.15 PM.png>)
+![](../../.gitbook/assets/screen-shot-2019-09-04-at-1.32.15-pm.png)
 
 Once the rule has been submitted please find the below list of rules with the new rule we just defined as shown below.
 
 #### **Seeing Your First Rule Get Triggered** <a href="hseeingyourfirstrulegettriggered" id="hseeingyourfirstrulegettriggered"></a>
 
-![](<../../.gitbook/assets/Screen Shot 2019-09-04 at 1.29.35 PM.png>)
+![](../../.gitbook/assets/screen-shot-2019-09-04-at-1.29.35-pm.png)
 
 Rule scores will appear under the Rule tab on the Hoot page. You can also see more details in the bottom panel of the Rules page under the Rules and Results tabs.
 
-![Hoot page rule results](<../../.gitbook/assets/Screen Shot 2019-09-04 at 1.29.54 PM.png>)
+![Hoot page rule results](../../.gitbook/assets/screen-shot-2019-09-04-at-1.29.54-pm.png)
 
-![Rule page rule results (bottom panel)](<../../.gitbook/assets/Screen Shot 2019-09-04 at 1.30.07 PM.png>)
+![Rule page rule results (bottom panel)](../../.gitbook/assets/screen-shot-2019-09-04-at-1.30.07-pm.png)
 
 
 

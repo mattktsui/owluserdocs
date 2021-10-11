@@ -137,7 +137,7 @@ Here we illustrate an example of how to work with files when using Owl programma
     }
 ```
 
-![](<../../.gitbook/assets/image (13).png>)
+![](<../../.gitbook/assets/image (24).png>)
 
 ### All Pipeline Activities in 1 Line
 
@@ -186,7 +186,7 @@ props.depth = 3
 props.dupeExcludeCols = "customer_id,card_number,customer_since_date,OWL_RUN_ID"
 ```
 
-![](../../.gitbook/assets/owl-spark-dq=pipeline.png)
+![](../../.gitbook/assets/owl-spark-dq-pipeline.png)
 
 ### Using Notebooks to build DQ Pipelines
 

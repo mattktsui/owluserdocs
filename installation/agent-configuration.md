@@ -35,7 +35,7 @@ When an agent picks up a DQ Job to execute, the agent will launch the job either
 | **Driver Memory (GB)**                                            | The default driver RAM allocated per DQ Job when using this Agent to run DQ Scan                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | <p><strong>Free Form (Appended)</strong><br><strong></strong></p> | Other `spark-submit` parameters to append to each DQ Job when using this Agent to run DQ Scan                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
-![Fig 2: Edit DQ Agent mode in D](<../.gitbook/assets/Screenshot 2021-06-14 at 4.25.09 PM.png>)
+![Fig 2: Edit DQ Agent mode in D](../.gitbook/assets/screenshot-2021-06-14-at-4.25.09-pm.png)
 
 ## How to Install a New DQ Agent
 
@@ -112,19 +112,19 @@ spring.agent.datasource.driver-class-name=org.postgresql.Driver
 
 * Login to DQ Web and navigate to Admin Console.
 
-![Fig 1: Home Page](../.gitbook/assets/DQ-Admin-Console-1.png)
+![Fig 1: Home Page](../.gitbook/assets/dq-admin-console-1.png)
 
 * From the Admin Console, click on the Remote Agent tile.
 
-![Fig 2: Admin Console](../.gitbook/assets/DQ-Admin-Console-2.png.png)
+![Fig 2: Admin Console](../.gitbook/assets/dq-admin-console-2.png.png)
 
 * Identify the row with the agent to edit . 
 
-![Fig 3: Agent Management Table](../.gitbook/assets/DQ-Admin-Console-3.png)
+![Fig 3: Agent Management Table](../.gitbook/assets/dq-admin-console-3.png)
 
 * Click on the pencil icon to edit.
 
-![Fig 4: DQ Agent with default values](../.gitbook/assets/DQ-Admin-Console-4.png)
+![Fig 4: DQ Agent with default values](../.gitbook/assets/dq-admin-console-4.png)
 
 ## How To Link DB Connection to Agent via UI
 
@@ -134,9 +134,9 @@ From Fig 3, select the chain link icon next to the DQ Agent to establish link to
 
 Double click the DQ Connection name to move from left to right. In Fig 5, DB Connection named "metastore" is being added to DQ Agent. Click the "Update" button to save the new list of DB Connections.
 
-![Fig 5: Adding DB Connection named "metastore" to the DQ Agent](<../.gitbook/assets/Screenshot 2021-06-14 at 5.04.25 PM.png>)
+![Fig 5: Adding DB Connection named "metastore" to the DQ Agent](../.gitbook/assets/screenshot-2021-06-14-at-5.04.25-pm.png)
 
-![Fig 6: How to add all connections to the selected DQ Agent](../.gitbook/assets/DQ-Agent-Config-Hint-1.png)
+![Fig 6: How to add all connections to the selected DQ Agent](../.gitbook/assets/dq-agent-config-hint-1.png)
 
 ## Setting up an HA Group <a href="setting-up-an-ha-group" id="setting-up-an-ha-group"></a>
 

@@ -17,7 +17,7 @@ Here we walk through a scenario to detect anomalies with network traffic dataset
 
 Dataset contains Timestamp, Source Workgroup, Source IP, Source Port, Destination Workgroup, Destination IP, Destination Port, Application, Protocol and Packet size information.
 
-![](../.gitbook/assets/sample_Infosec_Data.png)
+![](../.gitbook/assets/sample_infosec_data.png)
 
 ##  IP Address format Validation
 

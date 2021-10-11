@@ -42,7 +42,7 @@ hive.resultset.use.unique.column.names=false
 
 ### Example Connection
 
-![](<../../.gitbook/assets/image (75).png>)
+![](<../../.gitbook/assets/image (41).png>)
 
 ### Within the Owl Web UI you have to specify the following (See ScreenShot below)
 

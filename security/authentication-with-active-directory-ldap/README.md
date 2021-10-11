@@ -4,7 +4,7 @@ Go to the Admin Console page (click the Owl -> click the Gear -> click Admin Con
 
 Click on “AD Setup” and you will see the screenshot below.
 
-![](<../../.gitbook/assets/image (93).png>)
+![](<../../.gitbook/assets/image (86).png>)
 
 1. AD Enabled = flag to enabled AD (after binding please restart the owl-web application)
 2. Page Size = 100 is recommended. The number of results in a single page (NOTE: For really large AD Environments it’s best to narrow down the Base Path and/or possibly using Group Search Path to narrow down to that group explicitly).
@@ -21,7 +21,7 @@ When binding to AD you do not need a special AD username and password. The appli
 
 Now the binding is complete we can map an AD Group to an Owl ROLE.
 
-![](<../../.gitbook/assets/image (92).png>)
+![](<../../.gitbook/assets/image (85).png>)
 
 1. Click on “ROLE MAPPING”
 2. Select a ROLE in the drop down list - (Alternatively this is a time you can add a new Owl ROLE to map the AD Group(s) you want to include in that Owl ROLE).
@@ -36,4 +36,4 @@ Now that we’ve mapped an AD Group to an AD Role we can now log out and try to 
 
 When logging into the Owl Web application please make sure to append the domain to the end of the user name as depicted below.
 
-![](<../../.gitbook/assets/image (91).png>)
+![](<../../.gitbook/assets/image (84).png>)

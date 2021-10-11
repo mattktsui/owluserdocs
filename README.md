@@ -4,11 +4,11 @@ description: Autogenerate Rules, Anomaly Detection, Reconciliation
 
 # Collibra Data Quality
 
-![](<.gitbook/assets/Screen Shot 2021-07-28 at 8.02.40 AM.png>)
+![](.gitbook/assets/screen-shot-2021-07-28-at-8.02.40-am.png)
 
 Automatic Data Quality without the need for Rules. Owl provides a fast and elegant way to manage your data sets by learning through observation rather than human input. Owl applies the latest advancements in Data Science and Machine Learning to the problem of Data Quality. Surfacing data issues in minutes instead of months.
 
-![](<.gitbook/assets/Statistical Process Control for Data Quality (Animation) Aug 2021.gif>)
+![](.gitbook/assets/statistical-process-control-for-data-quality-animation-aug-2021.gif)
 
 ## Getting Started with Collibra DQ
 

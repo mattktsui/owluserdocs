@@ -53,7 +53,7 @@ A common JDBC connection is hive.resultset.use.unique.column.names=false
 
 This can be added directly to the JDBC connection url string or to the driver properties section
 
-![](<../.gitbook/assets/image (60).png>)
+![](<../.gitbook/assets/image (68).png>)
 
 
 
@@ -75,7 +75,7 @@ jdbc:hive2://<HOST>:10000/default;principal=hive/cdh-instance1.us-east1-b.c.comp
 
 Notice the driver properties for kerberos and principals.
 
-![](<../.gitbook/assets/Screen Shot 2019-05-29 at 6.44.50 PM.png>)
+![](../.gitbook/assets/screen-shot-2019-05-29-at-6.44.50-pm.png)
 
 In very rare cases where you can't get the jar files to connect properly one workaround is to add this to the owl-web startup script
 

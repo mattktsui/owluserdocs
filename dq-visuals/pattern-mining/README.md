@@ -12,7 +12,7 @@ To build a Pattern model, Owl requires historical data that contains the valid p
 
 It is possible that an apparent anti-pattern finding is actually valid data and not a data quality issue. In this case, Owl allows the user to further instruct the existing Patterns model on how to properly score and handle the findings. For example, if it turns out that "Market at 4th" is actually a valid "end_station" for a bike trip, the user can negate the identified anti-pattern by labeling it as valid. This action will instruct Owl to not raise this particular anti-pattern again. Owl will also rescore the current Owlcheck results to reflect the user's feedback. In addition, it is possible to define the weight of an anti-pattern finding on the current dataset by setting the numerical value to deduct per finding.
 
-![](<../../.gitbook/assets/Screen Shot 2020-03-19 at 5.55.49 PM.png>)
+![](../../.gitbook/assets/screen-shot-2020-03-19-at-5.55.49-pm.png)
 
 ## Fraud Detection?
 

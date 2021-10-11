@@ -12,7 +12,7 @@ It is common for banks to lend money in return for monthly payments with interes
 
 ![](../.gitbook/assets/bank-loan1.jpeg)
 
-![](<../.gitbook/assets/Screen Shot 2020-03-30 at 2.35.16 PM.png>)
+![](../.gitbook/assets/screen-shot-2020-03-30-at-2.35.16-pm.png)
 
 ## 1. Credit Score
 
@@ -91,6 +91,6 @@ We made use of Profiles, Duplicates, Outliers and Rules in this example.  The ex
 Interest Rates CSV
 {% endfile %}
 
-{% file src="../.gitbook/assets/Owl  Dataset (2).csv" %}
+{% file src="../.gitbook/assets/owl-dataset-2.csv" %}
 Loan Data CSV
 {% endfile %}

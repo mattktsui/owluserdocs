@@ -2,7 +2,7 @@
 
 When large scale and high concurrency checks are not required, DQ can be installed and operated entirely on a single host. In this mode, DQ will leverage a **Spark Standalone pseudo cluster** where the master and workers run and use resources from the same server. DQ also requires a Postgres database for storage and Java 8 for running the DQ web application. It is possible to install each of the Spark, Postgres, and Java 8 components separately and install DQ on top of existing components. However, we offer a full installation package that installs these components in off-line mode and install DQ in one server.
 
-![Fig 1: Architecture overview of Full Standalone Installation mode](<../.gitbook/assets/Screenshot 2021-06-14 at 5.44.53 PM.png>)
+![Fig 1: Architecture overview of Full Standalone Installation mode](../.gitbook/assets/screenshot-2021-06-14-at-5.44.53-pm.png)
 
 ## 0. Setup Tutorial Assumptions
 
@@ -179,11 +179,11 @@ The database named `postgres` is used by default as DQ metadata storage. Changin
 
 The installation process will start the DQ Web Application. This process will handle initializing the Postgres metadata storage schema in Postgres (under the database named `postgres`). This process must complete successfully before the DQ Agent can be started. Wait approximately 1 minute for the Postgres metadata storage schema to be populated. If you can access DQ Web using `<url-to-dq-web>:9000` using a Web browser, then this means you have successfully installed DQ.
 
-![Fig 2: Login page of DQ Web UI](../.gitbook/assets/DQ-Login.png)
+![Fig 2: Login page of DQ Web UI](../.gitbook/assets/dq-login.png)
 
 Next, verify that the Spark Cluster has started and is available to run DQ checks using `<url-to-dq-web>:`8080 Take note of the Spark Master url (starting with `spark://...`). This will be required during DQ Agent configuration.
 
-![Fig 3: Spark Master Web UI](<../.gitbook/assets/Screenshot 2021-06-14 at 4.17.30 PM.png>)
+![Fig 3: Spark Master Web UI](../.gitbook/assets/screenshot-2021-06-14-at-4.17.30-pm.png)
 
 ## Step 5. Set License Key
 
@@ -233,7 +233,7 @@ Follow the steps on [How To Configure Agent via UI](https://docs.owl-analytics.c
 
 Refer to [Agent Configuration Parameters](https://docs.owl-analytics.com/installation/agent-configuration#agent-configuration-parameters) for parameters descriptions.
 
-![Fig 4: Expected final output of edited agent based on this tutorial](<../.gitbook/assets/image (67).png>)
+![Fig 4: Expected final output of edited agent based on this tutorial](<../.gitbook/assets/image (40).png>)
 
 ## Step 7. Create DB Connection for DQ Job
 
@@ -243,15 +243,15 @@ Follow the steps on [How To Link DB Connection to Agent via UI](https://docs.owl
 
 Click the compass icon in the navigation pane to navigate to the Explorer Page. Click on the "metastore" connection, select the "public" schema, and then select the first table in the resulting list of tables. Once the preview and scope tab comes up, click "Build Model". When the Profile page comes up, click the "Run" button.
 
-![](<../.gitbook/assets/Screenshot 2021-06-14 at 5.03.40 PM.png>)
+![](../.gitbook/assets/screenshot-2021-06-14-at-5.03.40-pm.png)
 
 On the Run page, click the "Estimate Job" button, acknowledge the resource recommendations, and then click the "Run" button.
 
-![](<../.gitbook/assets/Screenshot 2021-06-14 at 5.05.31 PM.png>)
+![](../.gitbook/assets/screenshot-2021-06-14-at-5.05.31-pm.png)
 
 Click the clock icon in the navigation pane to navigate to the Jobs Page. Wait 10 seconds and then click refresh several times with a few seconds in between clicks. The test DQ check should show and progress through a sequence of activities before settling in "Finished "status.
 
-![](<../.gitbook/assets/Screenshot 2021-06-14 at 5.27.04 PM.png>)
+![](../.gitbook/assets/screenshot-2021-06-14-at-5.27.04-pm.png)
 
 ## Generally Available Build Versions
 

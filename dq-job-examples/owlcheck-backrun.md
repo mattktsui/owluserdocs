@@ -8,7 +8,7 @@ description: Replay 30 days of data
 
 Many times you will want to see how a dataset plays out over time.  This could be 5 days or 5 months.  Using this slider the tool will automatically create training sets and profiles as well as run any rules or outliers you've put in place.
 
-![](<../.gitbook/assets/Screen Shot 2021-04-27 at 8.14.28 AM.png>)
+![](../.gitbook/assets/screen-shot-2021-04-27-at-8.14.28-am.png)
 
 ### Quickly Replay 30 days of data, -br 30
 

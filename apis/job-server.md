@@ -19,7 +19,7 @@ curl -X POST --data '
 
 ### Owl Job Dashboard
 
-![](../.gitbook/assets/owl-job-status.png)
+![](<../.gitbook/assets/owl-job-status (1) (1).png>)
 
 ### Run Template
 
@@ -35,7 +35,7 @@ Each tenant of Owl can connect and push processing to 1 or more clusters.  Owl i
 
 ### Add an Agent/Cluster to a Tenant
 
-![](<../.gitbook/assets/owl-agent (1).png>)
+![](<../.gitbook/assets/owl-agent (1) (1).png>)
 
 ### Owl Scheduler - Built In
 
@@ -53,4 +53,4 @@ A quick way to schedule jobs is to use Owl's one click scheduler.
 
 ### Job Scheduler View
 
-![](<../.gitbook/assets/owl-scheduler (1).png>)
+![](../.gitbook/assets/owl-scheduler.png)

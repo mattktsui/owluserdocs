@@ -2,7 +2,7 @@
 
 ## Scorecard
 
-![OwlCheck Score Card](<../.gitbook/assets/image (2) (1).png>)
+![OwlCheck Score Card](../.gitbook/assets/image-2.png)
 
 
 
@@ -14,49 +14,49 @@ Owl will scan your data with the same frequency, that you load your data - Owl s
 
 **Imagine a column going null, automatic row count checks - does your data behave/look/feel the same way it has in the past.**
 
-![](../.gitbook/assets/Behavior.jpg)
+![](../.gitbook/assets/behavior.jpg)
 
 ## **2. Rules**
 
 **Assures only values compliant with your data rules are allowed within a data object. **
 
-![](../.gitbook/assets/Rules.jpg)
+![](../.gitbook/assets/rules.jpg)
 
 ## **3. Outliers**
 
 **Data points that differ significantly from other observations.**
 
-![](../.gitbook/assets/Outliers.jpg)
+![](../.gitbook/assets/outliers.jpg)
 
 ## **4. Pattern**
 
 **Recognizing relevant patterns between data examples.** 
 
-![](../.gitbook/assets/Pattern.jpg)
+![](../.gitbook/assets/pattern.jpg)
 
 ## **5. Source**
 
 **Validating source to target accuracy.**
 
-![](../.gitbook/assets/Source.jpg)
+![](../.gitbook/assets/source.jpg)
 
 ## **6. Record**
 
 **Deltas for a given column. **
 
-![](../.gitbook/assets/Record.jpg)
+![](../.gitbook/assets/record.jpg)
 
 ## **7. Schema **
 
 **Columns add or dropped.**
 
-![](../.gitbook/assets/Schema.jpg)
+![](../.gitbook/assets/schema.jpg)
 
 ## 8. Dupes 
 
 **Fuzzy matching to identify entries that have been added multiple times with similar but not exact detail.**
 
-![](../.gitbook/assets/Dupes.jpg)
+![](../.gitbook/assets/dupes.jpg)
 
 ## **9. Shapes**
 
@@ -66,4 +66,4 @@ Owl will scan your data with the same frequency, that you load your data - Owl s
 
 ## List View with Impact Analysis
 
-![](<../.gitbook/assets/List View with impact.jpg>)
+![](../.gitbook/assets/list-view-with-impact.jpg)

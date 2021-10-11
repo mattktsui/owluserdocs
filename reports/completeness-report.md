@@ -8,13 +8,13 @@ Fortunately the Collibra DQ Completeness Report covers all of these dimensions, 
 
 The "all" view shows completeness of the entire DQ program.  Really interesting to see that across hundreds of datasets and thousands of total columns or data assets we are 92% complete.  The more accurate measurement is likely the 97% due to the fact that it represents the volume of data as well.  
 
-![](<../.gitbook/assets/Screen Shot 2021-08-12 at 5.26.43 PM.png>)
+![](../.gitbook/assets/screen-shot-2021-08-12-at-5.26.43-pm.png)
 
 When looking at Completeness over time you may need to differentiate between the time when the DQ job ran (update time) or the date/time the data represents (run date).  For example I load stock data today but the data I loaded was for last week. 
 
 ### Column Completeness vs Dataset Completeness
 
-![](<../.gitbook/assets/Screen Shot 2021-08-12 at 4.04.53 PM.png>)
+![](../.gitbook/assets/screen-shot-2021-08-12-at-4.04.53-pm.png)
 
 Above you can see the dataset is 34.7% complete this is made up of columns ranging from 0% to 100% complete.  This view makes it easy to see which columns are the least complete and likely the biggest DQ concern.
 
@@ -26,4 +26,4 @@ Data completeness is a large concern because it means the data is missing all to
 
 In many academic settings completeness is defined for cases where you expect the data to be complete.  However in the real world you have too much data and never enough time to document what and when data should be complete.  It is vastly more efficient to use Collibra DQ `Replay` and `Profile` features to generate _statistical process control _around completeness.  This will alert you to a change in slope, or in other words a drastic change in completeness, which tends to be the exact DQ events you care the most about.
 
-![](<../.gitbook/assets/Statistical Process Control for Data Quality (Animation) Aug 2021.gif>)
+![](../.gitbook/assets/statistical-process-control-for-data-quality-animation-aug-2021.gif)

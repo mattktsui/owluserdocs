@@ -14,10 +14,10 @@ The image above depicts owl-web and owl-core deployed on different servers.  Exa
 
 ### Owl Fully Distributed <a href="howlfullydistributed" id="howlfullydistributed"></a>
 
-![](<../.gitbook/assets/image (77).png>)
+![](<../.gitbook/assets/image (70).png>)
 
 The image above depicts all components deployed on different servers.  OrientDB setup as a cluster which provides fault tolerance in case there is an issue with a single machine (NOTE: starting with version 1.1.0 of Owl, Orient is an optional service – or Owl-Web and Owlcheck do not rely on Orient being Available).  Postgres setup in a cluster in case one server fails. Multiple owl-web deployed behind a load balancer yet communicating with the same Metadata. Owl-core would be installed on the edge node and write Owlcheck results back to the metastores that Owl-web points to.  In this depiction the owlcheck driver runs on the Edge Node while the majority of the work gets pushed to the cluster (deploymode = client flag was sent), so all communication connects from the edge node to the metastores.
 
-![](<../.gitbook/assets/image (78).png>)
+![](<../.gitbook/assets/image (71).png>)
 
 In this depiction the owlcheck driver and job gets pushed to the cluster (deploymode = cluster flag was sent), so all communication connects from any node on the cluster back to the metastore.  
