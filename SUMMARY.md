@@ -45,7 +45,7 @@
   * [Rule Library](dq-visuals/rules/dq-rule-automation.md)
   * [Cross-Dataset Rules](dq-visuals/rules/easier-rule-examples.md)
   * [Data Concepts and Semantics](dq-visuals/rules/data-concepts-and-semantics.md)
-* [Behaviors](dq-visuals/behaviors.md)
+* [Behaviors (observability)](dq-visuals/behaviors.md)
 * [Schema](dq-visuals/schema-evolution.md)
 * [Shapes](dq-visuals/shapes.md)
 * [Duplicates (advanced)](dq-visuals/duplicates.md)
