@@ -6,7 +6,7 @@ description: A no-code screen to get started quickly.
 
 ## Getting Started
 
-This page can be accessed by clicked the Explorer option, within the compass icon
+This page can be accessed by clicked the Explorer option (the compass icon).
 
 ![](<../.gitbook/assets/image (87).png>)
 
