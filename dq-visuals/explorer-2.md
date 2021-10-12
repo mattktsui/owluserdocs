@@ -98,9 +98,9 @@ Manually map the columns by dragging left to right or deselect columns
 2. Click Estimate Job
 3. Click Run to start the job
 
-__![](<../.gitbook/assets/image (90).png>)__
+![](<../.gitbook/assets/image (90) (1).png>)
 
-__![](<../.gitbook/assets/image (100).png>)__
+![](<../.gitbook/assets/image (100).png>)
 
 {% hint style="info" %}
 \*Note if you do not see your agent, please verify the agent has been assigned to your connection via:

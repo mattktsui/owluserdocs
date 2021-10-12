@@ -104,7 +104,7 @@
 ## Scorecards
 
 * [Dataset Scorecard](scorecards/dataset-scorecard.md)
-* [Group Scorecard](scorecards/group-scorecard.md)
+* [Page View](scorecards/group-scorecard.md)
 * [List View](scorecards/list-view.md)
 * [DQ Scoring](scorecards/owl-dq-screen-shots.md)
 
