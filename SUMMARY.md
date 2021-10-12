@@ -96,10 +96,10 @@
 * [More...](dq-job-examples/owlcheck/README.md)
   * [OwlCheck JSON](dq-job-examples/owlcheck/owlcheck-json.md)
 
-## Integration
+## Collibra DIC Integration <a href="integration" id="integration"></a>
 
-* [Collibra Native DQ Connector](integration/dq-connector.md)
-* [DQ Workflows in Collibra DIC](integration/dq-workflows-in-collibra-dic.md)
+* [DQ Connector](integration/dq-connector.md)
+* [DQ Workflows](integration/dq-workflows-in-collibra-dic.md)
 
 ## Scorecards
 
