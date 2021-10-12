@@ -6,29 +6,29 @@ _OwlDQ is singularly focused on providing your end-users with the highest standa
 
 Whether you use a BI tool to visualize data or you are responsible for serving data to downstream subscribers, you always want to trust that your data is accurate. Showing inaccurate data in a bar chart or PDF report leads to a lack of confidence in the data provider.  Take, for example, the data pipeline below.  There are 4 main stages: Data Loading, Data Preparation, Data Verification (DQ), and Data Reporting which covers a broad category of all ways to see and deliver data.
 
-![](.gitbook/assets/screen-shot-2019-12-18-at-12.55.28-pm.png)
+![](../.gitbook/assets/screen-shot-2019-12-18-at-12.55.28-pm.png)
 
 In order to avoid getting lost in the latest marketing jargon, a fundamental description is provided under each of the 4 stages.  There are many ways to ingest and transform data; the descriptions are not meant to be exhaustive.  Imagine a scenario where data is loaded in either a batch or stream, then joined to another dataset with some column transformations, and finally made viewable in a BI tool for consumption.  But what about quality? What checks and verifications are in place to guarantee data accuracy and completeness?  After all, showing someone a housing report with incorrect estimated housing values or a stock report with the wrong stock prices won’t go over well. Figure 2 below has popular company logos overlaid in each stage to bring more context to the discussion. There are easily 30+ software companies in each of the 4 stages, Owl chose 3 popular companies in each sector at random. Owl is not ranking companies. Gartner is of course an obvious choice if you are looking for companies rankings per sector.
 
-![](.gitbook/assets/screen-shot-2019-12-18-at-1.18.39-pm.png)
+![](../.gitbook/assets/screen-shot-2019-12-18-at-1.18.39-pm.png)
 
 ## So, What’s the Problem?
 
 Detecting data issues is nuanced, manual and time consuming. The traditional solution is to write bespoke code or use a rules engine to validate specific columns in a dataset. If missing data is a concern a common remedy is to write a _nullcheck_. Another common example is a _row count check; _a piece of logic that checks if the number of rows in a dataset is greater than a specified number. Of course, DQ and business rules can get much more complicated. Scale becomes a huge issue, because it is nearly impossible to write all the rules that a business truly needs to be confident in their data. Often times, the math is _f(x)  = columns \* dbTables_. 100 columns on average and 500 tables in a single warehouse equals 50,000 rules if you only wrote 1 rule per column. The reality is you need many rules per column, and your business has more than 500 tables and files. But there are even bigger problems with this strategy.  Rules are a reactive approach to solving the problem; they are manually written and they don’t adapt (they are static).  With a rules only approach you can measure your franchise risk by the number of rules you can write.  This requires coders, domain experts and a tool to write and then manage the rules.
 
-![](.gitbook/assets/screen-shot-2019-12-18-at-1.48.13-pm.png)
+![](../.gitbook/assets/screen-shot-2019-12-18-at-1.48.13-pm.png)
 
 ### How Can Predictive DQ Help?
 
 Owl intentionally solves the problem using a machine learning first, rules second based approach.  Owl automatically puts all columns under quality control.  This includes _nullchecks, emptychecks, statistical profiles, sketches.  _Owl creates snapshots and baselines in order to benchmark past data and discover _drift_.  Owl automatically creates a ML labeling system for users to collaborate and down-train items with a click of a button.  The reason for this approach is obviously to maximize coverage while reducing the dependency of manual rule building.  The greater technical benefit is that all of Owl's generated checks and rules are adaptive.  Owl is constantly learning from new data and will make predictions in many cases for: typos, formatting issues, outliers and relationships.  This is a paradigm shift **from**, _risk being a measure of how many rules one can dream up and write_, **to** _simply click the Owl \[RUN] button_.               _ _ 
 
-![](.gitbook/assets/screen-shot-2019-12-18-at-1.50.34-pm.png)
+![](../.gitbook/assets/screen-shot-2019-12-18-at-1.50.34-pm.png)
 
 ## Why a Unified DQ Solution?
 
 Aren't their other DQ companies and solutions on the market?  Yes, absolutely.  The challenge is the vast ways IT groups consume and process data.  You need to find a product that can plug into Files the same way it can plug into DB Tables, Cloud File Systems, Data Frames and Kafka Topics etc...  You need to find a product that offers a consistent feature set and covers all 9 dimensions of DQ.  For most companies DQ is an after thought, they will add-on a single dimension of DQ such as _rules_ or _data drift.  _Owl offers a full DQ suite to cover the unique challenges of each dataset.  Complete coverage and consistency drives trust.  A single scoring and reporting framework with 9 pluggable features that can be activated in a tailorable DQ pipeline.  Owl is horizontally scaleable, it can scan data from any location with infinity scale.  Data quality needs to be abstracted from data ingestion for management to have a single normalized view of data health.  
 
-![](.gitbook/assets/owl-unified-dq.jpg)
+![](../.gitbook/assets/owl-unified-dq.jpg)
 
 ## Do One Thing Extremely Well
 
@@ -40,7 +40,7 @@ Email us:  info@collibra.com
 
 ### Does your DQ Solution Have?
 
-![](<.gitbook/assets/owldq-framework (1).png>)
+![](<../.gitbook/assets/owldq-framework (1).png>)
 
 |                           |                                                                                                                                                                    |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

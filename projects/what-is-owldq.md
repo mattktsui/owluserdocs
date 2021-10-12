@@ -117,7 +117,7 @@ Systematically Eliminate Your Biggest Data Blind Spots.
 
 Every feature, visual, and component within Owl is intended to make the analysis and implementation of data checks easier.
 
-![](.gitbook/assets/screenshot-2020-07-19-at-7.31.37-pm.png)
+![](../.gitbook/assets/screenshot-2020-07-19-at-7.31.37-pm.png)
 
 ## Why Use Owl?
 

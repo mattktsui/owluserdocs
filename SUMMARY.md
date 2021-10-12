@@ -2,9 +2,6 @@
 
 * [Collibra Data Quality](README.md)
 * [Release Notes](release-notes.md)
-* [Our Approach](why-owl.md)
-* [Our Story](our-story.md)
-* [What is OwlDQ](what-is-owldq.md)
 
 ## Installation
 
@@ -193,6 +190,9 @@
 
 ## Solutions <a href="projects" id="projects"></a>
 
+* [Our Approach](projects/why-owl.md)
+* [Our Story](projects/our-story.md)
+* [What is OwlDQ](projects/what-is-owldq.md)
 * [Best Practices](projects/best-practices.md)
 * [Prescriptive Personas](projects/prescriptive-personas.md)
 * [Builds a Better DQ Dashboard](projects/builds-a-better-dq-dashboard.md)
