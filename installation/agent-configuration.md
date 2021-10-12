@@ -2,7 +2,7 @@
 description: DQ Agent Configuration Guide
 ---
 
-# Agent Configuration
+# Agent Install
 
 ## High Level Architecture of Owl Agent setup <a href="high-level-architecture-of-owl-agent-setup" id="high-level-architecture-of-owl-agent-setup"></a>
 
@@ -137,6 +137,10 @@ Double click the DQ Connection name to move from left to right. In Fig 5, DB Con
 ![Fig 5: Adding DB Connection named "metastore" to the DQ Agent](../.gitbook/assets/screenshot-2021-06-14-at-5.04.25-pm.png)
 
 ![Fig 6: How to add all connections to the selected DQ Agent](../.gitbook/assets/dq-agent-config-hint-1.png)
+
+{% content-ref url="../connecting-to-dbs-in-owl-web/add-connection-to-agent.md" %}
+[add-connection-to-agent.md](../connecting-to-dbs-in-owl-web/add-connection-to-agent.md)
+{% endcontent-ref %}
 
 ## Setting up an HA Group <a href="setting-up-an-ha-group" id="setting-up-an-ha-group"></a>
 
