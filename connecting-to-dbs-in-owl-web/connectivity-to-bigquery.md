@@ -93,9 +93,14 @@ The above and explained there are actually a number of others steps which must b
 
 Please account for these urls from a networking and firewall perspective. 
 
-oauth2.googleapis.com\
-www.googleapis.com\
-bigquerystorage.googleapis.com\
+logging.googleapis.com 
+
+oauth2.googleapis.com 
+
+www.googleapis.com 
+
+bigquerystorage.googleapis.com 
+
 bigquery.googleapis.com
 
 ### Permissions
