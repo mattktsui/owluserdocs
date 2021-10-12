@@ -8,16 +8,15 @@
 
 ## Installation
 
-* [Basic Install](installation/basic-install.md)
-* [Full Standalone Install](installation/full-install.md)
+* [Standalone Install](installation/full-install.md)
 * [Standalone Upgrade](installation/standalone-upgrade.md)
-* [Hadoop Integration](installation/hadoop-integration.md)
-* [Agent Configuration](installation/agent-configuration.md)
+* [Agent Install](installation/agent-configuration.md)
+* [Hadoop Install](installation/hadoop-integration.md)
+* [Cloud Native Install](installation/deploying-cloud-native-owldq.md)
+* [Cloud Native Requirements](installation/preparing-for-deployment.md)
+* [Cloud Native Overview](installation/cloud-native-owldq.md)
 * [EMR / Dataproc / HDI](installation/emr.md)
-* [Preparing for Cloud Native Deployment](installation/preparing-for-deployment.md)
-* [Cloud Native OwlDQ](installation/cloud-native-owldq.md)
-* [Deploying Cloud Native OwlDQ](installation/deploying-cloud-native-owldq.md)
-* [AKS / EKS / GKE: Kubernetes Deployment](installation/aks-eks-gke-kubernetes-deployment.md)
+* [EKS / GKE / AKS](installation/aks-eks-gke-kubernetes-deployment.md)
 
 ## Connections <a href="connecting-to-dbs-in-owl-web" id="connecting-to-dbs-in-owl-web"></a>
 
