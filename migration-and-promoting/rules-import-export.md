@@ -4,13 +4,15 @@
 Best practice is to use get-exports and the owl_rule table post 2021.09 release. Please refer to the [Export and Import API](export-and-import-api.md) page for more details.
 {% endhint %}
 
+### Steps
+
 1. Find your dataset 
 2. Pass your table to the following api call - [http://\<url>/v2/get-rules-export?dataset=public.transit\_6](http://localhost:9000/v2/get-export?dataset=public.transit\_6)
 3. Run import on the desired environment, passing the output of the previous statement to the body of the request - [http://\<url>/v2/run-import](http://35.202.14.58/v2/run-import)
 
 {% embed url="https://youtu.be/puXZwKi-CmM" %}
 
-The following stored procedure needs to be created in the Owl metastore before this can run. 
+The following function needs to be declared in the postgres metastore before this can run. 
 
 ```
 CREATE OR REPLACE FUNCTION public.dump(p_schema text, p_table text, p_where text)
