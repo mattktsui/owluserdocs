@@ -46,7 +46,7 @@
 * [Shapes](dq-visuals/shapes.md)
 * [Duplicates (advanced)](dq-visuals/duplicates.md)
 * [Outliers (advanced)](dq-visuals/outliers.md)
-* [Patterns (advanced)](dq-visuals/pattern-mining.md)
+* [Patterns (advanced)](dq-visuals/pattern-mining/README.md)
 * [Records (advanced)](dq-visuals/missing-records.md)
 * [Source (advanced)](dq-visuals/validate-source.md)
 * [Explorer (advanced)](dq-visuals/explorer.md)
@@ -177,7 +177,7 @@
 ## Use Cases
 
 * [Bank Loans](use-cases/bank-loans.md)
-* [Bloomberg Data](use-cases/bloomberg-data.md)
+* [Bloomberg Data](dq-visuals/pattern-mining/bloomberg-data.md)
 * [Financial FxRate Data](use-cases/financial-fxrate-data.md)
 * [Intraday Positions](use-cases/intraday-positions.md)
 * [Creating a Data Quality Pipeline](use-cases/creating-a-data-quality-pipeline.md)

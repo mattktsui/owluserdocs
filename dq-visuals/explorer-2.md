@@ -20,7 +20,7 @@ All UI functionality has corresponding API endpoints to define, run, and get res
 
 ## Create a new DQ Job by clicking +Create DQ Job
 
-![](<../.gitbook/assets/image (92).png>)
+![](<../.gitbook/assets/image (92) (1).png>)
 
 #### **View Data is an interactive option to run queries and explore the data**
 
@@ -28,13 +28,13 @@ All UI functionality has corresponding API endpoints to define, run, and get res
 
 ## Select The Scope and Define a Query
 
-![](<../.gitbook/assets/image (98).png>)
+![](<../.gitbook/assets/image (98) (1).png>)
 
 #### Pick Date Column if your dataset contains an appropriate time filter 
 
 #### Click Build Model -> to Save and Continue 
 
-![](<../.gitbook/assets/image (99).png>)
+![](<../.gitbook/assets/image (99) (1).png>)
 
 ## Transform Tab (advanced / optional)
 
@@ -56,8 +56,8 @@ Toggle on Pattern to enable this layer
 
 Click +Add to define a group and series of columns 
 
-{% content-ref url="pattern-mining.md" %}
-[pattern-mining.md](pattern-mining.md)
+{% content-ref url="pattern-mining/" %}
+[pattern-mining](pattern-mining/)
 {% endcontent-ref %}
 
 #### Click Save to and Click Outlier to Continue 
@@ -98,9 +98,9 @@ Manually map the columns by dragging left to right or deselect columns
 2. Click Estimate Job
 3. Click Run to start the job
 
-![](<../.gitbook/assets/image (90) (1).png>)
+![](<../.gitbook/assets/image (90) (1) (1).png>)
 
-![](<../.gitbook/assets/image (100).png>)
+![](<../.gitbook/assets/image (100) (1).png>)
 
 {% hint style="info" %}
 \*Note if you do not see your agent, please verify the agent has been assigned to your connection via:

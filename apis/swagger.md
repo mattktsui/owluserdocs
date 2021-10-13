@@ -1,20 +1,32 @@
 ---
-description: Swagger is in Owl application
+description: Swagger is in the Collibra DQ application
 ---
 
 # Swagger
 
-For example swagger API please visit - [https://app.swaggerhub.com/apis/drnice/Owl-1.2.0-RC2/1.0](https://app.swaggerhub.com/apis/drnice/Owl-1.2.0-RC2/1.0)
+### Docs built into the application
 
-Owl software comes with full swagger support out of the box however integrating swagger into this documentation is a work in progress.  
+Collibra DQ comes with full swagger support out of the box.
 
 ```
-http://$owlhost/swagger-ui.html
+http://<YOUR_IP_ADDRESS>/swagger-ui.html
 ```
+
+Swagger can be found in the application under the Admin section labeled APIs.
+
+![](<../.gitbook/assets/image (93).png>)
+
+You will find a direct link to the Swagger page 
+
+![](<../.gitbook/assets/image (92).png>)
+
+Toggle between Product API and Internal API 
+
+![](<../.gitbook/assets/image (101).png>)
+
+
+
+For example swagger API please visit - [http://\<YOUR_IP>:9000/v2/api-docs?group=UI Internal](http://35.194.91.201:9003/v2/api-docs?group=UI%20Internal)  
 
 ![](../.gitbook/assets/owl-swagger.png)
-
-### Owl's has docs built into the application
-
-![](../.gitbook/assets/owl-apis.png)
 

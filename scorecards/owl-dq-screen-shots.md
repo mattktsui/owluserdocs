@@ -8,7 +8,7 @@ Owl will scan your data with the same frequency, that you load your data - Owl s
 
 #### Aggregate Score
 
-![The score starts with 100 and individual dimensions deduct from the total.](<../.gitbook/assets/image (90).png>)
+![The score starts with 100 and individual dimensions deduct from the total.](<../.gitbook/assets/image (90) (1).png>)
 
 {% hint style="info" %}
 Each dimension can be custom weighted and rules can contain custom scoring severity. In this example, the deducted score (59) from the starting score (100) equals an overall score of 41.

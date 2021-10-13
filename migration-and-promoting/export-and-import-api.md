@@ -24,6 +24,12 @@ http://<url>/v2/get-exports?dataset=public.dataset_scan_2,public.dataset_scan_1&
 
 #### Use Swagger to build this for you
 
+This is located under controller-scala (internal API)
+
+![](<../.gitbook/assets/image (99).png>)
+
+#### Click Try it out to input the details
+
 ![](<../.gitbook/assets/image (67).png>)
 
 ### Step 2 - Run-Import
@@ -37,6 +43,14 @@ Run import on the desired environment, passing the output of the previous statem
 ```javascript
 http://<url>/v2/run-import
 ```
+
+#### Use Swagger to try it out 
+
+This is under controller-catalog
+
+![](<../.gitbook/assets/image (98).png>)
+
+![](<../.gitbook/assets/image (91).png>)
 
 This would be the body of the POST.
 
