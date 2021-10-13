@@ -56,8 +56,8 @@ Toggle on Pattern to enable this layer
 
 Click +Add to define a group and series of columns 
 
-{% content-ref url="pattern-mining/" %}
-[pattern-mining](pattern-mining/)
+{% content-ref url="pattern-mining.md" %}
+[pattern-mining.md](pattern-mining.md)
 {% endcontent-ref %}
 
 #### Click Save to and Click Outlier to Continue 

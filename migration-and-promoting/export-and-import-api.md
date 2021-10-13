@@ -4,22 +4,33 @@ description: Promoting and moving datasets across environments
 
 # Export and Import API
 
-### Step 1
+{% hint style="info" %}
+The database needs the [stored procedure](export-and-import-api.md#stored-procedure) to use the Export/Import API. 
+{% endhint %}
 
-Pass your dataset and tables to the following api call. This endpoint will create a JSON payload
+### Step 1 - Get-Exports
 
-```javascript
-http://<url>/v2/get-export?dataset=public.dataset_scan_2&schema=public&tables=owl_catalog,dataset_scan,owl_check_repo
-T
+Best practice is to use the get-exports endpoint for most scenarios.  You can pass in several dataset names and several tables at once. This endpoint will create a JSON payload
+
+**The three most common tables are:**
+
+* owl_rule
+* job_schedule
+* owl\__check_repo_
+
+```
+http://<url>/v2/get-exports?dataset=public.dataset_scan_2,public.dataset_scan_1&schema=public&tables=owl_rule,job_schedule,owl_check_repo
 ```
 
-Examples:
+#### Use Swagger to build this for you
 
-![1 Table](../.gitbook/assets/screen-shot-2021-04-26-at-10.02.12-am.png)
+![](<../.gitbook/assets/image (67).png>)
 
-![Multiple Tables](../.gitbook/assets/screen-shot-2021-04-26-at-10.07.54-am.png)
+### Step 2 - Run-Import
 
-### Step 2
+{% hint style="info" %}
+You will want to perform a find/replace on the import payload to check for differences in connections, agents, spark and environment configurations.  Migrating to different environments typically requires the payload to be modified.
+{% endhint %}
 
 Run import on the desired environment, passing the output of the previous statement to the body of the request 
 
@@ -31,26 +42,9 @@ This would be the body of the POST.
 
 ![](../.gitbook/assets/screen-shot-2021-04-26-at-10.13.18-am.png)
 
-#### Notes: 
-
-You will want to modify the import payload to check for differences in connections, agents, spark and environment configurations.
-
-
-
-## Get-Exports
-
-Passing in several tables and datasets at once
-
-```javascript
-http://<url>/v2/get-exports?dataset=public.dataset_scan_2,public.dataset_scan_1&schema=public&tables=owl_catalog,dataset_scan,owl_check_repo
-T
-```
-
-![](<../.gitbook/assets/image (67).png>)
-
 ## Stored Procedure
 
-The following stored procedure needs to be created in the Owl metastore before this can run. 
+The following function needs to be created in the Owl metastore before this can run. 
 
 ```
 CREATE OR REPLACE FUNCTION public.dump(p_schema text, p_table text, p_where text)
