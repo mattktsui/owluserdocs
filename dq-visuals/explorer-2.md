@@ -8,7 +8,7 @@ description: A no-code option to get started quickly and onboard a dataset.
 
 This page can be accessed by clicked the Explorer option (the compass icon).
 
-![](<../.gitbook/assets/image (87).png>)
+![](<../.gitbook/assets/image (87) (1).png>)
 
 {% hint style="info" %}
 All UI functionality has corresponding API endpoints to define, run, and get results programmatically.
