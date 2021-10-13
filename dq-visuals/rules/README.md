@@ -181,6 +181,16 @@ gender['Male'].$uniquePercent between 40 and 60
 
 ![](../../.gitbook/assets/screen-shot-2021-05-10-at-2.24.51-pm.png)
 
+### Break Records
+
+Storing break records is only available for Freefrom and Simple rule types.  Rule library rules will use one of these types as well.  
+
+Additional storage can be enabled using the -linkid flag.  This allows users to store complete sets of break records. Please refer to the [linkid section](../../dq-job-examples/owlcheck-linkid.md) for more details
+
+{% hint style="info" %}
+Stat, Native, and Data Type (global) rules are not eligible for storing exception records.  
+{% endhint %}
+
 ### Quick Tips
 
 If joining more than one data source, make sure both sets of drivers are in the -lib. Or separately supply a -libsrc pointing to the appropriate directory/jar file location. Version 2021.11 and forward will use the -addlib for additional directories to add to the classpath.

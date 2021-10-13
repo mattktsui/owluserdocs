@@ -19,6 +19,10 @@ opt.linkId = Array("transaction_id", "trans_time")
 -linkid transaction_id,trans_time 
 ```
 
+{% hint style="info" %}
+For rules to use linkid the columns need to be present in the select statement (either select \* or select specific column names).  All Simple rules are eligible for linkid and Freeform rules need to contain the columns in the projection part of the SQL statement. 
+{% endhint %}
+
 ### Activity Usage
 
 | **Activity** | **Supported** | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                 |
