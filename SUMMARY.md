@@ -162,7 +162,7 @@
 ## API-MIGRATION <a href="migration-and-promoting" id="migration-and-promoting"></a>
 
 * [Export and Import API](migration-and-promoting/export-and-import-api.md)
-* [Rules Import Export](migration-and-promoting/rules-import-export.md)
+* [Export and Import Example](migration-and-promoting/rules-import-export.md)
 
 ## Advanced
 

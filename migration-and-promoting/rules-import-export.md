@@ -1,4 +1,8 @@
-# Rules Import Export
+# Export and Import Example
+
+{% hint style="info" %}
+Best practice is to use get-exports and the owl_rule table post 2021.09 release. Please refer to the [Export and Import API](export-and-import-api.md) page for more details.
+{% endhint %}
 
 1. Find your dataset 
 2. Pass your table to the following api call - [http://\<url>/v2/get-rules-export?dataset=public.transit\_6](http://localhost:9000/v2/get-export?dataset=public.transit\_6)
