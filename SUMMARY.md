@@ -106,8 +106,8 @@
 
 ## Scheduler
 
+* [Schedule a Job](scheduler/schedule-owlchecks.md)
 * [Schedule Management](scheduler/schedule-management.md)
-* [Schedule Owlchecks](scheduler/schedule-owlchecks.md)
 * [View/Re-Run Scheduled Jobs](scheduler/view-re-run-scheduled-jobs.md)
 
 ## WORKFLOWS / ALERTS <a href="workflows" id="workflows"></a>
