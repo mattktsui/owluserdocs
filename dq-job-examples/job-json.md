@@ -7,8 +7,8 @@ Run against a file using -json.  Additionally, options are available for -flatte
 ```
 -ds json_file_example \
 -f s3a://bucket_name/file.json \
--h sandbox-owl.us-east4-c.c.owl-node.internal:5432/postgres \
--master spark://sandbox-owl.us-east4-c.c.owl-node.internal:7077 \
+-h instance.us-east4-c.c.owl-node.internal:5432/postgres \
+-master spark://instance.us-east4-c.c.owl-node.internal:7077 \
 -json \
 -flatten \
 -multiline 
@@ -23,8 +23,8 @@ Automatic flattening will infer schema and explode all structs, arrays, and map 
 ```bash
 -ds public.json_sample \ 
 -lib "/opt/owl/drivers/postgres/" \
--h sandbox-owl.us-east4-c.c.owl-node.internal:5432/postgres \
--master spark://sandbox-owl.us-east4-c.c.owl-node.internal:7077 
+-h instance.us-east4-c.c.owl-node.internal:5432/postgres \
+-master spark://instance.us-east4-c.c.owl-node.internal:7077 
 -q "select * from public.jason" 
 -rd "2021-01-17" 
 -driver "org.postgresql.Driver" 
@@ -84,7 +84,7 @@ opt.runId = runId
 opt.datasetSafeOff = true
 
 // Owlcheck
-OwlUtils.resetDataSource("sandbox-owl.us-east4-c.c.owl-node.internal","5432/postgres","danielrice","owl123", spark)
+OwlUtils.resetDataSource("instance.us-east4-c.c.owl-node.internal","5432/postgres","user","pass", spark)
 val owl = OwlUtils.OwlContext(flatJson, opt)
 owl.register(opt)
 owl.owlCheck
