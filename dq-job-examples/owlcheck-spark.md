@@ -43,7 +43,7 @@ spark-submit \
 --driver-memory 3g --num-executors 2 --executor-memory 1g \
 --master spark://Kirks-MBP.home:7077 \
 --class com.owl.core.cli.OwlCheck /opt/owl/bin/owl-core-trunk-jar-with-dependencies.jar \
--u user -p pass -c jdbc:postgresql://owlpostgres.chzid9w0hpyi.us-east-1.rds.amazonaws.com/postgres \
+-u user -p pass -c jdbc:postgresql://xyz.chzid9w0hpyi.us-east-1.rds.amazonaws.com/postgres \
 -ds accounts -rd 2019-05-05 -dssafeoff -q "select * from accounts"
 -driver org.postgresql.Driver -lib /opt/owl/drivers/postgres42/  
 ```
@@ -59,7 +59,7 @@ spark-submit \
 --files /opt/owl/config/log4j-TRACE.properties \
 --driver-memory 2g --num-executors 2 --executor-memory 1g --master spark://Kirks-MBP.home:7077  \
 --class com.owl.core.cli.OwlCheck /opt/owl/bin/owl-core-trunk-jar-with-dependencies.jar \
--u us -p pass -c jdbc:postgresql://owlpostgres.chzid9w0hpyi.us-east-1.rds.amazonaws.com/postgres \
+-u us -p pass -c jdbc:postgresql://xyz.chzid9w0hpyi.us-east-1.rds.amazonaws.com/postgres \
 -ds aumdt -rd 2019-05-05 -dssafeoff -q "select * from aum_dt" \
 -driver org.postgresql.Driver -lib /opt/owl/drivers/postgres42/  \
 -connectionprops fetchsize=6000 -master spark://Kirks-MBP.home:7077 \
