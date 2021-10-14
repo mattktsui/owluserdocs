@@ -217,6 +217,7 @@
 
 * [ERD](architecture/erd.md)
 * [Architecture Diagram](architecture/diagram.md)
+* [Hardware Sizing](architecture/hardware-sizing.md)
 * [System Requirements](architecture/system-requirements.md)
 
 ## Admin
