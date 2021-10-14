@@ -2,6 +2,10 @@
 
 S3 permissions need to be setup appropriately.
 
+{% hint style="info" %}
+S3 connections should be defined using the root bucket.  Nested S3 connections are not supported.
+{% endhint %}
+
 #### Example Minimum Permissions
 
 ```
