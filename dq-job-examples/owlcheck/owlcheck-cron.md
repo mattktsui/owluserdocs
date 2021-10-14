@@ -49,14 +49,14 @@ You can also use -template to use Owl as a service hook and remove the need to p
 
 A quick option is to use Owl's built in scheduler. Owl will automatically substitute the runtime variables like ${rd} into the job.  This also gives you control to edit the OwlCheck. 
 
-![](../.gitbook/assets/owl-schedule.png)
+![](../../.gitbook/assets/owl-schedule.png)
 
 The schedule is based on the OwlCheck Template.  This way the runtime variables are replaced in each run.  Notice the ${rd} below. 
 
-![](../.gitbook/assets/owl-template-schedule.png)
+![](../../.gitbook/assets/owl-template-schedule.png)
 
 ### All Scheduled Jobs in 1 Place
 
 Under the jobs dashboard you can see an overview schedule with all running jobs and their status.
 
-![](<../.gitbook/assets/owl-scheduler (1).png>)
+![](<../../.gitbook/assets/owl-scheduler (1).png>)

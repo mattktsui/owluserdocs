@@ -8,7 +8,7 @@ description: A no-code option to get started quickly and onboard a dataset.
 
 This page can be accessed by clicked the Explorer option (the compass icon).
 
-![](<../.gitbook/assets/image (87) (1).png>)
+![](<../../.gitbook/assets/image (87) (1).png>)
 
 {% hint style="info" %}
 All UI functionality has corresponding API endpoints to define, run, and get results programmatically.
@@ -16,11 +16,11 @@ All UI functionality has corresponding API endpoints to define, run, and get res
 
 ## Select Your Data Source
 
-![](<../.gitbook/assets/image (89) (1).png>)
+![](<../../.gitbook/assets/image (89) (1).png>)
 
 ## Create a new DQ Job by clicking +Create DQ Job
 
-![](<../.gitbook/assets/image (92) (1).png>)
+![](<../../.gitbook/assets/image (92) (1).png>)
 
 #### **View Data is an interactive option to run queries and explore the data**
 
@@ -28,25 +28,25 @@ All UI functionality has corresponding API endpoints to define, run, and get res
 
 ## Select The Scope and Define a Query
 
-![](<../.gitbook/assets/image (98) (1).png>)
+![](<../../.gitbook/assets/image (98) (1).png>)
 
 #### Pick Date Column if your dataset contains an appropriate time filter 
 
 #### Click Build Model -> to Save and Continue 
 
-![](<../.gitbook/assets/image (99) (1).png>)
+![](<../../.gitbook/assets/image (99) (1).png>)
 
 ## Transform Tab (advanced / optional)
 
-{% content-ref url="../advanced/owlcheck-transform.md" %}
-[owlcheck-transform.md](../advanced/owlcheck-transform.md)
+{% content-ref url="../../advanced/owlcheck-transform.md" %}
+[owlcheck-transform.md](../../advanced/owlcheck-transform.md)
 {% endcontent-ref %}
 
 #### Click Build Model -> to Save and Continue 
 
 ## Profile
 
-![](<../.gitbook/assets/image (88).png>)
+![](<../../.gitbook/assets/image (88).png>)
 
 #### Use the drop-downs to enable different analysis. Best practice is to leave the defaults.
 
@@ -56,24 +56,24 @@ Toggle on Pattern to enable this layer
 
 Click +Add to define a group and series of columns 
 
-{% content-ref url="pattern-mining/" %}
-[pattern-mining](pattern-mining/)
+{% content-ref url="../more.../pattern-mining.md" %}
+[pattern-mining.md](../more.../pattern-mining.md)
 {% endcontent-ref %}
 
 #### Click Save to and Click Outlier to Continue 
 
 ## Outlier (advanced / optional)
 
-{% content-ref url="outliers.md" %}
-[outliers.md](outliers.md)
+{% content-ref url="../more.../outliers.md" %}
+[outliers.md](../more.../outliers.md)
 {% endcontent-ref %}
 
 #### Click Save to and Click Dupe to Continue 
 
 ## Dupe (advanced / optional)
 
-{% content-ref url="duplicates.md" %}
-[duplicates.md](duplicates.md)
+{% content-ref url="../more.../duplicates.md" %}
+[duplicates.md](../more.../duplicates.md)
 {% endcontent-ref %}
 
 #### Click Save to and Click Source to Continue 
@@ -86,8 +86,8 @@ Click Preview to interlace the columns
 
 Manually map the columns by dragging left to right or deselect columns 
 
-{% content-ref url="validate-source.md" %}
-[validate-source.md](validate-source.md)
+{% content-ref url="../more.../validate-source.md" %}
+[validate-source.md](../more.../validate-source.md)
 {% endcontent-ref %}
 
 #### Click Save to and Click Save/Run to Continue 
@@ -98,16 +98,16 @@ Manually map the columns by dragging left to right or deselect columns
 2. Click Estimate Job
 3. Click Run to start the job
 
-![](<../.gitbook/assets/image (90) (1) (1).png>)
+![](<../../.gitbook/assets/image (90) (1) (1).png>)
 
-![](<../.gitbook/assets/image (100) (1).png>)
+![](<../../.gitbook/assets/image (100) (1).png>)
 
 {% hint style="info" %}
 \*Note if you do not see your agent, please verify the agent has been assigned to your connection via:
 {% endhint %}
 
-{% content-ref url="../connecting-to-dbs-in-owl-web/add-connection-to-agent.md" %}
-[add-connection-to-agent.md](../connecting-to-dbs-in-owl-web/add-connection-to-agent.md)
+{% content-ref url="../../connecting-to-dbs-in-owl-web/add-connection-to-agent.md" %}
+[add-connection-to-agent.md](../../connecting-to-dbs-in-owl-web/add-connection-to-agent.md)
 {% endcontent-ref %}
 
 _Admin Console-->Remote Agent--> (Link icon on far right)-->Map connections to this agent and then reload the explorer page_

@@ -4,7 +4,7 @@
 
 Commonly data driven organizations have a need to ensure that 2 tables or a table and file match.  This match might be a daily reconciliation or any snapshot in time.  Owl calls this Source to Target or Left to Right matching.  It covers row differences, schema differences and all cell values. 
 
-![](../.gitbook/assets/screen-shot-2019-10-01-at-8.40.33-pm.png)
+![](../../.gitbook/assets/screen-shot-2019-10-01-at-8.40.33-pm.png)
 
 ### Impala/Hive -> DB2
 

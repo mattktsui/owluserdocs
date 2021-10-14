@@ -8,13 +8,13 @@ The difference between a business-critical lake and a swamp is _quality_. The ac
 
 Out of the box OwlDQ comes with a connection template for Databricks.  To connect, simply paste in your _username_, _password_ and _connection URL_.   
 
-![](../.gitbook/assets/owl-databricks.png)
+![](../../.gitbook/assets/owl-databricks.png)
 
 ### Explore Databricks Assets and Add DQ Checks
 
 Quickly explore DB assets that are cataloged in Delta Lake the same way you would any database (file tree explorer).  Use OwlDQ wizard to add data quality to any Databricks table or file.  Create a modern DQ program using machine learning in minutes.
 
-![](../.gitbook/assets/screen-shot-2020-01-30-at-7.22.56-pm.png)
+![](../../.gitbook/assets/screen-shot-2020-01-30-at-7.22.56-pm.png)
 
 ## 9 dimensions of Data Quality
 

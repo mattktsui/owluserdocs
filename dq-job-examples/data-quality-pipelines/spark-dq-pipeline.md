@@ -2,9 +2,9 @@
 description: Using Owl on Spark
 ---
 
-# Spark - DQ Pipeline
+# Advanced
 
-## Programmatic Owl
+## Programmatic DQ
 
 Don't like leaving your notebook? Want to build Owl into your in-house data quality pipeline? Owl can do both!
 

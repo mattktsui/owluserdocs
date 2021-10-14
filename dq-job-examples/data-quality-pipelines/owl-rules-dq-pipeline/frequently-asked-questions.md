@@ -30,9 +30,3 @@ props.host = "<ip>:<port>/<database_name>"
 {% endtab %}
 {% endtabs %}
 
-## How to verify results
-
-### UI
-
-### Code
-

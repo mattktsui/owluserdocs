@@ -4,7 +4,7 @@
 
 Using Owl's file tree explorer browse Mongo "collections" like "tables".  Then use the wizard to create standard DQ scans. 
 
-![](../.gitbook/assets/screen-shot-2020-08-01-at-10.11.41-am.png)
+![](../../.gitbook/assets/screen-shot-2020-08-01-at-10.11.41-am.png)
 
 ### CMD Line
 
@@ -37,15 +37,15 @@ path: /opt/owl/drivers/mongodb/
 
 ### Simply paste in JDBC Info
 
-![](../.gitbook/assets/screen-shot-2020-08-01-at-10.09.20-am.png)
+![](../../.gitbook/assets/screen-shot-2020-08-01-at-10.09.20-am.png)
 
 ### Discover Correlations, Relationships, DQ issues and Much More... 
 
-![](../.gitbook/assets/screen-shot-2020-08-01-at-10.10.45-am.png)
+![](../../.gitbook/assets/screen-shot-2020-08-01-at-10.10.45-am.png)
 
 The following table presents the various SQL statements related to table-level actions and the corresponding MongoDB statements.[https://docs.mongodb.com/manual/reference/sql-comparison/](https://docs.mongodb.com/manual/reference/sql-comparison/)
 
-![](../.gitbook/assets/screen-shot-2020-08-02-at-2.17.34-pm.png)
+![](../../.gitbook/assets/screen-shot-2020-08-02-at-2.17.34-pm.png)
 
 ### Limiting Collections in the JDBC URL
 
@@ -55,10 +55,10 @@ jdbc:mongodb://<dbuser>:<password>@datalake0-dza1q.a.query.mongodb.net/<mydataba
 
 There are 3 collections in this mongodb atlas lake.  By adding \&tables=orders in the URL params you can see only order collections show up in the explorer.
 
-![](../.gitbook/assets/screen-shot-2021-07-22-at-1.54.04-pm.png)
+![](../../.gitbook/assets/screen-shot-2021-07-22-at-1.54.04-pm.png)
 
 ### 3 Collections in MongoDB Atlas
 
 The total number of collections in mongodb atlas lake.
 
-![](../.gitbook/assets/screen-shot-2021-07-22-at-1.57.29-pm.png)
+![](../../.gitbook/assets/screen-shot-2021-07-22-at-1.57.29-pm.png)

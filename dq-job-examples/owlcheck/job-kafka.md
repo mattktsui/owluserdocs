@@ -56,9 +56,9 @@ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --f
       -master local
 ```
 
-![](../.gitbook/assets/owl-sensor-streams.png)
+![](../../.gitbook/assets/owl-sensor-streams.png)
 
-![](../.gitbook/assets/screen-shot-2021-07-06-at-9.33.58-am.png)
+![](../../.gitbook/assets/screen-shot-2021-07-06-at-9.33.58-am.png)
 
 ### Streams vs Sensors
 

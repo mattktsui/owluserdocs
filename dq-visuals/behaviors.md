@@ -1,8 +1,12 @@
 ---
-description: This is commonly referred to as data observability or metadata monitoring.
+description: This is commonly referred to as change detection or metadata monitoring.
 ---
 
-# Behaviors (observability)
+# Observability (auto)
+
+{% hint style="info" %}
+This is found under the behavior tab (short for behavioral analytics).
+{% endhint %}
 
 ## Evolution of Rule based Data Quality
 
