@@ -1,9 +1,41 @@
 # DQ Job S3
 
-S3 permissions need to be setup appropriately) (Needs appropriate driver) [http://central.maven.org/maven2/org/apache/hadoop/hadoop-aws/](http://central.maven.org/maven2/org/apache/hadoop/hadoop-aws/) Hadoop AWS Driver hadoop-aws-2.7.3.2.6.5.0-292.jar
+S3 permissions need to be setup appropriately.
+
+#### Example Minimum Permissions
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucketMultipartUploads",
+                "s3:ListBucket",
+                "s3:ListMultipartUploadParts",
+                "s3:PutObject",
+                "s3:GetObject",
+                "s3:GetBucketLocation"
+            ],
+            "Resource": [
+                "arn:aws:athena:*:<AWSAccountID>:workgroup/primary",
+                "arn:aws:s3:::<S3 bucket name>/*",
+                "arn:aws:s3:::<S3 bucket name>",
+                "arn:aws:glue:*:<AWSAccountID>:catalog",
+                "arn:aws:glue:*:<AWSAccountID>:database/<database name>",
+                "arn:aws:glue:*:<AWSAccountID>:table/<database name>/*"
+            ]
+        }
+    ]
+}
+```
+
+(Needs appropriate driver) [http://central.maven.org/maven2/org/apache/hadoop/hadoop-aws/](http://central.maven.org/maven2/org/apache/hadoop/hadoop-aws/) Hadoop AWS Driver hadoop-aws-2.7.3.2.6.5.0-292.jar
 
 ```bash
--f "s3a://s3-price-history/testfile.csv" \
+-f "s3a://s3-location/testfile.csv" \
 -d "," \
 -rd "2018-01-08" \
 -ds "salary_data_s3" \
@@ -14,10 +46,10 @@ S3 permissions need to be setup appropriately) (Needs appropriate driver) [http:
 ### Databricks Utils Or Spark Conf
 
 ```bash
-val AccessKey = "AKIAJ47QL3SBWY5BOFGA"
-val SecretKey = "aaRmxpiiaEpAQT14P2gnGKgeiB+ZivFSrIuTTv2B"
+val AccessKey = "xxx"
+val SecretKey = "xxxyyyzzz"
 //val EncodedSecretKey = SecretKey.replace("/", "%2F")
-val AwsBucketName = "s3-datasets"
+val AwsBucketName = "s3-location"
 val MountName = "kirk"
 
 dbutils.fs.unmount(s"/mnt/$MountName")
@@ -35,7 +67,7 @@ dbutils.fs.mount(s"s3a://$AccessKey:$SecretKey@$AwsBucketName", s"/mnt/$MountNam
 val AccessKey = "ABCDED"
 val SecretKey = "aaasdfwerwerasdfB"
 val EncodedSecretKey = SecretKey.replace("/", "%2F")
-val AwsBucketName = "s3-datasets"
+val AwsBucketName = "s3-location"
 val MountName = "abc"
 
 // bug if you don't unmount first
