@@ -182,7 +182,7 @@
 * [Intraday Positions](use-cases/intraday-positions.md)
 * [Creating a Data Quality Pipeline](use-cases/creating-a-data-quality-pipeline.md)
 * [Security Reference Data](use-cases/security-reference-data.md)
-* [Copying or Moving data](use-cases/copying-or-moving-data.md)
+* [Auditing Data Movement](use-cases/copying-or-moving-data.md)
 * [Cyber Anomalies in Real-Time](use-cases/cyber-anomalies-in-real-time.md)
 * [Healthcare  Data Quality](use-cases/healthcare-dq-in-2-minutes.md)
 * [Smart Meter Data](use-cases/smart-meter-data.md)
