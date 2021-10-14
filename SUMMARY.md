@@ -176,15 +176,14 @@
 
 * [Bank Loans](use-cases/bank-loans.md)
 * [Bloomberg Data](dq-visuals/pattern-mining/bloomberg-data.md)
-* [Financial FxRate Data](use-cases/financial-fxrate-data.md)
-* [Intraday Positions](use-cases/intraday-positions.md)
-* [Creating a Data Quality Pipeline](use-cases/creating-a-data-quality-pipeline.md)
-* [Security Reference Data](use-cases/security-reference-data.md)
-* [Validating Data Movement](use-cases/copying-or-moving-data.md)
 * [Cyber Anomalies in Real-Time](use-cases/cyber-anomalies-in-real-time.md)
+* [Financial FxRate Data](use-cases/financial-fxrate-data.md)
 * [Healthcare  Data Quality](use-cases/healthcare-dq-in-2-minutes.md)
-* [Smart Meter Data](use-cases/smart-meter-data.md)
 * [Health Insurance Claims Data](use-cases/insurance-data.md)
+* [Intraday Positions](use-cases/intraday-positions.md)
+* [Security Reference Data](use-cases/security-reference-data.md)
+* [Smart Meter Data](use-cases/smart-meter-data.md)
+* [Validating Data Movement](use-cases/copying-or-moving-data.md)
 
 ## Solutions <a href="projects" id="projects"></a>
 
@@ -200,6 +199,7 @@
   * [Makes your Data Lake better.](projects/data-projects/data-quality-monitoring.md)
   * [Speeds Migrations/Enables Replications](projects/data-projects/migrations.md)
   * [Assists Data Aggregation](projects/data-projects/assists-data-aggregation.md)
+  * [Creating a Data Quality Pipeline](projects/data-projects/creating-a-data-quality-pipeline.md)
 
 ## Troubleshooting
 
