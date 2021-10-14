@@ -1,7 +1,5 @@
 # System Requirements
 
-
-
 ### Prerequisites
 
 #### System Specification recommendations (Running owl-web and owl-core):
@@ -10,7 +8,6 @@ Operating System
 
 * RHEL6+ RHEL7+ 
 * Centos6+ Centos 7+
-* SUSE 12+
 
 Hardware Based on Role (standalone, distributed, or fully-distributed)
 

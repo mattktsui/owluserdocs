@@ -8,8 +8,6 @@ Operating System
 
 * RHEL6+ RHEL7+ 
 * Centos6+ Centos 7+
-* Linux version 4.14.62-65.117.amzn1.x86\_64 (mockbuild@gobi-build-60009) (gcc version 7.2.1 20170915 (Red Hat 7.2.1-2) (GCC)) #1 SMP Fri Aug 10 20:03:52 UTC 2018
-* SUSE 12+
 
 Hardware Based on Role (standalone, distributed, or fully-distributed)
 
@@ -17,7 +15,6 @@ Hardware Based on Role (standalone, distributed, or fully-distributed)
 | ------------------------ | --- | --- | ------- | ---------------- |
 | owl-web                  | 32  | 8   | 100 GB  | \~50             |
 | owl-metastore (postgres) | 16  | 4   | 250 GB  | --               |
-| owl-metastore (orient)   | 16  | 4   | 150 GB  | --               |
 | edge node / agent        | 16  | 4   | 50 GB   | --               |
 
 Java Version
@@ -53,7 +50,6 @@ Postgres Version
 
 #### Default Ports used by Owl
 
-* 2424 - OrientDB
 * 5432 - Postgres
 * 9000 - Owl-web
 
