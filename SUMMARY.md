@@ -40,7 +40,7 @@
   * [Explorer (advanced)](dq-visuals/explorer-2/explorer.md)
 * [Profile (no-code)](dq-visuals/profile/README.md)
   * [AutoProfile](dq-visuals/profile/autoprofile.md)
-* [Observability (automatic)](dq-visuals/behaviors.md)
+* [Behavior (automatic)](dq-visuals/behaviors.md)
 * [Rules (user-defined)](dq-visuals/rules/README.md)
   * [Adding a Rule](dq-visuals/rules/creating-a-business-rule.md)
   * [Rule Types](dq-visuals/rules/rule-types/README.md)
