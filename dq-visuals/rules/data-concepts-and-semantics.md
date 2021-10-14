@@ -1,4 +1,10 @@
-# Data Concepts and Semantics
+---
+description: >-
+  Custom data discovery and enforcement using rule templates (data concepts and
+  semantics)
+---
+
+# Rule Discovery
 
 ## Data Concepts
 
@@ -19,6 +25,12 @@ EMAIL, ZIP CODE, SSN, CUSIP, GENDER, ADDRESS, CURRENCY CD, SKU, EIN, IP ADDRESS,
 {% endhint %}
 
 A semantic is the "semantic type" of a column or attribute of a dataset.  All columns have a physical type such as String, Int, Date etc... but the semantic understanding of what type of String is in the column can be very important.  I also allows us to enforce DQ validation rules out of the box. 
+
+Owl's semantic scanning self identifies standard columns and automatically provides the proper protection. This makes it easy to get started adding common rules for specific use-cases. 
+
+**Owl offers out of the box rules for 1-click rule creation**
+
+![](../../.gitbook/assets/auto-rules.png)
 
 ## Sensitive Data
 

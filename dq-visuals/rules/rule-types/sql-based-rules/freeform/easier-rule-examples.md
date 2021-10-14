@@ -45,4 +45,4 @@ where
 
 ## Sample Results
 
-![](<../../.gitbook/assets/image (55).png>)
+![](<../../../../../.gitbook/assets/image (55).png>)

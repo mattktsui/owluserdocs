@@ -15,3 +15,7 @@ Owl automatically understands the _semantic_ schema of your data such as CREDIT 
 Owl applies many labels to the header of a field / column.  These labels be seen in the data preview table with highlighted errors and findings. 
 
 ![](../.gitbook/assets/owl-pii.png)
+
+#### The catalog offers a global view and filtering to see where PII exists
+
+![ You can also view globally via the catalog to see PII exists](../.gitbook/assets/screen-shot-2019-11-04-at-2.10.11-pm-1.png)
