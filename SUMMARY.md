@@ -99,6 +99,13 @@
   * [DQ Job LinkId](dq-job-examples/owlcheck/owlcheck-linkid.md)
   * [DQ Job Validate Source](dq-job-examples/owlcheck/owlcheck-validate-source.md)
   * [DQ Job 43M rows](dq-job-examples/owlcheck/owlcheck-43m-rows.md)
+  * [Add Date Column](dq-job-examples/owlcheck/add-date-column.md)
+  * [Date Time Variable Options](dq-job-examples/owlcheck/date-time-variable-options.md)
+  * [File Look Back](dq-job-examples/owlcheck/file-lookback.md)
+  * [Filter & Filter Not](dq-job-examples/owlcheck/filter.md)
+  * [Multiple Pattern Relationships](dq-job-examples/owlcheck/multiple-pattern-combinations.md)
+  * [Nulls in Datasets](dq-job-examples/owlcheck/zero-if-null.md)
+  * [Transform](dq-job-examples/owlcheck/owlcheck-transform.md)
 
 ## Collibra DIC Integration <a href="integration" id="integration"></a>
 
@@ -114,6 +121,7 @@
 
 ## Scheduler
 
+* [Overview](scheduler/job-server.md)
 * [Schedule a Job](scheduler/schedule-owlchecks.md)
 * [Schedule Management](scheduler/schedule-management.md)
 * [View/Re-Run Scheduled Jobs](scheduler/view-re-run-scheduled-jobs.md)
@@ -147,39 +155,22 @@
 
 ## APIs
 
-* [REST APIs](apis/rest-apis.md)
+* [REST APIs](apis/rest-apis/README.md)
+  * [Assignment API](apis/rest-apis/assignmentapi.md)
+  * [Export and Import API](apis/rest-apis/export-and-import-api.md)
+  * [Export and Import Example](apis/rest-apis/rules-import-export.md)
+  * [Time Zone API](apis/rest-apis/owl-time-zone-api.md)
 * [Swagger](apis/swagger.md)
-* [Job Server](apis/job-server.md)
-* [Assignment API](apis/assignmentapi.md)
-* [Time Zone API](apis/owl-time-zone-api.md)
-* [Notebook API](apis/notebook-api/README.md)
-  * [OwlOptions (base)](apis/notebook-api/owloptions-base.md)
-
-## API-Core <a href="api" id="api"></a>
-
-* [Notebook/Spark](api/notebook/README.md)
-  * [Spark-shell Sample](api/notebook/spark-shell-sample.md)
-  * [Dupe](api/notebook/dupe.md)
-  * [Load](api/notebook/load.md)
-  * [Source](api/notebook/source.md)
-  * [Profile](api/notebook/profile.md)
-* [JWT](api/jwt.md)
-* [Cookie](api/cookie.md)
-
-## API-MIGRATION <a href="migration-and-promoting" id="migration-and-promoting"></a>
-
-* [Export and Import API](migration-and-promoting/export-and-import-api.md)
-* [Export and Import Example](migration-and-promoting/rules-import-export.md)
-
-## Advanced
-
-* [Add Date Column](advanced/add-date-column.md)
-* [Date Time Variable Options](advanced/date-time-variable-options.md)
-* [File Look Back](advanced/file-lookback.md)
-* [Filter & Filter Not](advanced/filter.md)
-* [Multiple Pattern Relationships](advanced/multiple-pattern-combinations.md)
-* [Nulls in Datasets](advanced/zero-if-null.md)
-* [Transform](advanced/owlcheck-transform.md)
+* [Notebook/Spark](apis/notebook/README.md)
+  * [Spark-shell Sample](apis/notebook/spark-shell-sample.md)
+  * [Dupe](apis/notebook/dupe.md)
+  * [Load](apis/notebook/load.md)
+  * [Source](apis/notebook/source.md)
+  * [Profile](apis/notebook/profile.md)
+  * [Notebook API](apis/notebook/notebook-api/README.md)
+    * [OwlOptions (base)](apis/notebook/notebook-api/owloptions-base.md)
+  * [JWT](apis/notebook/jwt.md)
+  * [Cookie](apis/notebook/cookie.md)
 
 ## Use Cases
 
@@ -197,17 +188,18 @@
 
 ## Solutions <a href="projects" id="projects"></a>
 
-* [Our Approach](projects/why-owl.md)
-* [Our Story](projects/our-story.md)
-* [What is OwlDQ](projects/what-is-owldq.md)
-* [Best Practices](projects/best-practices.md)
-* [Prescriptive Personas](projects/prescriptive-personas.md)
-* [Builds a Better DQ Dashboard](projects/builds-a-better-dq-dashboard.md)
-* [Ensures CCPA & GDPR](projects/ccpa-and-gdpr.md)
-* [Makes your Data Lake better.](projects/data-quality-monitoring.md)
-* [Speeds Migrations/Enables Replications](projects/migrations.md)
-* [Assists Data Aggregation](projects/assists-data-aggregation.md)
-* [DQ is the difference](projects/data-quality.md)
+* [Our Approach](projects/why-owl/README.md)
+  * [Our Story](projects/why-owl/our-story.md)
+  * [What is OwlDQ](projects/why-owl/what-is-owldq.md)
+  * [DQ is the difference](projects/why-owl/data-quality.md)
+* [Best Practices](projects/best-practices/README.md)
+  * [Prescriptive Personas](projects/best-practices/prescriptive-personas.md)
+* [Data Projects](projects/data-projects/README.md)
+  * [Builds a Better DQ Dashboard](projects/data-projects/builds-a-better-dq-dashboard.md)
+  * [Ensures CCPA & GDPR](projects/data-projects/ccpa-and-gdpr.md)
+  * [Makes your Data Lake better.](projects/data-projects/data-quality-monitoring.md)
+  * [Speeds Migrations/Enables Replications](projects/data-projects/migrations.md)
+  * [Assists Data Aggregation](projects/data-projects/assists-data-aggregation.md)
 
 ## Troubleshooting
 

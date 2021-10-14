@@ -1,64 +1,18 @@
----
-description: Promoting and moving datasets across environments
----
-
-# Export and Import API
+# Export and Import Example
 
 {% hint style="info" %}
-The database needs the [stored procedure](export-and-import-api.md#stored-procedure) (function) defined in order to use the Export/Import API. 
+Best practice is to use get-exports and the owl_rule table post 2021.09 release. Please refer to the [Export and Import API](export-and-import-api.md) page for more details.
 {% endhint %}
 
-### Step 1 - Get-Exports
+### Steps
 
-Best practice is to use the get-exports endpoint for most scenarios.  You can pass in several dataset names and several tables at once. This endpoint will create a JSON payload
+1. Find your dataset 
+2. Pass your table to the following api call - [http://\<url>/v2/get-rules-export?dataset=public.transit\_6](http://localhost:9000/v2/get-export?dataset=public.transit\_6)
+3. Run import on the desired environment, passing the output of the previous statement to the body of the request - [http://\<url>/v2/run-import](http://35.202.14.58/v2/run-import)
 
-**The three most common tables are:**
+{% embed url="https://youtu.be/puXZwKi-CmM" %}
 
-* owl_rule
-* job_schedule
-* owl\__check_repo_
-
-```
-http://<url>/v2/get-exports?dataset=public.dataset_scan_2,public.dataset_scan_1&schema=public&tables=owl_rule,job_schedule,owl_check_repo
-```
-
-#### Use Swagger to build this for you
-
-This is located under controller-scala (internal API)
-
-![](<../.gitbook/assets/image (99).png>)
-
-#### Click Try it out to input the details
-
-![](<../.gitbook/assets/image (67).png>)
-
-### Step 2 - Run-Import
-
-{% hint style="info" %}
-You will want to perform a find/replace on the import payload to check for differences in connections, agents, spark and environment configurations.  Migrating to different environments typically requires the payload to be modified.
-{% endhint %}
-
-Run import on the desired environment, passing the output of the previous statement to the body of the request 
-
-```javascript
-http://<url>/v2/run-import
-```
-
-#### Use Swagger to try it out 
-
-This is under controller-catalog
-
-![](<../.gitbook/assets/image (98).png>)
-
-![](<../.gitbook/assets/image (91).png>)
-
-This would be the body of the POST.
-
-![](../.gitbook/assets/screen-shot-2021-04-26-at-10.13.18-am.png)
-
-## Stored Procedure
-
-The following function needs to be created in the Owl metastore before this can run. 
+The following function needs to be declared in the postgres metastore before this can run. 
 
 ```
 CREATE OR REPLACE FUNCTION public.dump(p_schema text, p_table text, p_where text)
@@ -137,10 +91,49 @@ AS $function$
  END
  $function$
 ;
-```
-
-This assignment needs added.
 
 ```
-alter function dump(text, text, text) owner to ownername;
-```
+
+## From Swagger
+
+Navigate to the API page
+
+ 
+
+![](<../../.gitbook/assets/image (65).png>)
+
+Find the Rest APIs link
+
+![](<../../.gitbook/assets/image (59) (1).png>)
+
+Drill-in to the controller-scala section
+
+![](<../../.gitbook/assets/image (63).png>)
+
+Find the get-rules-export call
+
+![](<../../.gitbook/assets/image (56).png>)
+
+Click Try it out and enter a dataset name, Execute to run the call
+
+![](<../../.gitbook/assets/image (57).png>)
+
+Copy the response body 
+
+![](<../../.gitbook/assets/image (66).png>)
+
+Navigate to the controller-catalog section
+
+![](<../../.gitbook/assets/image (64).png>)
+
+Find run-import and Try it out 
+
+![](<../../.gitbook/assets/image (62).png>)
+
+Make any edits and paste in the response body from the previous step 
+
+![](<../../.gitbook/assets/image (58).png>)
+
+Visually validate the rules were transferred to another dataset successfully
+
+![](<../../.gitbook/assets/image (60).png>)

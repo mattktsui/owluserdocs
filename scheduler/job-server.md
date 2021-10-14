@@ -1,21 +1,8 @@
 ---
-description: Owl Restful job server
+description: Job dashboard, scheduler and schedule management
 ---
 
-# Job Server
-
-### Curl Example
-
-```bash
-curl -X POST --data '
-{
-"file": "/opt/owl/bin/owl-core-trunk-jar-with-dependencies.jar", 
-"className": "com.owl.core.cli.Catalog", 
-"args": 
-    ["-cxn", "-databases", "public", "-driver", "org.postgresql.Driver", "-lib", "/opt/owl/drivers/postgres42/"]
-}' 
--H "Content-Type: application/json" localhost:8998/batches
-```
+# Overview
 
 ### Owl Job Dashboard
 

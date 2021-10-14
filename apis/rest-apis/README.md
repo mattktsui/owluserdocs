@@ -6,7 +6,7 @@ All REST APIs are available inside the application under admin section.  The API
 
 The product API is for end-users who want to interact with the official and supported API.  You can also generate a client side SDK from the API with 4 steps below.
 
-![](../.gitbook/assets/screen-shot-2021-08-02-at-5.25.08-pm.png)
+![](../../.gitbook/assets/screen-shot-2021-08-02-at-5.25.08-pm.png)
 
 ```bash
 #psuedo code example REST API
@@ -37,7 +37,7 @@ findings = /v3/jobs/{jobId}/findings
 3. Paste a URL that looks like this  [https://\<host>/v2/api-docs?group=Product%20API](https://146.148.84.143/v2/api-docs?group=Product%20API)
 4. Click generate client (python, java, scala, C#)
 
-![](../.gitbook/assets/screen-shot-2021-08-03-at-9.05.13-am.png)
+![](../../.gitbook/assets/screen-shot-2021-08-03-at-9.05.13-am.png)
 
 ```python
 #Python SDK Example 
@@ -435,7 +435,7 @@ The JSON for the full dataset definition.  It can be more terse to send in the c
 
 
 
-![](<../.gitbook/assets/image (47) (1).png>)
+![](<../../.gitbook/assets/image (47) (1).png>)
 
 ### JWT Token For Auth
 
@@ -629,6 +629,6 @@ response = requests.get(url = owl + '/v3/jobs/'+jobId+'/findings', headers=owl_h
 
 Collibra DQ also exposes the internal API so that all potential operations are available.  The caveat is that these calls may change over time or expose underlying functionality.
 
-![](<../.gitbook/assets/image (44) (1).png>)
+![](<../../.gitbook/assets/image (44) (1).png>)
 
-![](<../.gitbook/assets/image (47) (1).png>)
+![](<../../.gitbook/assets/image (47) (1).png>)

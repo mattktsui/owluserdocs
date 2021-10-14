@@ -38,8 +38,8 @@ All UI functionality has corresponding API endpoints to define, run, and get res
 
 ## Transform Tab (advanced / optional)
 
-{% content-ref url="../../advanced/owlcheck-transform.md" %}
-[owlcheck-transform.md](../../advanced/owlcheck-transform.md)
+{% content-ref url="../../dq-job-examples/owlcheck/owlcheck-transform.md" %}
+[owlcheck-transform.md](../../dq-job-examples/owlcheck/owlcheck-transform.md)
 {% endcontent-ref %}
 
 #### Click Build Model -> to Save and Continue 
