@@ -2,7 +2,9 @@
 description: A list of supported data source connection types.
 ---
 
-# Supported Drivers
+# Supported Connections
+
+## Production
 
 The following is a list of drivers certified for production use.
 
@@ -20,6 +22,8 @@ The following is a list of drivers certified for production use.
 | **DB2**           | Native                                | Production    | A-    | User / Pass, Kerberos                       | easy to use performs well, fetch syntax vs limit and other nuances                             |
 | **GreenPlum**     | Postgres                              | Production    | A-    | User / Pass                                 | easy to use performs well                                                                      |
 | **HDFS**          | HDFS connector                        | Production    | B     | Kerberos                                    | works well but usually a few hadoop spark nuances to get right                                 |
+
+## Preview
 
 The following is a list of drivers which are for test purposes (not certified yet for production usage).
 
@@ -43,6 +47,8 @@ The following is a list of drivers which are for test purposes (not certified ye
 | **Dremio**                       | Dremio JDBC                                                                       | Preview       | B     | User / Pass             |                                                                                                         |
 | **Kafka**                        | Native                                                                            | Preview       | B-    |                         | Most cases the group doesn't know enough about kafka administration, schema registry and other nuances. |
 
+## Files
+
 | File Type Support            | Grade | Comments                                   |
 | ---------------------------- | ----- | ------------------------------------------ |
 | **Parquet**                  | B+    | schema in file, less common but works well |
@@ -51,7 +57,7 @@ The following is a list of drivers which are for test purposes (not certified ye
 | **XML**                      | B     | recommend json                             |
 | **AVRO**                     | B     |                                            |
 
-## FAQ / Tips
+### **File Limitations**
 
 **File Sizes**
 
@@ -65,4 +71,10 @@ The following is a list of drivers which are for test purposes (not certified ye
 * Please ensure no spaces in S3 connection name
 * Please remember to select 'Save Credentials' checkbox upon establishing connection
 * Please point to root bucket, not sub folders
+
+**Local Files**
+
+* Local files can only be run using NO_AGENT default
+* This is for quick testing, smaller files, and demonstration purposes. 
+* Local file scanning is not intended for large scale production use.
 

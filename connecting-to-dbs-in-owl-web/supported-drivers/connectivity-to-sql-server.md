@@ -19,7 +19,7 @@ com.microsoft.sqlserver.jdbc.SQLServerDriver
 3. Fill in the required JDBC details
 4. Click save to validate the connection
 
-![](<../.gitbook/assets/image (50).png>)
+![](<../../.gitbook/assets/image (50).png>)
 
 {% embed url="https://docs.microsoft.com/en-us/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server" %}
 

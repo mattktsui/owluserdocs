@@ -2,15 +2,7 @@
 description: DQ Agent Configuration Guide
 ---
 
-# Agent Install
-
-## High Level Architecture of Owl Agent setup <a href="high-level-architecture-of-owl-agent-setup" id="high-level-architecture-of-owl-agent-setup"></a>
-
-![Fig 1: High level depiction of DQ Agents using CDH, HDP, and EMR within a single DQ Web App](https://gblobscdn.gitbook.com/assets%2F-L_xJcI5Uc0S1x9JC6xQ%2F-LnU88TjMSmNDQQOzmga%2F-LnUBuNZqRfEFAzVhB0o%2FAgents%20\(1\).jpg?alt=media\&token=3452698c-aeae-43e4-b730-b2b19e4dd1c5)
-
-Fig 1 shows provides a high level depiction of how agents work within DQ. A job execution is driven by DQ Jobs that are written to an `agent_q` table inside the DQ Metadata Postgres Storage (`Owl-Postres` database in Fig 1) via the Web UI or REST API endpoint.  Each agent available and running queries the `Owl-Postgres` table every 5 seconds to execute the DQ Jobs the agent is responsible for. For example, the EMR agent `Owl-Agent3` in Fig 1 only executes DQ Jobs scheduled to run on EMR. 
-
-When an agent picks up a DQ Job to execute, the agent will launch the job either locally on the agent node itself or on a cluster as a spark job (if the agent is setup as an edge node of a cluster). Depending on where the job launches, the results of the DQ Job will write back to the DQ Metadata Storage (`Owl-Postgres` database). The results are then displayed on the DQ Web UI, exposed as REST API, and available for direct SQL query against `Owl-Postgres` database.
+# Agent
 
 ## Agent Configuration Parameters
 
@@ -154,7 +146,13 @@ If you have multiple DQ Agents, then you can establish them as an HA Group. When
 
 ![Fig 7: Executing an Ad Hoc job via DQ Web Explorer](https://gblobscdn.gitbook.com/assets%2F-L_xJcI5Uc0S1x9JC6xQ%2F-LnUsmCFG-tKOAMRkqvx%2F-LnVCneYAUxjqA84p5Fq%2FScreen%20Shot%202019-08-29%20at%209.45.42%20PM.png?alt=media\&token=06e9d717-d75d-430c-8a2c-a68720189a78)
 
+### Diagram
 
+![Fig 1: High level depiction of DQ Agents using CDH, HDP, and EMR within a single DQ Web App](https://gblobscdn.gitbook.com/assets%2F-L_xJcI5Uc0S1x9JC6xQ%2F-LnU88TjMSmNDQQOzmga%2F-LnUBuNZqRfEFAzVhB0o%2FAgents%20\(1\).jpg?alt=media\&token=3452698c-aeae-43e4-b730-b2b19e4dd1c5)
+
+Fig 1 shows provides a high level depiction of how agents work within DQ. A job execution is driven by DQ Jobs that are written to an `agent_q` table inside the DQ Metadata Postgres Storage (`Owl-Postres` database in Fig 1) via the Web UI or REST API endpoint.  Each agent available and running queries the `Owl-Postgres` table every 5 seconds to execute the DQ Jobs the agent is responsible for. For example, the EMR agent `Owl-Agent3` in Fig 1 only executes DQ Jobs scheduled to run on EMR. 
+
+When an agent picks up a DQ Job to execute, the agent will launch the job either locally on the agent node itself or on a cluster as a spark job (if the agent is setup as an edge node of a cluster). Depending on where the job launches, the results of the DQ Job will write back to the DQ Metadata Storage (`Owl-Postgres` database). The results are then displayed on the DQ Web UI, exposed as REST API, and available for direct SQL query against `Owl-Postgres` database.
 
 
 

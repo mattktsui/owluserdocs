@@ -2,10 +2,10 @@
 description: This is commonly referred to as change detection or metadata monitoring.
 ---
 
-# Observability (auto)
+# Observability (automatic)
 
 {% hint style="info" %}
-This is found under the behavior tab (short for behavioral analytics).
+Results are found under the Behavior tab (short for behavioral analytics).  The adaptive rules modal will display a complete list of monitoring types and criteria.
 {% endhint %}
 
 ## Evolution of Rule based Data Quality

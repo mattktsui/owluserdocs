@@ -1,4 +1,4 @@
-# Cloud Native OwlDQ
+# Cloud Native
 
 ## Introduction to Cloud Native Architecture
 
@@ -10,7 +10,7 @@ These techniques enable loosely coupled systems that are resilient, manageable, 
 
 OwlDQ wholeheartedly embraces these principles in its design and deployment. The diagram below depicts OwlDQ's Cloud Native Deployment architecture:
 
-![](../.gitbook/assets/owl-k8s-deployment.png)
+![](../../.gitbook/assets/owl-k8s-deployment.png)
 
 In this "form factor", OwlDQ can be deployed in any public or private cloud while maintaining a consistent experience, performance, and management runbook. 
 

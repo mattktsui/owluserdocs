@@ -107,4 +107,4 @@ bigquery.googleapis.com
 
 Make sure the project and account have appropriate permissions.  These are common permissions to provide to the account. 
 
-![](<../.gitbook/assets/image (69).png>)
+![](<../../.gitbook/assets/image (69).png>)

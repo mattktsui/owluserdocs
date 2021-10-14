@@ -1,10 +1,12 @@
 # Overview
 
+## **Click or Code **
+
+Collibra DQ offers easy to use no (low) code options for getting started quickly. Alternatively, more technical users may prefer programmatic APIs.
+
 ## **Core Components**
 
-Owl offers a full DQ suite to cover the unique challenges of each dataset. 
-
-[See Complete Feature List Breakdown For More Information](https://owldq.com/features.html)
+Collibra DQ offers a full DQ suite to cover the unique challenges of each dataset. 
 
 **9 Dimensions of DQ**
 

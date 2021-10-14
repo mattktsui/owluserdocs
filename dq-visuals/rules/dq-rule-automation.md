@@ -24,4 +24,6 @@ The rule library hosts out of the box and custom global rules. See data concepts
 [data-concepts-and-semantics.md](data-concepts-and-semantics.md)
 {% endcontent-ref %}
 
+#### Bring your own regex
+
 ![](<../../.gitbook/assets/owl-rule-repo (3).png>)

@@ -5,47 +5,50 @@
 
 ## Installation
 
-* [Standalone Install](installation/full-install.md)
-* [Standalone Upgrade](installation/standalone-upgrade.md)
-* [Agent Install](installation/agent-configuration.md)
-* [Hadoop Install](installation/hadoop-integration.md)
-* [Cloud Native Install](installation/deploying-cloud-native-owldq.md)
-* [Cloud Native Requirements](installation/preparing-for-deployment.md)
-* [Cloud Native Overview](installation/cloud-native-owldq.md)
-* [EMR / Dataproc / HDI](installation/emr.md)
-* [EKS / GKE / AKS](installation/aks-eks-gke-kubernetes-deployment.md)
+* [Standalone](installation/standalone/README.md)
+  * [Standalone Install](installation/standalone/full-install.md)
+  * [Standalone Upgrade](installation/standalone/standalone-upgrade.md)
+  * [Standalone Sizing](installation/standalone/standalone-sizing.md)
+* [Hadoop](installation/hadoop/README.md)
+  * [Hadoop Install](installation/hadoop/hadoop-integration.md)
+  * [EMR / Dataproc / HDI](installation/hadoop/emr.md)
+* [Cloud Native](installation/cloud-native-owldq/README.md)
+  * [Cloud Native Install](installation/cloud-native-owldq/deploying-cloud-native-owldq.md)
+  * [Cloud Native Requirements](installation/cloud-native-owldq/preparing-for-deployment.md)
+  * [EKS / GKE / AKS](installation/cloud-native-owldq/aks-eks-gke-kubernetes-deployment.md)
+* [Agent](installation/agent-configuration.md)
 
 ## Connections <a href="connecting-to-dbs-in-owl-web" id="connecting-to-dbs-in-owl-web"></a>
 
-* [Supported Drivers](connecting-to-dbs-in-owl-web/supported-drivers.md)
-* [General](connecting-to-dbs-in-owl-web/owl-db-connection.md)
-* [Connectivity to Athena](connecting-to-dbs-in-owl-web/connectivity-to-athena.md)
-* [Connectivity to BigQuery](connecting-to-dbs-in-owl-web/connectivity-to-bigquery.md)
-* [Connectivity to Hive](connecting-to-dbs-in-owl-web/connectivity-to-hive/README.md)
-  * [Connecting to CDH 5.16 Hive SSL/TLS/Kerberos Setup](connecting-to-dbs-in-owl-web/connectivity-to-hive/connecting-to-cdh-5.16-hive-ssl-tls-kerberos-setup.md)
-* [Connectivity to Oracle](connecting-to-dbs-in-owl-web/connectivity-to-oracle.md)
-* [Connectivity to Presto](connecting-to-dbs-in-owl-web/connectivity-to-presto.md)
-* [Connectivity to Redshift](connecting-to-dbs-in-owl-web/connectivity-to-redshift.md)
-* [Connectivity to Snowflake](connecting-to-dbs-in-owl-web/connectivity-to-snowflake.md)
-* [Connectivity to SQL Server](connecting-to-dbs-in-owl-web/connectivity-to-sql-server.md)
+* [Supported Connections](connecting-to-dbs-in-owl-web/supported-drivers/README.md)
+  * [Connectivity to Athena](connecting-to-dbs-in-owl-web/supported-drivers/connectivity-to-athena.md)
+  * [Connectivity to BigQuery](connecting-to-dbs-in-owl-web/supported-drivers/connectivity-to-bigquery.md)
+  * [Connectivity to Hive](connecting-to-dbs-in-owl-web/supported-drivers/connectivity-to-hive/README.md)
+    * [Connecting to CDH 5.16 Hive SSL/TLS/Kerberos Setup](connecting-to-dbs-in-owl-web/supported-drivers/connectivity-to-hive/connecting-to-cdh-5.16-hive-ssl-tls-kerberos-setup.md)
+  * [Connectivity to Oracle](connecting-to-dbs-in-owl-web/supported-drivers/connectivity-to-oracle.md)
+  * [Connectivity to Presto](connecting-to-dbs-in-owl-web/supported-drivers/connectivity-to-presto.md)
+  * [Connectivity to Redshift](connecting-to-dbs-in-owl-web/supported-drivers/connectivity-to-redshift.md)
+  * [Connectivity to Snowflake](connecting-to-dbs-in-owl-web/supported-drivers/connectivity-to-snowflake.md)
+  * [Connectivity to SQL Server](connecting-to-dbs-in-owl-web/supported-drivers/connectivity-to-sql-server.md)
+* [Add a Connection](connecting-to-dbs-in-owl-web/owl-db-connection.md)
 * [Add Connection to Agent](connecting-to-dbs-in-owl-web/add-connection-to-agent.md)
 
-## Core Components <a href="dq-visuals" id="dq-visuals"></a>
+## Features <a href="dq-visuals" id="dq-visuals"></a>
 
 * [Overview](dq-visuals/overview.md)
 * [Explorer (no-code)](dq-visuals/explorer-2/README.md)
   * [Explorer (advanced)](dq-visuals/explorer-2/explorer.md)
 * [Profile (no-code)](dq-visuals/profile/README.md)
   * [AutoProfile](dq-visuals/profile/autoprofile.md)
+* [Observability (automatic)](dq-visuals/behaviors.md)
 * [Rules (user-defined)](dq-visuals/rules/README.md)
   * [Creating a Rule](dq-visuals/rules/creating-a-business-rule.md)
   * [Rule Library](dq-visuals/rules/dq-rule-automation.md)
   * [Cross-Dataset Rules](dq-visuals/rules/easier-rule-examples.md)
   * [Data Concepts and Semantics](dq-visuals/rules/data-concepts-and-semantics.md)
-* [Observability (auto)](dq-visuals/behaviors.md)
-* [Schema (auto)](dq-visuals/schema-evolution.md)
-* [Shapes (auto)](dq-visuals/shapes.md)
 * [More...](dq-visuals/more.../README.md)
+  * [Schema (automatic)](dq-visuals/more.../schema-evolution.md)
+  * [Shapes (automatic)](dq-visuals/more.../shapes.md)
   * [Duplicates (advanced)](dq-visuals/more.../duplicates.md)
   * [Outliers (advanced)](dq-visuals/more.../outliers.md)
   * [Patterns (advanced)](dq-visuals/more.../pattern-mining.md)
@@ -131,9 +134,9 @@
 ## Reports
 
 * [Completeness Report](reports/completeness-report.md)
-* [Summary Reports](reports/owl-summary-reports.md)
-* [Dataset Report](reports/profile.md)
 * [Coverage Report](reports/coverage-report.md)
+* [Dataset Report](reports/profile.md)
+* [Summary Reports](reports/owl-summary-reports.md)
 
 ## APIs
 

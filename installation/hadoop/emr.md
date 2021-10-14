@@ -10,7 +10,7 @@ A detailed guide for EMR is provided below.
 
 OwlDQ is able to use EMR as the compute space for data quality jobs (Owlchecks). While it is possible to simply operate a long running EMR cluster, EMR's intended operation model is ephemeral infrastructure. Using EMR as an ephemeral compute space is the most cost effective approach both in terms of operational effort and infrastructure costs. OwlDQ makes it possible to seamlessly leverage EMR in this operating model. When there is not an EMR cluster available, OwlDQ users are still able to browse datasets and DQ results in Web. However, if a user attempts to deploy an Owlcheck, they will simply see a red light icon next to the target agent. If the user still wants to request an Owlcheck, it will simply wait in queue until the target agent comes back online the next time an EMR cluster is available.
 
-![](../.gitbook/assets/screenshot-2021-02-17-at-9.47.05-am.png)
+![](../../.gitbook/assets/screenshot-2021-02-17-at-9.47.05-am.png)
 
 ### Prepare for Deployment
 
@@ -80,15 +80,15 @@ Once the EMR cluster and Owl Agent is deployed, it needs to be configured in Owl
 2. In the Admin Console, click on the "Remote Agent" tile.
 3. The newly created agent should have a green light icon.
 
-![](../.gitbook/assets/screenshot-2021-02-17-at-10.53.19-am.png)
+![](../../.gitbook/assets/screenshot-2021-02-17-at-10.53.19-am.png)
 
 Click the Pen/Pencil icon to the far right to configure the agent's settings. Make sure that Deploy Mode is set to "Cluster" and Default Master is set to "yarn".
 
-![](../.gitbook/assets/screenshot-2021-02-17-at-10.57.39-am.png)
+![](../../.gitbook/assets/screenshot-2021-02-17-at-10.57.39-am.png)
 
 Click the chain link icon to the far right to configure what datasources the agent is able to deploy Owlchecks for.
 
-![](../.gitbook/assets/screenshot-2021-02-17-at-11.00.48-am.png)
+![](../../.gitbook/assets/screenshot-2021-02-17-at-11.00.48-am.png)
 
 Any datasources that are not listed in the right hand pane will not be visible to this agent.
 
@@ -96,6 +96,6 @@ Any datasources that are not listed in the right hand pane will not be visible t
 
 Everything is now ready for users to use EMR to run Owlchecks on data. Review Explorer documentation for detailed instructions.
 
-{% content-ref url="../dq-visuals/explorer-2/" %}
-[explorer-2](../dq-visuals/explorer-2/)
+{% content-ref url="../../dq-visuals/explorer-2/" %}
+[explorer-2](../../dq-visuals/explorer-2/)
 {% endcontent-ref %}
