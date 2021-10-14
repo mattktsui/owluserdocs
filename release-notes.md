@@ -37,6 +37,18 @@
 * Export/Import API 
   * Users will be able to run the export/import API calls to conduct multiple promotions on the repo, schedule, and rule tables. 
 
+#### Patches
+
+* 2021.10.1 Import / Export API without constraint conflicts
+  * Import must match exactly to the format of our export in order to parse out columns and values to perform an update when existing records are already there
+
+```
+owl_rule
+owl_check_repo
+job_schedule
+rule_repo
+```
+
 #### Known Limitations
 
 * File sizes
@@ -111,7 +123,7 @@
   * S3 SAML Auth (TP)
     * DQ is configured to use SAML based authentication to S3 buckets with password manager or provided credentials. Testing is limited to OneLogin for SAML Provider in this tech preview release
 
-**Patches / Known Issues**
+**Patches**
 
 * 2021.09.1 Validate Source
 * 2021.09.2 Validate Source Large DB load
