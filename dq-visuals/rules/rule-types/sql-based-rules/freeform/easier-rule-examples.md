@@ -1,8 +1,10 @@
 # Cross-Dataset Rules
 
-{% hint style="info" %}
-Cross-dataset rules require -libsrc or -addlib (prior to 2021.11) 
+{% hint style="warning" %}
+Cross-dataset rules require -libsrc or -addlib (prior to 2021.11)&#x20;
 {% endhint %}
+
+![When a cross-dataset rule uses two connections, be sure the jars are in the -lib or -addlib directory.](<../../../../../.gitbook/assets/image (100).png>)
 
 ## In-Clause (Single Column)
 
@@ -11,7 +13,7 @@ select * from @table1 where id
 not in ( select id from @table2 )
 ```
 
-## Except (Multi-Column) 
+## Except (Multi-Column)&#x20;
 
 ```sql
 select id, app_id, email, guid_num from @table1
