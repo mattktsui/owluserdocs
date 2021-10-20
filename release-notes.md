@@ -1,5 +1,14 @@
 # Release Notes
 
+## 2021.11 (In Progress)
+
+#### Enhancements
+
+* Rules
+  * Semantics and data concepts
+* API
+  * Allows multiple imports without conflicts
+
 ## 2021.10
 
 #### Enhancements
@@ -28,14 +37,14 @@
 * Dupes
   * Resolved issue with white spaces in column headers blocking duplicate detection
 * Security
-  * Added configuration for setting the SAML_ENTITY_BASEURL, which sets the Consumer service url for the SP Metadata
+  * Added configuration for setting the SAML\_ENTITY\_BASEURL, which sets the Consumer service url for the SP Metadata
 * Shapes
   * Fixed issue where custom values override even after toggling Shapes back to auto or off
 * Console
   * Fixed uncaught TypeError on login screen
   * Fixed GET timeout error on registration page
-* Export/Import API 
-  * Users will be able to run the export/import API calls to conduct multiple promotions on the repo, schedule, and rule tables. 
+* Export/Import API&#x20;
+  * Users will be able to run the export/import API calls to conduct multiple promotions on the repo, schedule, and rule tables.&#x20;
 
 #### Patches
 
@@ -57,10 +66,10 @@ rule_repo
 * Files
   * Explorer / browser will generally have difficulty supporting > 250 columns in files
 * Profiling
-  * Pushdown profiling on Bigquery, Redshift, Athena and Presto is available for specific datatypes. 
-  * Backrun option and flag will persist beyond the first run (-br).  Please remove this flag if you do not want to backrun again. 
+  * Pushdown profiling on Bigquery, Redshift, Athena and Presto is available for specific datatypes.&#x20;
+  * Backrun option and flag will persist beyond the first run (-br).  Please remove this flag if you do not want to backrun again.&#x20;
 * Explorer
-  * QUARTER and WEEK are not supported time bins in this release. 
+  * QUARTER and WEEK are not supported time bins in this release.&#x20;
   * On non-csv files, Explorer will not automatically infer file types. Users must change file type to the required value and click Step 2 "Load File". Nothing will change in Step 1 "File Information". A future enhancement will be added to automatically check filetypes by reading the first file
   * Dataset names should not contain special characters
 * Rules
@@ -71,12 +80,12 @@ rule_repo
 * Validate Source
   * Complex Validate Source queries can only be edited from the CMD line or JSON directly before hitting Run.
 * Security
-  * Active Directory in Azure SQL can connect via LDAP (basic auth) or Kerberos. 
+  * Active Directory in Azure SQL can connect via LDAP (basic auth) or Kerberos.&#x20;
 * S3 / GS / ADLS
   * Remote storage connections should be defined using the root bucket only.
 * Estimate Job is only available for files when Livy is being used.
 * Stop Job on jobs page is limited and does not work for all installation types.
-* Bigquery connector does not work with views 
+* Bigquery connector does not work with views&#x20;
 
 ## 2021.09 (09-2021)
 
@@ -93,7 +102,7 @@ rule_repo
 * Profile
   * When faced with a few errors e.g. 0.005% null, highlight issues more clearly and visibly instead  of the notion of rounding up to and displaying 100.0%
 * Jobs
-  * Enhanced query and file date templating and variable options. This allows easier scheduling and programmatic templating for common date variables 
+  * Enhanced query and file date templating and variable options. This allows easier scheduling and programmatic templating for common date variables&#x20;
   * Job Template corrupt time portion of ${rd} on last run of replay
   * Refactor job actions column
 * Catalog
@@ -106,8 +115,8 @@ rule_repo
 * Agent
   * Agent no longer shows as red if services are correctly running
 * Logging
-  * Jobs log retention policy now configurable in Admin Console -> App Config via "JOB_LOG_RETENTION_HR" (variable must be added along with value). If not added, default to 72 hours
-  * Platform logs retention policy now configurable in Admin Console -> App Config via "PLATFORM_LOG_RETENTION_HR" (variable must be added along with value). If not added, default to 24 hours
+  * Jobs log retention policy now configurable in Admin Console -> App Config via "JOB\_LOG\_RETENTION\_HR" (variable must be added along with value). If not added, default to 72 hours
+  * Platform logs retention policy now configurable in Admin Console -> App Config via "PLATFORM\_LOG\_RETENTION\_HR" (variable must be added along with value). If not added, default to 24 hours
 * Outliers
   * Fixed connection properties behavior given how multiple custom properties are handled in Hive
   * Fixed outliers issue that ignored WHERE clause on remote files
@@ -145,11 +154,11 @@ _Please note updated Collibra release name methodology_
 * Patterns
   * Fix load query generation issue when WHERE clause is specified
 * Behaviors
-  * Fix behavior score calculation after suppressing AR 
+  * Fix behavior score calculation after suppressing AR&#x20;
   * Fix percent change calculations in behavior AR after retrain
   * Mean Value Drift \[New Feature] [Behaviors](dq-visuals/behaviors.md#using-behavioral-analytics-change-detection)
 * Security
-  * Introduce new role of ROLE_DATA_GOVERNANCE_MANAGER with ability to manage (create / update / delete) Business Units and Data Concepts. [More info on Collibra DQ Security Roles](https://docs.owl-analytics.com/v/2021.08/security/owl-security/role-based-access-control-rbac)
+  * Introduce new role of ROLE\_DATA\_GOVERNANCE\_MANAGER with ability to manage (create / update / delete) Business Units and Data Concepts. [More info on Collibra DQ Security Roles](https://docs.owl-analytics.com/v/2021.08/security/owl-security/role-based-access-control-rbac)
   * Relaxed field requirements for password manager connections for App ID, Safe, and Password Manager Name
 * Scorecard
   * Enhanced page loading speeds for scorecard pages
@@ -328,42 +337,42 @@ _Please note updated Collibra release name methodology_
 * Install
   * Version bump and rpm style installation for a local postgres in the Owl install script
 
-## 2.12.0     (10-01-2020) 
+## 2.12.0     (10-01-2020)&#x20;
 
 **Enhancements**
 
-* Rule Page Builder Enhancements 
+* Rule Page Builder Enhancements&#x20;
   * Native Rule Updates (push-down)
   * Rule Freeform Section Usability
   * Run with default Agent
-* AWS S3 Role Based Authorization 
+* AWS S3 Role Based Authorization&#x20;
   * Leverage Instance Profile to assume a Role for authorization of S3 access
-* Enable LinkID in Owlcheck Explorer 
+* Enable LinkID in Owlcheck Explorer&#x20;
   * Designate a column that contains a unique record identifier. The value contained in this column will be captured and stored along with DQ findings. This identifier enables data stewards to quickly find and remediate DQ findings in the source data.
-* Wizard driven windowed aggregates on datasets 
+* Wizard driven windowed aggregates on datasets&#x20;
   * A user can apply a SUM(DURATION) OVER (PARTITION BY GRADE)
-* Bulk Delete From CatalogSecurity admin role 
+* Bulk Delete From CatalogSecurity admin role&#x20;
   * A user can bulk delete based on time since last run, # of total runs.
-* Rule Breaks to allow for different columns 
+* Rule Breaks to allow for different columns&#x20;
   * A user can apply a rule that has different columns and we catch exception gracefully
-* Edit OwlCheck created from CLI 
+* Edit OwlCheck created from CLI&#x20;
   * Allow Edit for Owlchecks initiated from CLI instead of directly from OwlDQ Explorer.
-* Explorer Edit on File Data Source 
+* Explorer Edit on File Data Source&#x20;
   * Ability to edit existing Olwchecks created on remote and local files. Expanded capabilities for editing Owlchecks on JDBC sources
 * Edit Score Card capabilities
-* Search and index dataset_schema col in CATALOG
-* Notebook API - Expanded Outliers and Patterns Results Outliers output displays 
+* Search and index dataset\_schema col in CATALOG
+* Notebook API - Expanded Outliers and Patterns Results Outliers output displays&#x20;
   * Key Column names and an aggregate view that merges duplicate Outlier findings to display the number of occurrences. Patterns aggregate output denotes columns not relevant to a given finding.
-* TECH PREVIEW - Kubernetes Support (V1) 
-  * Deploy OwlDQ and run Owlchecks on Kubernetes 
-* TECH PREVIEW - Streaming Owlchecks - SSL Authentication 
-  * Run Streaming Owlchecks on Kafka topics protected by 2-Way SSL 
-* TECH PREVIEW - Validate Source Drill-in 
+* TECH PREVIEW - Kubernetes Support (V1)&#x20;
+  * Deploy OwlDQ and run Owlchecks on Kubernetes&#x20;
+* TECH PREVIEW - Streaming Owlchecks - SSL Authentication&#x20;
+  * Run Streaming Owlchecks on Kafka topics protected by 2-Way SSL&#x20;
+* TECH PREVIEW - Validate Source Drill-in&#x20;
   * Source activity shows more details regarding source findings. Currently view-only. Use the existing table for invalidation.
 
 
 
-## 2.11.0     (8-1-2020) 
+## 2.11.0     (8-1-2020)&#x20;
 
 **Enhancements**
 
@@ -372,9 +381,9 @@ _Please note updated Collibra release name methodology_
   * Multiple Outlier definitions supporting full object
   * Multiple Pattern definitions supporting full object
   * Display full rulebreak rows in output Dataframe
-* Owlcheck Wizard supports multiple Outlier grouping with different keys 
+* Owlcheck Wizard supports multiple Outlier grouping with different keys&#x20;
   * Wizard supports definition of multiple distinct Outlier definitions using includes and keys
-* Owlcheck Wizard supports multiple Pattern grouping with different keys 
+* Owlcheck Wizard supports multiple Pattern grouping with different keys&#x20;
   * Wizard supports definition of multiple distinct Pattern definitions using includes and keys
 
 
@@ -395,7 +404,7 @@ _Please note updated Collibra release name methodology_
   * Configure all alerts to run via OwlWeb
 * Behaviors ([docs](https://docs.owl-analytics.com/dq-visuals/behaviors))
   * Ability to suppress behavior items
-  * UX modal enhancement for additional display values (chart/top-N/functions)  
+  * UX modal enhancement for additional display values (chart/top-N/functions) &#x20;
 * Jobs ([docs](https://docs.owl-analytics.com/apis/job-server))
   * Export All (export all checkbox)
   * Detailed logging per job (click jobs link)
@@ -484,7 +493,7 @@ _Please note updated Collibra release name methodology_
   * Percentages
   * Visuals
 * Behavior Cardinality Visuals
-* AutoProfile 
+* AutoProfile&#x20;
 
 **Reporting Export**
 
@@ -493,8 +502,8 @@ _Please note updated Collibra release name methodology_
 **General**
 
 * To Use `-hive` flag on hdp
-  *  A separate non-jdbc hive driver package is required
-  *  For assistance with this scenario please contact support.
+  * &#x20;A separate non-jdbc hive driver package is required
+  * &#x20;For assistance with this scenario please contact support.
 * Rules that apply the @t1 parameter is not supported from backrun or continuous sparkOwl api
 
 ## **2.8.0 = 3.31.2020**
@@ -534,15 +543,15 @@ _Please note updated Collibra release name methodology_
 **General**
 
 * To Use `-hive` flag on hdp
-  *  A separate non-jdbc hive driver package is required
-  *  For assistance with this scenario please contact support.
+  * &#x20;A separate non-jdbc hive driver package is required
+  * &#x20;For assistance with this scenario please contact support.
 * Rules that apply the @t1 parameter is not supported from backrun or continuous sparkOwl api
 
 ## **2.7.0 = 1.31.2020**
 
 **Tech preview**
 
-*  Adaptive rules button in behavior tab
+* &#x20;Adaptive rules button in behavior tab
 
 #### Multi-Tenancy
 
@@ -565,15 +574,15 @@ _Please note updated Collibra release name methodology_
 **General**
 
 * To Use `-hive` flag on hdp
-  *  A separate non-jdbc hive driver package is required
-  *  For assistance with this scenario please contact support.
+  * &#x20;A separate non-jdbc hive driver package is required
+  * &#x20;For assistance with this scenario please contact support.
 * Rules that apply the @t1 parameter is not supported from backrun or continuous sparkOwl api
 
 ## **2.6.2 = 1.21.2019**
 
 **Tech preview**
 
-*  Adaptive rules button in behavior tab
+* &#x20;Adaptive rules button in behavior tab
 
 #### Multi-Tenancy
 
@@ -609,8 +618,8 @@ _Please note updated Collibra release name methodology_
 **General**
 
 * To Use `-hive` flag on hdp
-  *  A separate non-jdbc hive driver package is required
-  *  For assistance with this scenario please contact support.
+  * &#x20;A separate non-jdbc hive driver package is required
+  * &#x20;For assistance with this scenario please contact support.
 * Rules that apply the @t1 parameter is not supported from backrun or continuous sparkOwl api
 * If upgrading from <2.5.0 → 2.6.2, the upgrade script must be used
 
@@ -662,154 +671,154 @@ _Please note updated Collibra release name methodology_
 
 ### Change Log / Fixes
 
-* OWL-826 Hive JDBC Kerberos User/Pass Authentication 
-* OWL-639 OwlCheck All (like Catalog All) 
-* OWL-741 How to read data from MySQL or another DataBase into a DataBricks notebook (have to add to CP) 
-* OWL-675 This epic is to track Jira's associated with OWL notebook execution 
-* OWL-921 FileQuery rewrite in Load Activity causes string case to change, breaking case sensitive queries 
-* OWL-920 Add DAO for ColMatchOpt 
-* OWL-919 Adding OwlOptBLL to be able to persist OwlOption (with nested objects) 
-* OWL-914 remove unnecessary encryption initialization in Pattern Activity 
-* OWL-912 Build new Model methods that expose files from S3 to the View 
-* OWL-911 Build new Controller methods that expose files from S3 to the View 
-* OWL-909 Remove single fields of outlier/pattern from OwlOption class 
-* OWL-908 Moving fields back to OwlOption from LoadOpt 
-* OWL-907 Add DAO for OutlierOpt 
-* OWL-906 Enable opt\_ table creation at OwlBLL 
-* OWL-905 Opt-out table creation at OwlBLL 
-* OWL-904 Add Parquet, Avro, and Json file ability to Wizard 
-* OWL-903 Add Multiline and Flatten to UI Wizard 
-* OWL-902 Agent Log File Rollover 
-* OWL-901 Research viability of obtaining customer defined ID field for each observation 
-* OWL-900 OwlCheckHistoryDAO logs "No row found matching the query criteria" as ERROR, breaks hoot 
-* OWL-899 jackson-databind upgrade to version 2.9.10 per CVEs 
-* OWL-897 Behavioral Dimension method in Profile calls collectAsMap mutiple times 
-* OWL-896 MSSQL - wizard date picker failure 
-* OWL-895 DqItems.datashapes does not match data stored in metastore datashape table 
-* OWL-894 Rename dataset foreign key columns to dataset_fk 
-* OWL-893 example options is not correct in the upgrade.sh 
-* OWL-892 Correlation Matrix includes owl_id column 
-* OWL-891 $rdEnd Monthly Scheduler to use rdEnd 
-* OWL-890 Refactor Dupe Table to Allow Overflow 
-* OWL-889 Dupe Table Greater Than 200 start to break page 
-* OWL-888 Refactor -rd validation to include timestamp 
-* OWL-887 Removing and merging AlertOpt into OwlOpt 
-* OWL-886 Removing and merging MiscOpt into OwlOpt 
-* OWL-885 Show role labels with partial access and function level 
-* OWL-883 Refactor Behavior Tab "NO" msg to encompass minimum number of pass runs 
-* OWL-882 Catalog Runs vs Catalog with no Runs 
-* OWL-877 Clean Up Dashboard Page 
-* OWL-876 Add DAO for DupeOpt 
-* OWL-875 Add DAO for ProfileOpt 
-* OWL-874 Add DAO for SparkOpt 
-* OWL-873 Add DAO for SourceOpt 
-* OWL-872 Add DAO for OwlOptions 
-* OWL-871 Add DAO for LoadOpt 
-* OWL-870 Add DAO for PatternOpt 
-* OWL-869 Add DAO for TransformOpt list 
-* OWL-868 Embed SchemaOpt into OwlOpt 
-* OWL-867 Graph Add Element 
-* OWL-865 New TransformOpt structure 
-* OWL-864 Move all fields from TransformOpt to LoadOpt 
-* OWL-856 avro, hdfs, parquet files for filtergram 
-* OWL-854 Add DAO for EnvOpt 
-* OWL-853 Add DAO for SchemaOpt 
-* OWL-852 Add DAO for RecordOpt 
-* OWL-848 \[Tech Debt] How to add 'dataset' field as named parameter where table doesn't have this column 
-* OWL-847 Adding DAO for RuleOpt 
-* OWL-839 Implement user defined NullValue replacement for Parquet 
-* OWL-833 Model method to enable Kerberos User/Pass Prompt Authentication Connection Type 
-* OWL-831 Add to controllers for file wizard for parquet and avro 
-* OWL-823 Store/Update and show profile image on profile page 
-* OWL-822 Profile user image storage support on controller and db 
-* OWL-821 Aggregate timestamps on scope view to day 
-* OWL-819 Bulk delete option for removing datasets from Catalog page 
-* OWL-813 Prep Sample Data Files 
-* OWL-812 Updated security documentation on new roles and ACLs 
-* OWL-808 \[Tech Debt] Instantiating \*\*Opt fields only if there are any changes in default values 
-* OWL-802 patterns showing observations for mismatch soucre and schema 
-* OWL-798 Char conversion in db2 - recreate to fix 
-* OWL-797 Test cases for role mappings 
-* OWL-796 Allow dynamic setting for UI timeout in JS 
-* OWL-791 Auto mapping of Roles Disabled by default 
-* OWL-785 Configure JWT token duration via props 
-* OWL-784 Store JSESSIONID and USER IP in log output 
-* OWL-783 Adding TransformOpt and mapping 
-* OWL-782 Extending SparkOpt and mapping 
-* OWL-781 Extending SourceOpt and mapping 
-* OWL-780 Adding SchemaOpt and mapping 
-* OWL-779 Extending RuleOpt and mapping 
-* OWL-778 Adding RecordOpt and mapping 
-* OWL-777 Recheck usage of N/A marked properties 
-* OWL-776 Extending ProfileOpt and mapping 
-* OWL-775 Extending PatternOpt and mapping 
-* OWL-774 Extending OwlOptions and mapping 
-* OWL-773 Extending OutlierOpt and mapping 
-* OWL-772 Extending LoadOpt and mapping 
-* OWL-771 Adding EnvOpt with mapping 
-* OWL-770 Extending DupeOpt and mapping 
-* OWL-769 Adding AlertOpt with mapping 
-* OWL-768 JWT AD With Special Char Passwords 
-* OWL-767 Logs that roll don't have the same permissions as the original 
-* OWL-765 Working owlcheck command line example 
-* OWL-763 Store login/logout information in PG 
-* OWL-760 Flyway - DB migration between version of software 
-* OWL-759 OPT_LOAD, OPT_OUTLIER, OPT_all9tabactivities 
-* OWL-750 Behavior page (pie char) hitting getprofiledeltasbyrunid shows 500 
-* OWL-733 DB Notebook execution against a DB that is not Postgres 
-* OWL-706 Outlier limits are not enforced for categorical outliers 
-* OWL-687 Show the time when an owlcheck was kicked off in the UI 
-* OWL-662 Build new Controller methods that expose files from HDFS to the View 
-* OWL-661 Build new Model methods for Owl Web to Enable access to HDFS 
-* OWL-660 Expand File Explorer to achieve functional parity to JDBC Explorer 
-* OWL-638 User Profile Page with rich features 
-* OWL-627 Global Connection Stops working after a few days 
-* OWL-625 Automatic Scan of entire Database near Catalog on Explorer 
-* OWL-597 Handle File Charset Encoding other than UTF-8 
-* OWL-562 Data preview on hoot page with masking checkboxes in header 
-* OWL-531 Documentation on Profile page 
-* OWL-513 Refactor Owl Notebook API to make History loading conditional 
-* OWL-506 props.datasetSafety = false; not working from a DB notebook 
-* OWL-496 Databricks cluster job succeeds from owl standpoint but the job fails from DataBricks standpoint 
-* OWL-359 Column level masking on data preview 
-* OWL-884 Add Unicode to the Wizard Builder 
-* OWL-599 Discover that target file is encoded as something other than UTF-8 in Explorer 
-* OWL-973 Default initial scorecard page 
-* OWL-971 Spinner on barchart load after date selection (ScopeTab) 
-* OWL-959 App Props for DB Logging on auth and page acceess 
-* OWL-945 "Get Started" tab of Explorer on DB connection does not present a form to edit dataset name or date 
-* OWL-927 Wizard should inject schema.tablename for default query when building Owlcheck for Hive/Impala datasource 
-* OWL-917 PWD masking in job status page 
-* OWL-851 Modify Connection page to include a check box called "Hive Direct Eligible" 
-* OWL-849 Add Auto Parallel JDBC support for Teradata 
-* OWL-846 Manual override of Parallel JDBC partitions on Wizard Parallel JDBC tab 
-* OWL-820 Double code mirror on Explorer (See Attached) 
-* OWL-686 Default settings for show Views and Stats in Explorer OWL-941 Login/Logout/User Interaction DB Logging 
-* OWL-939 Fix Validate Source Inputs 
-* OWL-929 User Audit UI Page with Export 
-* OWL-928 Add -df dateFormat option for file wizard 
-* OWL-915 Force UTF-8 Chars in owlcheck 
-* OWL-881 MT OwlHub require admin user/pwd to be set 
-* OWL-976 Refactor Connections Screen on Click Logic for Form 
-* OWL-975 Refactor Dataset Scope Blocker 
-* OWL-974 Make Connection URL Input on keyup change 
-* OWL-972 Refactor Explorer Dataset Scope Click Change Event on Where Clause 
-* OWL-963 parallell on: -column not there 
-* OWL-962 Add Promise before Impact Btn logic 
-* OWL-960 Catalog Search Ranked Order by RUNs 
-* OWL-958 Adding upsert method to PatternOptDao by ID field 
-* OWL-957 Adding upsert method to OutlierOptDao by ID field 
-* OWL-946 When Date is present in the where clause, Wizard adds TO_DATE() function even when database is not Oracle 
-* OWL-944 Validate Source with Oracle as source or target adds TO_DATE() to predicate of both source and target. 
-* OWL-940 -srcq displays the incorrect selection 
-* OWL-936 Multiple OwlCheck Command Lines 
-* OWL-932 Adding unit tests to check each \*Opt. mapping 
-* OWL-930 Enable LinkId capture and storage for Rules 
-* OWL-922 Customer Defined LinkId on Observations/Outliers/Shapes/Rules 
-* OWL-916 Changing Estimates in Wizard 
-* OWL-910 Connections Page don't allow spaces in Alias Name 
-* OWL-866 VS Support DB to file and file to DB 
-* OWL-850 Modify Load activity to parse props.columnname to determine partition calculation aggressiveness 
+* OWL-826 Hive JDBC Kerberos User/Pass Authentication&#x20;
+* OWL-639 OwlCheck All (like Catalog All)&#x20;
+* OWL-741 How to read data from MySQL or another DataBase into a DataBricks notebook (have to add to CP)&#x20;
+* OWL-675 This epic is to track Jira's associated with OWL notebook execution&#x20;
+* OWL-921 FileQuery rewrite in Load Activity causes string case to change, breaking case sensitive queries&#x20;
+* OWL-920 Add DAO for ColMatchOpt&#x20;
+* OWL-919 Adding OwlOptBLL to be able to persist OwlOption (with nested objects)&#x20;
+* OWL-914 remove unnecessary encryption initialization in Pattern Activity&#x20;
+* OWL-912 Build new Model methods that expose files from S3 to the View&#x20;
+* OWL-911 Build new Controller methods that expose files from S3 to the View&#x20;
+* OWL-909 Remove single fields of outlier/pattern from OwlOption class&#x20;
+* OWL-908 Moving fields back to OwlOption from LoadOpt&#x20;
+* OWL-907 Add DAO for OutlierOpt&#x20;
+* OWL-906 Enable opt\_ table creation at OwlBLL&#x20;
+* OWL-905 Opt-out table creation at OwlBLL&#x20;
+* OWL-904 Add Parquet, Avro, and Json file ability to Wizard&#x20;
+* OWL-903 Add Multiline and Flatten to UI Wizard&#x20;
+* OWL-902 Agent Log File Rollover&#x20;
+* OWL-901 Research viability of obtaining customer defined ID field for each observation&#x20;
+* OWL-900 OwlCheckHistoryDAO logs "No row found matching the query criteria" as ERROR, breaks hoot&#x20;
+* OWL-899 jackson-databind upgrade to version 2.9.10 per CVEs&#x20;
+* OWL-897 Behavioral Dimension method in Profile calls collectAsMap mutiple times&#x20;
+* OWL-896 MSSQL - wizard date picker failure&#x20;
+* OWL-895 DqItems.datashapes does not match data stored in metastore datashape table&#x20;
+* OWL-894 Rename dataset foreign key columns to dataset\_fk&#x20;
+* OWL-893 example options is not correct in the upgrade.sh&#x20;
+* OWL-892 Correlation Matrix includes owl\_id column&#x20;
+* OWL-891 $rdEnd Monthly Scheduler to use rdEnd&#x20;
+* OWL-890 Refactor Dupe Table to Allow Overflow&#x20;
+* OWL-889 Dupe Table Greater Than 200 start to break page&#x20;
+* OWL-888 Refactor -rd validation to include timestamp&#x20;
+* OWL-887 Removing and merging AlertOpt into OwlOpt&#x20;
+* OWL-886 Removing and merging MiscOpt into OwlOpt&#x20;
+* OWL-885 Show role labels with partial access and function level&#x20;
+* OWL-883 Refactor Behavior Tab "NO" msg to encompass minimum number of pass runs&#x20;
+* OWL-882 Catalog Runs vs Catalog with no Runs&#x20;
+* OWL-877 Clean Up Dashboard Page&#x20;
+* OWL-876 Add DAO for DupeOpt&#x20;
+* OWL-875 Add DAO for ProfileOpt&#x20;
+* OWL-874 Add DAO for SparkOpt&#x20;
+* OWL-873 Add DAO for SourceOpt&#x20;
+* OWL-872 Add DAO for OwlOptions&#x20;
+* OWL-871 Add DAO for LoadOpt&#x20;
+* OWL-870 Add DAO for PatternOpt&#x20;
+* OWL-869 Add DAO for TransformOpt list&#x20;
+* OWL-868 Embed SchemaOpt into OwlOpt&#x20;
+* OWL-867 Graph Add Element&#x20;
+* OWL-865 New TransformOpt structure&#x20;
+* OWL-864 Move all fields from TransformOpt to LoadOpt&#x20;
+* OWL-856 avro, hdfs, parquet files for filtergram&#x20;
+* OWL-854 Add DAO for EnvOpt&#x20;
+* OWL-853 Add DAO for SchemaOpt&#x20;
+* OWL-852 Add DAO for RecordOpt&#x20;
+* OWL-848 \[Tech Debt] How to add 'dataset' field as named parameter where table doesn't have this column&#x20;
+* OWL-847 Adding DAO for RuleOpt&#x20;
+* OWL-839 Implement user defined NullValue replacement for Parquet&#x20;
+* OWL-833 Model method to enable Kerberos User/Pass Prompt Authentication Connection Type&#x20;
+* OWL-831 Add to controllers for file wizard for parquet and avro&#x20;
+* OWL-823 Store/Update and show profile image on profile page&#x20;
+* OWL-822 Profile user image storage support on controller and db&#x20;
+* OWL-821 Aggregate timestamps on scope view to day&#x20;
+* OWL-819 Bulk delete option for removing datasets from Catalog page&#x20;
+* OWL-813 Prep Sample Data Files&#x20;
+* OWL-812 Updated security documentation on new roles and ACLs&#x20;
+* OWL-808 \[Tech Debt] Instantiating \*\*Opt fields only if there are any changes in default values&#x20;
+* OWL-802 patterns showing observations for mismatch soucre and schema&#x20;
+* OWL-798 Char conversion in db2 - recreate to fix&#x20;
+* OWL-797 Test cases for role mappings&#x20;
+* OWL-796 Allow dynamic setting for UI timeout in JS&#x20;
+* OWL-791 Auto mapping of Roles Disabled by default&#x20;
+* OWL-785 Configure JWT token duration via props&#x20;
+* OWL-784 Store JSESSIONID and USER IP in log output&#x20;
+* OWL-783 Adding TransformOpt and mapping&#x20;
+* OWL-782 Extending SparkOpt and mapping&#x20;
+* OWL-781 Extending SourceOpt and mapping&#x20;
+* OWL-780 Adding SchemaOpt and mapping&#x20;
+* OWL-779 Extending RuleOpt and mapping&#x20;
+* OWL-778 Adding RecordOpt and mapping&#x20;
+* OWL-777 Recheck usage of N/A marked properties&#x20;
+* OWL-776 Extending ProfileOpt and mapping&#x20;
+* OWL-775 Extending PatternOpt and mapping&#x20;
+* OWL-774 Extending OwlOptions and mapping&#x20;
+* OWL-773 Extending OutlierOpt and mapping&#x20;
+* OWL-772 Extending LoadOpt and mapping&#x20;
+* OWL-771 Adding EnvOpt with mapping&#x20;
+* OWL-770 Extending DupeOpt and mapping&#x20;
+* OWL-769 Adding AlertOpt with mapping&#x20;
+* OWL-768 JWT AD With Special Char Passwords&#x20;
+* OWL-767 Logs that roll don't have the same permissions as the original&#x20;
+* OWL-765 Working owlcheck command line example&#x20;
+* OWL-763 Store login/logout information in PG&#x20;
+* OWL-760 Flyway - DB migration between version of software&#x20;
+* OWL-759 OPT\_LOAD, OPT\_OUTLIER, OPT\_all9tabactivities&#x20;
+* OWL-750 Behavior page (pie char) hitting getprofiledeltasbyrunid shows 500&#x20;
+* OWL-733 DB Notebook execution against a DB that is not Postgres&#x20;
+* OWL-706 Outlier limits are not enforced for categorical outliers&#x20;
+* OWL-687 Show the time when an owlcheck was kicked off in the UI&#x20;
+* OWL-662 Build new Controller methods that expose files from HDFS to the View&#x20;
+* OWL-661 Build new Model methods for Owl Web to Enable access to HDFS&#x20;
+* OWL-660 Expand File Explorer to achieve functional parity to JDBC Explorer&#x20;
+* OWL-638 User Profile Page with rich features&#x20;
+* OWL-627 Global Connection Stops working after a few days&#x20;
+* OWL-625 Automatic Scan of entire Database near Catalog on Explorer&#x20;
+* OWL-597 Handle File Charset Encoding other than UTF-8&#x20;
+* OWL-562 Data preview on hoot page with masking checkboxes in header&#x20;
+* OWL-531 Documentation on Profile page&#x20;
+* OWL-513 Refactor Owl Notebook API to make History loading conditional&#x20;
+* OWL-506 props.datasetSafety = false; not working from a DB notebook&#x20;
+* OWL-496 Databricks cluster job succeeds from owl standpoint but the job fails from DataBricks standpoint&#x20;
+* OWL-359 Column level masking on data preview&#x20;
+* OWL-884 Add Unicode to the Wizard Builder&#x20;
+* OWL-599 Discover that target file is encoded as something other than UTF-8 in Explorer&#x20;
+* OWL-973 Default initial scorecard page&#x20;
+* OWL-971 Spinner on barchart load after date selection (ScopeTab)&#x20;
+* OWL-959 App Props for DB Logging on auth and page acceess&#x20;
+* OWL-945 "Get Started" tab of Explorer on DB connection does not present a form to edit dataset name or date&#x20;
+* OWL-927 Wizard should inject schema.tablename for default query when building Owlcheck for Hive/Impala datasource&#x20;
+* OWL-917 PWD masking in job status page&#x20;
+* OWL-851 Modify Connection page to include a check box called "Hive Direct Eligible"&#x20;
+* OWL-849 Add Auto Parallel JDBC support for Teradata&#x20;
+* OWL-846 Manual override of Parallel JDBC partitions on Wizard Parallel JDBC tab&#x20;
+* OWL-820 Double code mirror on Explorer (See Attached)&#x20;
+* OWL-686 Default settings for show Views and Stats in Explorer OWL-941 Login/Logout/User Interaction DB Logging&#x20;
+* OWL-939 Fix Validate Source Inputs&#x20;
+* OWL-929 User Audit UI Page with Export&#x20;
+* OWL-928 Add -df dateFormat option for file wizard&#x20;
+* OWL-915 Force UTF-8 Chars in owlcheck&#x20;
+* OWL-881 MT OwlHub require admin user/pwd to be set&#x20;
+* OWL-976 Refactor Connections Screen on Click Logic for Form&#x20;
+* OWL-975 Refactor Dataset Scope Blocker&#x20;
+* OWL-974 Make Connection URL Input on keyup change&#x20;
+* OWL-972 Refactor Explorer Dataset Scope Click Change Event on Where Clause&#x20;
+* OWL-963 parallell on: -column not there&#x20;
+* OWL-962 Add Promise before Impact Btn logic&#x20;
+* OWL-960 Catalog Search Ranked Order by RUNs&#x20;
+* OWL-958 Adding upsert method to PatternOptDao by ID field&#x20;
+* OWL-957 Adding upsert method to OutlierOptDao by ID field&#x20;
+* OWL-946 When Date is present in the where clause, Wizard adds TO\_DATE() function even when database is not Oracle&#x20;
+* OWL-944 Validate Source with Oracle as source or target adds TO\_DATE() to predicate of both source and target.&#x20;
+* OWL-940 -srcq displays the incorrect selection&#x20;
+* OWL-936 Multiple OwlCheck Command Lines&#x20;
+* OWL-932 Adding unit tests to check each \*Opt. mapping&#x20;
+* OWL-930 Enable LinkId capture and storage for Rules&#x20;
+* OWL-922 Customer Defined LinkId on Observations/Outliers/Shapes/Rules&#x20;
+* OWL-916 Changing Estimates in Wizard&#x20;
+* OWL-910 Connections Page don't allow spaces in Alias Name&#x20;
+* OWL-866 VS Support DB to file and file to DB&#x20;
+* OWL-850 Modify Load activity to parse props.columnname to determine partition calculation aggressiveness&#x20;
 * OWL-938 Track Hoot Page Tab with Darker Color
 * OWL-937 Refactor Left Nav
 
@@ -838,7 +847,7 @@ _Please note updated Collibra release name methodology_
 1. opt.source.map map is not available in Notebook api
 2. Cluster restart required when adding nodes to re-initialize static app configs.
 3. if opt.outlier.on = true and not using Owl Load() to load dataframes, dfHist.createOrReplace("historical")
-4. If opt.pattern.on = true, pattern needs a date column to run (-adddc -fpgdc OWL_RUN_ID or define -fpgdc as actual date column)
+4. If opt.pattern.on = true, pattern needs a date column to run (-adddc -fpgdc OWL\_RUN\_ID or define -fpgdc as actual date column)
 5. spark.catalog.clearCache() should be called to clear rdd storage (rdd build-up can occur if not routinely clearing legacy cached rdds)
 6. LinkId should be a unique row identifier
 
@@ -850,22 +859,22 @@ _Please note updated Collibra release name methodology_
 
 ### Change Log / Fixes
 
-* OWL-732 Owl.owlCheck() fails if props.cardOff set to true 
-* OWL-743 Add test notebook on DataBricks 
-* OWL-730 Cover Dupes activity with test notebooks on DataBricks 
-* OWL-744 Cover Profile activity with test notebooks on DataBricks 
-* OWL-742 Add ATM test notebooks on DataBricks 
-* OWL-701 long running fpg - review fpg buckets - not adhering to 50k limit 
-* OWL-681 Catalog hangs from spark where 1 =0 wrapper 
-* OWL-431 Additional User Activity Logging 
-* OWL-626 Create DATA_PREVIEW role to control who can see stored customer data 
+* OWL-732 Owl.owlCheck() fails if props.cardOff set to true&#x20;
+* OWL-743 Add test notebook on DataBricks&#x20;
+* OWL-730 Cover Dupes activity with test notebooks on DataBricks&#x20;
+* OWL-744 Cover Profile activity with test notebooks on DataBricks&#x20;
+* OWL-742 Add ATM test notebooks on DataBricks&#x20;
+* OWL-701 long running fpg - review fpg buckets - not adhering to 50k limit&#x20;
+* OWL-681 Catalog hangs from spark where 1 =0 wrapper&#x20;
+* OWL-431 Additional User Activity Logging&#x20;
+* OWL-626 Create DATA\_PREVIEW role to control who can see stored customer data&#x20;
 * OWL-735 When filequery is enabled, data is cached but then dropped from memory before Profile
 
 ### **Known Issues**
 
-* Validate Source if Oracle is Target TO_DATE is applied and breaks \
-  \-- work around remove TO_DATE from Source \
-  \-- impala and certain databases that do not support TO_DATE
+* Validate Source if Oracle is Target TO\_DATE is applied and breaks \
+  \-- work around remove TO\_DATE from Source \
+  \-- impala and certain databases that do not support TO\_DATE
 * Back run -br does not warn you that ${rd} does not exist on wizard
 * \~| as a file delimiter does not work in the UI (works via OwlCheck)
 * Estimate Job does not always take. You can only click it while on Config Tab first
@@ -888,91 +897,91 @@ _Please note updated Collibra release name methodology_
 
 ### Change Log / Fixes
 
-* OWL-542 Wrong initial Score calculation 
-* OWL-621 DQ INBOX Refactor and LIST VIEW 
-* OWL-659 Modify Owl Web to store and handle Spark enabled Principals and JDBC enabled Principals separately 
-* OWL-351 Document DB Encryption Requirements Per Type 
-* OWL-549 Build OwlHub Metastore and DAOs 
-* OWL-585 MT - new install no tables and the export MULTITENANTMODE=TRUE doesn't create main tables 
-* OWL-629 MT Login Via AD 
-* OWL-510 DB Notebook issue - Dataset score shows double reduction in the UI. 
-* OWL-665 Web UI should expose shape sensitivity and column exclusion settings on the Shapes tab on Hoot page 
-* OWL-623 SENSITIVIY PopUp 
-* OWL-160 setup.sh better handling if packages are not included in the package directory 
-* OWL-664 Populate executor cores field using values returned by job estimator 
-* OWL-622 SEARCH for PROFILE and HOOT in 1 
-* OWL-548 POC Run multiple tenants by schema in parallel 
-* OWL-667 Implement Web Controller method to write Shape settings to metastore 
-* OWL-700 sensitivities reduced for nulls empties and mixed types 
-* OWL-624 REPORT Summary View for public roles 
-* OWL-666 Data Shapes Noise Reduction Phase 2 
-* OWL-630 JWT MT Testing multi login scenarios 
-* OWL-586 Cannot log into to MT enabled UI trying owlhub 
-* OWL-511 DB notebook error in UI. UI shows 1 column added no matter what dataset I run against 
-* OWL-708 Fix CMD wrap 
-* OWL-707 Validate CMD to throw error when no 'TO_DATE' for Oracle 
-* OWL-652 dlexc dlinc added for categorical outliers 
+* OWL-542 Wrong initial Score calculation&#x20;
+* OWL-621 DQ INBOX Refactor and LIST VIEW&#x20;
+* OWL-659 Modify Owl Web to store and handle Spark enabled Principals and JDBC enabled Principals separately&#x20;
+* OWL-351 Document DB Encryption Requirements Per Type&#x20;
+* OWL-549 Build OwlHub Metastore and DAOs&#x20;
+* OWL-585 MT - new install no tables and the export MULTITENANTMODE=TRUE doesn't create main tables&#x20;
+* OWL-629 MT Login Via AD&#x20;
+* OWL-510 DB Notebook issue - Dataset score shows double reduction in the UI.&#x20;
+* OWL-665 Web UI should expose shape sensitivity and column exclusion settings on the Shapes tab on Hoot page&#x20;
+* OWL-623 SENSITIVIY PopUp&#x20;
+* OWL-160 setup.sh better handling if packages are not included in the package directory&#x20;
+* OWL-664 Populate executor cores field using values returned by job estimator&#x20;
+* OWL-622 SEARCH for PROFILE and HOOT in 1&#x20;
+* OWL-548 POC Run multiple tenants by schema in parallel&#x20;
+* OWL-667 Implement Web Controller method to write Shape settings to metastore&#x20;
+* OWL-700 sensitivities reduced for nulls empties and mixed types&#x20;
+* OWL-624 REPORT Summary View for public roles&#x20;
+* OWL-666 Data Shapes Noise Reduction Phase 2&#x20;
+* OWL-630 JWT MT Testing multi login scenarios&#x20;
+* OWL-586 Cannot log into to MT enabled UI trying owlhub&#x20;
+* OWL-511 DB notebook error in UI. UI shows 1 column added no matter what dataset I run against&#x20;
+* OWL-708 Fix CMD wrap&#x20;
+* OWL-707 Validate CMD to throw error when no 'TO\_DATE' for Oracle&#x20;
+* OWL-652 dlexc dlinc added for categorical outliers&#x20;
 * OWL-532 Documentation on SQL Editor
-* OWL-263 Implement Kerb Principal and Keytab handling in Owlcheck 
-* OWL-572 AD Auth Providers Per Tenant 
-* OWL-658 Expand Owlcheck to handle multiple Principals/Keytabs for different purposes 
-* OWL-498 Test Case - Match All Hoot Components for FPG and Validate Source to Hoot BLL and Sub Scoring Components to Scores BLL 
-* OWL-691 Handle Web UI for endpoints that return a 403 for no Data Preview Access 
-* OWL-690 Refactor Hoot Page Permissions for DATA_PREVIEW Role 
-* OWL-657 Kerberos Connect-As for JDBC connections 
-* OWL-693 Upload File to Rule Truthset OWL-618 HOOT job ERROR MSG display 
-* OWL-689 opts doesn't seem to have pguser/pgpassword or host parameters 
-* OWL-656 Establish Secured HDP 3.1 cluster for testing 
-* OWL-613 datashapescore flag is not being honored 
-* OWL-698 dupe first character as 0 fixed 
-* OWL-620 Data Preview TYPES in header vs LABELS 
-* OWL-695 Validation for Truthset Forms 
-* OWL-694 Concat Columns for Categorical Outliers 
-* OWL-619 Catalog +/- to arrow 
-* OWL-696 Add run tab to Rule page to re-run owlcheck with rules 
-* OWL-563 MT Documentation 
-* OWL-565 Logging validation 
-* OWL-562 Data preview on hoot page with masking checkboxes in header 
-* OWL-647 Exclude columns from Shape discovery in Owl Core 
-* OWL-604 MT - trying to execute a job to a specific agent throws an error 
-* OWL-682 Datashape table is not being cleared when re-running a existing day 
-* OWL-530 Documentation on Rules - update the rules section of docs 
-* OWL-648 Auto configure Shapes Sensitivity 
-* OWL-411 UI display of estimation details on wizard 
-* OWL-410 Job resource requirement calculation 
-* OWL-684 Sample 10 examples of Shapes Data Preview Highlights 
-* OWL-610 Testing validate source from UI 
-* OWL-685 Bin Month By Month fix date parsing 
-* OWL-553 Stress Test Concurrent tenant logins 
-* OWL-552 "Web Scheduled Tasks by Schema (cache job schedule)" 
-* OWL-632 Refactor Outlier History and Preview 
-* OWL-555 Owl setup with option to enable multi tenant with app props 
-* OWL-554 Owlcheck web custom -h flag if MT enabled 
-* OWL-362 Documentation user setup on all three encryption options 
-* OWL-361 Create new table/DAO/Domain Object for Col Masking 
-* OWL-209 New log4j2.xml file changes the owlcheck parameters 
-* OWL-593 MT with the use of agents 
-* OWL-671 Misleading example/hint SQL statements on Rule -> FreeformSQL -> SQL Editor page 
-* OWL-715 "Hive emits columns formated table.colum breaks ValSrc auto mapping" 
-* OWL-557 JWT/Cookie CURL in multi tenant mode 
-* OWL-439 New dataset runs do not show schema labels 
-* OWL-633 explorer wizard <= replaces with >= 
-* OWL-515 regular -dl outlier (take outlierLimit) cap data preview inserts 
-* OWL-559 Default configuration of tenant admin on enable MT 
-* OWL-635 file explorer wizard (local file don't add yarn parameters) 
-* OWL-558 Alt login path if entering owl hub 
-* OWL-676 Inject Kerberos Principal and Keytab required to submit Owlcheck via agent configs 
-* OWL-678 Hive -jdbcprinc -jdbckeytab patch 
-* OWL-673 Shape DataPreview Batch Insert fails if preview row column value is NULL (DB NULL constraint) 
-* OWL-479 Run OwlCheck Cluster mode when Hive JDBC is the Source 
-* OWL-600 "Handle Tab and ""\~|"" delimiter for file ingest in Owlcheck" 
+* OWL-263 Implement Kerb Principal and Keytab handling in Owlcheck&#x20;
+* OWL-572 AD Auth Providers Per Tenant&#x20;
+* OWL-658 Expand Owlcheck to handle multiple Principals/Keytabs for different purposes&#x20;
+* OWL-498 Test Case - Match All Hoot Components for FPG and Validate Source to Hoot BLL and Sub Scoring Components to Scores BLL&#x20;
+* OWL-691 Handle Web UI for endpoints that return a 403 for no Data Preview Access&#x20;
+* OWL-690 Refactor Hoot Page Permissions for DATA\_PREVIEW Role&#x20;
+* OWL-657 Kerberos Connect-As for JDBC connections&#x20;
+* OWL-693 Upload File to Rule Truthset OWL-618 HOOT job ERROR MSG display&#x20;
+* OWL-689 opts doesn't seem to have pguser/pgpassword or host parameters&#x20;
+* OWL-656 Establish Secured HDP 3.1 cluster for testing&#x20;
+* OWL-613 datashapescore flag is not being honored&#x20;
+* OWL-698 dupe first character as 0 fixed&#x20;
+* OWL-620 Data Preview TYPES in header vs LABELS&#x20;
+* OWL-695 Validation for Truthset Forms&#x20;
+* OWL-694 Concat Columns for Categorical Outliers&#x20;
+* OWL-619 Catalog +/- to arrow&#x20;
+* OWL-696 Add run tab to Rule page to re-run owlcheck with rules&#x20;
+* OWL-563 MT Documentation&#x20;
+* OWL-565 Logging validation&#x20;
+* OWL-562 Data preview on hoot page with masking checkboxes in header&#x20;
+* OWL-647 Exclude columns from Shape discovery in Owl Core&#x20;
+* OWL-604 MT - trying to execute a job to a specific agent throws an error&#x20;
+* OWL-682 Datashape table is not being cleared when re-running a existing day&#x20;
+* OWL-530 Documentation on Rules - update the rules section of docs&#x20;
+* OWL-648 Auto configure Shapes Sensitivity&#x20;
+* OWL-411 UI display of estimation details on wizard&#x20;
+* OWL-410 Job resource requirement calculation&#x20;
+* OWL-684 Sample 10 examples of Shapes Data Preview Highlights&#x20;
+* OWL-610 Testing validate source from UI&#x20;
+* OWL-685 Bin Month By Month fix date parsing&#x20;
+* OWL-553 Stress Test Concurrent tenant logins&#x20;
+* OWL-552 "Web Scheduled Tasks by Schema (cache job schedule)"&#x20;
+* OWL-632 Refactor Outlier History and Preview&#x20;
+* OWL-555 Owl setup with option to enable multi tenant with app props&#x20;
+* OWL-554 Owlcheck web custom -h flag if MT enabled&#x20;
+* OWL-362 Documentation user setup on all three encryption options&#x20;
+* OWL-361 Create new table/DAO/Domain Object for Col Masking&#x20;
+* OWL-209 New log4j2.xml file changes the owlcheck parameters&#x20;
+* OWL-593 MT with the use of agents&#x20;
+* OWL-671 Misleading example/hint SQL statements on Rule -> FreeformSQL -> SQL Editor page&#x20;
+* OWL-715 "Hive emits columns formated table.colum breaks ValSrc auto mapping"&#x20;
+* OWL-557 JWT/Cookie CURL in multi tenant mode&#x20;
+* OWL-439 New dataset runs do not show schema labels&#x20;
+* OWL-633 explorer wizard <= replaces with >=&#x20;
+* OWL-515 regular -dl outlier (take outlierLimit) cap data preview inserts&#x20;
+* OWL-559 Default configuration of tenant admin on enable MT&#x20;
+* OWL-635 file explorer wizard (local file don't add yarn parameters)&#x20;
+* OWL-558 Alt login path if entering owl hub&#x20;
+* OWL-676 Inject Kerberos Principal and Keytab required to submit Owlcheck via agent configs&#x20;
+* OWL-678 Hive -jdbcprinc -jdbckeytab patch&#x20;
+* OWL-673 Shape DataPreview Batch Insert fails if preview row column value is NULL (DB NULL constraint)&#x20;
+* OWL-479 Run OwlCheck Cluster mode when Hive JDBC is the Source&#x20;
+* OWL-600 "Handle Tab and ""\~|"" delimiter for file ingest in Owlcheck"&#x20;
 * OWL-674 MIN/MAX stats = NULL causes NPE in Histograms
 
 ### **Known Issues**
 
-* Validate Source if Oracle is Target TO_DATE is applied and breaks \
-  \-- work around remove TO_DATE from Source \
-  \-- impala and certain databases that do not support TO_DATE
+* Validate Source if Oracle is Target TO\_DATE is applied and breaks \
+  \-- work around remove TO\_DATE from Source \
+  \-- impala and certain databases that do not support TO\_DATE
 * Back run -br does not warn you that ${rd} does not exist on wizard
 * \~| as a file delimiter does not work in the UI (works via OwlCheck)
 * Estimate Job does not always take. You can only click it while on Config Tab first
@@ -989,40 +998,40 @@ _Please note updated Collibra release name methodology_
 
 ### **Features**
 
-* Multi Tenancy 
+* Multi Tenancy&#x20;
 * Masking
 * JWT CURL
 
 ### Change Log / Fixes
 
-* OWL-566 Outliers Performance Review 
-* OWL-522 Rules UI refactor 
-* OWL-528 Build Controller method that determines whether there is a minority set of data shapes and only returns those shapes 
-* OWL-605 profileRDD for comparison 
+* OWL-566 Outliers Performance Review&#x20;
+* OWL-522 Rules UI refactor&#x20;
+* OWL-528 Build Controller method that determines whether there is a minority set of data shapes and only returns those shapes&#x20;
+* OWL-605 profileRDD for comparison&#x20;
 * OWL-550 OwlHub Management GUI for Multi Tenancy
-* OWL-524 behavior dimension to check for nulls 
-* OWL-567 Shapes Insert unique idx conflict fix 
-* OWL-603 Lookback query does not build correct bin boundaries 
-* OWL-526 Handle Data Shapes more efficiently both for user experience and backend processing 
-* OWL-590 Turn Outliers Preview Highlight back on with bulk write to DB 
-* OWL-587 Load Activity does not correctly build time binned historical queries for PG/Oracle/MSSQL/DB2 
-* OWL-608 validate source matches and counts 
+* OWL-524 behavior dimension to check for nulls&#x20;
+* OWL-567 Shapes Insert unique idx conflict fix&#x20;
+* OWL-603 Lookback query does not build correct bin boundaries&#x20;
+* OWL-526 Handle Data Shapes more efficiently both for user experience and backend processing&#x20;
+* OWL-590 Turn Outliers Preview Highlight back on with bulk write to DB&#x20;
+* OWL-587 Load Activity does not correctly build time binned historical queries for PG/Oracle/MSSQL/DB2&#x20;
+* OWL-608 validate source matches and counts&#x20;
 * OWL-589 Specifying a queue name in the explorer page on the config tab doesn't get added to the ""Run CMD"" owlcheck cli
-* OWL-594 Installing just owl agent doesn't prompt for owl-postgres password 
-* OWL-595 Agent Configs number of cores doesn't get added to the owlcheck 
-* OWL-556 Customize Login page to select tenant before login 
-* OWL-592 Compute Stats in DQRowCheck routine to optimize Profile Activity 
-* OWL-614 Don't down score for Schema Evolution on first run 
-* OWL-591 MultiTenant (MT) creation of more then one tenant spawns duplicates 
-* OWL-598 Enable core to handle non-UTF-8 encoding when parsing target and source files 
-* OWL-600 "Handle Tab and ""\~|"" delimiter for file ingest in Owlcheck" 
-* OWL-596 setup.sh when only installing Postgres misses creation of owl-env.sh script 
-* OWL-545 setup.sh script all parameterized for unattended installations of owl 
+* OWL-594 Installing just owl agent doesn't prompt for owl-postgres password&#x20;
+* OWL-595 Agent Configs number of cores doesn't get added to the owlcheck&#x20;
+* OWL-556 Customize Login page to select tenant before login&#x20;
+* OWL-592 Compute Stats in DQRowCheck routine to optimize Profile Activity&#x20;
+* OWL-614 Don't down score for Schema Evolution on first run&#x20;
+* OWL-591 MultiTenant (MT) creation of more then one tenant spawns duplicates&#x20;
+* OWL-598 Enable core to handle non-UTF-8 encoding when parsing target and source files&#x20;
+* OWL-600 "Handle Tab and ""\~|"" delimiter for file ingest in Owlcheck"&#x20;
+* OWL-596 setup.sh when only installing Postgres misses creation of owl-env.sh script&#x20;
+* OWL-545 setup.sh script all parameterized for unattended installations of owl&#x20;
 * OWL-130 Agent Documentation
-* OWL-607 dupe test for block index 
-* OWL-606 validate source matching values with count  
-* OWL-576 Integrate BitBucket with Jenkins to automatically build and test batches of commits 
-* OWL-134 MultiTenancy Documentation 
+* OWL-607 dupe test for block index&#x20;
+* OWL-606 validate source matching values with count &#x20;
+* OWL-576 Integrate BitBucket with Jenkins to automatically build and test batches of commits&#x20;
+* OWL-134 MultiTenancy Documentation&#x20;
 * OWL-133 HA Documentation
 
 ### **Known Issues**
@@ -1042,7 +1051,7 @@ _Please note updated Collibra release name methodology_
 
 ### Change Log/Fixes
 
-* Performance related improvements.  
+* Performance related improvements. &#x20;
 * Bulk inserts into owl-postgres metastore
 
 ## 2.2.0 = 8.12.2019
@@ -1055,43 +1064,43 @@ _Please note updated Collibra release name methodology_
 
 ### Change Log/Fix
 
-* OWL-544 Datasets with a high number incidents of shape issues align all rows in preview 
-* OWL-541 Create Additional Estimate Button on Explorer to display row and col values in addition to  run settings 
-* OWL-539 Implement Logic for runDate on owlCheck 
-* OWL-538 Performance tuning of Histogram String when low number of rows and high number of columns 
+* OWL-544 Datasets with a high number incidents of shape issues align all rows in preview&#x20;
+* OWL-541 Create Additional Estimate Button on Explorer to display row and col values in addition to  run settings&#x20;
+* OWL-539 Implement Logic for runDate on owlCheck&#x20;
+* OWL-538 Performance tuning of Histogram String when low number of rows and high number of columns&#x20;
 * OWL-536 datashapes drill in with preview update
-* OWL-535 template creation with $rd parameter support. 
-* OWL-534 Break Load().execute() into modular methods to better control loading and caching 
-* OWL-533 change setup.sh script to pull hostname and add to owl-env.sh in place of localhost 
-* OWL-527 Only look for data shapes on columns that have not been tagged as a semantic schema type 
-* OWL-523 Dupe Slider in Wizard 
-* OWL-521 VarSrc Lib in wizard owlcheck 
-* OWL-520 Add Data Preview Collapsible Area Above Agent Area on Explorer 
-* OWL-514 Owl Notebook API support for loading historical data 
-* OWL-512 master - UI explorer adding custom persist at runtime. 
-* OWL-504 256Bit Encryption on internal Enc Method 
-* OWL-503 log encryption for Spark UI 
-* OWL-502 Agent add exports in owl.properties specifically for agent due to shade of postgres 
-* OWL-501 Clean Activity fix (VizErrors.Clean() test case fix) 
-* OWL-500 Load Phase Build Historical breaks when dataCol predicate comes after where statement 
-* OWL-497 Alter table commands between versions of owl - (Postgres release) 
-* OWL-495 Databricks notebook execution have to manual update the application.properties file for it to write back to DB 
-* OWL-494 Hoot Page Always Show 'Processing' for Hourly and Minute Run Ids 
-* OWL-493 2019-06-18T11:08:00.000 0000 Date Parser Format Support 
-* OWL-488 Categorical Data Preview Inserts - Check for Accuracy 
-* OWL-484 Test Rules for Notebook API per OWL-472 
-* OWL-483 --Conf support at CmdLine 
-* OWL-481 Wizard Kerb Hive Support for OWL-479 
-* OWL-480 Kerb JDBC Connection for OWL-479 
-* OWL-479 Run OwlCheck Cluster mode when Hive JDBC is the Source 
+* OWL-535 template creation with $rd parameter support.&#x20;
+* OWL-534 Break Load().execute() into modular methods to better control loading and caching&#x20;
+* OWL-533 change setup.sh script to pull hostname and add to owl-env.sh in place of localhost&#x20;
+* OWL-527 Only look for data shapes on columns that have not been tagged as a semantic schema type&#x20;
+* OWL-523 Dupe Slider in Wizard&#x20;
+* OWL-521 VarSrc Lib in wizard owlcheck&#x20;
+* OWL-520 Add Data Preview Collapsible Area Above Agent Area on Explorer&#x20;
+* OWL-514 Owl Notebook API support for loading historical data&#x20;
+* OWL-512 master - UI explorer adding custom persist at runtime.&#x20;
+* OWL-504 256Bit Encryption on internal Enc Method&#x20;
+* OWL-503 log encryption for Spark UI&#x20;
+* OWL-502 Agent add exports in owl.properties specifically for agent due to shade of postgres&#x20;
+* OWL-501 Clean Activity fix (VizErrors.Clean() test case fix)&#x20;
+* OWL-500 Load Phase Build Historical breaks when dataCol predicate comes after where statement&#x20;
+* OWL-497 Alter table commands between versions of owl - (Postgres release)&#x20;
+* OWL-495 Databricks notebook execution have to manual update the application.properties file for it to write back to DB&#x20;
+* OWL-494 Hoot Page Always Show 'Processing' for Hourly and Minute Run Ids&#x20;
+* OWL-493 2019-06-18T11:08:00.000 0000 Date Parser Format Support&#x20;
+* OWL-488 Categorical Data Preview Inserts - Check for Accuracy&#x20;
+* OWL-484 Test Rules for Notebook API per OWL-472&#x20;
+* OWL-483 --Conf support at CmdLine&#x20;
+* OWL-481 Wizard Kerb Hive Support for OWL-479&#x20;
+* OWL-480 Kerb JDBC Connection for OWL-479&#x20;
+* OWL-479 Run OwlCheck Cluster mode when Hive JDBC is the Source&#x20;
 * OWL-466 UI Save enhanced notifications
-* OWL-451 Run Tab enhancements In Wizard 
-* OWL-437 Hoot DataPreview Highlight and Shapes 
-* OWL-406 UI Global connection with customer password manager option 
-* OWL-390 more s3 test cases 
-* OWL-346 Hoot dynamic loading with UI improvements 
-* OWL-322 Truth Set Rules 
-* OWL-98 Install of components, interaction base on what is NOT installed. 
+* OWL-451 Run Tab enhancements In Wizard&#x20;
+* OWL-437 Hoot DataPreview Highlight and Shapes&#x20;
+* OWL-406 UI Global connection with customer password manager option&#x20;
+* OWL-390 more s3 test cases&#x20;
+* OWL-346 Hoot dynamic loading with UI improvements&#x20;
+* OWL-322 Truth Set Rules&#x20;
+* OWL-98 Install of components, interaction base on what is NOT installed.&#x20;
 * OWL-48 COLUMN SEARCHING IN WIZARD
 
 ### **Known Issues**
@@ -1107,28 +1116,28 @@ _Please note updated Collibra release name methodology_
 * Scheduler added
 * Support for XML/ORC
 * Disable/Enable Notebook & Orient features for the UI
-* Admin Delegate sub-authorities for Managing User Access to Various Functions 
+* Admin Delegate sub-authorities for Managing User Access to Various Functions&#x20;
 * owlcheck support of --conf (in owl-env.sh)
 * Connection Templates for common drivers
 
 ### **Change Log/Fix**
 
 * OWL-453 Reference Record for Record Added Dropped
-* OWL-285 rule history -> removeAllRules, 
-* OWL-486 Dupes on an integer column causes dupes to NOT be found, 
-* OWL-460 owlcheck examples on gitbook, 
+* OWL-285 rule history -> removeAllRules,&#x20;
+* OWL-486 Dupes on an integer column causes dupes to NOT be found,&#x20;
+* OWL-460 owlcheck examples on gitbook,&#x20;
 * OWL-459 documentation: add information about the scheduler (screenshots) and how to use it.,
 * OWL-457 backrun (-br) using cluster mode is failing do to what seems to be a spark context issue,
-* OWL-446 Any time the timezone is updated it generates more behaviors, 
-* OWL-445 Setup.sh script to include all drivers at install time, 
-* OWL-426 OwlCheck cannot run in Cluster mode when Hive JDBC is the Source, 
-* OWL-423 Postgres Multiple Schema test within the same DB, 
+* OWL-446 Any time the timezone is updated it generates more behaviors,&#x20;
+* OWL-445 Setup.sh script to include all drivers at install time,&#x20;
+* OWL-426 OwlCheck cannot run in Cluster mode when Hive JDBC is the Source,&#x20;
+* OWL-423 Postgres Multiple Schema test within the same DB,&#x20;
 * OWL-387 If Alert mail server is not setup - alert user when the click alerts that no email server has been setup
 * OWL-386 If Orient or Zeppelin are not installed we should just remove the buttons from the UI
 * OWL-344 owlcheck support of --conf
 * OWL-476 DataPreview Working in Hoot but not Rules/Profile
 * OWL-468 Databricks - Classpath issues running notebooks
-* OWL-467 Upgrade Web/Common to Spring 2 
+* OWL-467 Upgrade Web/Common to Spring 2&#x20;
 * OWL-465 Application Features Endpoint
 * OWL-464 Controller Endpoint for Update Agent
 * OWL-462 Edit Agent Modal
@@ -1139,7 +1148,7 @@ _Please note updated Collibra release name methodology_
 * OWL-450 Connection Templates For Common Drivers
 * OWL-449 Scheduler - one click Job scheduling
 * OWL-447 Back running - replays with templates
-* OWL-441 Job Scheduling 
+* OWL-441 Job Scheduling&#x20;
 * OWL-435 Shapes drill in preview does not scroll horizontal
 * OWL-433 Batch insert for DAO DataPreview by Executor
 * OWL-430 Change support email address
@@ -1152,8 +1161,8 @@ _Please note updated Collibra release name methodology_
 * OWL-349 Alert Form Validation
 * OWL-487 Add Hive Warehouse Connector to support "Hive Native" on HDP3.x
 * OWL-485 Support Owlcheck on XML files
-* OWL-473 Outlier Binned Timeseries (HOUR/MIN) does not calculate correct time range (startdate time missing), 
-* OWL-472 Migrate Notebook API to use Load activity 
+* OWL-473 Outlier Binned Timeseries (HOUR/MIN) does not calculate correct time range (startdate time missing),&#x20;
+* OWL-472 Migrate Notebook API to use Load activity&#x20;
 * OWL-470 Use New DAO batch methods to better control Shapes Issues written to metastore,
 
 ### **Known Issues**
@@ -1166,16 +1175,16 @@ _Please note updated Collibra release name methodology_
 
 ### Features
 
-* Encryption at REST 
+* Encryption at REST&#x20;
 * Job Status Page
 * Rules Src Validate Function
 * Explorer search and custom filters
 * Profile and Hoot UI Enhancements
 * New App props [(see all)](https://app.gitbook.com/@owl-analytics/s/user-guide/installing#configuration-env-settings-within-owl-env-sh)
   * Key 2.0 Additions for custom configuration of the meta-store DB in owl-env.sh:
-    * SPRING_DATASOURCE_URL
-    * SPRING_DATASOURCE_USERNAME
-    * SPRING_DATASOURCE_PASSWORD
+    * SPRING\_DATASOURCE\_URL
+    * SPRING\_DATASOURCE\_USERNAME
+    * SPRING\_DATASOURCE\_PASSWORD
   * Matching configuration properties for owlcheck in owl.properties
     * spring.datasource.url
     * spring.datasource.password
@@ -1183,79 +1192,79 @@ _Please note updated Collibra release name methodology_
 
 ### **Change Log/Fix**
 
-* OWL-292 Create Agent Component on Wizard Page 
-* OWL-293 Refactor Owlcheck submission for agent/agent_group as agent and agent_group use Serial/Integer 
-* OWL-294 LOG Files CLUSTER Mode 
-* OWL-296 Spark options (bounds/colname/partition) 
-* OWL-298 Owl-env.sh script use Lib option 
-* OWL-303 Cloudera Test Env Setup 
-* OWL-304 Rules Refactor Speed Increase 
-* OWL-305 Rules Score Update 
-* OWL-306 Cloudera Env infrastructure support 
-* OWL-307 Rules HOOT shows (5) when nothing breached 
-* OWL-309 Job Status . FINISHED, RUN ALL in UI table 
-* OWL-310 Rule page to use a runId for toggling 
-* OWL-311 Profile Page to Use new Datapreview and Histogram expand fullscreen 
-* OWL-312 Current date selected in hoot page heatmap chart (top chart #2) not showing for long runId 
-* OWL-313 Profile Page Rework all sections 
-* OWL-314 null in filtergram check and replace with string 'null' 
-* OWL-315 cascading and repeating names in scorecard page 
-* OWL-317 Spark Tuning R\&D 
-* OWL-323 Rules Current vs Last Run (t1) usability enhancement 
-* OWL-334 Rules Performance 
-* OWL-336 Rules UI Error Handling 
-* OWL-337 Rules CodeMirror Syntax Validation 
-* OWL-338 Item labels on behavior items 
-* OWL-340 Application User Logs 
-* OWL-341 AgentQ Table for issuing agent job requests 
-* OWL-342 Job Status Page Enhancements for all owlChecks 
-* OWL-345 Ability to change all default passwords (such as orient/postgres) 
-* OWL-350 HOOT TimeZone Edit button 
-* OWL-356 Security Configuration option for type of encryption to be used 
-* OWL-357 Configuration Setting for where to get public encryption key for encryption/decryption 
-* OWL-363 HOOT Processing outlier...dupe... 
-* OWL-364 Jenkins Build process / Test invoke / email on failures 
-* OWL-365 Filter options for JDBC query before expanding the DB 
-* OWL-366 owlcheck overwriting the semantic schema issue 
-* OWL-370 Dupe Detection runtime reduction 
-* OWL-371 Activity Decouple 
-* OWL-372 Hist refactor for performance 
-* OWL-373 WebApp Driver UnRegister Bad Driver 
-* OWL-375 Load Time Trigger 
-* OWL-378 Datashape Distribution turn back on, profile the performance issue 
-* OWL-379 Retrain Button 
-* OWL-380 RECORD Changes and SCHEMA Changes not showing in UI 
-* OWL-381 HOOT timezone says TRUE 
-* OWL-382 Item Label Outlier 
-* OWL-383 Install and test v2.0 of Owl with Postgres version 9.6.5 
-* OWL-384 Encrypt data within postgres Data_Preview table (decrypt automatically) 
-* OWL-385 dataset_field table encryption using java encryption key held in owl 
-* OWL-388 encryption of the dataset_field_value table 
-* OWL-389 dataset_hist table doing columns hist_values 
-* OWL-395 ItemLabel table encryption of column item_values 
-* OWL-396 Explorer RUN Tab UI 
-* OWL-397 Load Time Alert 
-* OWL-398 ReTrain Changes Score on behavior item for previous runs 
-* OWL-401 DuplicateLabels added anytime I down train an item 
-* OWL-402 observation table - encrypted (out_column, out_value, out_median) 
-* OWL-403 outlier table encryption at rest in postgres 
-* OWL-404 Once you label something as ignore it cannot be set back to - not be ignored 
-* OWL-413 Owl web app fails to restart with error below 
-* OWL-414 -h command doesn't work with owl-core if not using the default schema name in Postgres 
-* OWL-416 Hive JDBC connection in Explorer page 
-* OWL-417 Remove HBase Phoenix 
-* OWL-418 Data Cleanup Thread 
-* OWL-419 PG Connections encryption pwd 
-* OWL-420 PG Credentials in props and Batch Insert for Executor Insert Model 
-* OWL-421 Oracle mod to filtergram needs wrapper for rownum where clause limit 
-* OWL-422 Filtergrams with Oracle not working (SQL Exception: Unable to execute sql for this dataset) 
-* OWL-424 Add agent start/stop to owlmanage.sh 
-* OWL-425 val src observations inserts 
-* OWL-427 Audit Trail Timestamp conversion from epoch long to a readable date 
-* OWL-428 Performance improvements 
-* OWL-434 Cleanup/Constraint options for insert Data Preview 
-* OWL-444 DevOps - Setup script doesn't interrogate user for orient password at setup 
-* OWL-466 UI Save with no success/failure response back to user 
+* OWL-292 Create Agent Component on Wizard Page&#x20;
+* OWL-293 Refactor Owlcheck submission for agent/agent\_group as agent and agent\_group use Serial/Integer&#x20;
+* OWL-294 LOG Files CLUSTER Mode&#x20;
+* OWL-296 Spark options (bounds/colname/partition)&#x20;
+* OWL-298 Owl-env.sh script use Lib option&#x20;
+* OWL-303 Cloudera Test Env Setup&#x20;
+* OWL-304 Rules Refactor Speed Increase&#x20;
+* OWL-305 Rules Score Update&#x20;
+* OWL-306 Cloudera Env infrastructure support&#x20;
+* OWL-307 Rules HOOT shows (5) when nothing breached&#x20;
+* OWL-309 Job Status . FINISHED, RUN ALL in UI table&#x20;
+* OWL-310 Rule page to use a runId for toggling&#x20;
+* OWL-311 Profile Page to Use new Datapreview and Histogram expand fullscreen&#x20;
+* OWL-312 Current date selected in hoot page heatmap chart (top chart #2) not showing for long runId&#x20;
+* OWL-313 Profile Page Rework all sections&#x20;
+* OWL-314 null in filtergram check and replace with string 'null'&#x20;
+* OWL-315 cascading and repeating names in scorecard page&#x20;
+* OWL-317 Spark Tuning R\&D&#x20;
+* OWL-323 Rules Current vs Last Run (t1) usability enhancement&#x20;
+* OWL-334 Rules Performance&#x20;
+* OWL-336 Rules UI Error Handling&#x20;
+* OWL-337 Rules CodeMirror Syntax Validation&#x20;
+* OWL-338 Item labels on behavior items&#x20;
+* OWL-340 Application User Logs&#x20;
+* OWL-341 AgentQ Table for issuing agent job requests&#x20;
+* OWL-342 Job Status Page Enhancements for all owlChecks&#x20;
+* OWL-345 Ability to change all default passwords (such as orient/postgres)&#x20;
+* OWL-350 HOOT TimeZone Edit button&#x20;
+* OWL-356 Security Configuration option for type of encryption to be used&#x20;
+* OWL-357 Configuration Setting for where to get public encryption key for encryption/decryption&#x20;
+* OWL-363 HOOT Processing outlier...dupe...&#x20;
+* OWL-364 Jenkins Build process / Test invoke / email on failures&#x20;
+* OWL-365 Filter options for JDBC query before expanding the DB&#x20;
+* OWL-366 owlcheck overwriting the semantic schema issue&#x20;
+* OWL-370 Dupe Detection runtime reduction&#x20;
+* OWL-371 Activity Decouple&#x20;
+* OWL-372 Hist refactor for performance&#x20;
+* OWL-373 WebApp Driver UnRegister Bad Driver&#x20;
+* OWL-375 Load Time Trigger&#x20;
+* OWL-378 Datashape Distribution turn back on, profile the performance issue&#x20;
+* OWL-379 Retrain Button&#x20;
+* OWL-380 RECORD Changes and SCHEMA Changes not showing in UI&#x20;
+* OWL-381 HOOT timezone says TRUE&#x20;
+* OWL-382 Item Label Outlier&#x20;
+* OWL-383 Install and test v2.0 of Owl with Postgres version 9.6.5&#x20;
+* OWL-384 Encrypt data within postgres Data\_Preview table (decrypt automatically)&#x20;
+* OWL-385 dataset\_field table encryption using java encryption key held in owl&#x20;
+* OWL-388 encryption of the dataset\_field\_value table&#x20;
+* OWL-389 dataset\_hist table doing columns hist\_values&#x20;
+* OWL-395 ItemLabel table encryption of column item\_values&#x20;
+* OWL-396 Explorer RUN Tab UI&#x20;
+* OWL-397 Load Time Alert&#x20;
+* OWL-398 ReTrain Changes Score on behavior item for previous runs&#x20;
+* OWL-401 DuplicateLabels added anytime I down train an item&#x20;
+* OWL-402 observation table - encrypted (out\_column, out\_value, out\_median)&#x20;
+* OWL-403 outlier table encryption at rest in postgres&#x20;
+* OWL-404 Once you label something as ignore it cannot be set back to - not be ignored&#x20;
+* OWL-413 Owl web app fails to restart with error below&#x20;
+* OWL-414 -h command doesn't work with owl-core if not using the default schema name in Postgres&#x20;
+* OWL-416 Hive JDBC connection in Explorer page&#x20;
+* OWL-417 Remove HBase Phoenix&#x20;
+* OWL-418 Data Cleanup Thread&#x20;
+* OWL-419 PG Connections encryption pwd&#x20;
+* OWL-420 PG Credentials in props and Batch Insert for Executor Insert Model&#x20;
+* OWL-421 Oracle mod to filtergram needs wrapper for rownum where clause limit&#x20;
+* OWL-422 Filtergrams with Oracle not working (SQL Exception: Unable to execute sql for this dataset)&#x20;
+* OWL-424 Add agent start/stop to owlmanage.sh&#x20;
+* OWL-425 val src observations inserts&#x20;
+* OWL-427 Audit Trail Timestamp conversion from epoch long to a readable date&#x20;
+* OWL-428 Performance improvements&#x20;
+* OWL-434 Cleanup/Constraint options for insert Data Preview&#x20;
+* OWL-444 DevOps - Setup script doesn't interrogate user for orient password at setup&#x20;
+* OWL-466 UI Save with no success/failure response back to user&#x20;
 * OWL-471 Ensure valsrcinc/valsrcexc columns are applied to schema checks and counts
 
 ### **Known Issues**
