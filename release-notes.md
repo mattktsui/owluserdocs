@@ -2,12 +2,22 @@
 
 ## 2021.11 (In Progress)
 
-#### Enhancements
+#### New Features
 
 * Rules
-  * Semantics and data concepts
+  * Semantics and data concepts management *tech preview*
+
+#### Enhancements
+* Explorer
+  * Dynamic query reload allows you to view JOIN query columns in other activities
+  * Support for some special characters in table name
+  * Fixed ability to add additional libs that were previously not being properly saved on subsequent runs. Under DQ Job tag, please utilize -fllb boolean (union lookback) and libsrc input box for lib directory path (will materialize as -addlib)
 * API
   * Allows multiple imports without conflicts
+* Profile
+  * Fixed backrun timebin to work with weeks and quarters instead of days
+* Outliers
+  * Split historical load to avoid historical query rounding up
 
 ## 2021.10
 
