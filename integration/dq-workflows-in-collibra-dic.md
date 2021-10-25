@@ -15,7 +15,7 @@ _Please note: DQ Workflows are listed on Collibra Marketplace and are templates 
 | Collibra Edge Site               | DQ Connector is a capability of Edge            |
 | Collibra Data Intelligence Cloud | 2021.07 Release (or newer)                      |
 | Collibra Data Quality            | 2.15 (or newer)                                 |
-| DQ Connector                     | Synchronized Rules from Data Quality to Catalog |
+| Collibra DQ Connector            | Synchronized Rules from Data Quality to Catalog |
 
 {% hint style="success" %}
 Let's proceed after gathering all prerequisites!
