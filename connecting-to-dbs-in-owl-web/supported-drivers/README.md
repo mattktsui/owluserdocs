@@ -78,3 +78,6 @@ The following is a list of drivers which are for test purposes (not certified ye
 * This is for quick testing, smaller files, and demonstration purposes.&#x20;
 * Local file scanning is not intended for large scale production use.
 
+#### Spark Engine Support
+
+* MapR is EOL and MapR spark engine not supported to run CDQ jobs.
