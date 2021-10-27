@@ -46,6 +46,7 @@ The following is a list of drivers which are for test purposes (not certified ye
 | **MariaDB**                      | MySQL Driver                                                                      | Preview       | B+    | User / Pass             | Uses mysql driver, some nuances                                                                                               |
 | **Dremio**                       | Dremio JDBC                                                                       | Preview       | B     | User / Pass             |                                                                                                                               |
 | **Kafka**                        | Native                                                                            | Preview       | B-    |                         | Most cases the group doesn't know enough about kafka administration, schema registry and other nuances.                       |
+| Sybase                           | Native                                                                            | Preview       | B+    |                         |                                                                                                                               |
 
 ## Files
 
