@@ -5,7 +5,7 @@
 #### New Features
 
 * Rules
-  * Semantics and data concepts management&#x20;
+  * \*Tech Preview\* Semantics and data concepts management
 
 #### Enhancements
 
@@ -481,4 +481,3 @@ _Please note updated Collibra release name methodology_
 * Estimate Jobs function may produce suboptimal configuration
 * Kerberos Exception when attempting to generate preview for JSON/XML files on HDF
 * Auto Profile AGENT status indicator (GREEN/RED) missing
-
