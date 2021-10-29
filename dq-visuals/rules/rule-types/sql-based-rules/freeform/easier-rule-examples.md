@@ -1,5 +1,17 @@
 # Cross-Dataset Rules
 
+{% hint style="danger" %}
+**Best practice for cross-table joins is to define a view and scan the view.  **
+
+****
+
+**Only in circumstances when a view cannot be created should you define cross-table joins with 2 separate datasets (DQ Jobs) and express the join in the rule. **
+
+****
+
+**If you're doing multiple lookups this will improve long-term performance and consolidate maintenance. **
+{% endhint %}
+
 {% hint style="warning" %}
 Cross-dataset rules require -libsrc or -addlib (prior to 2021.11)&#x20;
 {% endhint %}
