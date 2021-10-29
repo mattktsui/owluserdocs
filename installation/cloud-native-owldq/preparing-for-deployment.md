@@ -1,8 +1,11 @@
-# Preparing for Cloud Native Deployment
+# Cloud Native Requirements
 
 ## Minimum Requirements
 
-* Owl Web 
+* Helm ([https://helm.sh/](https://helm.sh))
+* Kubectl&#x20;
+* Cloud cmd line SDK (gcloud, aws, etc.)
+* Owl Web&#x20;
   * 1 core
   * 2 GB Memory
   * 10MB PVC Storage
@@ -21,9 +24,9 @@
 
 ## Network Service Considerations
 
-Owl Web is the only required component that needs to be directly accessed from outside of Kubernetes. History Server is the only other component that can be accessed directly by users, however, it is optional. 
+Owl Web is the only required component that needs to be directly accessed from outside of Kubernetes. History Server is the only other component that can be accessed directly by users, however, it is optional.&#x20;
 
-If the target Kubernetes platform supports LoadBalancer service type, the Helm chart can be configured to directly deploy the externally accessible endpoint. It is also possible to configure the Helm Chart to deploy a NodePort service type, however, this is not recommended for anything other than testing purposes. 
+If the target Kubernetes platform supports LoadBalancer service type, the Helm chart can be configured to directly deploy the externally accessible endpoint. It is also possible to configure the Helm Chart to deploy a NodePort service type, however, this is not recommended for anything other than testing purposes.&#x20;
 
 If the desired service type is Ingress, the recommended approach is to deploy OwlDQ without an externally accessible service and then attach the Ingress service separately. This applies when a third-party Ingress controller is being used (NGINX, Contour, ect). The Helm Chart is able to deploy an Ingress on GKE and EKS platforms, however, there is a wide variety of possible Ingress configurations that have not been tested.
 
@@ -37,9 +40,9 @@ In order to enable SSL for secure access to Owl Web, a keystore that contains a 
 
 ### Cloud Storage Credentials
 
-If History Server is enabled, then a distributed filesystem is required. Currently, OwlDQ supports S3 and GCS for Spark history log storage. Azure Blob and HDFS on the near term roadmap. 
+If History Server is enabled, then a distributed filesystem is required. Currently, OwlDQ supports S3 and GCS for Spark history log storage. Azure Blob and HDFS on the near term roadmap.&#x20;
 
-* If S3 is the target storage system, and IAM Role with access to the target bucket needs to be attached to the Kubernetes nodes of the namespace where OwlDQ is being deployed. 
+* If S3 is the target storage system, and IAM Role with access to the target bucket needs to be attached to the Kubernetes nodes of the namespace where OwlDQ is being deployed.&#x20;
 * If GCS is the target storage system, then a secret must be created from the JSON key file of a service account with access the the log bucket. The secret must be available in the namespace prior to deploying OwlDQ. By default, OwlDQ will look for a secret called "spark-gcs-secret", if GCS is enabled for Spark history logs. This can be changed via a helm chart argument.
 
 ### Container Pull Secret
@@ -52,7 +55,7 @@ In order for Owl Agent and Spark driver to create and destroy compute containers
 
 ## Access the Platform
 
-In order to deploy anything to a Kubernetes cluster, the first step is to install the required client utilities and configure access. 
+In order to deploy anything to a Kubernetes cluster, the first step is to install the required client utilities and configure access.&#x20;
 
 * **kubectl **- the main method of communication with a Kubernetes cluster. All configuration or introspection tasks will be preformed using kubectl.
 * **helm** (V3) - used to deploy the OwlDQ helm chart without hand coding manifests.
@@ -71,7 +74,7 @@ In private clouds, this process will vary from organization to organization, how
 
 ## Preparing Secrets
 
-Once access to the target platform is confirmed, namespace preparation can begin. Typically the namespace that OwlDQ is going to be deployed into will be pre-allocated by the platform team. 
+Once access to the target platform is confirmed, namespace preparation can begin. Typically the namespace that OwlDQ is going to be deployed into will be pre-allocated by the platform team.&#x20;
 
 ```
 kubectl create namespace <namespace>
@@ -114,7 +117,7 @@ kubectl create secret docker-registry owldq-pull-secret \
 ```
 
 {% hint style="warning" %}
-GCP Oauth tokens are usually only good for 1 hour. This type of credential is excellent if the goal is to pull containers into a private registry. It can be used as the pull secret to access containers directly, however, the secret would have to be recreated with a fresh token before restarting any of the OwlDQ components. 
+GCP Oauth tokens are usually only good for 1 hour. This type of credential is excellent if the goal is to pull containers into a private registry. It can be used as the pull secret to access containers directly, however, the secret would have to be recreated with a fresh token before restarting any of the OwlDQ components.&#x20;
 {% endhint %}
 
 #### Create GSC Credential Secret
