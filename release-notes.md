@@ -7,10 +7,10 @@
 * Rules
   * \*Tech Preview\* \[TP] [Semantics and data concepts management](dq-visuals/rules/data-concepts-and-semantics.md)
     * The application now supports dynamic semantics checks. This allows the user to create custom semantics that can be checked for when running a DQ check on a data set. Previously the application checked against a pre defined set of semantics. Controls to organize and apply these semantics checks have also been added. The following is a list of changes:
-    * A new data concepts management page has been added. This can be accessed from catalog or admin console and the user can assign many semantics to a data concept.
-    * When running a DQ check the user can select a data concept. The semantics assigned to this data concept will be checked against each column of dataset.
-    * Users will have a list of pre defined semantics that are not editable. They will also have the ability to create/edit/delete custom semantics.
-    * Repo on rules page has been added to Rules Library where semantics will be viewable.
+      * A new data concepts management page has been added. This can be accessed from Catalog or Admin Console. A user can assign multiple semantics to a data concept.
+      * When running a DQ check, the user can select a data concept. The semantics assigned to this data concept will be checked against each column of dataset.
+      * Users will have a list of pre-defined semantics that are not editable. They will also have the ability to create/edit/delete custom semantics.
+      * Repo on rules page has been added to Rules Library where semantics will be viewable
 
 #### Enhancements
 
@@ -19,9 +19,10 @@
   * Support for some special characters in table name
   * Fixed ability to add additional libs that were previously not being properly saved on subsequent runs. Under DQ Job tag, please utilize -fllb boolean (union lookback) and libsrc input box for lib directory path (will materialize as -addlib)
 * Connections
-  * \*Tech Preview\* \[TP] BigQuery Views and Joins Preliminary Support
+  * \*Tech Preview\* \[TP] BigQuery Views and Joins
 * API
   * Allows multiple imports without conflicts
+  * Allows for incremental import such as updating matching records / insert new / leave existing. There is no requirement to delete tables first before running import.
 * Profile
   * Fixed backrun timebin to work with weeks and quarters instead of days
 * Outliers
