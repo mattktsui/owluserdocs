@@ -24,6 +24,11 @@
   * Fixed backrun timebin to work with weeks and quarters instead of days
 * Outliers
   * Split historical load to avoid historical query rounding up
+  * \*Tech Preview\* Minimum / ragged history
+* Source
+  * Fixed issue where settings were not sticking
+* Security
+  * _SAML Enhancements_
 
 ## 2021.10
 
