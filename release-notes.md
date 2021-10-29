@@ -29,7 +29,7 @@
   * Split historical load to avoid historical query rounding up
   * \*Tech Preview\* \[TP] Minimum / ragged history
 * Source
-  * Fixed issue where settings were not sticking
+  * Fixed issue where settings were not sticky for subsequent runs
 * Security
   * _SAML Enhancements_
 
