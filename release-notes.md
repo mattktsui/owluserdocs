@@ -35,19 +35,16 @@
 
 #### Known Limitations
 
-Local files using upload\_file are only eligible for NO\_AGENT. Best practice is to use a remote file system connection.&#x20;
-
-Different timezones are not accounted for when submitting jobs via API from another machine (with a different time zone).  Best practice is to align the timezones on UTC.&#x20;
-
+* Local files using upload\_file are only eligible for NO\_AGENT. Best practice is to use a remote file system connection.&#x20;
+*
 
 
-Please refer to postgres official documentation ncrease max\_connection and shared\_buffers
+
+
+
+Please refer to Postgres official documentation how to increase max\_connection and shared\_buffers.
 
 https://www.postgresql.org/docs/9.6/runtime-config-connection.html
-
-How to increase max connections
-
-1.
 
 ## 2021.10
 
