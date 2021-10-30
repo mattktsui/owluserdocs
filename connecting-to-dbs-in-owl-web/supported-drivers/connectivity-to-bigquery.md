@@ -14,8 +14,8 @@ The above and explained there are actually a number of others steps which must b
    `base64 your_json.json -w 0`\
    or\
    `cat your_json.json | base64 -w 0`
-2. **Check that this JAR exists and is on the path of the Collibra DQ Web UI server** (eg. \<INSTALL_PATH>/owl/drivers/bigquery/core). Look at your driver directory location which contains this BigQuery JAR: spark-bigquery\_2.12-0.18.1.jar
-3. **Make sure these JARs present in \<INSTALL_PATH>/owl/drivers/bigquery/:**\
+2. **Check that this JAR exists and is on the path of the Collibra DQ Web UI server** (eg. \<INSTALL\_PATH>/owl/drivers/bigquery/core). Look at your driver directory location which contains this BigQuery JAR: spark-bigquery\_2.12-0.18.1.jar
+3. **Make sure these JARs present in \<INSTALL\_PATH>/owl/drivers/bigquery/:**\
    ****_animal-sniffer-annotations-1.19.jar_\
    _google-api-services-bigquery-v2-rev20201030-1.30.10.jar_\
    _grpc-google-cloud-bigquerystorage-v1beta1-0.106.4.jar_\
@@ -64,7 +64,7 @@ The above and explained there are actually a number of others steps which must b
    _google-http-client-jackson2-1.38.0.jar_\
    _j2objc-annotations-1.3.jar_\
    _proto-google-iam-v1-1.0.3.jar_\
-   _error_prone_annotations-2.4.0.jar_\
+   _error\_prone\_annotations-2.4.0.jar_\
    _google-oauth-client-1.31.1.jar_\
    _jackson-annotations-2.11.0.jar_\
    _grpc-alts-1.33.1.jar_\
@@ -91,20 +91,26 @@ The above and explained there are actually a number of others steps which must b
 
 ### Networking
 
-Please account for these urls from a networking and firewall perspective. 
+Please account for these urls from a networking and firewall perspective.&#x20;
 
-logging.googleapis.com 
+logging.googleapis.com&#x20;
 
-oauth2.googleapis.com 
+oauth2.googleapis.com&#x20;
 
-www.googleapis.com 
+www.googleapis.com&#x20;
 
-bigquerystorage.googleapis.com 
+bigquerystorage.googleapis.com&#x20;
 
 bigquery.googleapis.com
 
 ### Permissions
 
-Make sure the project and account have appropriate permissions.  These are common permissions to provide to the account. 
+Make sure the project and account have appropriate permissions.  These are common permissions to provide to the account.&#x20;
 
 ![](<../../.gitbook/assets/image (69).png>)
+
+### Views
+
+Support for Bigquery views is available from the 2021.11 release and forward. There are Bigquery limitations on creating views from different datasets (collections).  Optionally you can add the `viewsEnabled=true` parameter to the connection property when defining the connection.
+
+![](<../../.gitbook/assets/image (103).png>)

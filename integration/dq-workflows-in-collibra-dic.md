@@ -2,16 +2,17 @@
 
 ## Benefits <a href="benefits" id="benefits"></a>
 
-The DQ Workflows package listed on Collibra Marketplace allows you to 1) create and manage Data Quality Issues, 2) receive Notifications on Rule Metrics, and 3) request Rule Creation and Modification within **Collibra Data Intelligence Cloud**. Data stewards will be able to organize and prioritize all requests within DIC before they take any action within **Collibra Data Quality**. 
+The DQ Workflows package listed on Collibra Marketplace allows you to 1) create and manage Data Quality Issues, 2) receive Notifications on Rule Metrics, and 3) request Rule Creation and Modification within **Collibra Data Intelligence Cloud**. Data stewards will be able to organize and prioritize all requests within DIC before they take any action within **Collibra Data Quality**.
 
 Once deployed, the workflows will facilitate quicker data issue remediation by involving business analysts and other personas who can now participate in your data quality workstreams.
 
-_Please note: DQ Workflows are listed on Collibra Marketplace and are templates to get customers started. Collibra-provided Marketplace listings are not subject to the same SLA obligations (_[_https://marketplace.collibra.com/marketplace-terms/_](https://marketplace.collibra.com/marketplace-terms/)_)  In addition, they can only be leveraged within Collibra Data Intelligence Cloud. In the future, we will work towards releasing bi-directional workflows._
+_Please note: DQ Workflows are listed on Collibra Marketplace and are templates to get customers started. Collibra-provided Marketplace listings are not subject to the same SLA obligations (_[_https://marketplace.collibra.com/marketplace-terms/_](https://marketplace.collibra.com/marketplace-terms/)_) In addition, they can only be leveraged within Collibra Data Intelligence Cloud. In the future, we will work towards releasing bi-directional workflows._
 
 ## Step 0: Prerequisites <a href="step-0-prerequisites" id="step-0-prerequisites"></a>
 
-| **Resource**                     | Notes                                           |
+|                                  |                                                 |
 | -------------------------------- | ----------------------------------------------- |
+| **Resource**                     | Notes                                           |
 | Collibra Edge Site               | DQ Connector is a capability of Edge            |
 | Collibra Data Intelligence Cloud | 2021.07 Release (or newer)                      |
 | Collibra Data Quality            | 2.15 (or newer)                                 |
@@ -25,14 +26,15 @@ Let's proceed after gathering all prerequisites!
 
 **1A. Download Package from Collibra Marketplace and Unzip Files**
 
-**1B. Deploy Workflows **
+\*\*1B. Deploy Workflows \*\*
 
 ![](<../.gitbook/assets/image (20).png>)
 
 **1C. Adjust Workflow Settings (One-Time Setup)**
 
-| **Workflows**                             | Adjustments To Default Load Settings                                                                                                                                                                                                                                                                                               |
+|                                           |                                                                                                                                                                                                                                                                                                                                    |
 | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Workflows**                             | Adjustments To Default Load Settings                                                                                                                                                                                                                                                                                               |
 | <p>DQ Rule Request<br>DQ Sync Request</p> | <p>Applies To: Edit: Global -> <strong>Asset</strong></p><p>Asset Type: Add Rules: <strong>Column, Table</strong></p><p>Other: Any signed in user can start workflow (<strong>Check</strong>)</p><p>Other: This workflow can only run once at the same time on specific resource (<strong>Uncheck</strong>)</p>                    |
 | DQ Rule Modification                      | <p>Applies To: Edit: Global -> <strong>Asset</strong></p><p>Asset Type: Add Rules: <strong>Column, Table, Data Quality Rule</strong></p><p>Other: Any signed in user can start workflow (<strong>Check</strong>)</p><p>Other: This workflow can only run once at the same time on specific resource (<strong>Uncheck</strong>)</p> |
 | DQ Data Remediation                       | <p>Applies To: Edit: Global -> <strong>Asset</strong></p><p>Asset Type: Add Rules: <strong>Column, Table</strong></p><p>Other: Any signed in user can start workflow (<strong>Check</strong>)</p>                                                                                                                                  |
@@ -40,9 +42,9 @@ Let's proceed after gathering all prerequisites!
 | Manage DQ Subscriptions                   | <p>Other: Any signed in user can start workflow (<strong>Check</strong>)</p><p>Other: Show in global create (<strong>Check</strong>)</p>                                                                                                                                                                                           |
 | Notify of DQ Metrics                      | None                                                                                                                                                                                                                                                                                                                               |
 
-![Example: DQ Rule Request ](<../.gitbook/assets/image (30).png>)
+![Example: DQ Rule Request](<../.gitbook/assets/image (30).png>)
 
-![Example: Manage DQ Subscriptions ](<../.gitbook/assets/image (17).png>)
+![Example: Manage DQ Subscriptions](<../.gitbook/assets/image (17).png>)
 
 ## **Step 2: Create Data Quality Requests / Issues**
 
@@ -73,7 +75,7 @@ Let's proceed after gathering all prerequisites!
 
 * Select Issues
 * Navigate to 'Filters'
-* Properties > Attributes > Relations > Issue **categorized by **Issue Category > Input 'Data Quality Issue' > Apply
+* Properties > Attributes > Relations > Issue \*\*categorized by \*\*Issue Category > Input 'Data Quality Issue' > Apply
 * Save button > Save View as > '**Data Quality Issues**'
 * Optional settings for View: Can pin, promote, make public, make default
 
@@ -109,6 +111,6 @@ Ensure that the DQ alerts set for you are providing helpful details
 
 ![](<../.gitbook/assets/image (97).png>)
 
-For every subscription set up for a Subscriber, the Manage DQ Subscriptions modal will cycle through for your review. You can update **Threshold**, add or delete **Notification Days**, add or delete **Tables** or **Columns**, rename the **Subscription title**, **Save the new settings**, or simply **Unsubscribe**. 
+For every subscription set up for a Subscriber, the Manage DQ Subscriptions modal will cycle through for your review. You can update **Threshold**, add or delete **Notification Days**, add or delete **Tables** or **Columns**, rename the **Subscription title**, **Save the new settings**, or simply **Unsubscribe**.
 
 ![](<../.gitbook/assets/image (96).png>)
