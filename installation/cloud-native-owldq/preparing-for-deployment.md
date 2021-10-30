@@ -2,9 +2,25 @@
 
 ## Minimum Requirements
 
+These are needed to run the installation.
+
+#### Prerequisites
+
 * Helm ([https://helm.sh/](https://helm.sh))
 * Kubectl&#x20;
-* Cloud cmd line SDK (gcloud, aws, etc.)
+* Cloud cmd line SDK (gcloud CLI, AWS CLI, etc.)
+
+#### Files
+
+* A Kubernetes Cluster
+* The helm chart&#x20;
+* Kubectl to create secrets in jks file
+  * owldq-ssl-secret
+  * owldq-pull-secret
+* Create a spark-gcs-secret from your service account file or token
+
+#### Application
+
 * Owl Web&#x20;
   * 1 core
   * 2 GB Memory
