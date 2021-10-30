@@ -57,7 +57,7 @@ Let's proceed after gathering all prerequisites!
 | DQ Rule Modification | Business Analyst                           | Proposing adjustments to existing rules e.g. values, dimensions, passing thresholds                                                                                                    | Data Steward                  |
 | DQ Sync Request      | Business Analyst                           | Request for synchronization of the DQ Connector to synchronize and/or onboarding a new dataset with pre-populated rules                                                                | Data Steward                  |
 
-![Example: Data Quality Rule Request](<../.gitbook/assets/image (97) (1).png>)
+![Example: Data Quality Rule Request](<../.gitbook/assets/image (97) (1) (1).png>)
 
 ![Completed Rule Request Example](<../.gitbook/assets/image (94).png>)
 
@@ -109,7 +109,7 @@ Ensure that the DQ alerts set for you are providing helpful details
 
 ### 4C. Update Subscription Settings
 
-![](<../.gitbook/assets/image (97).png>)
+![](<../.gitbook/assets/image (97) (1).png>)
 
 For every subscription set up for a Subscriber, the Manage DQ Subscriptions modal will cycle through for your review. You can update **Threshold**, add or delete **Notification Days**, add or delete **Tables** or **Columns**, rename the **Subscription title**, **Save the new settings**, or simply **Unsubscribe**.
 
