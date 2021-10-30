@@ -4,6 +4,8 @@ description: A no-code option to get started quickly and onboard a dataset.
 
 # Explorer (no-code)
 
+![Onboard a dataset using the Explorer](../../.gitbook/assets/explorer\_create.gif)
+
 ## Getting Started
 
 This page can be accessed by clicked the Explorer option (the compass icon).
