@@ -141,8 +141,8 @@
 
 ## Catalog
 
+* [Overview](catalog/catalog.md)
 * [Business Units](catalog/business-units.md)
-* [Catalog](catalog/catalog.md)
 * [Catalog Bulk Actions](catalog/catalog-bulk-actions.md)
 * [Cluster Health Report](catalog/cluster-health-report.md)
 
@@ -178,7 +178,7 @@
 * [Bloomberg Data](dq-visuals/pattern-mining/bloomberg-data.md)
 * [Cyber Anomalies in Real-Time](use-cases/cyber-anomalies-in-real-time.md)
 * [Financial FxRate Data](use-cases/financial-fxrate-data.md)
-* [Healthcare  Data Quality](use-cases/healthcare-dq-in-2-minutes.md)
+* [Healthcare Data Quality](use-cases/healthcare-dq-in-2-minutes.md)
 * [Health Insurance Claims Data](use-cases/insurance-data.md)
 * [Intraday Positions](use-cases/intraday-positions.md)
 * [Security Reference Data](use-cases/security-reference-data.md)
@@ -200,6 +200,7 @@
   * [Speeds Migrations/Enables Replications](projects/data-projects/migrations.md)
   * [Assists Data Aggregation](projects/data-projects/assists-data-aggregation.md)
   * [Creating a Data Quality Pipeline](projects/data-projects/creating-a-data-quality-pipeline.md)
+* [Use Cases](projects/use-cases.md)
 
 ## Troubleshooting
 
