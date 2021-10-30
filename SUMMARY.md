@@ -172,19 +172,6 @@
   * [JWT](apis/notebook/jwt.md)
   * [Cookie](apis/notebook/cookie.md)
 
-## Use Cases
-
-* [Bank Loans](use-cases/bank-loans.md)
-* [Bloomberg Data](dq-visuals/pattern-mining/bloomberg-data.md)
-* [Cyber Anomalies in Real-Time](use-cases/cyber-anomalies-in-real-time.md)
-* [Financial FxRate Data](use-cases/financial-fxrate-data.md)
-* [Healthcare Data Quality](use-cases/healthcare-dq-in-2-minutes.md)
-* [Health Insurance Claims Data](use-cases/insurance-data.md)
-* [Intraday Positions](use-cases/intraday-positions.md)
-* [Security Reference Data](use-cases/security-reference-data.md)
-* [Smart Meter Data](use-cases/smart-meter-data.md)
-* [Validating Data Movement](use-cases/copying-or-moving-data.md)
-
 ## Solutions <a href="projects" id="projects"></a>
 
 * [Our Approach](projects/why-owl/README.md)
@@ -200,7 +187,17 @@
   * [Speeds Migrations/Enables Replications](projects/data-projects/migrations.md)
   * [Assists Data Aggregation](projects/data-projects/assists-data-aggregation.md)
   * [Creating a Data Quality Pipeline](projects/data-projects/creating-a-data-quality-pipeline.md)
-* [Use Cases](projects/use-cases.md)
+* [Use Cases](projects/use-cases/README.md)
+  * [Bank Loans](projects/use-cases/bank-loans.md)
+  * [Bloomberg Data](projects/use-cases/bloomberg-data.md)
+  * [Cyber Anomalies in Real-Time](projects/use-cases/cyber-anomalies-in-real-time.md)
+  * [Financial FxRate Data](projects/use-cases/financial-fxrate-data.md)
+  * [Healthcare Data Quality](projects/use-cases/healthcare-dq-in-2-minutes.md)
+  * [Health Insurance Claims Data](projects/use-cases/insurance-data.md)
+  * [Intraday Positions](projects/use-cases/intraday-positions.md)
+  * [Security Reference Data](projects/use-cases/security-reference-data.md)
+  * [Smart Meter Data](projects/use-cases/smart-meter-data.md)
+  * [Validating Data Movement](projects/use-cases/copying-or-moving-data.md)
 
 ## Troubleshooting
 

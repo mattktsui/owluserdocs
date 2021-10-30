@@ -10,7 +10,7 @@ Revenue Cycle Management is the process of identifying, collecting and managing 
 
 Inaccurate claims data, is the primary cause for diagnostic providers receiving incorrect payments for their services. Most providers struggle with the quality of the data that they receive, and without direct access to the patients, it can be an expensive, laborious process to correct incomplete, or missing data that is required for claim reimbursement.
 
-Cleaning up or correcting incomplete data is not a step in the claims process that can be skipped. It must be done to assure the reimbursement process is accurate, and complete in the agreed time frame. Automating the data quality during intake is the key to the timely completion of the reimbursement process, and saving the cost and effort of correcting the data down stream. 
+Cleaning up or correcting incomplete data is not a step in the claims process that can be skipped. It must be done to assure the reimbursement process is accurate, and complete in the agreed time frame. Automating the data quality during intake is the key to the timely completion of the reimbursement process, and saving the cost and effort of correcting the data down stream.&#x20;
 
 ```
 Increase revenue from insurance and patient payments
@@ -22,7 +22,7 @@ Improve claim processing speed
 
 The revenue cycle includes all the administrative and clinical functions that contribute to the capture, management and collection of patient service revenue, according to the Healthcare Financial Management Association
 
-![](../.gitbook/assets/rcm-process.png)
+![](../../.gitbook/assets/rcm-process.png)
 
 ```
 Preregistration - Collecting preregistration information
