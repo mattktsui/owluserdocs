@@ -10,4 +10,4 @@ Available Data
 * Comments
 * Timestamp
 
-![](<../.gitbook/assets/image (14).png>)
+![](<../../.gitbook/assets/image (14).png>)

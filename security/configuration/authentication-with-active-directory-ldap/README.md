@@ -4,7 +4,7 @@ Go to the Admin Console page (click the Owl -> click the Gear -> click Admin Con
 
 Click on “AD Setup” and you will see the screenshot below.
 
-![](<../../.gitbook/assets/image (86).png>)
+![](<../../../.gitbook/assets/image (86).png>)
 
 1. AD Enabled = flag to enabled AD (after binding please restart the owl-web application)
 2. Page Size = 100 is recommended. The number of results in a single page (NOTE: For really large AD Environments it’s best to narrow down the Base Path and/or possibly using Group Search Path to narrow down to that group explicitly).
@@ -15,13 +15,13 @@ Click on “AD Setup” and you will see the screenshot below.
 7. Bind Password = users domain password.
 8. Click save and you should receive the message below on the top of the owl-web application.
 
-![](https://lh4.googleusercontent.com/Z_btfJeipsC7WQrC2lC80Z9IwmomiBX8VFaNneAgdGOBPRfyArWao7f\_\_C9TEFVXDb0-DyxFpXc3BUrpmhJs20gelNfA8TI7-sVTkyD4aVlV7Q1WUR50dN7MvukyrcBoUysfYgvm)
+![](https://lh4.googleusercontent.com/Z\_btfJeipsC7WQrC2lC80Z9IwmomiBX8VFaNneAgdGOBPRfyArWao7f\_\_C9TEFVXDb0-DyxFpXc3BUrpmhJs20gelNfA8TI7-sVTkyD4aVlV7Q1WUR50dN7MvukyrcBoUysfYgvm)
 
 When binding to AD you do not need a special AD username and password. The application just needs a user to bind with in order to run a read-only query on the groups. The AD credentials are not stored, owl uses this dynamically to understand what groups you want to map.
 
 Now the binding is complete we can map an AD Group to an Owl ROLE.
 
-![](<../../.gitbook/assets/image (85).png>)
+![](<../../../.gitbook/assets/image (85).png>)
 
 1. Click on “ROLE MAPPING”
 2. Select a ROLE in the drop down list - (Alternatively this is a time you can add a new Owl ROLE to map the AD Group(s) you want to include in that Owl ROLE).
@@ -32,8 +32,8 @@ Now the binding is complete we can map an AD Group to an Owl ROLE.
 
 ![](https://lh5.googleusercontent.com/b6FG3k6y73mbVt9eXl8AG9CORfKRGwvcJhR5pRNtx5F4lkjeWc8ZB6uKSd6M0BpoNmYv6Iw8Aai78XNH4fq3bEe6eITdr5f9DFOy9eBDg5b58KWMf94OZoza8I8cwNPMA3uStoUQ)
 
-Now that we’ve mapped an AD Group to an AD Role we can now log out and try to login as a domain user. (REMEMBER: you will have to restart the owl-web by running ./owlmanage.sh restart_owlweb when toggling AD Enabled).
+Now that we’ve mapped an AD Group to an AD Role we can now log out and try to login as a domain user. (REMEMBER: you will have to restart the owl-web by running ./owlmanage.sh restart\_owlweb when toggling AD Enabled).
 
 When logging into the Owl Web application please make sure to append the domain to the end of the user name as depicted below.
 
-![](<../../.gitbook/assets/image (84).png>)
+![](<../../../.gitbook/assets/image (84).png>)
