@@ -16,5 +16,5 @@ Masking updates will take effect for all existing and future runs of the selecte
 ROLE\_ADMIN and ROLE\_DATASET\_MANAGER also have the ability to unmask.&#x20;
 {% endhint %}
 
-![](../../../.gitbook/assets/screen-shot-2019-09-05-at-10.21.44-pm.png)
+![](../.gitbook/assets/screen-shot-2019-09-05-at-10.21.44-pm.png)
 

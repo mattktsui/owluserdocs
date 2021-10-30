@@ -12,11 +12,11 @@ Go to the Admin Console page (click the Owl -> click the Gear -> click Admin Con
 
 Click on “Datasets” as shown below
 
-![](../../../.gitbook/assets/screen-shot-2019-09-05-at-11.07.43-pm.png)
+![](../.gitbook/assets/screen-shot-2019-09-05-at-11.07.43-pm.png)
 
 Note all the Datasets from the demo script we launch at the beginning of this document have been added to ROLE\_PUBLIC ROLE defined in Owl except the row\_count Dataset.  At this point we already have the [odemo@owl.com](mailto:odemo@owl.com) user created and mapped to the ROLE\_PUBLIC ROLE which has access to those Datasets.  Lets login as [odemo@owl.com](mailto:odemo@owl.com) and try to access row\_count DatasetStats page (for an understanding on how to access the DatasetStats page see section entitled “Understanding the DQ DatasetStats Page” in this document…..doing so will result in the error message below.
 
-![](../../../.gitbook/assets/screen-shot-2019-09-05-at-11.08.43-pm.png)
+![](../.gitbook/assets/screen-shot-2019-09-05-at-11.08.43-pm.png)
 
 However I can see the other DatasetStats that are part of the PUBLIC\_ROLE as [odemo@owl.com](mailto:odemo@owl.com) is a member of that ROLE.
 

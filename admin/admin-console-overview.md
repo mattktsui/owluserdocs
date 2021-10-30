@@ -1,4 +1,6 @@
-# Admin Console Overview
+# Overview
+
+![](<../.gitbook/assets/image (104).png>)
 
 The left hand icons “Dashboard”, “Inventory”, “Connections”, and “Configuration” are shortcut links to different operations within Owl.
 
@@ -7,13 +9,13 @@ The left hand icons “Dashboard”, “Inventory”, “Connections”, and “
   * Total number of datasets - including passing jobs and jobs that failed (quality fails), # of alerts, # of rules
   * A list of messages on specific Owlchecks and what was found.
 
-![](https://lh3.googleusercontent.com/jHwoAmIsWNmkC3QKQkCaJkqZ5qth2qvylinzDsaWpxBBfqd_PZBWdgoMDyXnNF1imDUAJP-ub9oux7yxA_oQ2MSG22qrmR47Ud-Qx5ToY0JgaknBa0eqoG2BJrbutb5GU0BiZO6A)
+![](https://lh3.googleusercontent.com/jHwoAmIsWNmkC3QKQkCaJkqZ5qth2qvylinzDsaWpxBBfqd\_PZBWdgoMDyXnNF1imDUAJP-ub9oux7yxA\_oQ2MSG22qrmR47Ud-Qx5ToY0JgaknBa0eqoG2BJrbutb5GU0BiZO6A)
 
 * “Inventory”
   * Inventory of all Owlcheck ever executed, including (Run Date, Dataset, Command Line, Type, Query, Connection).
   * See screenshot below.
 
-![](https://lh6.googleusercontent.com/vfrlHGmcM_jTbf1laf44DBZHqfWnIzPnX3Zf2iryxakcqgSkomxpygRaU0spfOjxS6PWHUWNPhtADajZQg2WZAvMQ0PHlgyqCRlhAFiz2ekwkpIITgD6sU6k6p2EdfZqMMuYYK6u)
+![](https://lh6.googleusercontent.com/vfrlHGmcM\_jTbf1laf44DBZHqfWnIzPnX3Zf2iryxakcqgSkomxpygRaU0spfOjxS6PWHUWNPhtADajZQg2WZAvMQ0PHlgyqCRlhAFiz2ekwkpIITgD6sU6k6p2EdfZqMMuYYK6u)
 
 * “Connections” - See Owl Build in the “DB Connection” section of this document.
 * “Configuration” - Administrator overrides.
@@ -23,4 +25,4 @@ The left hand icons “Dashboard”, “Inventory”, “Connections”, and “
 * Audit Trail” -
   * List all security related changes by user, action, description and timestamp in a searchable sortable table
 
-![](https://lh3.googleusercontent.com/6uQay257hLCwrZ7VvlmXsBPt-4U1EHfvEbR8cPcLdziC\_035kz5fdCVJ5ZbW5XyS7iX7bga_L6z6f9sZl7imqKCu8i7VL2lAgKaH9jB\_-3pEjYuJUoo7IJWqyzUf6SRc3OkU9BEW)
+![](https://lh3.googleusercontent.com/6uQay257hLCwrZ7VvlmXsBPt-4U1EHfvEbR8cPcLdziC\_035kz5fdCVJ5ZbW5XyS7iX7bga\_L6z6f9sZl7imqKCu8i7VL2lAgKaH9jB\_-3pEjYuJUoo7IJWqyzUf6SRc3OkU9BEW)

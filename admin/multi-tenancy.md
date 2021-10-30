@@ -39,29 +39,29 @@ In order to setup multi-tenancy follow these steps
 * In order to use multi-tenancy in URLBASEDMULTITENANTMODE=TRUE you'll have to make sure we have DNS entries to the tenant endpoints, otherwise click the tenant management link from the login page.  Example:&#x20;
   1. If I have a DNS alias named hub.  I should be able to point me browser at hub:9002 (or your respective owlweb port) to get to the main Multi-Tenant login page as depicted below
 
-![](<../../.gitbook/assets/image (75).png>)
+![](<../.gitbook/assets/image (75).png>)
 
 * This is where DNS alias come into place.  Assuming we left the owlhub as the multiTenantSchemaHub name we hit the drop down and select owlhub and click the arrow it will place owlhub.hub into the url.  This means there also has to be a DNS Alias name for your selected multiTenantSchemaHub name.   NOTE: Username and password for tenant management is mtadmin / mtadmin123
 
-![](<../../.gitbook/assets/image (76).png>)
+![](<../.gitbook/assets/image (76).png>)
 
 * Now that you logged into the Tenant Management screen using the hub DNS alias we can create our first tenant.  In this example below I'm going to create a tenant named tenant1.  First click the "+ Add Tenant" button in the top right part of the screen.
 
-![](<../../.gitbook/assets/image (77).png>)
+![](<../.gitbook/assets/image (77).png>)
 
 Click Save.  Your tenant shows up in the list and now you can click the login button as shown below.
 
-![](<../../.gitbook/assets/image (78).png>)
+![](<../.gitbook/assets/image (78).png>)
 
 Clicking the Login button will redirect your browser to the tenant1.hub:9002 url (DNS entry needs to be in place for tenant1 as shown below).
 
-![](<../../.gitbook/assets/image (79).png>)
+![](<../.gitbook/assets/image (79).png>)
 
 Enter the admin username and password that you created for the tenant1 (refer to figure 3 about) and login to the tenant as the admin.
 
 While logged in as a tenant admin the last step is to go to the Admin Console and click on "Sync Schema" this will generate the tables under the tenant called tenant1.
 
-![](<../../.gitbook/assets/image (80).png>)
+![](<../.gitbook/assets/image (80).png>)
 
 At this point you are ready to start administrating your tenant1 as you did with the owl web application in the past.
 
@@ -73,19 +73,19 @@ Regardless of the need, Owl will support dynamically creating tenants via our Ow
 
 Once enabled you will have a tenant selection screen prior to login where you can chose any of your configured tenants or access the Owl Hub (with the TENANT\_ADMIN role)
 
-![](../../.gitbook/assets/screen-shot-2019-09-03-at-11.34.13-am.png)
+![](../.gitbook/assets/screen-shot-2019-09-03-at-11.34.13-am.png)
 
 After selecting the owlHub tenant, you will have the ability to manage each tenant, as well as create new tenants from the management console.
 
-![](../../.gitbook/assets/screen-shot-2019-09-03-at-10.51.28-am.png)
+![](../.gitbook/assets/screen-shot-2019-09-03-at-10.51.28-am.png)
 
 All enabled tenants will be listed in the multi-tenant drop down menu. Access to tenants are handled by the administrator(s) within each tenant individually.
 
 Access to agents are also handled by the administrator(s) within each tenant individually.
 
-![](../../.gitbook/assets/screen-shot-2019-09-04-at-12.35.34-pm.png)
+![](../.gitbook/assets/screen-shot-2019-09-04-at-12.35.34-pm.png)
 
 Each agent is visible and editable as an Admin from the UI.
 
-![](<../../.gitbook/assets/owl-agent (1).png>)
+![](<../.gitbook/assets/owl-agent (1).png>)
 

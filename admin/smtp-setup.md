@@ -27,7 +27,7 @@ Once the information has been populated and added, the grey box above the form w
 
 Now that configuration of the SMTP Email Server has been completed let’s create an alert and see that the alert triggers an email. In this example, we will use the dist\_example dataset that we ran earlier from the demo.sh script.
 
-![](<../../.gitbook/assets/image (83).png>)
+![](<../.gitbook/assets/image (83).png>)
 
 In the above screen shot we did the following:
 
@@ -45,8 +45,8 @@ From the terminal on this install if you run the below command (which is just an
 
 At the end of this command we should see the “Alert was triggered” as shown in the screenshot below.
 
-![](<../../.gitbook/assets/image (82).png>)
+![](<../.gitbook/assets/image (82).png>)
 
 And the recipient [user2@owl.net](mailto:user2@owl.net) received the email.
 
-![](<../../.gitbook/assets/image (81).png>)
+![](<../.gitbook/assets/image (81).png>)

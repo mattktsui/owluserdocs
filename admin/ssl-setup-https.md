@@ -2,7 +2,7 @@
 
 By Default Collibra DQ has plain HTTP enabled for testing. When you are ready to enable SSL for the web application you can set the following environment variables in owl-env.sh to enable HTTPS.
 
-The settings listed at the bottom of this page will disable un-secure HTTP, enable secure HTTPS, and allow you to point to your certificate key store + credentials. \*A restart of the web-application is required. 
+The settings listed at the bottom of this page will disable un-secure HTTP, enable secure HTTPS, and allow you to point to your certificate key store + credentials. \*A restart of the web-application is required.&#x20;
 
 Before starting please have an accessible key store.
 
@@ -10,7 +10,7 @@ Before starting please have an accessible key store.
 export SERVER_SSL_KEY_STORE: <path to your key store>
 ```
 
-You can call Collibra DQ's built in 256-bit encryption for the SERVER_SSL_KEY_PASS value from the bin directory: ./owlmanage.sh encrypt=\<sensitive plain text string>
+You can call Collibra DQ's built in 256-bit encryption for the SERVER\_SSL\_KEY\_PASS value from the bin directory: ./owlmanage.sh encrypt=\<sensitive plain text string>
 
 Use the response value instead of the plain text value to secure your password.
 

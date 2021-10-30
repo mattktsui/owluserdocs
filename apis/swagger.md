@@ -14,7 +14,7 @@ http://<YOUR_IP_ADDRESS>/swagger-ui.html
 
 Swagger can be found in the application under the Admin section labeled APIs.
 
-![](<../.gitbook/assets/image (93).png>)
+![](<../.gitbook/assets/image (93) (1).png>)
 
 You will find a direct link to the Swagger page&#x20;
 

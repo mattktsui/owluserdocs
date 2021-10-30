@@ -2,7 +2,7 @@
 
 By Mapping an AD Group to an Owl role you are granting all users from the selected AD Group, role based access to the selected Owl role as depicted in the steps below. There will be more on creating custom application roles in the RBAC Section of this document.
 
-Application properties set in owl-env.sh can be set to determine which LDAP properties correspond to LDAP Query results. For group mapping you will need the full path (unique) as well as the display name. 
+Application properties set in owl-env.sh can be set to determine which LDAP properties correspond to LDAP Query results. For group mapping you will need the full path (unique) as well as the display name.&#x20;
 
 For example:
 
@@ -24,7 +24,7 @@ LDAP_GROUP_RESULT_NAME_ATTRIBUTE=CN
 
 ![](https://lh5.googleusercontent.com/b6FG3k6y73mbVt9eXl8AG9CORfKRGwvcJhR5pRNtx5F4lkjeWc8ZB6uKSd6M0BpoNmYv6Iw8Aai78XNH4fq3bEe6eITdr5f9DFOy9eBDg5b58KWMf94OZoza8I8cwNPMA3uStoUQ)
 
-Now that we’ve mapped an AD Group to an AD Role we can now log out and try to login as a domain user.  (REMEMBER: you will have to restart the owl-web by running ./owlmanage.sh restart_owlweb when toggling AD Enabled).
+Now that we’ve mapped an AD Group to an AD Role we can now log out and try to login as a domain user.  (REMEMBER: you will have to restart the owl-web by running ./owlmanage.sh restart\_owlweb when toggling AD Enabled).
 
 When logging into the Owl Web application please make sure to append the domain to the end of the user name as depicted below.
 
