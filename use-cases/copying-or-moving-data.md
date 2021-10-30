@@ -2,7 +2,7 @@
 description: Validate Data Integrity Between Distinct Storage Systems
 ---
 
-# Copying or Moving data
+# Validating Data Movement
 
 ## Record-for-Record Reconciliation
 
@@ -10,19 +10,19 @@ When you’re copying or moving data between distinct storage systems such as mu
 
 Detect potential data corruption caused, for example, by older versions of drivers, parsing errors, connection limits, noisy network links, memory errors on server computers and routers along the path, or software bugs (such as in a library that customers use).
 
-### Common Data Copying/Movement Scenarios 
+### Common Data Copying/Movement Scenarios&#x20;
 
 * Landing, Loading, Persisting third-party files
-  * Landing daily files. 
-  * Loading daily files into staging location. 
+  * Landing daily files.&#x20;
+  * Loading daily files into staging location.&#x20;
   * Finally, persisting data in lake or warehouse.
-* Cloud Migrations  
+* Cloud Migrations &#x20;
   * Between existing database storage to optimized cloud storage formats.
-  * Between local file systems and cloud relational database 
+  * Between local file systems and cloud relational database&#x20;
 * Data Lake or Data Warehouse
   * Migrating data from single storage system to distributed storage
   * Consolidating storage systems to a single lake or warehouse
-* Same Storage, Different Environments 
+* Same Storage, Different Environments&#x20;
   * Copying same data between Dev, QA, and Prod environments.
 
 {% hint style="warning" %}
@@ -41,7 +41,7 @@ _How do you easily validate the same data exists in distinct locations? _
 * https://wiki.apache.org/hadoop/HCFS
 * (HCFS) such as Cloud Storage.
 
-Explicit end-to-end data integrity validation adds protection for cases that may go undetected by typical in-transit mechanisms. 
+Explicit end-to-end data integrity validation adds protection for cases that may go undetected by typical in-transit mechanisms.&#x20;
 
 ### Enter, OwlDQ Integrity Validation!
 
@@ -49,7 +49,7 @@ To ensure and protect against target systems getting out of sync or not matching
 
 {% embed url="https://docs.owl-analytics.com/dq-visuals/validate-source" %}
 
-Complete row, column, conformity, and value checks between any two distinct storage systems. Can be run against high-dimension or low-dimension datasets. Works between Files and/or Database storage, On-premise, or across Cloud environments. 
+Complete row, column, conformity, and value checks between any two distinct storage systems. Can be run against high-dimension or low-dimension datasets. Works between Files and/or Database storage, On-premise, or across Cloud environments.&#x20;
 
 ### **Get Started Today**
 

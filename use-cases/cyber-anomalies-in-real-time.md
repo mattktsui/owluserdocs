@@ -11,13 +11,13 @@ Here we walk through a scenario to detect anomalies with network traffic dataset
 3. Identify the suspicious packets based on size.
 4. Detect the malicious activity based on source and destination IP addresses.
 
-![](../../.gitbook/assets/cyber-anomaly-detection-4.png)
+![](../.gitbook/assets/cyber-anomaly-detection-4.png)
 
 ## Infosec dataset Preview
 
 Dataset contains Timestamp, Source Workgroup, Source IP, Source Port, Destination Workgroup, Destination IP, Destination Port, Application, Protocol and Packet size information.
 
-![](../../.gitbook/assets/sample\_infosec\_data.png)
+![](../.gitbook/assets/sample\_infosec\_data.png)
 
 ## &#x20;IP Address format Validation
 
@@ -72,7 +72,7 @@ Realtime OwlDQ can provide the alerts on network traffic anomalies which can hel
 
 ## Sample Dataset <a href="files-that-can-be-used-to-replicate-this-example" id="files-that-can-be-used-to-replicate-this-example"></a>
 
-{% file src="../../.gitbook/assets/infosec-anomaly.csv" %}
+{% file src="../.gitbook/assets/infosec-anomaly.csv" %}
 
 
 

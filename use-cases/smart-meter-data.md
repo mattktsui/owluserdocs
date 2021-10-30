@@ -12,7 +12,7 @@ The U.S. smart meter data management market forecast is projected to reach $556.
 
 In the example below, Owl  detected 200 records missing from the previous run.
 
-![](../../.gitbook/assets/public-energy.jpg)
+![](../.gitbook/assets/public-energy.jpg)
 
 Consider the following opportunities that smart meter data analytics provide:
 

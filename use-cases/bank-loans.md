@@ -10,9 +10,9 @@ It is common for banks to lend money in return for monthly payments with interes
 6. Loan Amount Validation
 7. Loan Completeness Validation
 
-![](../../.gitbook/assets/bank-loan1.jpeg)
+![](../.gitbook/assets/bank-loan1.jpeg)
 
-![](../../.gitbook/assets/screen-shot-2020-03-30-at-2.35.16-pm.png)
+![](../.gitbook/assets/screen-shot-2020-03-30-at-2.35.16-pm.png)
 
 ## 1. Credit Score
 
@@ -83,14 +83,14 @@ Can't give someone the same loan twice!
 
 We made use of Profiles, Duplicates, Outliers and Rules in this example.  The experiments were automatically cataloged and put on a job scheduler.  The next time a loan issue arises we will be able to take remediation action using the workflow Q.  Over time we can see how the bank loan program is running via the report section.&#x20;
 
-![](../../.gitbook/assets/owldq-framework-li.png)
+![](../.gitbook/assets/owldq-framework-li.png)
 
 ## Files that can be used to replicate this example
 
-{% file src="../../.gitbook/assets/interest_rates.csv" %}
+{% file src="../.gitbook/assets/interest_rates.csv" %}
 Interest Rates CSV
 {% endfile %}
 
-{% file src="../../.gitbook/assets/owl-dataset-2.csv" %}
+{% file src="../.gitbook/assets/owl-dataset-2.csv" %}
 Loan Data CSV
 {% endfile %}
