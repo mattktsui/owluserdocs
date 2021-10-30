@@ -2,7 +2,7 @@
 
 ## Minimum Requirements
 
-These are needed to run the installation.
+You will need a machine with these files and packages to run the installation. These can be run from a laptop or separate VM and do not need to be issued on the Kubernetes cluster itself.
 
 #### Prerequisites
 
@@ -12,7 +12,6 @@ These are needed to run the installation.
 
 #### Files
 
-* A Kubernetes Cluster
 * The helm chart&#x20;
 * Kubectl to create secrets in jks file
   * owldq-ssl-secret
