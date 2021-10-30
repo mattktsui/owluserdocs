@@ -100,9 +100,9 @@
   * [DQ Job Validate Source](dq-job-examples/owlcheck/owlcheck-validate-source.md)
   * [DQ Job 43M rows](dq-job-examples/owlcheck/owlcheck-43m-rows.md)
   * [Add Date Column](dq-job-examples/owlcheck/add-date-column.md)
-  * [Cloudera CLASSPATH](dq-job-examples/owlcheck/cloudera-classpath.md)
+  * [Cloudera CLASSPATH](troubleshooting/cloudera-classpath.md)
   * [Date Time Variable Options](dq-job-examples/owlcheck/date-time-variable-options.md)
-  * [Deploy Mode](dq-job-examples/owlcheck/deploy-mode.md)
+  * [Deploy Mode](troubleshooting/deploy-mode.md)
   * [File Look Back](dq-job-examples/owlcheck/file-lookback.md)
   * [Filter & Filter Not](dq-job-examples/owlcheck/filter.md)
   * [Multiple Pattern Relationships](dq-job-examples/owlcheck/multiple-pattern-combinations.md)
@@ -204,7 +204,7 @@
 ## Benchmarks
 
 * [Performance Tests](benchmarks/performance-tests.md)
-* [Performance Tuning](benchmarks/performance-tuning.md)
+* [Performance Tuning](troubleshooting/performance-tuning.md)
 * [FAQ](benchmarks/benchmark-faq.md)
 
 ## Architecture
@@ -217,7 +217,6 @@
 ## Admin
 
 * [Admin Console Overview](admin/admin-console-overview.md)
-* [System Setup](admin/system-setup.md)
 * [Dataset Audit Trail](admin/dataset-audit-trail.md)
 * [Security Audit Trail](admin/security-audit-trail.md)
 * [User Audit Trail](admin/user-audit-trail.md)

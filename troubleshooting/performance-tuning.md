@@ -14,7 +14,7 @@ description: Guide for tuning
 | JDBC Table     | 250M                  | 9                        | 10G        | 5                          | 7G              | 35G       | 14 mins       | 15 mins      |
 | JDBC Table     | 250M                  | 145                      | 70G        | 17                         | 12G             | 204G      | 28 mins       | 30 mins      |
 
-Using a 10/1 ratio of RAM to Executors is often a good rule of thumb, another and more simple option is to turn on dynamic.allocation and allow the resources to be provided as needed on demand.  
+Using a 10/1 ratio of RAM to Executors is often a good rule of thumb, another and more simple option is to turn on dynamic.allocation and allow the resources to be provided as needed on demand. &#x20;
 
 ### Limit Columns
 
@@ -72,9 +72,9 @@ add more memory to the driver node as it will be responsible for the initial lan
 
 9 Million rows with 46 columns on a daily basis for just 1 dataset.  The data lives in Greenplum and we want to process it on a cluster platform where Owl runs.  The first run results in a 12 minute runtime.  While acceptable it's not ideal, here is what you should do.
 
-1. Add Parallel JDBC for faster network 
+1. Add Parallel JDBC for faster network&#x20;
 2. Limit columns to the 18 that are of use in the downstream processing
-3. Turn off unneeded features. 
+3. Turn off unneeded features.&#x20;
 4. Find out of the job is memory bound or CPU bound
 
 By setting the below configs this same job ran in 6 mins.

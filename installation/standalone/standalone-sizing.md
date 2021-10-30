@@ -29,7 +29,7 @@
 
 ## Estimates
 
-Sizing should allow headroom and based on peak concurrency and peak volume requirements.  If concurrency is not a requirement, you just need to size for peak volume (largest tables). Best practice to efficiently scan is to scope the job by selecting critical columns. See [performance tuning](../../benchmarks/performance-tuning.md) for more information.
+Sizing should allow headroom and based on peak concurrency and peak volume requirements.  If concurrency is not a requirement, you just need to size for peak volume (largest tables). Best practice to efficiently scan is to scope the job by selecting critical columns. See [performance tuning](../../troubleshooting/performance-tuning.md) for more information.
 
 | Bytes per Cell | Rows             | Columns | Gigabytes | Gigabytes for Spark (3x) |
 | -------------- | ---------------- | ------- | --------- | ------------------------ |
