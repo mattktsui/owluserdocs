@@ -6,16 +6,14 @@
 
 Operating System
 
-* RHEL6+ RHEL7+ 
+* RHEL6+ RHEL7+&#x20;
 * Centos6+ Centos 7+
+* Amazon Linux
+* Debian (in progress)
 
-Hardware Based on Role (standalone, distributed, or fully-distributed)
+Hardware Based on Role (standalone, distributed, or fully-distributed).
 
-| Role                     | Ram | CPU | Storage | Concurrent Users |
-| ------------------------ | --- | --- | ------- | ---------------- |
-| owl-web                  | 32  | 8   | 100 GB  | \~50             |
-| owl-metastore (postgres) | 16  | 4   | 250 GB  | --               |
-| edge node / agent        | 16  | 4   | 50 GB   | --               |
+* Please see [hardware sizing](hardware-sizing.md) for minimum resources for each component.
 
 Java Version
 
