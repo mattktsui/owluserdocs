@@ -10,7 +10,7 @@ You will need a machine with these files and packages to run the installation. T
 * Kubectl&#x20;
 * Cloud cmd line SDK (gcloud CLI, AWS CLI, etc.)
 
-#### Files
+#### Files (available upon request from Collibra)
 
 * The helm chart&#x20;
 * Kubectl to create secrets in jks file
