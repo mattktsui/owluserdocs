@@ -27,7 +27,7 @@ gcloud compute ssh --zone "us-central1-a" --project "gcp-example-project" "cento
 **GOAL**
 
 1. Create a new compute instance on a cloud provider (if applicable)
-2. Access the server where DQ will be installed. 
+2. Access the server where DQ will be installed.&#x20;
 {% endhint %}
 
 ## 1. Download DQ Full Package
@@ -57,7 +57,7 @@ rm dq-full-package.tar.gz
 
 ## 2. Install DQ + Postgres + Spark
 
-First set some variables for `OWL_BASE` (where to install DQ. In this tutorial, you are already in the directory that you want to install), `OWL_METASTORE_USER` (the Postgres username used by DQ Web Application  to access Postgres storage), and `OWL_METASTORE_PASS` (the Postgres password used by DQ Web Application  to access Postgres storage). 
+First set some variables for `OWL_BASE` (where to install DQ. In this tutorial, you are already in the directory that you want to install), `OWL_METASTORE_USER` (the Postgres username used by DQ Web Application  to access Postgres storage), and `OWL_METASTORE_PASS` (the Postgres password used by DQ Web Application  to access Postgres storage).&#x20;
 
 ```
 ### base path that you want owl installed. No trailing
@@ -75,9 +75,9 @@ The default username and password for Postgres server that will be installed as 
 
 ![List of off-line installed packages](../../.gitbook/assets/full-package-install-packages.png)
 
-One of the files extracted from the tarball is `setup.sh`. This script installs DQ and the required components. If a component already exist (e.g. Java 8 is already installed and `$JAVA_HOME` is set), then that component is not installed (i.e. Java 8 installation is skipped). 
+One of the files extracted from the tarball is `setup.sh`. This script installs DQ and the required components. If a component already exist (e.g. Java 8 is already installed and `$JAVA_HOME` is set), then that component is not installed (i.e. Java 8 installation is skipped).&#x20;
 
-To control which components are installed, use `-options=...`parameter. The argument provided should be comma-delimited list of components to install (valid inputs: `spark`, `postgres`, `owlweb`, and `owlagent`. `-options=postgres,spark,owlweb,owlagent` means "install Postgres, Spark pseudo cluster, Owl Web Application, and Owl Agent". Note that Java is not part of the options. Java 8 installation is automatically checked and installed/skipped depending on availability. 
+To control which components are installed, use `-options=...`parameter. The argument provided should be comma-delimited list of components to install (valid inputs: `spark`, `postgres`, `owlweb`, and `owlagent`. `-options=postgres,spark,owlweb,owlagent` means "install Postgres, Spark pseudo cluster, Owl Web Application, and Owl Agent". Note that Java is not part of the options. Java 8 installation is automatically checked and installed/skipped depending on availability.&#x20;
 
 You must at minimum specify `-options=spark,owlweb,owlagent` if you independently installed Postgres or using an external Postgres connection (as you can see in Step #3 if you choose that installation route)
 
@@ -123,7 +123,7 @@ please use owl owlmanage utility to configure license key and start owl-agent af
 **GOAL**
 
 1. Specify `OWL_BASE` path where DQ will be installed and specify Postgres environment variables
-2.  Install DQ Web with Postgres and Spark linked to DQ Agent (**all files will be in `$OWL_BASE/owl` sub-directory**) using `setup.sh` script provided. \
+2. &#x20;Install DQ Web with Postgres and Spark linked to DQ Agent (**all files will be in `$OWL_BASE/owl` sub-directory**) using `setup.sh` script provided. \
    The location of `OWL_BASE` and Postgres are configurable, but we advise you to take the defaults.
 {% endhint %}
 
@@ -168,7 +168,7 @@ The database named `postgres` is used by default as DQ metadata storage. Changin
 **GOAL**
 
 1. Specify `OWL_BASE` path where DQ will be installed and specify Postgres environment variables
-2.  Install DQ Web and Spark linked to DQ Agent (**all files will be in `$OWL_BASE/owl` sub-directory**) using `setup.sh` script provided and link DQ Web to an existing Postgres server.
+2. &#x20;Install DQ Web and Spark linked to DQ Agent (**all files will be in `$OWL_BASE/owl` sub-directory**) using `setup.sh` script provided and link DQ Web to an existing Postgres server.
 {% endhint %}
 
 ## Step 4. Verify DQ and Spark Installation
@@ -220,7 +220,7 @@ Once the DQ Agent starts, it needs to be configured in DQ Web in order to succes
 
 The new agent has been setup with the template base path `/opt` and install path `/opt/owl`. The `owlmanage.sh start=owlagent` script does not respect  `OWL_BASE` environment. **We need to edit the Agent Configuration to follow our** `OWL_BASE`
 
-Follow the steps on [How To Configure Agent via UI](https://docs.owl-analytics.com/installation/agent-configuration#how-to-configure-agent-via-ui) page to configure the newly created DQ Agent and edit the following parameters in DQ Agent #2. 
+Follow the steps on [How To Configure Agent via UI](https://docs.owl-analytics.com/installation/agent-configuration#how-to-configure-agent-via-ui) page to configure the newly created DQ Agent and edit the following parameters in DQ Agent #2.&#x20;
 
 * Replace all occurrence of `/opt/owl` with your `$OWL_BASE/owl/`in **Base Path**, **Collibra DQ Core JAR**, **Collibra DQ Core Logs**, **Collibra DQ Script**, and **Collibra DQ Web Logs**.
   * Note that **Base Path** here does not refer to `OWL_BASE`
@@ -233,9 +233,9 @@ Refer to [Agent Configuration Parameters](https://docs.owl-analytics.com/install
 
 ## Step 7. Create DB Connection for DQ Job
 
-Follow the steps on [How to Add DB Connection via UI](https://docs.owl-analytics.com/installation/agent-configuration#how-to-add-db-connection-via-ui) page to add `metastore` database connection. For demo purposes, we will run a DQ Job against local DQ Metadata Storage. 
+Follow the steps on [How to Add DB Connection via UI](https://docs.owl-analytics.com/installation/agent-configuration#how-to-add-db-connection-via-ui) page to add `metastore` database connection. For demo purposes, we will run a DQ Job against local DQ Metadata Storage.&#x20;
 
-Follow the steps on [How To Link DB Connection to Agent via UI](https://docs.owl-analytics.com/installation/agent-configuration#how-to-link-db-connection-to-agent-via-ui) page to configure newly created DQ Agent. 
+Follow the steps on [How To Link DB Connection to Agent via UI](https://docs.owl-analytics.com/installation/agent-configuration#how-to-link-db-connection-to-agent-via-ui) page to configure newly created DQ Agent.&#x20;
 
 Click the compass icon in the navigation pane to navigate to the Explorer Page. Click on the "metastore" connection, select the "public" schema, and then select the first table in the resulting list of tables. Once the preview and scope tab comes up, click "Build Model". When the Profile page comes up, click the "Run" button.
 
@@ -359,7 +359,7 @@ cd /home/owldq/owl/spark/sbin/
 
 ### Launch Scripts
 
-To launch a Spark standalone cluster with the launch scripts, you should create a file called conf/workers in your Spark directory, which must contain the hostnames of all the machines where you intend to start Spark workers, one per line. If conf/workers does not exist, the launch scripts defaults to a single machine (localhost), which is useful for testing. Note, the master machine accesses each of the worker machines via ssh. By default, ssh is run in parallel and requires password-less (using a private key) access to be setup. If you do not have a password-less setup, you can set the environment variable SPARK_SSH_FOREGROUND and serially provide a password for each worker.
+To launch a Spark standalone cluster with the launch scripts, you should create a file called conf/workers in your Spark directory, which must contain the hostnames of all the machines where you intend to start Spark workers, one per line. If conf/workers does not exist, the launch scripts defaults to a single machine (localhost), which is useful for testing. Note, the master machine accesses each of the worker machines via ssh. By default, ssh is run in parallel and requires password-less (using a private key) access to be setup. If you do not have a password-less setup, you can set the environment variable SPARK\_SSH\_FOREGROUND and serially provide a password for each worker.
 
 Once you’ve set up this file, you can launch or stop your cluster with the following shell scripts, based on Hadoop’s deploy scripts, and available in `SPARK_HOME/sbin`:
 
@@ -388,8 +388,11 @@ cd /home/owldq/owl/spark/sbin
 ```
 ### Starting Spark with Separate Workers
 
+SPARK_WORKER_OPTS=" -Dspark.worker.cleanup.enabled=true -Dspark.worker.cleanup.interval=1799 -Dspark.worker.cleanup.appDataTtl=3600"
+
+### 1 start master
 /home/owldq/owl/spark/sbin/start-master.sh
 
-SPARK_WORKER_OPTS=" -Dspark.worker.cleanup.enabled=true -Dspark.worker.cleanup.interval=1799 -Dspark.worker.cleanup.appDataTtl=3600"
+### 2 start workers 
 SPARK_WORKER_INSTANCES=3;/home/owldq/owl/spark/sbin/start-slave.sh spark://$(hostname):7077 -c 5 -m 20g
 ```
