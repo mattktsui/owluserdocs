@@ -113,4 +113,4 @@ Make sure the project and account have appropriate permissions.  These are commo
 
 Support for Bigquery views is available from the 2021.11 release and forward. There are Bigquery limitations on creating views from different datasets (collections).  Optionally you can add the `viewsEnabled=true` parameter to the connection property when defining the connection.
 
-![](<../../.gitbook/assets/image (103).png>)
+![](<../../.gitbook/assets/image (103) (1).png>)

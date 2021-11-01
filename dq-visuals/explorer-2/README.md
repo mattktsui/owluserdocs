@@ -18,7 +18,7 @@ All UI functionality has corresponding API endpoints to define, run, and get res
 
 ## Select Your Data Source
 
-![](<../../.gitbook/assets/image (89) (1).png>)
+![](<../../.gitbook/assets/image (89) (1) (1).png>)
 
 ## Create a new DQ Job by clicking +Create DQ Job
 
@@ -36,7 +36,7 @@ All UI functionality has corresponding API endpoints to define, run, and get res
 
 #### Click Build Model -> to Save and Continue&#x20;
 
-![](<../../.gitbook/assets/image (99) (1).png>)
+![](<../../.gitbook/assets/image (99) (1) (1).png>)
 
 ## Transform Tab (advanced / optional)
 
@@ -100,7 +100,7 @@ Manually map the columns by dragging left to right or deselect columns&#x20;
 2. Click Estimate Job
 3. Click Run to start the job
 
-![](<../../.gitbook/assets/image (90) (1) (1).png>)
+![](<../../.gitbook/assets/image (90) (1) (1) (1).png>)
 
 ![](<../../.gitbook/assets/image (100) (1) (1).png>)
 

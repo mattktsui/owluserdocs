@@ -5,7 +5,7 @@ description: Promoting and moving datasets across environments
 # Export and Import API
 
 {% hint style="info" %}
-The database needs the [stored procedure](export-and-import-api.md#stored-procedure) (function) defined in order to use the Export/Import API. 
+The database needs the [stored procedure](export-and-import-api.md#stored-procedure) (function) defined in order to use the Export/Import API.&#x20;
 {% endhint %}
 
 ### Step 1 - Get-Exports
@@ -14,9 +14,9 @@ Best practice is to use the get-exports endpoint for most scenarios.  You can pa
 
 **The three most common tables are:**
 
-* owl_rule
-* job_schedule
-* owl\__check_repo_
+* owl\_rule
+* job\_schedule
+* owl\__check\_repo_
 
 ```
 http://<url>/v2/get-exports?dataset=public.dataset_scan_2,public.dataset_scan_1&schema=public&tables=owl_rule,job_schedule,owl_check_repo
@@ -26,7 +26,7 @@ http://<url>/v2/get-exports?dataset=public.dataset_scan_2,public.dataset_scan_1&
 
 This is located under controller-scala (internal API)
 
-![](<../../.gitbook/assets/image (99).png>)
+![](<../../.gitbook/assets/image (99) (1).png>)
 
 #### Click Try it out to input the details
 
@@ -38,13 +38,13 @@ This is located under controller-scala (internal API)
 You will want to perform a find/replace on the import payload to check for differences in connections, agents, spark and environment configurations.  Migrating to different environments typically requires the payload to be modified.
 {% endhint %}
 
-Run import on the desired environment, passing the output of the previous statement to the body of the request 
+Run import on the desired environment, passing the output of the previous statement to the body of the request&#x20;
 
 ```javascript
 http://<url>/v2/run-import
 ```
 
-#### Use Swagger to try it out 
+#### Use Swagger to try it out&#x20;
 
 This is under controller-catalog
 
@@ -58,7 +58,7 @@ This would be the body of the POST.
 
 ## Stored Procedure
 
-The following function needs to be created in the Owl metastore before this can run. 
+The following function needs to be created in the Owl metastore before this can run.&#x20;
 
 ```
 CREATE OR REPLACE FUNCTION public.dump(p_schema text, p_table text, p_where text)

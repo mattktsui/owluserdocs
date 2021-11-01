@@ -9,9 +9,9 @@ description: >-
 
 This is commonly used when using pushdown profiling and/or pre-existing SQL validations exist in a specific syntax.
 
-![](<../../../../.gitbook/assets/image (89).png>)
+![](<../../../../.gitbook/assets/image (89) (1).png>)
 
-If you have rules already written in Oracle, Sybase, or DB2 syntax - Copy/Paste the rule directly into the Native SQL section. 
+If you have rules already written in Oracle, Sybase, or DB2 syntax - Copy/Paste the rule directly into the Native SQL section.&#x20;
 
 When creating a Native SQL rule, keep the following in mind:
 
@@ -24,5 +24,5 @@ Testing native rules can be done quickly by limiting the results or using an ext
 {% endhint %}
 
 {% hint style="warning" %}
-At this rule type you won't have mismatch highlighting and record breakdown on the UI, just the score itself! 
+At this rule type you won't have mismatch highlighting and record breakdown on the UI, just the score itself!&#x20;
 {% endhint %}

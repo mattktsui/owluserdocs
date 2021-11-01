@@ -203,6 +203,7 @@
 
 ## Benchmarks
 
+* [Performance Settings](benchmarks/performance-settings.md)
 * [Performance Tests](benchmarks/performance-tests.md)
 * [Performance Tuning](troubleshooting/performance-tuning.md)
 * [FAQ](benchmarks/benchmark-faq.md)
