@@ -1,8 +1,10 @@
 # Email Alerts
 
+![](../.gitbook/assets/alerts.gif)
+
 ### Setting up the EmailServer Programmatically
 
-If you are in a notebook or pipeline you may prefer to use the Scala/Spark API to create the Email Server 
+If you are in a notebook or pipeline you may prefer to use the Scala/Spark API to create the Email Server&#x20;
 
 ```scala
     val emailServer = OwlUtils.createEmailServer("smtp-relay.sendinblue.com", 587)
@@ -39,7 +41,7 @@ There is also a scenario where the DQ job fails to run or has an exception and t
 
 ## Alert Notifications in Web UI
 
-There are also alert notifications in the web UI.  This can be helpful to confirm that the email alerts were sent out and to whom should have received the notifications. 
+There are also alert notifications in the web UI.  This can be helpful to confirm that the email alerts were sent out and to whom should have received the notifications.&#x20;
 
 ![](../.gitbook/assets/screen-shot-2021-08-12-at-8.03.07-am.png)
 
