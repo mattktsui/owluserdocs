@@ -20,8 +20,8 @@ Even though Owl uses complex formulas to identify the correct outliers in a data
 
 Data may not always enter your data pipeline on time and as expected due to weekend, holidays, errors, etc. To help capture outliers in spite of gaps, there are two main options:
 
-* 1\) Extend the file lookback period
-* 2\) Utilize additional flags per below
+* 1\) Extend the lookback period (to 10 days from 5 days, for example)
+* 2\) Utilize additional flags per below (fllbminrow new as of 2021.11)
 
 | Flag       | Description                                                                                                                  | Example                                                                                                                                            |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
