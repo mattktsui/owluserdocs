@@ -1,5 +1,7 @@
 # Overview
 
+![](../.gitbook/assets/scorecards.gif)
+
 Scorecards allow you to visualize the health and consistency of a dataset over time. Owl will highlight macro and micro trends, e.g weekend loads vs weekday loads or behavioral item changes per day, and display them on the dataset scorecard.
 
 ![](../.gitbook/assets/owl-trend.png)
