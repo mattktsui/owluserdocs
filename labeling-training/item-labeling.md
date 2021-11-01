@@ -15,7 +15,7 @@ Outliers - Validate, Invalidate, Resolve
 Pattern - Validate, Invalidate, Resolve
 Source - Validate, Invalidate, Resolve
 Record - Validate, Resolve 
-Scheme - Validate, Resolve 
+Schema - Validate, Resolve 
 Dupes - Invalidate Only 
 Shapes - Validate, Invalidate, Resolve
 ```
