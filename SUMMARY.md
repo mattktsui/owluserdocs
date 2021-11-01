@@ -158,6 +158,7 @@
 ## APIs
 
 * [REST APIs](apis/rest-apis/README.md)
+  * [Find the endpoint](apis/rest-apis/find-the-endpoint.md)
   * [Assignment API](apis/rest-apis/assignmentapi.md)
   * [Export and Import API](apis/rest-apis/export-and-import-api.md)
   * [Export and Import Example](apis/rest-apis/rules-import-export.md)
