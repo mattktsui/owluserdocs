@@ -11,6 +11,8 @@
       * When running a DQ check, the user can select a data concept. The semantics assigned to this data concept will be checked against each column of dataset.
       * Users will have a list of pre-defined semantics that are not editable. They will also have the ability to create/edit/delete custom semantics.
       * Repo on rules page has been added to Rules Library where semantics will be viewable
+* Resource Limits
+  * Users can supply limits to executors, cores, memory and cells so that a user can be warned if submitting a job that requires a lot of resources and admins can control maximum resources submitted. Please see the [this section](benchmarks/performance-settings.md) for details.
 
 #### Enhancements
 
