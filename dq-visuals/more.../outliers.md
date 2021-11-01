@@ -16,6 +16,18 @@ Even though Owl uses complex formulas to identify the correct outliers in a data
 
 ![](<../../.gitbook/assets/owl-outlier-numerical (2).png>)
 
+### Dynamic history options
+
+Data may not always enter your data pipeline on time and as expected due to weekend, holidays, errors, etc. To help capture outliers in spite of gaps, there are two main options:
+
+* 1\) Extend the file lookback period
+* 2\) Utilize additional flags per below
+
+| Flag       | Description                                                                                                                  | Example                                                                                                                                            |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| fllbminrow | File Lookback Minimum Rows: determines minimum number of rows that a previous file scan needs to be counted as file lookback | <p>-fllbminrow 1 (counts nay DQ scans with 1 or more row in minimum history)</p><p>-fllbminrow 0 (default behavior, row count does not matter)</p> |
+| dllb       | Date Lookback: determines how many days of learning                                                                          | -dllb 5 (5 days)                                                                                                                                   |
+
 ## Categorical Outliers
 
 Categorical Outliers are much different than numerical outliers and require separate techniques to automatically capture meaningful anomalies. The details regarding Owl's methodology and testing can be found below, 3 minute read on the topic.
@@ -24,7 +36,7 @@ Categorical Outliers are much different than numerical outliers and require sepa
 
 Owl will automatically learn the normal behavior of your String and Categorical attributes such as STOCK,OPTION,FUTURE or state codes such as MD,NC,D.C. When a strange pattern occurs (e.g NYC instead of NY), Owl will show this as a categorical outlier.
 
-Owl is able to detect Categorical Outliers both with and without taking time into account. If a time dimension is not provided, Owl will calculate the distribution of categorical values within the available data, and identify the values that fall into the most infrequent percentile (configurable).  
+Owl is able to detect Categorical Outliers both with and without taking time into account. If a time dimension is not provided, Owl will calculate the distribution of categorical values within the available data, and identify the values that fall into the most infrequent percentile (configurable). &#x20;
 
 ![Categorical Outliers without Time](../../.gitbook/assets/screen-shot-2020-07-07-at-9.43.19-pm.png)
 
@@ -44,11 +56,11 @@ To obtain more targeted results, the Owl requires a "key" column. This column wi
 
 ![](../../.gitbook/assets/screen-shot-2020-07-07-at-8.18.40-pm.png)
 
-Another input that can make outlier detection more precise is a data/time column and a look back period.   This enables a more precise calculation of the normal range for a column and in the case of numerical outliers, makes it possible for Owl to establish a trend. Given a time column and key column, Owl will not only identify numerical outliers, it will plot the historical trend of the column value trailing the outlier. 
+Another input that can make outlier detection more precise is a data/time column and a look back period.   This enables a more precise calculation of the normal range for a column and in the case of numerical outliers, makes it possible for Owl to establish a trend. Given a time column and key column, Owl will not only identify numerical outliers, it will plot the historical trend of the column value trailing the outlier.&#x20;
 
 ![](../../.gitbook/assets/screen-shot-2020-07-07-at-8.19.14-pm.png)
 
-Owl also allows further refinement of the time dimension by defining time bins and processing intervals. By default, when given a time column, Owl will bin the data into days and process the data in daily interval. However, if the data is high frequency, day bins and day intervals might be too coarse grained. In this case,  it might make more sense to group the data into bins on the minute and process the data in hour or minute intervals. The same concept applies in the other direction. What if the data is already aggregated on the month or year? In this case, it makes more sense to set the bins and intervals to month by month or month by year. 
+Owl also allows further refinement of the time dimension by defining time bins and processing intervals. By default, when given a time column, Owl will bin the data into days and process the data in daily interval. However, if the data is high frequency, day bins and day intervals might be too coarse grained. In this case,  it might make more sense to group the data into bins on the minute and process the data in hour or minute intervals. The same concept applies in the other direction. What if the data is already aggregated on the month or year? In this case, it makes more sense to set the bins and intervals to month by month or month by year.&#x20;
 
 ![](../../.gitbook/assets/screen-shot-2020-07-07-at-8.20.18-pm.png)
 
@@ -79,20 +91,20 @@ group by date_trunc('MONTH', "date"), address
 order by date_month, address
 ```
 
-| date_month          | address                   | sales_count |
-| ------------------- | ------------------------- | ----------- |
-| 2016-01-01 00:00:00 | 1843 JOHNSON AVENUE, N.W. | 422         |
-| 2016-02-01 00:00:00 | 1843 JOHNSON AVENUE, N.W. | 451         |
-| 2016-03-01 00:00:00 | 1843 JOHNSON AVENUE, N.W. | 579         |
-| 2016-04-01 00:00:00 | 1843 JOHNSON AVENUE, N.W. | 404         |
-| 2016-05-01 00:00:00 | 1843 Johnson Avenue, N.W. | 625         |
-| 2016-06-01 00:00:00 | 1843 Johnson Avenue, N.W. | 695         |
-| 2016-07-01 00:00:00 | 1843 Johnson Avenue, N.W. | 457         |
-| 2016-08-01 00:00:00 | 1843 Johnson Avenue, N.W. | 744         |
-| 2016-09-01 00:00:00 | 1843 Johnson Avenue, N.W. | 681         |
-| 2016-10-01 00:00:00 | 1843 Johnson Avenue, N.W. | 728         |
-| 2016-11-01 00:00:00 | 1843 Johnson Avenue, N.W. | 1062        |
-| 2016-12-01 00:00:00 | 1843 Johnson Avenue, N.W. | 992         |
+| date\_month         | address                   | sales\_count |
+| ------------------- | ------------------------- | ------------ |
+| 2016-01-01 00:00:00 | 1843 JOHNSON AVENUE, N.W. | 422          |
+| 2016-02-01 00:00:00 | 1843 JOHNSON AVENUE, N.W. | 451          |
+| 2016-03-01 00:00:00 | 1843 JOHNSON AVENUE, N.W. | 579          |
+| 2016-04-01 00:00:00 | 1843 JOHNSON AVENUE, N.W. | 404          |
+| 2016-05-01 00:00:00 | 1843 Johnson Avenue, N.W. | 625          |
+| 2016-06-01 00:00:00 | 1843 Johnson Avenue, N.W. | 695          |
+| 2016-07-01 00:00:00 | 1843 Johnson Avenue, N.W. | 457          |
+| 2016-08-01 00:00:00 | 1843 Johnson Avenue, N.W. | 744          |
+| 2016-09-01 00:00:00 | 1843 Johnson Avenue, N.W. | 681          |
+| 2016-10-01 00:00:00 | 1843 Johnson Avenue, N.W. | 728          |
+| 2016-11-01 00:00:00 | 1843 Johnson Avenue, N.W. | 1062         |
+| 2016-12-01 00:00:00 | 1843 Johnson Avenue, N.W. | 992          |
 
 Because `store_number` is an unique number assigned to the store who ordered the liquor, the inconsistent `address` values for the same store pose data quality problem. But `address` is a string value that can take many forms. For store #2508, the reported address value has a shifted behavior from all capital letters starting on May 2016. For other cases, it might be completely different behavior change that you would have to manually check one by one. With over 2,000 unique stores, 19 million rows, and 8 years of data, you need an automated way to detect meaningful categorical outliers.
 
@@ -129,7 +141,7 @@ The following command shows an example of running monthly OwlDQ Checks, from the
 
 **Results**
 
-The `-br 12` option ran 12 monthly OwlChecks for every month of 2016. The figure below shows OwlCheck Hoot page for the lastest run of dataset `iowa_liquor_sales_by_store_numbers_monthly`. The Hoot page shows that OwlCheck identified 24 Outliers among 4.8k rows of unique date x store_number for month of December, 2016.
+The `-br 12` option ran 12 monthly OwlChecks for every month of 2016. The figure below shows OwlCheck Hoot page for the lastest run of dataset `iowa_liquor_sales_by_store_numbers_monthly`. The Hoot page shows that OwlCheck identified 24 Outliers among 4.8k rows of unique date x store\_number for month of December, 2016.
 
 ![Monthly OwlCheck for 2016-12-01](<../../.gitbook/assets/image (39).png>)
 
