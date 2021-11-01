@@ -18,6 +18,8 @@ Owl automatically profiles datasets over time to enable drill-in for detailed in
 
 Collibra DQ offers click or code options to run profiling.&#x20;
 
+![](../../.gitbook/assets/profile\_results.gif)
+
 ## Dataset Profile
 
 Owl creates a detailed profile of each dataset under management. This profile will later be used to both provide insight and automatically identify data quality issues.
