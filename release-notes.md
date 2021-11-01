@@ -27,7 +27,7 @@
   * Fixed backrun timebin to work with weeks and quarters instead of days
 * Outliers
   * Split historical load to avoid historical query rounding up
-  * \*Tech Preview\* \[TP] Minimum / ragged history
+  * \*Tech Preview\* \[TP] Dynamic minimum history
 * Source
   * Fixed issue where settings were not sticky for subsequent runs
 * Security

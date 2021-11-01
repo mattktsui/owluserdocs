@@ -16,7 +16,7 @@ Even though Owl uses complex formulas to identify the correct outliers in a data
 
 ![](<../../.gitbook/assets/owl-outlier-numerical (2).png>)
 
-### Dynamic history options
+## Dynamic history options
 
 Data may not always enter your data pipeline on time and as expected due to weekend, holidays, errors, etc. To help capture outliers in spite of gaps, there are two main options:
 
