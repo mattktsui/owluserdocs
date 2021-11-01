@@ -308,6 +308,19 @@ sudo du -ah | sort -hr | head -5
 sudo find /home/owldq/owl/spark/work/* -mtime +1 -type f -delete
 ```
 
+```
+### Redirect Spark scratch to another location
+SPARK_LOCAL_DIRS=/mnt/disks/sdb/tmp
+
+### Set Spark to delete older files
+export SPARK_WORKER_OPTS="${SPARK_WORKER_OPTS} -Dspark.worker.cleanup.enabled=true -Dspark.worker.cleanup.interval=1800 -Dspark.worker.cleanup.appDataTtl=3600"
+
+```
+
+Or change Spark storage with an agent configuration `-conf spark.local.dir=/home/owldq/owl/owltmp`
+
+![](<../../.gitbook/assets/image (91).png>)
+
 ## Troubleshooting Tip: Add Spark Home Environment Variables to Profile
 
 ```

@@ -50,7 +50,7 @@ This is under controller-catalog
 
 ![](<../../.gitbook/assets/image (98).png>)
 
-![](<../../.gitbook/assets/image (91).png>)
+![](<../../.gitbook/assets/image (91) (1).png>)
 
 This would be the body of the POST.
 
