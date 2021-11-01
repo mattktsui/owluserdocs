@@ -12,13 +12,15 @@ See [selecting the scope section](https://dq-docs.collibra.com/dq-visuals/explor
 
 ![Profile is on by default and is part of onboarding a dataset](<../../.gitbook/assets/profile\_setup (1).gif>)
 
+![](../../.gitbook/assets/profile\_results.gif)
+
 ## Automatically Profile
 
 Owl automatically profiles datasets over time to enable drill-in for detailed insights an automated data quality. A profile is just the first step towards an amazing amount of auto discovery. Visualize segments of the dataset and how how the dataset is changing over time.
 
 Collibra DQ offers click or code options to run profiling.&#x20;
 
-![](../../.gitbook/assets/profile\_results.gif)
+![](<../../.gitbook/assets/profile\_results (1).gif>)
 
 ## Dataset Profile
 
