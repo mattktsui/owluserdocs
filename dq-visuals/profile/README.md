@@ -5,16 +5,18 @@ description: Create profiles based on a table, view, or file
 # Profile (no-code)
 
 {% hint style="info" %}
-Users have the option to scan the entire dataset or users can apply custom filtering to select the depth (row filtering) and width (columns). 
+Users have the option to scan the entire dataset or users can apply custom filtering to select the depth (row filtering) and width (columns).&#x20;
 {% endhint %}
 
 See [selecting the scope section](https://dq-docs.collibra.com/dq-visuals/explorer-2#select-the-scope-and-define-a-query) of Explorer to see how.
+
+![Profile is on by default and is part of onboarding a dataset](<../../.gitbook/assets/profile\_setup (1).gif>)
 
 ## Automatically Profile
 
 Owl automatically profiles datasets over time to enable drill-in for detailed insights an automated data quality. A profile is just the first step towards an amazing amount of auto discovery. Visualize segments of the dataset and how how the dataset is changing over time.
 
-Collibra DQ offers click or code options to run profiling. 
+Collibra DQ offers click or code options to run profiling.&#x20;
 
 ## Dataset Profile
 
@@ -24,25 +26,25 @@ Owl creates a detailed profile of each dataset under management. This profile wi
 
 ### Pushdown Profiling
 
-Collibra DQ can compute the Profile of a dataset either via Spark (default) or the Data Warehouse (Profile Pushdown) where the data lives as the engine. When the Profile is computed using the datasource DBMS the user can choose two levels of pushdown: 
+Collibra DQ can compute the Profile of a dataset either via Spark (default) or the Data Warehouse (Profile Pushdown) where the data lives as the engine. When the Profile is computed using the datasource DBMS the user can choose two levels of pushdown:&#x20;
 
-* Full Profile - Perform full profile calculation except for TopN 
+* Full Profile - Perform full profile calculation except for TopN&#x20;
 * Count - Only perform row and column counts
 
 {% hint style="info" %}
 The following DBMS systems are supported for "Profile Pushdown"
 
-* Impala 
-* Hive 
-* Snowflake 
-* Presto 
-* Teradata 
-* SQL Server 
-* Postgres 
-* Redshift 
-* Mysql 
-* Oracle 
-* DB2 
+* Impala&#x20;
+* Hive&#x20;
+* Snowflake&#x20;
+* Presto&#x20;
+* Teradata&#x20;
+* SQL Server&#x20;
+* Postgres&#x20;
+* Redshift&#x20;
+* Mysql&#x20;
+* Oracle&#x20;
+* DB2&#x20;
 {% endhint %}
 
 ![](../../.gitbook/assets/screen-shot-2020-05-07-at-7.28.25-pm.png)
@@ -51,7 +53,7 @@ The following DBMS systems are supported for "Profile Pushdown"
 
 ![](../../.gitbook/assets/screen-shot-2020-05-07-at-7.33.16-pm.png)
 
-By gathering a variety of different statistics, Owl's profile can provide a great deal of insight about the dataset.  
+By gathering a variety of different statistics, Owl's profile can provide a great deal of insight about the dataset. &#x20;
 
 {% hint style="info" %}
 Profile includes a range of statistics
@@ -71,7 +73,7 @@ Profile includes a range of statistics
 
 ## Sensitive Data Detection (Semantic)
 
-Owl can automatically identify any types of common PII columns. 
+Owl can automatically identify any types of common PII columns.&#x20;
 
 {% hint style="info" %}
 Owl is able to detect the following types of PII
