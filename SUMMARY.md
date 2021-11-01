@@ -239,6 +239,6 @@
   * [Local User Store Authentication](security/authentication-with-local-user-store/README.md)
     * [Adding Local Users](security/authentication-with-local-user-store/adding-local-users.md)
   * [Role Based Access Control (RBAC)](security/role-based-access-control-rbac.md)
-  * [SAML IDP](security/authentication-with-saml-idp.md)
+  * [SAML Authentication](security/authentication-with-saml-idp.md)
   * [Securing Passwords](admin/securing-passwords.md)
   * [SSL Setup (HTTPS)](admin/ssl-setup-https.md)
