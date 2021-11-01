@@ -1,6 +1,8 @@
-# Schedule Owlchecks
+# Schedule a Job
 
 After you successfully run a job, you can schedule that job to run automatically. You can do this by updating the template (if needed) and clicking the schedule icon in the hoot page. To change the template, you can use the -rd variable: ${rd} in your query to set dynamic dates or date ranges for your scheduled job.
+
+![](../.gitbook/assets/schedule.gif)
 
 ![](<../.gitbook/assets/image (53).png>)
 
