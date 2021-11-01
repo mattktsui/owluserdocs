@@ -8,19 +8,21 @@ description: Create profiles based on a table, view, or file
 Users have the option to scan the entire dataset or users can apply custom filtering to select the depth (row filtering) and width (columns).&#x20;
 {% endhint %}
 
-See [selecting the scope section](https://dq-docs.collibra.com/dq-visuals/explorer-2#select-the-scope-and-define-a-query) of Explorer to see how.
+### Select the Scope
+
+See [selecting the scope section](https://dq-docs.collibra.com/dq-visuals/explorer-2#select-the-scope-and-define-a-query) of Explorer to see how. Users can run limits, by time, or full table scans if they have enough resources.
 
 ![Profile is on by default and is part of onboarding a dataset](<../../.gitbook/assets/profile\_setup (1).gif>)
 
-![](../../.gitbook/assets/profile\_results.gif)
+### View the Results
+
+![](<../../.gitbook/assets/profile\_results (1).gif>)
 
 ## Automatically Profile
 
 Owl automatically profiles datasets over time to enable drill-in for detailed insights an automated data quality. A profile is just the first step towards an amazing amount of auto discovery. Visualize segments of the dataset and how how the dataset is changing over time.
 
 Collibra DQ offers click or code options to run profiling.&#x20;
-
-![](<../../.gitbook/assets/profile\_results (1).gif>)
 
 ## Dataset Profile
 
