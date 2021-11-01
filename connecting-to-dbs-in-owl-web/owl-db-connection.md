@@ -1,6 +1,6 @@
 # Add a Connection
 
-![](../.gitbook/assets/connections.gif)
+![](<../.gitbook/assets/connections (1).gif>)
 
 ## How to Add DB Connection via UI
 
