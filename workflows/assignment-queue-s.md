@@ -1,5 +1,7 @@
 # Assignment Queue(s)
 
+![](../.gitbook/assets/assignments.gif)
+
 OwlDQ provides observations that usually need review to validate. In many cases, it makes sense to assign the validation to a person that has access to the source data. Assignments can be handled by Owl internally, or an existing ServiceNow or JIRA queue when configured.
 
 When reviewing any observation you will notice a column called "Action
