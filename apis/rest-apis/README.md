@@ -1,5 +1,7 @@
 # REST APIs
 
+![](../../.gitbook/assets/APIs.gif)
+
 All REST APIs are available inside the application under admin section.  The APIs can be used against the application in live working mode, which is preferred over documentation of APIs because it means the API works and was tested at compile time versus documentation time.
 
 ### Product API
@@ -57,7 +59,7 @@ status = get_job_findings(dataset, run_date)
 
 ### Dataset Definition
 
-The JSON for the full dataset definition.  It can be more terse to send in the cmdline string of just the variables you use for your DQ Job.  
+The JSON for the full dataset definition.  It can be more terse to send in the cmdline string of just the variables you use for your DQ Job. &#x20;
 
 ```bash
 -df "yyyy/MM/dd" -owluser <user> -numexecutors 1 -executormemory 1g \
@@ -469,12 +471,12 @@ curl --location --request POST 'http://localhost:9000/auth/signin' \
 
 Alternatively, you can use the rest endpoints directly. This example shows how it can be done with Python.
 
-1. Create a dataset def 
-   1. using the UI (Explorer) or 
+1. Create a dataset def&#x20;
+   1. using the UI (Explorer) or&#x20;
    2. using the dataset-def-api (https://\<ip>/swagger-ui.html#/dataset-def-api)
-2. Confirm your Python environment has the appropriate modules and imports 
+2. Confirm your Python environment has the appropriate modules and imports&#x20;
 3. Fill-in the variables and customize to your preference
-   1. url, user and pass 
+   1. url, user and pass&#x20;
    2. dataset, runDate, and agentName
 
 ```python
@@ -536,7 +538,7 @@ response = requests.get(
 print(response.json())
 ```
 
-This assumes you have created a dataset definition using the UI or from the template. 
+This assumes you have created a dataset definition using the UI or from the template.&#x20;
 
 #### Command Line instead of JSON dataset def
 
