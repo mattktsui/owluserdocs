@@ -1,4 +1,6 @@
-# Group Scorecard
+# Page View
+
+![](../.gitbook/assets/page\_view.gif)
 
 ## Visually and logically group datasets together to create a heat-map of blindspots.
 
