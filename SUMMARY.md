@@ -124,7 +124,6 @@
 
 ## Scheduler
 
-* [Overview](scheduler/job-server.md)
 * [Schedule a Job](scheduler/schedule-owlchecks.md)
 * [Schedule Management](scheduler/schedule-management/README.md)
   * [View/Re-Run Scheduled Jobs](scheduler/schedule-management/view-re-run-scheduled-jobs.md)
