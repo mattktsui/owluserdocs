@@ -230,7 +230,7 @@ _Please note updated Collibra release name methodology_
 * Security
   * SQL View data by role vs just Admin
 * Reports
-  * OTB completeness reports from reports section. [Completeness Report](reports/built-in/completeness-report.md)
+  * OTB completeness reports from reports section. [Completeness Report](reports/completeness-report.md)
 
 ## 2.15.0 (**05-31-2021)**
 

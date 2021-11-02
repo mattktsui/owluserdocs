@@ -150,10 +150,11 @@
 ## Reports
 
 * [Built-In](reports/built-in/README.md)
-  * [Completeness Report](reports/built-in/completeness-report.md)
-  * [Coverage Report](reports/built-in/coverage-report.md)
-  * [Dataset Report](reports/built-in/profile.md)
-  * [Summary Reports](reports/built-in/owl-summary-reports.md)
+  * [Completeness Report](reports/completeness-report.md)
+  * [Coverage Report](reports/coverage-report.md)
+  * [Dataset Report](reports/profile.md)
+  * [Summary Reports](reports/owl-summary-reports.md)
+* [Custom](reports/custom.md)
 
 ## APIs
 
