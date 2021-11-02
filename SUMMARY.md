@@ -37,8 +37,7 @@
 
 * [Explorer (no-code)](dq-visuals/explorer-2/README.md)
   * [Explorer (advanced)](dq-visuals/explorer-2/explorer.md)
-* [Profile (no-code)](dq-visuals/profile/README.md)
-  * [AutoProfile](dq-visuals/profile/autoprofile.md)
+* [Profile (no-code)](dq-visuals/profile.md)
 * [Behavior (automatic)](dq-visuals/behaviors.md)
 * [Rules (user-defined)](dq-visuals/rules/README.md)
   * [Adding a Rule](dq-visuals/rules/creating-a-business-rule.md)
@@ -100,6 +99,7 @@
   * [DQ Job Validate Source](dq-job-examples/owlcheck/owlcheck-validate-source.md)
   * [DQ Job 43M rows](dq-job-examples/owlcheck/owlcheck-43m-rows.md)
   * [Add Date Column](dq-job-examples/owlcheck/add-date-column.md)
+  * [AutoProfile](dq-job-examples/owlcheck/autoprofile.md)
   * [Cloudera CLASSPATH](troubleshooting/cloudera-classpath.md)
   * [Column Matching](dq-job-examples/owlcheck/cluster-health-report.md)
   * [Date Time Variable Options](dq-job-examples/owlcheck/date-time-variable-options.md)
