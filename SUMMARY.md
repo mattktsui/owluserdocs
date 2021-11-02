@@ -117,8 +117,8 @@
 
 ## Scorecards
 
-* [Overview](scorecards/dataset-scorecard/README.md)
-  * [Scoring](scorecards/dataset-scorecard/owl-dq-screen-shots.md)
+* [Overview](scorecards/dataset-scorecard.md)
+  * [Scoring](scorecards/owl-dq-screen-shots.md)
 * [Page View](scorecards/group-scorecard.md)
 * [List View](scorecards/list-view.md)
 
@@ -149,11 +149,11 @@
 
 ## Reports
 
-* [Built-In](reports/built-in.md)
-* [Completeness Report](reports/completeness-report.md)
-* [Coverage Report](reports/coverage-report.md)
-* [Dataset Report](reports/profile.md)
-* [Summary Reports](reports/owl-summary-reports.md)
+* [Built-In](reports/built-in/README.md)
+  * [Completeness Report](reports/built-in/completeness-report.md)
+  * [Coverage Report](reports/built-in/coverage-report.md)
+  * [Dataset Report](reports/built-in/profile.md)
+  * [Summary Reports](reports/built-in/owl-summary-reports.md)
 
 ## APIs
 
