@@ -2,7 +2,7 @@
 description: How much is your redundant data costing you?
 ---
 
-# Cluster Health Report
+# Column Matching
 
 ### Reclaim Gigabytes of Redundant Data
 
@@ -12,7 +12,7 @@ The result is the same data or similar columns of the same data being copied man
 
 ### Tabular breakdown of % fingerprint match
 
-![](../.gitbook/assets/owl-cluster-health.png)
+![](../../.gitbook/assets/owl-cluster-health.png)
 
 Sometimes its not as simple as comparing 2 tables from the same database.  Owl allows a technical user to setup multiple DB connections before executing an owl health check.
 
@@ -49,6 +49,6 @@ matchDF.createOrReplaceTempView("matches")
 
 ### High level view of data overlap
 
-![](../.gitbook/assets/owl-health-chart.png)
+![](../../.gitbook/assets/owl-health-chart.png)
 
-  
+&#x20;&#x20;

@@ -101,6 +101,7 @@
   * [DQ Job 43M rows](dq-job-examples/owlcheck/owlcheck-43m-rows.md)
   * [Add Date Column](dq-job-examples/owlcheck/add-date-column.md)
   * [Cloudera CLASSPATH](troubleshooting/cloudera-classpath.md)
+  * [Column Matching](dq-job-examples/owlcheck/cluster-health-report.md)
   * [Date Time Variable Options](dq-job-examples/owlcheck/date-time-variable-options.md)
   * [Deploy Mode](troubleshooting/deploy-mode.md)
   * [File Look Back](dq-job-examples/owlcheck/file-lookback.md)
@@ -125,16 +126,16 @@
 
 * [Overview](scheduler/job-server.md)
 * [Schedule a Job](scheduler/schedule-owlchecks.md)
-* [Schedule Management](scheduler/schedule-management.md)
-* [View/Re-Run Scheduled Jobs](scheduler/view-re-run-scheduled-jobs.md)
+* [Schedule Management](scheduler/schedule-management/README.md)
+  * [View/Re-Run Scheduled Jobs](scheduler/schedule-management/view-re-run-scheduled-jobs.md)
 
 ## WORKFLOWS / ALERTS <a href="workflows" id="workflows"></a>
 
 * [Email Alerts](workflows/email-alerts.md)
-* [Assignment Queue(s)](workflows/assignment-queue-s.md)
-* [Internal Assignment](workflows/internal-assignment.md)
-* [External Assignment](workflows/external-assignment.md)
-* [FAQ](workflows/faq.md)
+* [Assignment Queue(s)](workflows/assignment-queue-s/README.md)
+  * [Internal Assignment](workflows/assignment-queue-s/internal-assignment.md)
+  * [External Assignment](workflows/assignment-queue-s/external-assignment.md)
+  * [FAQ](workflows/assignment-queue-s/faq.md)
 
 ## Labeling / Training
 
@@ -146,7 +147,6 @@
 * [Overview](catalog/catalog.md)
 * [Business Units](catalog/business-units.md)
 * [Catalog Bulk Actions](catalog/catalog-bulk-actions.md)
-* [Cluster Health Report](catalog/cluster-health-report.md)
 
 ## Reports
 
@@ -211,8 +211,8 @@
 
 ## Architecture
 
-* [ERD](architecture/erd.md)
-* [Architecture Diagram](architecture/diagram.md)
+* [Architecture Diagram](architecture/diagram/README.md)
+  * [ERD](architecture/diagram/erd.md)
 * [Hardware Sizing](architecture/hardware-sizing.md)
 * [System Requirements](architecture/system-requirements.md)
 
