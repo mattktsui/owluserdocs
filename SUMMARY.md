@@ -35,7 +35,6 @@
 
 ## Features <a href="dq-visuals" id="dq-visuals"></a>
 
-* [Overview](dq-visuals/overview.md)
 * [Explorer (no-code)](dq-visuals/explorer-2/README.md)
   * [Explorer (advanced)](dq-visuals/explorer-2/explorer.md)
 * [Profile (no-code)](dq-visuals/profile/README.md)
@@ -62,6 +61,7 @@
   * [Patterns (advanced)](dq-visuals/more.../pattern-mining.md)
   * [Records (advanced)](dq-visuals/more.../missing-records.md)
   * [Source (advanced)](dq-visuals/more.../validate-source.md)
+  * [Summary](dq-visuals/more.../overview.md)
 
 ## DQ JOB Examples
 
@@ -213,8 +213,8 @@
 
 * [Architecture Diagram](architecture/diagram/README.md)
   * [ERD](architecture/diagram/erd.md)
-* [Hardware Sizing](architecture/hardware-sizing.md)
-* [System Requirements](architecture/system-requirements.md)
+* [System Requirements](architecture/system-requirements/README.md)
+  * [Hardware Sizing](architecture/system-requirements/hardware-sizing.md)
 
 ## Admin
 

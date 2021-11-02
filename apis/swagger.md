@@ -22,7 +22,7 @@ You will find a direct link to the Swagger page&#x20;
 
 Toggle between Product API and Internal API&#x20;
 
-![](<../.gitbook/assets/image (101) (1).png>)
+![](<../.gitbook/assets/image (101) (1) (1).png>)
 
 
 
