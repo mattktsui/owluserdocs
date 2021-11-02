@@ -1,5 +1,7 @@
 # Catalog Bulk Actions
 
+![](../.gitbook/assets/bulk\_actions.gif)
+
 ### Bulk Delete
 
 The catalog allows user to delete multiple datasets in one action through the catalog. Click the Bulk Actions button dropdown in the top right corner. Select Bulk Delete.
