@@ -40,73 +40,74 @@ Custom reports can be leveraged by connecting your favorite BI tool on the under
 
 **Jobs IDs from Agent**
 
-select remote\_job\_id from agent\_q where remote\_job\_id is not null
+`select remote_job_id from agent_q where remote_job_id is not null`
 
 **Dataset Activity **
 
-select dataset,run\_id,total\_time from dataset\_activity where total\_time is not null order by total\_time desc
+`select dataset,run_id,total_time from dataset_activity where total_time is not null order by total_time desc`
 
 **Jobs with Enriched Metrics **
 
-with activity as ( select dataset,run\_id,total\_time from dataset\_activity where total\_time is not null order by total\_time desc limit 100), scans as ( select \* from dataset\_scan where dataset in (select dataset from activity) ), configs as ( select \* from opt\_spark where dataset in (select dataset from activity)), schema as ( select count(\*) as col\_cnt, dataset from dataset\_schema where dataset in (select dataset from activity) group by dataset ) SELECT A.dataset, A.run\_id, C.total\_time, A.rc, D.col\_cnt, B.driver\_memory, B.num\_executors,B.executor\_cores, B.executor\_memory, B.master FROM scans A INNER JOIN configs B ON A.dataset = B.dataset INNER JOIN activity C ON A.dataset = C.dataset and A.run\_id = C.run\_id INNER JOIN schema D on A.dataset = D.dataset ORDER BY C.total\_time desc
+`with activity as ( select dataset,run_id,total_time from dataset_activity where total_time is not null order by total_time desc limit 100), scans as ( select * from dataset_scan where dataset in (select dataset from activity) ), configs as ( select * from opt_spark where dataset in (select dataset from activity)), schema as ( select count(*) as col_cnt, dataset from dataset_schema where dataset in (select dataset from activity) group by dataset ) SELECT A.dataset, A.run_id, C.total_time, A.rc, D.col_cnt, B.driver_memory, B.num_executors,B.executor_cores, B.executor_memory, B.master FROM scans A INNER JOIN configs B ON A.dataset = B.dataset INNER JOIN activity C ON A.dataset = C.dataset and A.run_id = C.run_id INNER JOIN schema D on A.dataset = D.dataset ORDER BY C.total_time desc`
 
 **Jobs. Load Times and Resources**
 
-&#x20;with activity as ( select dataset,run\_id,total\_time from public.dataset\_activity where total\_time is not null order by total\_time), scans as ( select \* from public.dataset\_scan where dataset in (select dataset from activity) ), configs as ( select \* from public.opt\_spark where dataset in (select dataset from activity)), schema as ( select count(\*) as col\_cnt, dataset from public.dataset\_schema where dataset in (select dataset from activity) group by dataset ) SELECT A.dataset, A.run\_id, A.updt\_ts, C.total\_time, A.rc, D.col\_cnt, B.driver\_memory, B.num\_executors,B.executor\_cores, B.executor\_memory, B.master FROM scans A INNER JOIN configs B ON A.dataset = B.dataset INNER JOIN activity C ON A.dataset = C.dataset and A.run\_id = C.run\_id INNER JOIN schema D on A.dataset = D.dataset ORDER BY A.updt\_ts desc limit 10
+`with activity as ( select dataset,run_id,total_time from public.dataset_activity where total_time is not null order by total_time), scans as ( select * from public.dataset_scan where dataset in (select dataset from activity) ), configs as ( select * from public.opt_spark where dataset in (select dataset from activity)), schema as ( select count(*) as col_cnt, dataset from public.dataset_schema where dataset in (select dataset from activity) group by dataset ) SELECT A.dataset, A.run_id, A.updt_ts, C.total_time, A.rc, D.col_cnt, B.driver_memory, B.num_executors,B.executor_cores, B.executor_memory, B.master FROM scans A INNER JOIN configs B ON A.dataset = B.dataset INNER JOIN activity C ON A.dataset = C.dataset and A.run_id = C.run_id INNER JOIN schema D on A.dataset = D.dataset ORDER BY A.updt_ts desc limit 10`
 
 **Dataset Scans and Scores By Schema**
 
-select \* from public.dataset\_scan where dataset like 'public.%';
+`select * from public.dataset_scan where dataset like 'public.%';`
 
 **Dataset Scans and Scores By Name**
 
-select \* from public.dataset\_scan where dataset ='public.atm\_customer';
+`select * from public.dataset_scan where dataset ='public.atm_customer';`
 
 **Scans By Month By Schema - 'Public'**
 
-select dataset, DATE\_TRUNC('MONTH', run\_id) as run\_id, count(\*) as Total\_Scans from dataset\_scan where dataset like 'public%' group by dataset, run\_id order by run\_id asc
+`select dataset, DATE_TRUNC('MONTH', run_id) as run_id, count(*) as Total_Scans from dataset_scan where dataset like 'public%' group by dataset, run_id order by run_id asc`
 
 **Rule Breaks Past 30 Days**
 
-select \* from rule\_output where run\_id < NOW() - INTERVAL '30 DAY';
+`select * from rule_output where run_id < NOW() - INTERVAL '30 DAY';`
 
 **Scheduled Jobs Queue**
 
-select job\_id,agent\_id,dataset,run\_id,status,activity,start\_time from public.owlcheck\_q;
+`select job_id,agent_id,dataset,run_id,status,activity,start_time from public.owlcheck_q;`
 
 **Column Counts from Dataset Schema**
 
-select dataset, count(\*) from dataset\_schema group by dataset;
+`select dataset, count(*) from dataset_schema group by dataset;`
 
 **Profiling Stats**
 
-select dataset, run\_id, field\_nm, (null\_ratio \* 100) as null\_percent, (empty\_ratio \* 100) as empty\_percent, ROUND( CAST( ( 100 - ((null\_ratio \* 100) + (empty\_ratio \* 100)) ) as numeric), 3) as completeness from public.dataset\_field where updt\_ts > '2020-06-01' and dataset = 'ProcessOrder' and run\_id > '2021-03-17 00:00:00+00' order by completeness desc
+`select dataset, run_id, field_nm, (null_ratio * 100) as null_percent, (empty_ratio * 100) as empty_percent, ROUND( CAST( ( 100 - ((null_ratio * 100) + (empty_ratio * 100)) ) as numeric), 3) as completeness from public.dataset_field where updt_ts > '2020-06-01' and dataset = 'ProcessOrder' and run_id > '2021-03-17 00:00:00+00' order by completeness desc`
 
 **Metadata / Schema / Datatypes**
 
-select \* from public.dataset\_schema;
+`select * from public.dataset_schema;`
 
 **Profile Stats**
 
-select \* from public.dataset\_field;
+`select * from public.dataset_field;`
 
 **Locate Similar Columns**
 
-select distinct dataset, field\_nm, max\_abs from dataset\_field where max\_abs = 'Wireless Telecommunications'
+`select distinct dataset, field_nm, max_abs from dataset_field where max_abs = 'Wireless Telecommunications'`
 
 **Same Column Names**&#x20;
 
-select distinct dataset, field\_nm from dataset\_field where field\_nm = 'authenticated\_user'
+`select distinct dataset, field_nm from dataset_field where field_nm = 'authenticated_user'`
 
 **Similar Column Names**
 
-&#x20;select distinct dataset,field\_nm from dataset\_field where field\_nm like '%id%'
+` select distinct dataset,field_nm from dataset_field where field_nm like '%id%'`
 
 **Behavior Findings**
 
-&#x20;select \* from behavior where dataset='demo.esg\_data\_october\_22'
+` select * from behavior where dataset='esg_data'`
 
 **All Columns for Schema from Postgres Stats**
 
-&#x20;SELECT table\_name FROM information\_schema.tables WHERE table\_schema = 'public' ORDER BY table\_name;
+`SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' ORDER BY table_name;`
 
+``
