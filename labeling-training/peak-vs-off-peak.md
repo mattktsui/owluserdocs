@@ -1,5 +1,7 @@
 # Peak vs Off Peak
 
+![](../.gitbook/assets/off\_peak.gif)
+
 ## But my Weekend runs are not the Same
 
 A common scenario that can fool behavioral analytics and ML is when you have 2 or 3 different but normal patterns. Owl has a rich labeling system that allows a user to fork the training model to learn these cycles individually as to not confuse the model.
