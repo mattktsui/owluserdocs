@@ -56,7 +56,7 @@ add more memory to the driver node as it will be responsible for the initial lan
 
 **Add Parallel JDBC**
 
-![](../.gitbook/assets/owl-parallel-jdbc.png)
+![](../../.gitbook/assets/owl-parallel-jdbc.png)
 
 ### Limit Features, Turn Flags Off
 

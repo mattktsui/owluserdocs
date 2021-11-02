@@ -206,8 +206,8 @@
 
 * [Performance Settings](benchmarks/performance-settings.md)
 * [Performance Tests](benchmarks/performance-tests.md)
-* [Performance Tuning](troubleshooting/performance-tuning.md)
-* [FAQ](benchmarks/benchmark-faq.md)
+* [Performance Tuning](benchmarks/performance-tuning/README.md)
+  * [Performance Considerations](benchmarks/performance-tuning/benchmark-faq.md)
 
 ## Architecture
 
