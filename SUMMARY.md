@@ -35,9 +35,7 @@
 
 ## Features <a href="dq-visuals" id="dq-visuals"></a>
 
-* [Explorer (no-code)](dq-visuals/explorer-2/README.md)
-  * [Explorer (advanced)](dq-visuals/explorer-2/explorer.md)
-* [Profile (no-code)](dq-visuals/profile.md)
+* [Profile (automatic)](dq-visuals/profile.md)
 * [Behavior (automatic)](dq-visuals/behaviors.md)
 * [Rules (user-defined)](dq-visuals/rules/README.md)
   * [Adding a Rule](dq-visuals/rules/creating-a-business-rule.md)
@@ -53,6 +51,7 @@
   * [Rule Library](dq-visuals/rules/dq-rule-automation.md)
   * [Rule Discovery](dq-visuals/rules/data-concepts-and-semantics.md)
 * [More...](dq-visuals/more.../README.md)
+  * [Explorer (no-code)](dq-visuals/more.../explorer-2.md)
   * [Schema (automatic)](dq-visuals/more.../schema-evolution.md)
   * [Shapes (automatic)](dq-visuals/more.../shapes.md)
   * [Duplicates (advanced)](dq-visuals/more.../duplicates.md)
@@ -104,6 +103,7 @@
   * [Column Matching](dq-job-examples/owlcheck/cluster-health-report.md)
   * [Date Time Variable Options](dq-job-examples/owlcheck/date-time-variable-options.md)
   * [Deploy Mode](troubleshooting/deploy-mode.md)
+  * [Explorer (advanced)](dq-job-examples/owlcheck/explorer.md)
   * [File Look Back](dq-job-examples/owlcheck/file-lookback.md)
   * [Filter & Filter Not](dq-job-examples/owlcheck/filter.md)
   * [Multiple Pattern Relationships](dq-job-examples/owlcheck/multiple-pattern-combinations.md)

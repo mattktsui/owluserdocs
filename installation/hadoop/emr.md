@@ -15,10 +15,10 @@ OwlDQ is able to use EMR as the compute space for data quality jobs (Owlchecks).
 ### Prepare for Deployment
 
 {% hint style="info" %}
-Before enabling OwlDQ to use EMR as the compute space, make sure that Owl Web and the Owl Metastore are already deployed ([https://docs.owl-analytics.com/installation/full-install](https://docs.owl-analytics.com/installation/full-install)). 
+Before enabling OwlDQ to use EMR as the compute space, make sure that Owl Web and the Owl Metastore are already deployed ([https://docs.owl-analytics.com/installation/full-install](https://docs.owl-analytics.com/installation/full-install)).&#x20;
 {% endhint %}
 
-1. Create a "bootstrap bucket" location in S3 where OwlDQ binaries and bootstrap script (install-agent-emr.sh) will be staged. The EMR cluster instances will need to include an attached Role that has access to this location in order to bootstrap the cluster. This location should not contain any data or any kind of sensitive materials and thus should not require any special permissions. It just needs to be accessible by EMR clusters for bootstrap purposes. 
+1. Create a "bootstrap bucket" location in S3 where OwlDQ binaries and bootstrap script (install-agent-emr.sh) will be staged. The EMR cluster instances will need to include an attached Role that has access to this location in order to bootstrap the cluster. This location should not contain any data or any kind of sensitive materials and thus should not require any special permissions. It just needs to be accessible by EMR clusters for bootstrap purposes.&#x20;
 2. Create or modify an instance Profile Role that will be attached to EMR clusters so that it enables read access to the bootstrap bucket location. This Role is separate from the EMR service role that EMR will use to deploy the infrastructure.
 3. Stage the bootstrap script and the OwlDQ binary package in the bootstrap location created above.
 4. Make sure that the VPC where the Owl Metastore is deployed is accessible from the VPC where EMR clusters will be deployed.
@@ -28,12 +28,12 @@ Before enabling OwlDQ to use EMR as the compute space, make sure that Owl Web an
 
 ### Deploy EMR Cluster
 
-There are several ways to deploy EMR, however, for dev-ops purposes, the simplest path is usually to use the AWS CLI utility. The example below will deploy and EMR cluster bootstrapped with OwlDQ binaries and a functioning agent to deploy Owlchecks. 
+There are several ways to deploy EMR, however, for dev-ops purposes, the simplest path is usually to use the AWS CLI utility. The example below will deploy and EMR cluster bootstrapped with OwlDQ binaries and a functioning agent to deploy Owlchecks.&#x20;
 
 {% hint style="info" %}
 When defining the Bootstrap Location argument, do not include "s3://". For example:
 
-If Bootstrap Location is s3://bucket/prefix then BOOTSTRAP_LOCATION="bucket/prefix"
+If Bootstrap Location is s3://bucket/prefix then BOOTSTRAP\_LOCATION="bucket/prefix"
 {% endhint %}
 
 ```
@@ -74,7 +74,7 @@ aws emr create-cluster \
 
 ### Configure Agent
 
-Once the EMR cluster and Owl Agent is deployed, it needs to be configured in Owl Web. 
+Once the EMR cluster and Owl Agent is deployed, it needs to be configured in Owl Web.&#x20;
 
 1. Log into Owl Web, click the gear icon in the Navigation Pane and select "Admin Console".
 2. In the Admin Console, click on the "Remote Agent" tile.
@@ -96,6 +96,6 @@ Any datasources that are not listed in the right hand pane will not be visible t
 
 Everything is now ready for users to use EMR to run Owlchecks on data. Review Explorer documentation for detailed instructions.
 
-{% content-ref url="../../dq-visuals/explorer-2/" %}
-[explorer-2](../../dq-visuals/explorer-2/)
+{% content-ref url="../../dq-visuals/more.../explorer-2.md" %}
+[explorer-2.md](../../dq-visuals/more.../explorer-2.md)
 {% endcontent-ref %}
