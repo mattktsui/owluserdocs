@@ -1,8 +1,10 @@
 # Schedule Management
 
+![](../.gitbook/assets/job\_schedule.gif)
+
 Enable Scheduled Jobs from your environment variable in owl-env.sh
 
-SCHEDULE_ENABLED = TRUE/FALSE (Default = TRUE)
+SCHEDULE\_ENABLED = TRUE/FALSE (Default = TRUE)
 
 Limit Scheduler Open Time-slots:
 
