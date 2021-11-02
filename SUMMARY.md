@@ -117,10 +117,10 @@
 
 ## Scorecards
 
-* [Overview](scorecards/dataset-scorecard.md)
+* [Overview](scorecards/dataset-scorecard/README.md)
+  * [Scoring](scorecards/dataset-scorecard/owl-dq-screen-shots.md)
 * [Page View](scorecards/group-scorecard.md)
 * [List View](scorecards/list-view.md)
-* [Scoring](scorecards/owl-dq-screen-shots.md)
 
 ## Scheduler
 
@@ -149,6 +149,7 @@
 
 ## Reports
 
+* [Built-In](reports/built-in.md)
 * [Completeness Report](reports/completeness-report.md)
 * [Coverage Report](reports/coverage-report.md)
 * [Dataset Report](reports/profile.md)

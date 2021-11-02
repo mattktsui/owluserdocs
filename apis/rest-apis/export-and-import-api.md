@@ -48,7 +48,7 @@ http://<url>/v2/run-import
 
 This is under controller-catalog
 
-![](<../../.gitbook/assets/image (98).png>)
+![](<../../.gitbook/assets/image (98) (1).png>)
 
 ![](<../../.gitbook/assets/image (91) (1).png>)
 

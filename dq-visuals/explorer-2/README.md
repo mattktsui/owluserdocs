@@ -30,7 +30,7 @@ All UI functionality has corresponding API endpoints to define, run, and get res
 
 ## Select The Scope and Define a Query
 
-![](<../../.gitbook/assets/image (98) (1).png>)
+![](<../../.gitbook/assets/image (98) (1) (1).png>)
 
 #### Pick Date Column if your dataset contains an appropriate time filter&#x20;
 

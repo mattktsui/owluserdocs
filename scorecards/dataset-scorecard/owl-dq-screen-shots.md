@@ -1,6 +1,8 @@
 # Scoring
 
-![](../.gitbook/assets/scoring.gif)
+Scoring can be completely controlled by the end-user with out of the box defaults.
+
+![](../../.gitbook/assets/scoring.gif)
 
 Owl provides a data quality assessment that scans 9 dimensions of a data set to assure the integrity of that data. The 9 dimensions are behavior, rules, outliers, pattern, source, record, schema, duplicates, and shapes.&#x20;
 
@@ -10,7 +12,7 @@ Owl will scan your data with the same frequency, that you load your data - Owl s
 
 #### Aggregate Score
 
-![The score starts with 100 and individual dimensions deduct from the total.](<../.gitbook/assets/image (90) (1) (1).png>)
+![The score starts with 100 and individual dimensions deduct from the total.](<../../.gitbook/assets/image (90) (1) (1).png>)
 
 {% hint style="info" %}
 Each dimension can be custom weighted and rules can contain custom scoring severity. In this example, the deducted score (59) from the starting score (100) equals an overall score of 41.
