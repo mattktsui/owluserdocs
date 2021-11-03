@@ -37,6 +37,8 @@
 
 #### Known Limitations
 
+* Semantics and data concepts
+  * Not supported in pushdown mode
 * While is it possible to create joins and cross-dataset rules using Freeform SQL, it is best practice to create a view and handle the join prior to running the DQ Job.
 * Local files using UPLOAD\_PATH, UPLOAD\_FILE\_PATH, and temp files are only eligible to be deployed using the default NO\_AGENT option. These are only intended for quick tests and not intended for production-scale use. Best practice is to use a remote file system connection (S3, Google storage or ADLS).&#x20;
 * When submitting jobs via API from a different machine with a different timezone, timezone discrepancies are not accounted for automatically.  Best practice is to align each component to use UTC.
