@@ -4,6 +4,8 @@ description: An organized repository of all your rule templates
 
 # Rule Library
 
+![](../../.gitbook/assets/rule\_lib.gif)
+
 #### The rule library contains both OOTB and custom-built rule templates.
 
 ![](<../../.gitbook/assets/image (88).png>)
