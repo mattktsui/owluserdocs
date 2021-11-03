@@ -39,6 +39,7 @@
 * [Behavior (automatic)](dq-visuals/behaviors.md)
 * [Rules (user-defined)](dq-visuals/rules/README.md)
   * [Adding a Rule](dq-visuals/rules/creating-a-business-rule.md)
+  * [Scores](dq-visuals/rules/scores.md)
   * [Rule Types](dq-visuals/rules/rule-types/README.md)
     * [SQL Based Rules](dq-visuals/rules/rule-types/sql-based-rules/README.md)
       * [Simple](dq-visuals/rules/rule-types/sql-based-rules/simple.md)
