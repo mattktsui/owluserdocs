@@ -52,6 +52,6 @@ Native SQL uses your native DB syntax. The score is total break records / rows f
 
 ### Spark SQL
 
-This complete list of Spark SQL operators and functions.
+This is a complete list of Spark SQL operators and functions available. [https://spark.apache.org/docs/latest/api/sql/index.html](https://spark.apache.org/docs/latest/api/sql/index.html)
 
-[https://spark.apache.org/docs/latest/api/sql/index.html](https://spark.apache.org/docs/latest/api/sql/index.html)
+![](<../../.gitbook/assets/sql\_functions (1).gif>)
