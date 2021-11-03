@@ -1,6 +1,6 @@
 # Add Connection to Agent
 
-![](../.gitbook/assets/connections.gif)
+![](../.gitbook/assets/agent\_shuffle.gif)
 
 ## How To Link DB Connection to Agent via UI <a href="how-to-link-db-connection-to-agent-via-ui" id="how-to-link-db-connection-to-agent-via-ui"></a>
 

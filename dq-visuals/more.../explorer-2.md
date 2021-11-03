@@ -22,7 +22,7 @@ All UI functionality has corresponding API endpoints to define, run, and get res
 
 ## Create a new DQ Job by clicking +Create DQ Job
 
-![](<../../.gitbook/assets/image (92) (1).png>)
+![](<../../.gitbook/assets/image (92) (1) (1).png>)
 
 #### **View Data is an interactive option to run queries and explore the data**
 
@@ -58,24 +58,24 @@ Toggle on Pattern to enable this layer
 
 Click +Add to define a group and series of columns&#x20;
 
-{% content-ref url="../more.../pattern-mining.md" %}
-[pattern-mining.md](../more.../pattern-mining.md)
+{% content-ref url="pattern-mining.md" %}
+[pattern-mining.md](pattern-mining.md)
 {% endcontent-ref %}
 
 #### Click Save to and Click Outlier to Continue&#x20;
 
 ## Outlier (advanced / optional)
 
-{% content-ref url="../more.../outliers.md" %}
-[outliers.md](../more.../outliers.md)
+{% content-ref url="outliers.md" %}
+[outliers.md](outliers.md)
 {% endcontent-ref %}
 
 #### Click Save to and Click Dupe to Continue&#x20;
 
 ## Dupe (advanced / optional)
 
-{% content-ref url="../more.../duplicates.md" %}
-[duplicates.md](../more.../duplicates.md)
+{% content-ref url="duplicates.md" %}
+[duplicates.md](duplicates.md)
 {% endcontent-ref %}
 
 #### Click Save to and Click Source to Continue&#x20;
@@ -88,8 +88,8 @@ Click Preview to interlace the columns
 
 Manually map the columns by dragging left to right or deselect columns&#x20;
 
-{% content-ref url="../more.../validate-source.md" %}
-[validate-source.md](../more.../validate-source.md)
+{% content-ref url="validate-source.md" %}
+[validate-source.md](validate-source.md)
 {% endcontent-ref %}
 
 #### Click Save to and Click Save/Run to Continue&#x20;

@@ -1,6 +1,8 @@
-# Creating a Rule
+# Adding a Rule
 
-Navigate to the Rule page as shown in the screenshot below. By selecting the  icon on the top left corner under the Owl icon and select “Rule”. You will see a page as shown below. 
+![](../../.gitbook/assets/rule\_.gif)
+
+Navigate to the Rule page as shown in the screenshot below. By selecting the  icon on the top left corner under the Owl icon and select “Rule”. You will see a page as shown below.&#x20;
 
 ![](../../.gitbook/assets/screen-shot-2019-12-24-at-9.08.27-am.png)
 
@@ -8,19 +10,19 @@ You can get to rules from the hoot page by clicking on Rules under the dataset n
 
 ![](../../.gitbook/assets/screen-shot-2019-12-24-at-9.07.59-am.png)
 
-##  Instructions                                                
+## &#x20;Instructions                                               &#x20;
 
 1. Search for a dataset or navigate to the rule page using the hot link
    * Rules can only be applied to datasets once a DQ job has been run
-2. Click Load 
+2. Click Load&#x20;
    * This will populate the schema and any previously saved rules
-3. Select a rule type 
+3. Select a rule type&#x20;
    * Using the dropdown next to the Type label
-4. Select a rule name 
+4. Select a rule name&#x20;
    * If applying a preset rule, the rule name will be auto populated
 5. Input a rule condition
    * Only if applying a simple, freeform sql, stat, or native rule type.
-   * Provide a value in the condition/sql/function input field. 
+   * Provide a value in the condition/sql/function input field.&#x20;
    * Keystroke Ctrl+Space will provide IntelliSense
 6. Select Low, Medium or High for scoring severity (optional).
 7. Add any custom DQ dimensions for reporting (optional).
@@ -51,10 +53,10 @@ For every percentage the X condition occurs, deduct Y points from the data quali
 
 Let’s create a simple rule using the below information. The dataset name.
 
-1. Search for “shape_example” and click “Load”
+1. Search for “shape\_example” and click “Load”
 2. Select “Simple Rule”
 3. Rule Name = lnametest
-4. @shape_example.lname = “hootbeck” (should hit one time day over day).
+4. @shape\_example.lname = “hootbeck” (should hit one time day over day).
 5. Points = 1
 6. Percentage = 1
 7. Click “Submit”
