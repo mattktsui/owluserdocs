@@ -2,7 +2,7 @@
 description: Create profiles based on a table, view, or file
 ---
 
-# Profile (no-code)
+# Profile (automatic)
 
 {% hint style="info" %}
 Users have the option to scan the entire dataset or users can apply custom filtering to select the depth (row filtering) and width (columns).&#x20;
@@ -12,11 +12,19 @@ Users have the option to scan the entire dataset or users can apply custom filte
 
 See [selecting the scope section](https://dq-docs.collibra.com/dq-visuals/explorer-2#select-the-scope-and-define-a-query) of Explorer to see how. Users can run limits, by time, or full table scans if they have enough resources.
 
-![Profile is on by default and is part of onboarding a dataset](<../../.gitbook/assets/profile\_setup (1).gif>)
+![](../.gitbook/assets/profile\_scope.gif)
+
+### Select Options (or leave defaults)
+
+![](../.gitbook/assets/profile\_options.gif)
+
+### Save / Run
+
+![Profile is on by default and is part of onboarding a dataset](<../.gitbook/assets/profile\_setup (1).gif>)
 
 ### View the Results
 
-![](<../../.gitbook/assets/profile\_results (1).gif>)
+![](<../.gitbook/assets/profile\_results (1).gif>)
 
 ## Automatically Profile
 
@@ -28,7 +36,7 @@ Collibra DQ offers click or code options to run profiling.&#x20;
 
 Owl creates a detailed profile of each dataset under management. This profile will later be used to both provide insight and automatically identify data quality issues.
 
-![](../../.gitbook/assets/screen-shot-2020-07-08-at-12.45.19-am.png)
+![](../.gitbook/assets/screen-shot-2020-07-08-at-12.45.19-am.png)
 
 ### Pushdown Profiling
 
@@ -36,6 +44,8 @@ Collibra DQ can compute the Profile of a dataset either via Spark (default) or t
 
 * Full Profile - Perform full profile calculation except for TopN&#x20;
 * Count - Only perform row and column counts
+
+![](../.gitbook/assets/pushdown.gif)
 
 {% hint style="info" %}
 The following DBMS systems are supported for "Profile Pushdown"
@@ -53,11 +63,11 @@ The following DBMS systems are supported for "Profile Pushdown"
 * DB2&#x20;
 {% endhint %}
 
-![](../../.gitbook/assets/screen-shot-2020-05-07-at-7.28.25-pm.png)
+![](../.gitbook/assets/screen-shot-2020-05-07-at-7.28.25-pm.png)
 
 ## Profile Insights
 
-![](../../.gitbook/assets/screen-shot-2020-05-07-at-7.33.16-pm.png)
+![](../.gitbook/assets/screen-shot-2020-05-07-at-7.33.16-pm.png)
 
 By gathering a variety of different statistics, Owl's profile can provide a great deal of insight about the dataset. &#x20;
 
@@ -95,27 +105,27 @@ Owl is able to detect the following types of PII
 * EIN
 {% endhint %}
 
-![](../../.gitbook/assets/screen-shot-2020-07-08-at-12.37.10-am.png)
+![](../.gitbook/assets/screen-shot-2020-07-08-at-12.37.10-am.png)
 
 Once detected, Owl will tag the column in the Profile as the discovered type as well as automatically apply a rule. If the user can choose to decline any discovered tag by simply clicking on it and confirming the delete action. This action can also remove the rule associated with the tag.
 
-![](../../.gitbook/assets/screen-shot-2020-07-08-at-12.39.13-am.png)
+![](../.gitbook/assets/screen-shot-2020-07-08-at-12.39.13-am.png)
 
 ## Correlation Matrix (Relationship)
 
 Discover hidden relationships and measure the strength of those relationships.
 
-![](../../.gitbook/assets/owl-relationships.png)
+![](../.gitbook/assets/owl-relationships.png)
 
 ## Histograms
 
 Often the first step in a data science project is to segment the data. Owl automatically does this using histograms.
 
-![](../../.gitbook/assets/owl-histogram.png)
+![](../.gitbook/assets/owl-histogram.png)
 
 ## Data Preview
 
 After profiling the data, for those users with appropriate rights, Owl provides a glimpse of the dataset. The Data preview tab also provides a some basic insights such as highlights of Data Shape issues and Outliers (if enabled), and Column Filtergram visualization.
 
-![](../../.gitbook/assets/screen-shot-2020-05-07-at-7.57.29-pm.png)
+![](../.gitbook/assets/screen-shot-2020-05-07-at-7.57.29-pm.png)
 
