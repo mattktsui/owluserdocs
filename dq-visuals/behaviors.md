@@ -20,6 +20,8 @@ The main goal of OwlDQ is to provide enterprise data quality insight while great
 Behaviors is turned on by default.  Monitoring will calibrate and detect DQ observations, based on the profiling activity.&#x20;
 {% endhint %}
 
+![](../.gitbook/assets/adaptive\_rules.gif)
+
 ## Using Behavioral Analytics (Change Detection)
 
 Typically, data quality checks are scheduled to run on a given dataset daily. Behavior DQ or simply put change detection, is built on top of data calculated by the Profile activity. The default settings will often work just fine, however, Owl allows the user to specify two key parameters:
