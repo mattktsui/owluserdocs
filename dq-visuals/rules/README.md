@@ -12,6 +12,8 @@ description: Users can apply custom monitoring with SQL
 
 Owl takes a strong stance that data should first be profiled, auto-discovered and learned before applying basic rules.  This methodology commonly removes thousands of rules that will never need to be written and evolve naturally overtime.  However there are still many cases to add a simple rule, complex rule or domain specific rule.  Simply search for any dataset and add a rule. You can use the optional Column Name/Category/Description to add meta-data to your rules for future reporting.
 
+![](<../../.gitbook/assets/quick\_rules (1).gif>)
+
 ![](<../../.gitbook/assets/image (48).png>)
 
 {% hint style="info" %}
