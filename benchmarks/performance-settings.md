@@ -8,7 +8,7 @@ Limits can be set to limit resources that are requested.  There are options for 
 
 If you request more cells than the limit, the user should see a warning message before hitting run.&#x20;
 
-![](<../.gitbook/assets/image (99).png>)
+![](<../.gitbook/assets/image (99) (1).png>)
 
 ### Agent Defaults
 

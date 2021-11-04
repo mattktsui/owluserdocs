@@ -9,7 +9,7 @@ description: >-
 
 This is commonly used when using pushdown profiling and/or pre-existing SQL validations exist in a specific syntax.  Native rules are often referred to as pushdown rules.
 
-![](<../../../../.gitbook/assets/image (92).png>)
+![](<../../../../.gitbook/assets/image (92) (1).png>)
 
 If you have rules already written in Oracle, Sybase, or DB2 syntax - Copy/Paste the rule directly into the Native SQL section.&#x20;
 

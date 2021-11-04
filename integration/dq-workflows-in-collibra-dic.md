@@ -93,7 +93,7 @@ Let's proceed after gathering all prerequisites!
 
 Who? Anyone can set up a DQ subscription, for yourself or for your teammates
 
-![](<../.gitbook/assets/image (99) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (99) (1) (1) (1) (1).png>)
 
 Alerts will be sent based on reviewing rules and metrics associated with **Tables** or **Columns** that violate the specified **Threshold**
 
