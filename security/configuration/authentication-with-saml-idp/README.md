@@ -51,8 +51,6 @@ When **SAML\_METADATA\_USE\_URL** is set to `true` (default), the following addi
 | SAML\_METADATA\_REQUIRE\_SIGNATURE  | <p>Whether Collibra DQ signs authentication requests to the identity provider.</p><p>The default value is <code>false</code>.</p>                                                       |
 | SAML\_INCLUDE\_DISCOVERY\_EXTENSION | <p>Whether to enable Collibra DQ to indicate in the SAML metadata that it’s able to consume responses from an IDP Discovery Service.</p><p>The default value is <code>false</code>.</p> |
 
-#### Optional Properties: Load Balancer
-
 When **SAML\_LB\_EXISTS** is set to `true`, the following additional properties are available.
 
 | Property                             | Description                                                                                                                                                                                                                |

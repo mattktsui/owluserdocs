@@ -34,7 +34,7 @@
   * Fixed issue where settings were not sticky for subsequent runs
 * Security
   * SAML Enhancements
-    * New configuration settings are available when the Load Balancer is set for SSL Termination.
+    * New [configuration settings](security/configuration/authentication-with-saml-idp/#set-the-saml-authentication-properties) are available when the Load Balancer is set for SSL Termination.
     * You can now set the [**RelayState** property](security/configuration/authentication-with-saml-idp/multi-tenancy-support-through-saml-relaystate.md) to route SSO to the proper tenant.
 
 #### Known Limitations
