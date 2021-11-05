@@ -19,16 +19,21 @@ Before configuring SAML authentication, you must add the following required prop
 {% endtab %}
 {% endtabs %}
 
-| Required properties | Description                                                                                                                                                                                         |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| SAML\_ENABLED       | <p>Whether Collibra DQ uses SAML.</p><p>If set to <code>false</code>, users sign in with a username and password.</p><p>If set to <code>true</code>, SAML handles the authentication request.</p>   |
-| SAML\_ENTITY\_ID    | <p>The name of the application for the identity provider, for example <em>Collibra DQ</em>.</p><p>It is an immutable unique identifier of the service provider for the identity provider (IDP).</p> |
+#### Required properties
+
+| Property         | Description                                                                                                                                                                                         |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SAML\_ENABLED    | <p>Whether Collibra DQ uses SAML.</p><p>If set to <code>false</code>, users sign in with a username and password.</p><p>If set to <code>true</code>, SAML handles the authentication request.</p>   |
+| SAML\_ENTITY\_ID | <p>The name of the application for the identity provider, for example <em>Collibra DQ</em>.</p><p>It is an immutable unique identifier of the service provider for the identity provider (IDP).</p> |
+
+#### Optional properties
 
 You can further configure your SAML setup with the following optional properties.
 
-| Optional properties      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Property                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | SAML\_ENTITY\_BASEURL    | <p>The base URL that is provided in the service provider metadata.</p><p>Set this property when you use DNS.</p>                                                                                                                                                                                                                                                                                                                                   |
+| SAML\_LB\_EXISTS         | <p>Whether the application needs to configure a load balancer.</p><p>You generally need this setting only when the <strong>Load Balancer</strong> is set for <strong>SSL Termination</strong>.</p><p>The default value is <code>false</code>.</p><p>If set to <code>true</code>, you must also provide a value for <strong>SAML_LB_SERVER_NAME</strong>.</p>                                                                                       |
 | SAML\_METADATA\_USE\_URL | <p>Whether Collibra DQ uses an URL or a file for the identity provider metadata.</p><p>The default value is <code>true</code>.</p><p>If set to <code>false</code>, the file must be accessible to the owl-web and the path provided in the <strong>Meta-Data URL</strong> field of the <strong>Meta Data Configurations</strong> section under <strong>Admin Console</strong> --> <strong>SAML Setup </strong>--> <strong>Connection</strong>.</p> |
 | SAML\_ROLES\_PROP\_NAME  | <p>The attribute in which the identity provider stores the role of the user authenticating in the SAML response.</p><p>The default value is <code>memberOf</code>.</p>                                                                                                                                                                                                                                                                             |
 | SAML\_GRANT\_ALL\_PUBLIC | <p>Whether any user authenticated by the identity provider is allowed to login the Collibra DQ application.</p><p>The default value is <code>false</code>.</p>                                                                                                                                                                                                                                                                                     |
@@ -38,11 +43,23 @@ You can further configure your SAML setup with the following optional properties
 | SAML\_KEYSTORE\_PASS     | The password for the keystore provided in `SAML_KEYSTORE_FILE`.                                                                                                                                                                                                                                                                                                                                                                                    |
 | SAML\_KEYSTORE\_ALIAS    | The alias of the keypair (private and public) in the keystore used for SSL verification.                                                                                                                                                                                                                                                                                                                                                           |
 
-| SAML\_METADATA\_USE\_URL properties | Description                                                                                                                                                                             |
+When **SAML\_METADATA\_USE\_URL** is set to `true` (default), the following additional properties are available.
+
+| Property                            | Description                                                                                                                                                                             |
 | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | SAML\_METADATA\_TRUST\_CHECK        | <p>Whether to enable Collibra DQ to do trust verification of the identity provider.</p><p>The default value is <code>false</code>.</p>                                                  |
 | SAML\_METADATA\_REQUIRE\_SIGNATURE  | <p>Whether Collibra DQ signs authentication requests to the identity provider.</p><p>The default value is <code>false</code>.</p>                                                       |
 | SAML\_INCLUDE\_DISCOVERY\_EXTENSION | <p>Whether to enable Collibra DQ to indicate in the SAML metadata that it’s able to consume responses from an IDP Discovery Service.</p><p>The default value is <code>false</code>.</p> |
+
+When **SAML\_LB\_EXISTS** is set to `true`, the following additional properties are available.
+
+| Property                             | Description                                                                                                                                                                                                                |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SAML\_LB\_INCLUDE\_PORT\_IN\_REQUEST | <p>Whether to include the port number in the request.</p><p>The default value is <code>false</code>.</p>                                                                                                                   |
+| SAML\_LB\_PORT                       | <p>The port number of the load balancer.</p><p>The default value is <code>443</code>.</p>                                                                                                                                  |
+| SAML\_LB\_SCHEME                     | <p>The protocol of the load balancer.</p><p>The default value is <code>https</code>.</p>                                                                                                                                   |
+| SAML\_LB\_SERVER\_NAME               | <p>The server or DNS name.</p><p>Usually, the same as <strong>SAML_ENTITY_BASEURL</strong> without specifying the protocol, for example without <em>https://</em>.</p><p>This property is required and has no default.</p> |
+| SAML\_LB\_CONTEXT\_PATH              | Any path that may be defined on the load balancer.                                                                                                                                                                         |
 
 {% code title="Example" %}
 ```

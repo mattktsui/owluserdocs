@@ -244,6 +244,7 @@
   * [Local User Store Authentication](security/authentication-with-local-user-store/README.md)
     * [Adding Local Users](security/authentication-with-local-user-store/adding-local-users.md)
   * [Role Based Access Control (RBAC)](security/role-based-access-control-rbac.md)
-  * [SAML Authentication](security/authentication-with-saml-idp.md)
+  * [SAML Authentication](security/configuration/authentication-with-saml-idp/README.md)
+    * [Multi-tenancy support through SAML RelayState](security/configuration/authentication-with-saml-idp/multi-tenancy-support-through-saml-relaystate.md)
   * [Securing Passwords](admin/securing-passwords.md)
   * [SSL Setup (HTTPS)](admin/ssl-setup-https.md)

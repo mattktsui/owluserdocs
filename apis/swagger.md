@@ -18,7 +18,7 @@ Swagger can be found in the application under the Admin section labeled APIs.
 
 You will find a direct link to the Swagger page&#x20;
 
-![](<../.gitbook/assets/image (92) (1) (1).png>)
+![](<../.gitbook/assets/image (92) (2).png>)
 
 Toggle between Product API and Internal API&#x20;
 
