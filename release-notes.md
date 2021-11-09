@@ -6,32 +6,32 @@
 
 * Rules
   * \*Tech Preview\* \[TP] [Semantics and data concepts management](dq-visuals/rules/data-concepts-and-semantics.md)
-    * The application now supports dynamic semantics checks. This allows the user to create custom semantics that can be checked for when running a DQ check on a data set. Previously the application checked against a pre defined set of semantics. Controls to organize and apply these semantics checks have also been added. The following is a list of changes:
-      * A new data concepts management page has been added. This can be accessed from Catalog or Admin Console. A user can assign multiple semantics to a data concept.
-      * When running a DQ check, the user can select a data concept. The semantics assigned to this data concept will be checked against each column of dataset.
-      * Users will have a list of pre-defined semantics that are not editable. They will also have the ability to create/edit/delete custom semantics.
-      * Repo on rules page has been added to Rules Library where semantics will be viewable
+    * The application now supports dynamic semantics checks. This allows you to create custom semantics that can be checked for when running a DQ check on a data set. Previously the application checked against a predefined set of semantics. You also have access to controls to organize and apply these semantics checks. The following is a list of changes:
+      * There is a new data concepts management page. You can access it from Catalog or Admin Console. You can assign multiple semantics to a data concept.
+      * When running a DQ check, you can select a data concept. The semantics assigned to this data concept will be checked against each column of dataset.
+      * You have a list of predefined semantics that are not editable. You also have the ability to create/edit/delete custom semantics.
+      * Repo on rules page has been added to Rules Library where semantics will be viewable.
 * Resource Limits
-  * Users can supply limits to executors, cores, memory and cells so that a user can be warned if submitting a job that requires a lot of resources and admins can control maximum resources submitted. Please see the [this section](benchmarks/performance-settings.md) for details.
+  * You can edit the [Performance Settings](benchmarks/performance-settings.md) to supply limits to executors, cores, memory and cells so that a user can be warned if submitting a job that requires a lot of resources and admins can control maximum resources submitted.
 
 #### Enhancements
 
 * Explorer
-  * \*Tech Preview\* \[TP] Dynamic query reload allows you to view JOIN query columns in other activities
-  * Support for some special characters in table name
-  * Fixed ability to add additional libs that were previously not being properly saved on subsequent runs. Under DQ Job tag, please utilize -fllb boolean (union lookback) and libsrc input box for lib directory path (will materialize as -addlib)
+  * \*Tech Preview\* \[TP] Dynamic query reload allows you to view JOIN query columns in other activities.
+  * Support for some special characters in table name.
+  * Fixed the ability to add additional libs that were previously not being properly saved on subsequent runs. Under DQ Job tag, please utilize -fllb boolean (union lookback) and libsrc input box for lib directory path (will materialize as -addlib).
 * Connections
-  * \*Tech Preview\* \[TP] BigQuery Views and Joins
+  * \*Tech Preview\* \[TP] BigQuery Views and Joins.
 * API
-  * Allows multiple imports without conflicts
-  * Allows for incremental import such as updating matching records / insert new / leave existing. There is no requirement to delete tables first before running import.
+  * You can perform multiple imports without conflicts.
+  * You can have an incremental import such as updating matching records / insert new / leave existing. There is no requirement to delete tables first before running import.
 * Profile
-  * Fixed backrun timebin to work with weeks and quarters instead of days
+  * Fixed backrun timebin to work with weeks and quarters instead of days.
 * Outliers
-  * Split historical load to avoid historical query rounding up
-  * \*Tech Preview\* \[TP] [Dynamic minimum history](dq-visuals/more.../outliers.md#dynamic-history-options)
+  * Split historical load to avoid historical query rounding up.
+  * \*Tech Preview\* \[TP] [Dynamic minimum history](dq-visuals/more.../outliers.md#dynamic-history-options).
 * Source
-  * Fixed issue where settings were not sticky for subsequent runs
+  * Fixed an issue where settings were not sticky for subsequent runs.
 * Security
   * SAML Enhancements
     * New [configuration settings](security/configuration/authentication-with-saml-idp/#set-the-saml-authentication-properties) are available when the Load Balancer is set for SSL Termination.
@@ -39,9 +39,9 @@
 
 #### Known Limitations
 
-* Semantics and data concepts
-  * Not supported in pushdown mode
-* While is it possible to create joins and cross-dataset rules using Freeform SQL, it is best practice to create a view and handle the join prior to running the DQ Job.
+* Semantics and data concepts:
+  * Not supported in pushdown mode.
+* While it is possible to create joins and cross-dataset rules using Freeform SQL, it is best practice to create a view and handle the join prior to running the DQ Job.
 * Local files using UPLOAD\_PATH, UPLOAD\_FILE\_PATH, and temp files are only eligible to be deployed using the default NO\_AGENT option. These are only intended for quick tests and not intended for production-scale use. Best practice is to use a remote file system connection (S3, Google storage or ADLS).&#x20;
 * When submitting jobs via API from a different machine with a different timezone, timezone discrepancies are not accounted for automatically.  Best practice is to align each component to use UTC.
 * Delimiter support for special characters is limited.  Supported file delimiters are comma, pipe, tab, semicolon, double quote and single quote. Custom delimiters will work for many characters, but not all combinations. &#x20;
