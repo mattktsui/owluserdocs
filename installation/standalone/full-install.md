@@ -1,6 +1,6 @@
 # Standalone Install
 
-## 0. Setup Tutorial Assumptions
+## Step 0. Setup Tutorial Assumptions
 
 We assume that a server running Centos 7 or RHEL 7 is setup and ready to install DQ in the home directory (base path: `OWL_BASE`) under subdirectory `owl`(install path: `$OWL_BASE/owl`). There is no requirement for DQ to be installed in the home directory, but the DQ Full Installation script may lead to permission-denied issue during local Postgres server installation if paths other than home directory is used. If so, please adjust your directory permission to allow the installation script a write access to the Postgres data folder.
 
@@ -30,7 +30,7 @@ gcloud compute ssh --zone "us-central1-a" --project "gcp-example-project" "cento
 2. Access the server where DQ will be installed.&#x20;
 {% endhint %}
 
-## 1. Download DQ Full Package
+## Step 1. Download DQ Full Package
 
 Download full package tarball using the signed link to the full package tarball provided by the DQ Team. Replace `<signed-link-to-full-package>` with the link provided.
 
@@ -55,7 +55,7 @@ rm dq-full-package.tar.gz
 2. Untar`dq-full-package.tar.gz` to `OWL_BASE`.
 {% endhint %}
 
-## 2. Install DQ + Postgres + Spark
+## Step 2. Install DQ + Postgres + Spark
 
 First set some variables for `OWL_BASE` (where to install DQ. In this tutorial, you are already in the directory that you want to install), `OWL_METASTORE_USER` (the Postgres username used by DQ Web Application  to access Postgres storage), and `OWL_METASTORE_PASS` (the Postgres password used by DQ Web Application  to access Postgres storage).&#x20;
 
@@ -183,7 +183,7 @@ Next, verify that the Spark Cluster has started and is available to run DQ check
 
 ## Step 5. Set License Key
 
-In order for DQ to run checks on data, the DQ Agent must be configured with a license key. Replace `<license-key>` with a valid license key provided by the DQ Team.
+In order for DQ to run checks on data, the DQ Agent must be configured with a license key. Replace `<license-key>` with a valid license key provided by Collibra.
 
 ```
 cd $OWL_BASE/owl/bin
@@ -258,8 +258,6 @@ Click the clock icon in the navigation pane to navigate to the Jobs Page. Wait 1
 * CDH5
 * CDH6-NOLOG
 * K8s
-
-
 
 ### Helpful Commands
 
