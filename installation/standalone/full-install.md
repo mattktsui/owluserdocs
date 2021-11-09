@@ -321,7 +321,50 @@ Or change Spark storage with an agent configuration `-conf spark.local.dir=/home
 
 ![](<../../.gitbook/assets/image (91).png>)
 
+## Troubleshooting Tip: Add Spark Home Environment Variables to Profile
 
+```
+### Adding ENV variables to bash profile
+
+### Variable 'owldq' below should be updated wherever installed e.g. centos
+
+vi ~/.bash_profile
+export SPARK_HOME=/home/owldq/owl/spark
+export PATH=$SPARK_HOME/bin:$PATH
+
+### Add to owl-env.sh for standalone install 
+
+vi /home/owldq/owl/config/owl-env.sh 
+export SPARK_HOME=/home/owldq/owl/spark
+export PATH=$SPARK_HOME/bin:$PATH
+```
+
+## Check Processes are Running
+
+```
+### Checking PIDS for different components
+
+ps -aef|grep postgres
+ps -aef|grep owl-web
+ps -aef|grep owl-agent
+ps -aef|grep spark
+
+```
+
+## Starting Components
+
+```
+### Restart different components 
+
+cd /home/owldq/owl/bin/
+./owlmanage.sh start=postgres
+./owlmanage.sh start=owlagent
+./owlmanage.sh start=owlweb
+
+cd /home/owldq/owl/spark/sbin/
+./stop-all.sh
+./start-all.sh
+```
 
 ## Configuration Options
 
@@ -445,50 +488,7 @@ Contents of the Owl-env.sh script and what is is used for.
 | **spring.agent.datasource.password**                              | **{password}**                                        |
 | **spring.agent.datasource.driver-class-name**                     | **org.postgresql.Driver**                             |
 
-## Troubleshooting Tip: Add Spark Home Environment Variables to Profile
 
-```
-### Adding ENV variables to bash profile
-
-### Variable 'owldq' below should be updated wherever installed e.g. centos
-
-vi ~/.bash_profile
-export SPARK_HOME=/home/owldq/owl/spark
-export PATH=$SPARK_HOME/bin:$PATH
-
-### Add to owl-env.sh for standalone install 
-
-vi /home/owldq/owl/config/owl-env.sh 
-export SPARK_HOME=/home/owldq/owl/spark
-export PATH=$SPARK_HOME/bin:$PATH
-```
-
-## Check Processes are Running
-
-```
-### Checking PIDS for different components
-
-ps -aef|grep postgres
-ps -aef|grep owl-web
-ps -aef|grep owl-agent
-ps -aef|grep spark
-
-```
-
-## Starting Components
-
-```
-### Restart different components 
-
-cd /home/owldq/owl/bin/
-./owlmanage.sh start=postgres
-./owlmanage.sh start=owlagent
-./owlmanage.sh start=owlweb
-
-cd /home/owldq/owl/spark/sbin/
-./stop-all.sh
-./start-all.sh
-```
 
 ## Starting Spark
 
