@@ -327,7 +327,29 @@ Or change Spark storage with an agent configuration `-conf spark.local.dir=/home
 
 ### Setup.sh arguments <a href="setup.sh-arguments" id="setup.sh-arguments"></a>
 
-**-non-interactive** skip asking to accept JAVA license agreement**-skipSpark** skips the extraction of spark components**-stop** do not automatically start up all components (orient,owl-web,zeppelin,postgres)**-port=** set owlweb application to use defined port**-user=** Optional Parameter (default will be current user) set the user to run owl as.-**owlbase=** set base path to where you want owl installed**-owlpackage=** Optional Parameter (default is current working directory) set owl package directory**-help** display this help and exit**-options=** the different owl components to install (comma separated list) --- owlagent,owlweb,zeppelin,postgres,orient,spark**-pgpassword=** password to use to set for the postgres metastore (unattended install)**-pgserver= **name of the postgres server example = owl-postgres-host.example.com:5432/owldb (unattended install)**-opassword=** password for the orient graph DB (unattended install)
+**-non-interactive** skip asking to accept JAVA license agreement
+
+**-skipSpark** skips the extraction of spark components
+
+**-stop** do not automatically start up all components (orient,owl-web,zeppelin,postgres)
+
+**-port=** set owlweb application to use defined port
+
+**-user=** Optional Parameter (default will be current user) set the user to run owl as.
+
+\-**owlbase=** set base path to where you want owl installed
+
+**-owlpackage=** Optional Parameter (default is current working directory) set owl package directory
+
+**-help** display this help and exit
+
+**-options=** the different owl components to install (comma separated list) --- owlagent,owlweb,zeppelin,postgres,orient,spark
+
+**-pgpassword=** password to use to set for the postgres metastore (unattended install)
+
+**-pgserver= **name of the postgres server example = owl-postgres-host.example.com:5432/owldb (unattended install)
+
+**-opassword=** password for the orient graph DB (unattended install)
 
 #### Example: <a href="example" id="example"></a>
 
@@ -344,11 +366,15 @@ _**./setup.sh -port=9000 -user=ec2-user -owlbase=/home/ec2-user -owlpackage=/hom
 * Owl-agent will be running as the_** ec2-user**_
 * The base location for the setup.sh script to create the owl folder and place all packages under owl will be: _**/home/ec2-user/**_
 
-_**./setup.sh -user=ec2-user -owlbase=/home/ec2-user -owlpackage=/home/ec2-user/package -options=owlagent**_When installing different features questions will be asked
+_**./setup.sh -user=ec2-user -owlbase=/home/ec2-user -owlpackage=/home/ec2-user/package -options=owlagent**_
+
+{% hint style="info" %}
+When installing different features questions will be asked
 
 * postgres = Postgres DBPassword needs to be supplied
 * orient = Orient DBPassword needs to be supplied
 * If postgres is not being installed (such as agent install only) postgres metastore server name needs to be supplied
+{% endhint %}
 
 ### Launching and Administering owl: <a href="launching-and-administering-owl" id="launching-and-administering-owl"></a>
 
@@ -356,7 +382,9 @@ When the setup.sh script finishes by default software is automatically started. 
 
 ### Owl Directory Structure after running Setup.sh <a href="owl-directory-structure-after-running-setup.sh" id="owl-directory-structure-after-running-setup.sh"></a>
 
-export ORIENTDB\_HOST="localhost"![](https://files.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L\_xJcI5Uc0S1x9JC6xQ%2F-LiQA1uhYoTELY58hjz\_%2F-LiQBsDxBzzkDzLkf-DB%2Fimage.png?alt=media\&token=05fb9d40-7697-4b09-b70b-f481ca0f292a)
+export ORIENTDB\_HOST="localhost"
+
+![](https://files.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L\_xJcI5Uc0S1x9JC6xQ%2F-LiQA1uhYoTELY58hjz\_%2F-LiQBsDxBzzkDzLkf-DB%2Fimage.png?alt=media\&token=05fb9d40-7697-4b09-b70b-f481ca0f292a)
 
 #### Configuration / ENV settings within owl-env.sh <a href="configuration-env-settings-within-owl-env.sh" id="configuration-env-settings-within-owl-env.sh"></a>
 
