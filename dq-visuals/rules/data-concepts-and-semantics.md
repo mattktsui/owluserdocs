@@ -43,7 +43,7 @@ Column Level
 
 ## Data Discovery: The Power of Combining All Three into One Domain&#x20;
 
-{% embed url="https://www.youtube.com/watch?v=ahfIe3Qv9SU" %}
+{% embed url="https://www.youtube.com/watch?v=wLXh71fn1l0" %}
 
 Now imagine if you could classify your datasets as concepts, then automatically have all the columns be recognized semantically(with validation rules in place) as well as have the columns labeled with sensitivity tags.  It might look something like the below.
 
