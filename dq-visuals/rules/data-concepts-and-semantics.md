@@ -41,7 +41,7 @@ Column Level
 **PCI** - credit information like a credit card number                                                                              **PHI** - Hippa medical information
 {% endhint %}
 
-## The Power of combining all Three into One Domain&#x20;
+## Data Discovery: The Power of Combining All Three into One Domain&#x20;
 
 {% embed url="https://www.youtube.com/watch?v=ahfIe3Qv9SU" %}
 
