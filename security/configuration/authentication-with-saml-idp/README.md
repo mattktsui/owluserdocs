@@ -26,7 +26,7 @@ Before configuring SAML authentication, you must add the following required prop
 | SAML\_ENABLED    | <p>Whether Collibra DQ uses SAML.</p><p>If set to <code>false</code>, users sign in with a username and password.</p><p>If set to <code>true</code>, SAML handles the authentication request.</p>   |
 | SAML\_ENTITY\_ID | <p>The name of the application for the identity provider, for example <em>Collibra DQ</em>.</p><p>It is an immutable unique identifier of the service provider for the identity provider (IDP).</p> |
 
-#### Optional properties
+#### Optional properties: general
 
 You can further configure your SAML setup with the following optional properties.
 
@@ -43,6 +43,8 @@ You can further configure your SAML setup with the following optional properties
 | SAML\_KEYSTORE\_PASS     | The password for the keystore provided in `SAML_KEYSTORE_FILE`.                                                                                                                                                                                                                                                                                                                                                                                    |
 | SAML\_KEYSTORE\_ALIAS    | The alias of the keypair (private and public) in the keystore used for SSL verification.                                                                                                                                                                                                                                                                                                                                                           |
 
+#### Optional p
+
 When **SAML\_METADATA\_USE\_URL** is set to `true` (default), the following additional properties are available.
 
 | Property                            | Description                                                                                                                                                                             |
@@ -50,6 +52,8 @@ When **SAML\_METADATA\_USE\_URL** is set to `true` (default), the following addi
 | SAML\_METADATA\_TRUST\_CHECK        | <p>Whether to enable Collibra DQ to do trust verification of the identity provider.</p><p>The default value is <code>false</code>.</p>                                                  |
 | SAML\_METADATA\_REQUIRE\_SIGNATURE  | <p>Whether Collibra DQ signs authentication requests to the identity provider.</p><p>The default value is <code>false</code>.</p>                                                       |
 | SAML\_INCLUDE\_DISCOVERY\_EXTENSION | <p>Whether to enable Collibra DQ to indicate in the SAML metadata that it’s able to consume responses from an IDP Discovery Service.</p><p>The default value is <code>false</code>.</p> |
+
+#### Optional Properties: Load Balancer
 
 When **SAML\_LB\_EXISTS** is set to `true`, the following additional properties are available.
 

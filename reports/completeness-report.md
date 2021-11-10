@@ -2,6 +2,10 @@
 
 ![](../.gitbook/assets/completeness\_report.gif)
 
+{% hint style="info" %}
+V
+{% endhint %}
+
 Completeness commonly means what percentage of your data is filled in, as in not `EMPTY` or `NULL`.  The confusion often comes when you consider the context of completeness.  Completeness of a column?  Completeness of a dataset (file or table)? Completeness of a collection of tables or business unit?  And even worse... completeness over time.
 
 Fortunately the Collibra DQ Completeness Report covers all of these dimensions, allowing the user to generate a report that answers almost any completeness question.  We have also found that volume weighted completeness is arguably a better metric than average completeness in a rollup scenario.

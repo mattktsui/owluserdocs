@@ -49,6 +49,36 @@ Now imagine if you could classify your datasets as concepts, then automatically 
 
 ![](../../.gitbook/assets/screen-shot-2021-09-15-at-1.11.06-pm.png)
 
+## Steps To Use
+
+### Step 1: Create DQ Job with Semantic On
+
+To start, create a new DQ Job and select Semantic ON on the Profile options page
+
+![](<../../.gitbook/assets/dqjobsemanticon (1).gif>)
+
+### Step 2: In Catalog, select and apply your Data Concept
+
+Navigate to your dataset in **Catalog** and select the Data Concept you would like to apply with the **Actions **dropdown menu.
+
+See below sections on how to **Create and Manage Data Concepts **as well as how to** Create and Manage Semantics**
+
+![](<../../.gitbook/assets/semantic-apply-dataconcept (1).gif>)
+
+### Step 3: Rerun your DQ Job with applied Data Concept
+
+Please rerun your DQ Job so that Collibra DQ can 1) profile your data, 2) auto-generate the rules based on the Semantics under the Data Concept, and 3) highlight any break records.
+
+![](../../.gitbook/assets/dataconcept-rerun-job.gif)
+
+### Success! Review Findings
+
+On the Profile page, please observe the newly tagged Semantics on the applicable columns
+
+On the DQ Job page, please browse your newly created rules based on Semantics as well as any corresponding rule breaks
+
+![](../../.gitbook/assets/review-dataconcept-results.gif)
+
 ## Administering Data Concepts
 
 Setup your data concepts once and let the entire organization benefit by unifying all datasets to a common understanding in the admin Data Concepts page.&#x20;
