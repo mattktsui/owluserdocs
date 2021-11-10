@@ -4,7 +4,7 @@ description: BI Integrations
 
 # Custom
 
-Custom reports can be leveraged by connecting your favorite BI tool on the underlying reporting mart.
+Custom reports can be leveraged by connecting your favorite BI tool on the underlying reporting mart. Below are a few queries that can be used as inspiration for building your own reports. Please refer to the[ ERD diagram ](../architecture/diagram/erd.md)for a larger list of tables.
 
 **Long Running Jobs**
 
@@ -108,6 +108,4 @@ Custom reports can be leveraged by connecting your favorite BI tool on the under
 
 **All Columns for Schema from Postgres Stats**
 
-`SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' ORDER BY table_name;`
-
-``
+`SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' ORDER BY table_name`
