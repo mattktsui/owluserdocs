@@ -61,7 +61,7 @@ To start, create a new DQ Job and select Semantic ON on the Profile options page
 
 Navigate to your dataset in **Catalog** and select the Data Concept you would like to apply with the **Actions **dropdown menu.
 
-See below sections on how to **Create and Manage Data Concepts **as well as how to** Create and Manage Semantics**
+See below sections on how to **Administering Data Concepts **as well as how to** Create and Manage Semantics**
 
 ![](<../../.gitbook/assets/semantic-apply-dataconcept (1).gif>)
 
@@ -79,9 +79,17 @@ On the DQ Job page, please browse your newly created rules based on Semantics as
 
 ![](../../.gitbook/assets/review-dataconcept-results.gif)
 
+## Creating and Managing Semantics
+
+Create, test, and manage your Semantics in Collibra DQ in your **Rule Builder** wizard on the **Create Generic Rule** tab. Below is an example of creating a RegEx Semantic
+
+![](<../../.gitbook/assets/creating-semantic-regex (1).gif>)
+
 ## Administering Data Concepts
 
 Setup your data concepts once and let the entire organization benefit by unifying all datasets to a common understanding in the admin Data Concepts page.&#x20;
+
+![](../../.gitbook/assets/adding-data-concepts.gif)
 
 ![](../../.gitbook/assets/screen-shot-2021-09-15-at-1.14.42-pm.png)
 
