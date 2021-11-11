@@ -1,6 +1,6 @@
 # Release Notes
 
-## 2021.11 (In Progress)
+## 2021.11
 
 #### New Features
 
