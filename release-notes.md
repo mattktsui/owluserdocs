@@ -37,6 +37,16 @@
     * New [configuration settings](security/configuration/authentication-with-saml-idp/#set-the-saml-authentication-properties) are available when the Load Balancer is set for SSL Termination.
     * You can now set the [**RelayState** property](security/configuration/authentication-with-saml-idp/multi-tenancy-support-through-saml-relaystate.md) to route SSO to the proper tenant.
 
+#### Patches
+
+* 2021.11.1 Explorer
+  * Allow ampersand in metastore host name for additional parameters&#x20;
+  * In below example, support for ampersand needed for required SSL flags
+
+```
+metastore01.us-east1-b.c.customer-dq-prod.internal:5432/dev?sslmode=required&currentSchema=public
+```
+
 #### Known Limitations
 
 * Rules
