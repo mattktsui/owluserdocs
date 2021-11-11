@@ -38,7 +38,7 @@ Owl's semantic scanning self identifies standard columns and automatically provi
 Column Level
 
 **PII** - personally identifiable information                                                                                             **MNPI** - materially non public information\
-**PCI** - credit information like a credit card number                                                                              **PHI** - Hippa medical information
+**PCI** - credit information like a credit card number                                                                              **PHI** - HIPAA medical information
 {% endhint %}
 
 ## Data Discovery: The Power of Combining All Three into One Domain&#x20;
