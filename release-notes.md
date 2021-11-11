@@ -54,14 +54,21 @@ metastore01.us-east1-b.c.customer-dq-prod.internal:5432/dev?sslmode=required&cur
     * Not supported in pushdown mode
     * Exporting RegEx semantics not currently supported
   * While it is possible to create joins and cross-dataset rules using Freeform SQL, it is best practice to create a view and handle the join prior to running the DQ Job.
+* Behavior
+  * Schema is not eligible for invalidate
 * Files
   * Local files using UPLOAD\_PATH, UPLOAD\_FILE\_PATH, and temp files are only eligible to be deployed using the default NO\_AGENT option. These are only intended for quick tests and not intended for production-scale use. Best practice is to use a remote file system connection (S3, Google storage or ADLS).&#x20;
   * Delimiter support for special characters is limited.  Supported file delimiters are comma, pipe, tab, semicolon, double quote and single quote. Custom delimiters will work for many characters, but not all combinations.
+  * Temp files and NO\_AGENT should have -master local\[\*] or -master spark://:7077 defined in freeform append of the agent options
 * DQ Job
-  * When submitting jobs via API from a different machine with a different timezone, timezone discrepancies are not accounted for automatically.  Best practice is to align each component to use UTC. &#x20;
+  * When submitting jobs via API from a different machine with a different timezone, timezone discrepancies are not accounted for automatically.  Best practice is to align each component to use UTC.
+  * Jobs submitted via API with a run date that include HH:MM in the -rd (run date) will submit to the job queue and leave a remnant ‘STAGED’ job &#x20;
 * Connections
   * Postgres limits max connections per spark job.  The default is 100. Please refer to Postgres official documentation how to increase max\_connection and shared\_buffers.
     * https://www.postgresql.org/docs/9.6/runtime-config-connection.html
+  * BigQuery
+    * Updating scope to include joins in BigQuery can only be materialized when tables are part of the same dataset collection
+    * Should you receive an error for pre-existing BigQuery jobs, please add -dssafeoff to the cmd line or select ‘Allow Overwrite’ to enable this from Edit mode in the Explorer
 
 ## 2021.10
 
