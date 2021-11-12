@@ -21,7 +21,13 @@
   * Support for some special characters in table name.
   * Fixed the ability to add additional libs that were previously not being properly saved on subsequent runs. Under DQ Job tag, please utilize -fllb boolean (union lookback) and libsrc input box for lib directory path (will materialize as -addlib).
 * Connections
-  * \*Tech Preview\* \[TP] BigQuery Views and Joins.
+  * \*Tech Preview\* \[TP] BigQuery Views and Joins
+  * Please add the following to the BigQuery connection property
+
+```
+viewsEnabled = true
+```
+
 * API
   * You can perform multiple imports without conflicts.
   * You can have an incremental import such as updating matching records / insert new / leave existing. There is no requirement to delete tables first before running import.
