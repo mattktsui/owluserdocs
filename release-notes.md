@@ -25,7 +25,7 @@
   * Please add the following to the BigQuery connection property
 
 ```
-viewsEnabled = true
+viewsEnabled=true
 ```
 
 * API
