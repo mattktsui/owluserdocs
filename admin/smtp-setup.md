@@ -8,7 +8,7 @@ Simple Mail Transport Protocol or SMTP, is an internet standard for email transm
 
 In order to setup SMTP click on the gear icon -> Alerts as show in the screenshot below.
 
-​![](http://18.204.201.140:8080/xwiki/bin/download/Documentation/Admin%20Guide/Setting%20Up%20SMTP/WebHome/1555068880284-638.png)SMTP Setup
+![](<../.gitbook/assets/smtp\_setup (1).gif>)
 
 When in the “Admin Manage Alerts” screen we can now setup the SMTP server by providing the following information:
 
