@@ -17,8 +17,8 @@ Hardware Based on Role (standalone, distributed, or fully-distributed).
 
 Java Version
 
-* Oracle JDK version "1.8.0\_152" +
-* Open JDK version 1.8.0+
+* Oracle JDK version "1.8.0\_152.x"
+* Open JDK version 1.8.0.x
 
 Encryption
 
