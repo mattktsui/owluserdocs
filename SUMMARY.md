@@ -18,7 +18,7 @@
   * [EKS / GKE / AKS](installation/cloud-native-owldq/aks-eks-gke-kubernetes-deployment.md)
 * [Agent](installation/agent-configuration.md)
 
-## Connections <a href="connecting-to-dbs-in-owl-web" id="connecting-to-dbs-in-owl-web"></a>
+## Connections <a href="#connecting-to-dbs-in-owl-web" id="connecting-to-dbs-in-owl-web"></a>
 
 * [Supported Connections](connecting-to-dbs-in-owl-web/supported-drivers/README.md)
   * [Connectivity to Athena](connecting-to-dbs-in-owl-web/supported-drivers/connectivity-to-athena.md)
@@ -33,7 +33,7 @@
 * [Add a Connection](connecting-to-dbs-in-owl-web/owl-db-connection.md)
 * [Add Connection to Agent](connecting-to-dbs-in-owl-web/add-connection-to-agent.md)
 
-## Features <a href="dq-visuals" id="dq-visuals"></a>
+## Features <a href="#dq-visuals" id="dq-visuals"></a>
 
 * [Profile (automatic)](dq-visuals/profile.md)
 * [Behavior (automatic)](dq-visuals/behaviors.md)
@@ -52,7 +52,7 @@
   * [Rule Templates](dq-visuals/rules/rule-templates.md)
   * [Rule Library](dq-visuals/rules/dq-rule-automation.md)
   * [Rule Discovery](dq-visuals/rules/data-concepts-and-semantics.md)
-* [More...](dq-visuals/more.../README.md)
+* [More](dq-visuals/more.../README.md)
   * [Explorer (no-code)](dq-visuals/more.../explorer-2.md)
   * [Schema (automatic)](dq-visuals/more.../schema-evolution.md)
   * [Shapes (automatic)](dq-visuals/more.../shapes.md)
@@ -112,7 +112,7 @@
   * [Nulls in Datasets](dq-job-examples/owlcheck/zero-if-null.md)
   * [Transform](dq-job-examples/owlcheck/owlcheck-transform.md)
 
-## Collibra DIC Integration <a href="integration" id="integration"></a>
+## Collibra DIC Integration <a href="#integration" id="integration"></a>
 
 * [DQ Connector](integration/dq-connector.md)
 * [DQ Workflows](integration/dq-workflows-in-collibra-dic.md)
@@ -130,7 +130,7 @@
 * [Schedule Management](scheduler/schedule-management/README.md)
   * [View/Re-Run Scheduled Jobs](scheduler/schedule-management/view-re-run-scheduled-jobs.md)
 
-## WORKFLOWS / ALERTS <a href="workflows" id="workflows"></a>
+## WORKFLOWS / ALERTS <a href="#workflows" id="workflows"></a>
 
 * [Email Alerts](workflows/email-alerts.md)
 * [Assignment Queue(s)](workflows/assignment-queue-s/README.md)
@@ -178,7 +178,7 @@
   * [JWT](apis/notebook/jwt.md)
   * [Cookie](apis/notebook/cookie.md)
 
-## Solutions <a href="projects" id="projects"></a>
+## Solutions <a href="#projects" id="projects"></a>
 
 * [Our Approach](projects/why-owl/README.md)
   * [Our Story](projects/why-owl/our-story.md)
