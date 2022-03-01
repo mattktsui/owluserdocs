@@ -82,3 +82,16 @@ The following is a list of drivers which are for test purposes (not certified ye
 #### Spark Engine Support
 
 * MapR is EOL and MapR spark engine not supported to run CDQ jobs.
+
+#### Databricks
+
+The only supported Databricks spark submit option is to use a [notebook](../../dq-job-examples/data-quality-pipelines/aws-databricks-dq-pipeline.md) to initiate the job (Scala and Pyspark options).  This is intended for pipeline developers and users knowledgeable with Databricks and notebooks.  This is not intended for use from business users. &#x20;
+
+{% hint style="warning" %}
+Delta Lake and JDBC connectivity has been validated against Spark 3.01 CDQ package, Databricks 7.3 LTS and SparkJDBC41.jar.  This is available as Preview.  No other combinations have been certified at this time.
+{% endhint %}
+
+{% hint style="danger" %}
+Spark submit using the Databricks spark master url is not supported.&#x20;
+{% endhint %}
+
