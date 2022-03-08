@@ -27,7 +27,7 @@ File look back (-fllb) should only be used when a SQL layer is not available.  T
 This look back will load your past 4 runs as your historical training set
 {% endhint %}
 
-File look back is used with [deep learning ](../../dq-visuals/more.../outliers.md#numerical-outliers)or [pattern matching](../../dq-visuals/more.../pattern-mining.md). In the example above it is used with deep learning.
+File look back is used with [deep learning ](../../dq-visuals/more/outliers.md#numerical-outliers)or [pattern matching](../../dq-visuals/more/pattern-mining.md). In the example above it is used with deep learning.
 
 ```
 -fllb

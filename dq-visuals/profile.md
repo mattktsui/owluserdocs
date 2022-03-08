@@ -10,7 +10,7 @@ Users have the option to scan the entire dataset or users can apply custom filte
 
 ### Select the Scope
 
-You can find detailed instructions about [selecting the scope](more.../explorer-2.md#select-the-scope-and-define-a-query) in the Explorer section. You can run limits, by time, or full table scans if you have enough resources.
+You can find detailed instructions about [selecting the scope](more/explorer-2.md#select-the-scope-and-define-a-query) in the Explorer section. You can run limits, by time, or full table scans if you have enough resources.
 
 ![](../.gitbook/assets/profile\_scope.gif)
 
