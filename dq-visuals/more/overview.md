@@ -1,6 +1,6 @@
 # Summary
 
-## **Click or Code **
+## **Click or Code**&#x20;
 
 Collibra DQ offers easy to use no (low) code options for getting started quickly. Alternatively, more technical users may prefer programmatic APIs.
 
@@ -22,7 +22,7 @@ Collibra DQ offers a full DQ suite to cover the unique challenges of each datase
 
 [Check out our videos to learn more](https://www.youtube.com/channel/UCKMcJ5NRiCDZQxBvSsVtTXw/videos)
 
-## **Behavior **
+## **Behavior**&#x20;
 
 **Imagine a column going null, automatic row count checks - does your data behave/look/feel the same way it has in the past.**
 
@@ -30,11 +30,11 @@ Collibra DQ offers a full DQ suite to cover the unique challenges of each datase
 
 ## **Rules**
 
-**Assures only values compliant with your data rules are allowed within a data object. **
+**Assures only values compliant with your data rules are allowed within a data object.**&#x20;
 
 ![](../../.gitbook/assets/rules.jpg)
 
-## **Schema **
+## **Schema**&#x20;
 
 **Columns add or dropped.**
 
@@ -72,7 +72,7 @@ Collibra DQ offers a full DQ suite to cover the unique challenges of each datase
 
 ## **Record**
 
-**Deltas for a given column. **
+**Deltas for a given column.**&#x20;
 
 ![](../../.gitbook/assets/record.jpg)
 

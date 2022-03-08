@@ -26,7 +26,7 @@ Detect potential data corruption caused, for example, by older versions of drive
   * Copying same data between Dev, QA, and Prod environments.
 
 {% hint style="warning" %}
-_How do you easily validate the same data exists in distinct locations? _
+_How do you easily validate the same data exists in distinct locations?_&#x20;
 {% endhint %}
 
 ### Shortcomings of Existing Validation Checks
@@ -55,7 +55,7 @@ Complete row, column, conformity, and value checks between any two distinct stor
 
 We don’t want you to get stuck writing a bunch of reconciliation checks we’ve already written!  Focus on other stuff that actually moves your project forward.
 
-For more information, please contact **info@owl-analytics.com** or **schedule a demo at **[**www.owldq.com**](http://www.owldq.com)** **
+For more information, please contact **info@owl-analytics.com** or **schedule a demo at** [**www.owldq.com**](http://www.owldq.com) ****&#x20;
 
 
 

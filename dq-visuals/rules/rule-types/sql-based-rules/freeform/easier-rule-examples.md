@@ -1,15 +1,15 @@
 # Cross-Dataset Rules
 
 {% hint style="danger" %}
-**Best practice for cross-table joins is to define a view and scan the view.  **
+**Best practice for cross-table joins is to define a view and scan the view.** &#x20;
 
 ****
 
-**Only in circumstances when a view cannot be created should you define cross-table joins with 2 separate datasets (DQ Jobs) and express the join in the rule. **
+**Only in circumstances when a view cannot be created should you define cross-table joins with 2 separate datasets (DQ Jobs) and express the join in the rule.**&#x20;
 
 ****
 
-**If you're doing multiple lookups this will improve long-term performance and consolidate maintenance. **
+**If you're doing multiple lookups this will improve long-term performance and consolidate maintenance.**&#x20;
 {% endhint %}
 
 {% hint style="warning" %}

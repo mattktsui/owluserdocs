@@ -27,14 +27,14 @@ In order to setup multi-tenancy follow these steps
 * Make sure the web application has started up one time and you successfully logged into it with the default credentials.
 * Then stop all the components using ./owlmanage.sh stop
 * Modify the owl-env.sh file to include these to new parameters
-  1. **export multiTenantSchemaHub=owlhub **(this is a new schema that will get created on owlweb start, note the name of the TenantSchemaHub can be changed to the desired name at setup time)
+  1. **export multiTenantSchemaHub=owlhub** (this is a new schema that will get created on owlweb start, note the name of the TenantSchemaHub can be changed to the desired name at setup time)
   2. **export MULTITENANTMODE=TRUE** (this enabled multi-tenancy to be used).
   3. **export URLBASEDMULTITENANTMODE=TRUE/FALSE**
      1. TRUE (default) means you are using the tenant name as a sub-domain (see prerequisites)&#x20;
      2. FALSE means you will let owl manage tenants via sessions/tokens
 * If using agents as part of the operation of owl please be sure to modify the owl.properties file to include the following.
-  1. spring.agent.datasource.url=jdbc:postgresql://cdh-edge-dan.us-east4-c.c.owl-hadoop-cdh.internal:5432/postgres**?currentSchema=owlhub **(matching the name of the schema set on step 3-1 above).
-  2. jdbc:postgresql://cdh-edge-dan.us-east4-c.c.owl-hadoop-cdh.internal:5432/postgres**?currentSchema=owlhub **(matching the name of the schema set on step 3-1 above).
+  1. spring.agent.datasource.url=jdbc:postgresql://cdh-edge-dan.us-east4-c.c.owl-hadoop-cdh.internal:5432/postgres**?currentSchema=owlhub** (matching the name of the schema set on step 3-1 above).
+  2. jdbc:postgresql://cdh-edge-dan.us-east4-c.c.owl-hadoop-cdh.internal:5432/postgres**?currentSchema=owlhub** (matching the name of the schema set on step 3-1 above).
 * Once the settings have been configured for multi-tenancy please start up the owlweb host first using ./owlmanage.sh start=owlweb.  Once the web is up and you can hit the page please start up the agents using ./owlmanage.sh start=owlagent.
 * In order to use multi-tenancy in URLBASEDMULTITENANTMODE=TRUE you'll have to make sure we have DNS entries to the tenant endpoints, otherwise click the tenant management link from the login page.  Example:&#x20;
   1. If I have a DNS alias named hub.  I should be able to point me browser at hub:9002 (or your respective owlweb port) to get to the main Multi-Tenant login page as depicted below

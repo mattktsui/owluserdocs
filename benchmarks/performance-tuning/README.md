@@ -41,7 +41,7 @@ It is always a good performance practice to colocate data and processing.  That 
 
 #### JDBC
 
-**Set fetchsize **\
+**Set fetchsize** \
 1M rows   -connectionprops fetchsize=1000\
 5M rows   -connectionprops fetchsize=5000\
 10M rows   -connectionprops fetchsize=10000

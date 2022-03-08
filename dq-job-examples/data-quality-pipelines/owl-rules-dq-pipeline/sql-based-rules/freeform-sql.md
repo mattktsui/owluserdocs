@@ -17,7 +17,7 @@ GROUP BY <group_by_expression>
 HAVING <having_expression>
 ```
 
-The base of the statement is given with **@\<dataset_name> **style. In general the \<dataset_name> is the same, where the rule is attached to, but basically you can use any valid dataset name in the expression.
+The base of the statement is given with **@\<dataset\_name>** style. In general the \<dataset\_name> is the same, where the rule is attached to, but basically you can use any valid dataset name in the expression.
 
 #### Examples
 
@@ -82,16 +82,16 @@ rule.setUserNm("admin")
 *   Getting historical state of the same dataset\
     \
     **Syntax:** **@t\<n>**,\
-    where _n _parameter means, how many days should we go back in the past at the base dataset (marked with @\<dataset_name>)\
+    where _n_ parameter means, how many days should we go back in the past at the base dataset (marked with @\<dataset\_name>)\
     \
-    **Example: **
+    **Example:**&#x20;
 
     * **@t1**, will point to the data which was used at yesterday's run
     * **@t4**, will point to the data which was used 4 days ago
 
 
 * Getting different dataset\
-  **Syntax: @\<other_dataset_name>**\
+  **Syntax: @\<other\_dataset\_name>**\
   ****
 
 ### WHERE style

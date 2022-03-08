@@ -8,11 +8,11 @@ description: >-
 
 ## Example #1
 
-In this example you can see how to create a simple SQL rule, with name **simple_sql_rule**.
+In this example you can see how to create a simple SQL rule, with name **simple\_sql\_rule**.
 
 | Code                                              | Description                                                                                   |
 | ------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| rule.setRuleNm("**simple_sql_rule**")             | Adding the name of the given rule                                                             |
+| rule.setRuleNm("**simple\_sql\_rule**")           | Adding the name of the given rule                                                             |
 | rule.setRuleValue("**startDate < '2011-11-01'")** | <p>Setting the simple SQL expression.<br>No <strong>JOIN</strong> allowed between tables!</p> |
 | rule.setRuleType("**SQLG**")                      | Setting the rule type                                                                         |
 
@@ -105,7 +105,7 @@ simpleRuleNotebook()
 #### via Code
 
 You can do multiple assertion on the result of the OwlCheck process.\
-Using **owl.hoot **parameter will provide access to the execution results, in this case for the rule 
+Using **owl.hoot** parameter will provide access to the execution results, in this case for the rule&#x20;
 
 #### via UI
 
@@ -113,11 +113,11 @@ Using **owl.hoot **parameter will provide access to the execution results, in th
 
 ## Example #2
 
-In this example you can see how to create a simple SQL with rule with **templates**, with name **simple_sql_rule_with_template**.
+In this example you can see how to create a simple SQL with rule with **templates**, with name **simple\_sql\_rule\_with\_template**.
 
 #### Steps
 
-1.  Create the rule template, where the template column name should be marked with **$colNm **string.\
+1.  Create the rule template, where the template column name should be marked with **$colNm** string.\
 
 
     ```scala

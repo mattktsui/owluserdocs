@@ -8,12 +8,12 @@ description: >-
 
 ## Data Concepts
 
-A data concept is the class or family of a dataset for example:  _Loan Data, Stock Data, Position Limit Data, Retail Product Data, Patient Health Data, Interest Rate Data, etc... _By giving data classes or "classifying" datasets we can transfer common understanding, rules and ML to datasets. This powerful technique allows a data steward to set up concepts once and enables the entire organization the ability to unify and standardize on common rules and terms, solving many metadata scale challenges.
+A data concept is the class or family of a dataset for example:  _Loan Data, Stock Data, Position Limit Data, Retail Product Data, Patient Health Data, Interest Rate Data, etc..._ By giving data classes or "classifying" datasets we can transfer common understanding, rules and ML to datasets. This powerful technique allows a data steward to set up concepts once and enables the entire organization the ability to unify and standardize on common rules and terms, solving many metadata scale challenges.
 
 {% hint style="info" %}
 Dataset Level
 
-**Security Reference Data **- Bloomberg financial data**                                                                      Home Loan Data** - Mortgage application data
+**Security Reference Data** - Bloomberg financial data                                                                      **Home Loan Data** - Mortgage application data
 {% endhint %}
 
 ## Semantics
@@ -59,9 +59,9 @@ To start, create a new DQ Job and select Semantic ON on the Profile options page
 
 ### Step 2: In Catalog, select and apply your Data Concept
 
-Navigate to your dataset in **Catalog** and select the Data Concept you would like to apply with the **Actions **dropdown menu.
+Navigate to your dataset in **Catalog** and select the Data Concept you would like to apply with the **Actions** dropdown menu.
 
-See below sections on how to **Administering Data Concepts **as well as how to** Create and Manage Semantics**
+See below sections on how to **Administering Data Concepts** as well as how to **Create and Manage Semantics**
 
 ![](<../../.gitbook/assets/semantic-apply-dataconcept (1).gif>)
 

@@ -8,7 +8,7 @@ description: How much is your redundant data costing you?
 
 As data engineers, first we copy files into a landing zone, next we load the files into a staging area.  After that we transform (ETL) the data into the final table.  Soon that same data is copied to a lake for other groups to run analytics on.  Eventually a group of analysts will need the data in another format and a data engineer will copy the data in a newly joined or transposed fashion.  Sounds familiar?
 
-The result is the same data or similar columns of the same data being copied many times.  **The answer**:  _Buy more hardware_... could be  OR  _ run an Owl health report_ and gain an understanding of how much data could be removed, reclaiming disk space and instantly seeing a return on investment after clicking the button.
+The result is the same data or similar columns of the same data being copied many times.  **The answer**:  _Buy more hardware_... could be  OR  _run an Owl health report_ and gain an understanding of how much data could be removed, reclaiming disk space and instantly seeing a return on investment after clicking the button.
 
 ### Tabular breakdown of % fingerprint match
 

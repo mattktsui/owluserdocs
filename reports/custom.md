@@ -22,11 +22,11 @@ Custom reports can be leveraged by connecting your favorite BI tool on the under
 
 `select count(*), user_nm, dataset from dev.public.owl_check_history group by user_nm, dataset order by count desc`
 
-**Largest by Row Count **
+**Largest by Row Count**&#x20;
 
 `select dataset,rc as row_count from dataset_scan order by rc desc`
 
-**Jobs by Month **
+**Jobs by Month**&#x20;
 
 `with grp as ( select date_trunc('MONTH', run_id) as by_month from dataset_scan where run_id < now() ) select count(*) as owlchecks, by_month from grp group by by_month order by by_month desc`
 
@@ -42,11 +42,11 @@ Custom reports can be leveraged by connecting your favorite BI tool on the under
 
 `select remote_job_id from agent_q where remote_job_id is not null`
 
-**Dataset Activity **
+**Dataset Activity**&#x20;
 
 `select dataset,run_id,total_time from dataset_activity where total_time is not null order by total_time desc`
 
-**Jobs with Enriched Metrics **
+**Jobs with Enriched Metrics**&#x20;
 
 `with activity as ( select dataset,run_id,total_time from dataset_activity where total_time is not null order by total_time desc limit 100), scans as ( select * from dataset_scan where dataset in (select dataset from activity) ), configs as ( select * from opt_spark where dataset in (select dataset from activity)), schema as ( select count(*) as col_cnt, dataset from dataset_schema where dataset in (select dataset from activity) group by dataset ) SELECT A.dataset, A.run_id, C.total_time, A.rc, D.col_cnt, B.driver_memory, B.num_executors,B.executor_cores, B.executor_memory, B.master FROM scans A INNER JOIN configs B ON A.dataset = B.dataset INNER JOIN activity C ON A.dataset = C.dataset and A.run_id = C.run_id INNER JOIN schema D on A.dataset = D.dataset ORDER BY C.total_time desc`
 
@@ -100,11 +100,11 @@ Custom reports can be leveraged by connecting your favorite BI tool on the under
 
 **Similar Column Names**
 
-` select distinct dataset,field_nm from dataset_field where field_nm like '%id%'`
+&#x20;`select distinct dataset,field_nm from dataset_field where field_nm like '%id%'`
 
 **Behavior Findings**
 
-` select * from behavior where dataset='esg_data'`
+&#x20;`select * from behavior where dataset='esg_data'`
 
 **All Columns for Schema from Postgres Stats**
 

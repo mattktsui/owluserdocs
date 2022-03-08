@@ -96,6 +96,6 @@ Any datasources that are not listed in the right hand pane will not be visible t
 
 Everything is now ready for users to use EMR to run Owlchecks on data. Review Explorer documentation for detailed instructions.
 
-{% content-ref url="../../dq-visuals/more.../explorer-2.md" %}
-[explorer-2.md](../../dq-visuals/more.../explorer-2.md)
+{% content-ref url="../../dq-visuals/more/explorer-2.md" %}
+[explorer-2.md](../../dq-visuals/more/explorer-2.md)
 {% endcontent-ref %}

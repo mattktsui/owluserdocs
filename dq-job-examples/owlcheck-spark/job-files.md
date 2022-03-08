@@ -2,17 +2,17 @@
 
 For example, a large file `transaction_2021-01-01.csv` might contain the following transaction data with two transaction per day spanning all of January.
 
-| transaction_id | account_id | date       | amount |
-| -------------- | ---------- | ---------- | ------ |
-| 1              | 1          | 2021-01-01 | 100    |
-| 2              | 2          | 2021-01-01 | 120    |
-| 3              | 1          | 2021-01-02 | 90     |
-| 4              | 2          | 2021-01-02 | 115    |
-| ...            |            | ...        | ...    |
-| 61             | 1          | 2021-01-31 | 100    |
-| 62             | 2          | 2021-01-31 | 999    |
+| transaction\_id | account\_id | date       | amount |
+| --------------- | ----------- | ---------- | ------ |
+| 1               | 1           | 2021-01-01 | 100    |
+| 2               | 2           | 2021-01-01 | 120    |
+| 3               | 1           | 2021-01-02 | 90     |
+| 4               | 2           | 2021-01-02 | 115    |
+| ...             |             | ...        | ...    |
+| 61              | 1           | 2021-01-31 | 100    |
+| 62              | 2           | 2021-01-31 | 999    |
 
-and this file might be located on the directory `~/customer/transaction-2021-01-01/`. 
+and this file might be located on the directory `~/customer/transaction-2021-01-01/`.&#x20;
 
 ```bash
 ~/customer
@@ -29,7 +29,7 @@ Other folders with similar pattern may exist in your directory, such as `~/custo
 
 To run an Owlcheck on this single file containing multiple dates, you have the following choices.
 
-## Owlchecks with** file **
+## Owlchecks with **file**&#x20;
 
 **1. Run an Owlcheck on all the rows in a single file.**
 
@@ -48,7 +48,7 @@ The above command would lead to an Owlcheck on 62 rows of data spanning all of J
 \
 If you were to schedule a job to run this job monthly and next job ran on February 1st, 2021, then same DQ checks will be performed on the **same set of 62 rows** with same score as your Owlcheck run from January 1, 2021.\
 \
- For example, the follow-up scheduled job running on February 1st, 2021 would be:
+&#x20;For example, the follow-up scheduled job running on February 1st, 2021 would be:
 
 ```bash
 ./owlcheck 
@@ -66,7 +66,7 @@ This type of Owlcheck can also be used if `~/customer/transaction-2021-01-01/tra
 
 **2. Run an Owlcheck on subset of rows from a single file**
 
-The single file contains daily data for January of 2021. To run Data Quality checks on January 1st, January 2nd, ... , and January 31st, you need to run 31 Owlchecks, each with subset of rows from the file. Note the `where` clause in `-fq` matching with the run date `-rd` 
+The single file contains daily data for January of 2021. To run Data Quality checks on January 1st, January 2nd, ... , and January 31st, you need to run 31 Owlchecks, each with subset of rows from the file. Note the `where` clause in `-fq` matching with the run date `-rd`&#x20;
 
 ```bash
 ./owlcheck 
@@ -165,14 +165,14 @@ If we want to run an Owlcheck for December of 2021 and use July of 2021 to Novem
     ... # other relevant options
 ```
 
-One caveat to this `-fllb` method_ _is that the Owlcheck history must be "primed" first so that the OwlDQ knows the file path of the past series of files. In fact, `-fllb` does not use the file path provided in `-f` and loads different files from different folders._ It relies on the Owlcheck history_ under the same `-ds` name. `-fllb` means lookback up to N number of past consecutive Owlchecks. For each of those past Owlcheck, look up the file path `-f` used in the past and follow those paths. The number N is determined by the maximum number of lookbacks from Outlier (`-dllb`) and Patterns (`-fpglb` ). In the Owlcheck above, because `-dllb 5` is provided along with `-fllb`, it means "Look up 5 past owlchecks and load those files as historical dataset".\
+One caveat to this `-fllb` method __ is that the Owlcheck history must be "primed" first so that the OwlDQ knows the file path of the past series of files. In fact, `-fllb` does not use the file path provided in `-f` and loads different files from different folders. _It relies on the Owlcheck history_ under the same `-ds` name. `-fllb` means lookback up to N number of past consecutive Owlchecks. For each of those past Owlcheck, look up the file path `-f` used in the past and follow those paths. The number N is determined by the maximum number of lookbacks from Outlier (`-dllb`) and Patterns (`-fpglb` ). In the Owlcheck above, because `-dllb 5` is provided along with `-fllb`, it means "Look up 5 past owlchecks and load those files as historical dataset".\
 \
 In summary, in order to run an Owlcheck on "2021-12-01" and have that Owlcheck for that date "look up" the files in   \
-  `~/customer/transaction-2021-07-01/transaction_2021-07-01.csv` ,\
-  `~/customer/transaction-2021-08-01/transaction_2021-08-01.csv` ,\
-  `~/customer/transaction-2021-09-01/transaction_2021-09-01.csv` ,\
-  `~/customer/transaction-2021-10-01/transaction_2021-10-01.csv` , and\
-  `~/customer/transaction-2021-11-01/transaction_2021-11-01.csv` , \
+&#x20; `~/customer/transaction-2021-07-01/transaction_2021-07-01.csv` ,\
+&#x20; `~/customer/transaction-2021-08-01/transaction_2021-08-01.csv` ,\
+&#x20; `~/customer/transaction-2021-09-01/transaction_2021-09-01.csv` ,\
+&#x20; `~/customer/transaction-2021-10-01/transaction_2021-10-01.csv` , and\
+&#x20; `~/customer/transaction-2021-11-01/transaction_2021-11-01.csv` , \
 \
 you need to have ran Owlchecks for "2021-07-01", "2021-08-01", ... , and "2021-11-01" under the same dataset name. Therefore, it would be more logical, best-practice is to name the dataset  `-ds DQCheck_transaction_2021` and run series of monthly owlchecks up to "2021-12-01" (but the name of the dataset is up to you)/
 

@@ -6,7 +6,7 @@ We assume that a server running Centos 7 or RHEL 7 is setup and ready to install
 
 This tutorial assumes that you are installing DQ on a brand new compute instance on Google Cloud Platform. Google Cloud SDK setup with proper user permission is assumed. This is optional, as you are free to create Full Standalone Installation setup on any cloud service provider or on-premise.
 
-Please refer to the _**GOAL**_** **paragraph for the intended outcome of each step and modify accordingly
+Please refer to the _**GOAL**_** ** paragraph for the intended outcome of each step and modify accordingly
 
 {% hint style="info" %}
 The full install package supports Centos 7 and RHEL 7. If another OS flavor is required, please follow the basic install process.
@@ -366,7 +366,7 @@ cd /home/owldq/owl/spark/sbin/
 
 ## Configuration Options
 
-### Setup.sh arguments <a href="setup.sh-arguments" id="setup.sh-arguments"></a>
+### Setup.sh arguments <a href="#setup.sh-arguments" id="setup.sh-arguments"></a>
 
 **-non-interactive** skip asking to accept JAVA license agreement
 
@@ -388,23 +388,23 @@ cd /home/owldq/owl/spark/sbin/
 
 **-pgpassword=** password to use to set for the postgres metastore (unattended install)
 
-**-pgserver= **name of the postgres server example = owl-postgres-host.example.com:5432/owldb (unattended install)
+**-pgserver=** name of the postgres server example = owl-postgres-host.example.com:5432/owldb (unattended install)
 
 **-opassword=** password for the orient graph DB (unattended install)
 
-#### Example: <a href="example" id="example"></a>
+#### Example: <a href="#example" id="example"></a>
 
-* The Owl tar ball has been extracted to this folder on my EC2 Instance:_** /home/ec2-user/packages/**_
-* Owl will be running as the_** ec2-user**_
+* The Owl tar ball has been extracted to this folder on my EC2 Instance: _**/home/ec2-user/packages/**_
+* Owl will be running as the _**ec2-user**_
 * The owl-web application will run on port _**9000**_
 * The base location for the setup.sh script to create the owl folder and place all content under owl will be: _**/home/ec2-user/**_
 
 _**./setup.sh -port=9000 -user=ec2-user -owlbase=/home/ec2-user -owlpackage=/home/ec2-user/package**_
 
-#### Example installing just the agent (perhaps on an Edge node of a hadoop cluster): <a href="example-installing-just-the-agent-perhaps-on-an-edge-node-of-a-hadoop-cluster" id="example-installing-just-the-agent-perhaps-on-an-edge-node-of-a-hadoop-cluster"></a>
+#### Example installing just the agent (perhaps on an Edge node of a hadoop cluster): <a href="#example-installing-just-the-agent-perhaps-on-an-edge-node-of-a-hadoop-cluster" id="example-installing-just-the-agent-perhaps-on-an-edge-node-of-a-hadoop-cluster"></a>
 
-* The Package has been extracted to this folder on my EC2 Instance:_** /home/ec2-user/packages/**_
-* Owl-agent will be running as the_** ec2-user**_
+* The Package has been extracted to this folder on my EC2 Instance: _**/home/ec2-user/packages/**_
+* Owl-agent will be running as the _**ec2-user**_
 * The base location for the setup.sh script to create the owl folder and place all packages under owl will be: _**/home/ec2-user/**_
 
 _**./setup.sh -user=ec2-user -owlbase=/home/ec2-user -owlpackage=/home/ec2-user/package -options=owlagent**_
@@ -417,17 +417,17 @@ When installing different features questions will be asked
 * If postgres is not being installed (such as agent install only) postgres metastore server name needs to be supplied
 {% endhint %}
 
-### Launching and Administering owl: <a href="launching-and-administering-owl" id="launching-and-administering-owl"></a>
+### Launching and Administering owl: <a href="#launching-and-administering-owl" id="launching-and-administering-owl"></a>
 
 When the setup.sh script finishes by default software is automatically started. The setup.sh also creates the owlmanage.sh script which allows for stopping and starting of all owl services or some components of services.The setup script will also generate an owl-env.sh script that will hold the main variables that are reused across components (see owl-env.sh under the config directory).
 
-### Owl Directory Structure after running Setup.sh <a href="owl-directory-structure-after-running-setup.sh" id="owl-directory-structure-after-running-setup.sh"></a>
+### Owl Directory Structure after running Setup.sh <a href="#owl-directory-structure-after-running-setup.sh" id="owl-directory-structure-after-running-setup.sh"></a>
 
 export ORIENTDB\_HOST="localhost"
 
 ![](https://files.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-L\_xJcI5Uc0S1x9JC6xQ%2F-LiQA1uhYoTELY58hjz\_%2F-LiQBsDxBzzkDzLkf-DB%2Fimage.png?alt=media\&token=05fb9d40-7697-4b09-b70b-f481ca0f292a)
 
-#### Configuration / ENV settings within owl-env.sh <a href="configuration-env-settings-within-owl-env.sh" id="configuration-env-settings-within-owl-env.sh"></a>
+#### Configuration / ENV settings within owl-env.sh <a href="#configuration-env-settings-within-owl-env.sh" id="configuration-env-settings-within-owl-env.sh"></a>
 
 Contents of the Owl-env.sh script and what is is used for.
 
@@ -470,7 +470,7 @@ Contents of the Owl-env.sh script and what is is used for.
 | export multiTenantSchemaHub=owlhub                                        | schema name used for multi tenancy                                                                                                                                                                                                                                       |
 | export OWL\_SPARKLOG\_ENABLE=false                                        | Enabling deeper spark logs when toggled to true                                                                                                                                                                                                                          |
 
-#### Configuration / owl.properties file <a href="configuration-owl.properties-file" id="configuration-owl.properties-file"></a>
+#### Configuration / owl.properties file <a href="#configuration-owl.properties-file" id="configuration-owl.properties-file"></a>
 
 | Example                                                           | Meaning                                               |
 | ----------------------------------------------------------------- | ----------------------------------------------------- |

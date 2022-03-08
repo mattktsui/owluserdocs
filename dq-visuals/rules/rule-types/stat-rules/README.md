@@ -23,7 +23,7 @@ fname.$type != 'String' AND $rowCount < 800
 | **.$max**                      | fname.$max > 'apple'                     |                                                                                                                                                   |
 | **.$maxNum**                   | age.$maxNum > 13                         |                                                                                                                                                   |
 | .**$uniqueCount**              | id.$uniqueCount != $rowCount             | alert when the uniqueCount of a field doesn't match the rowCount                                                                                  |
-| **.$uniqueRatio             ** | gender.$uniqueRatio between .4 and .6    |                                                                                                                                                   |
+| **.$uniqueRatio**              | gender.$uniqueRatio between .4 and .6    |                                                                                                                                                   |
 | **.$nullRatio**                | lname.$nullRatio not between .4 and .6   | alert when the ratio of nulls no longer falls within acceptable range                                                                             |
 | **.$nullPercent**              | lname.$nullPercent not between 40 and 60 | alert when the percent of nulls no longer falls within acceptable range                                                                           |
 | **.$nullCount**                | lname.$nullCount >= 1                    | test for a single null                                                                                                                            |
@@ -36,7 +36,7 @@ fname.$type != 'String' AND $rowCount < 800
 
 ![](../../../../.gitbook/assets/colstatrules.png)
 
-Known limitation.  Cannot combine stat rules or distribution rules with regex rules in the same rule.  Example car\__vin rlike '$\[asdf]\[0-9]' and car_vin.$uniqueCount_
+Known limitation.  Cannot combine stat rules or distribution rules with regex rules in the same rule.  Example car\__vin rlike '$\[asdf]\[0-9]' and car\_vin.$uniqueCount_
 
 ### Distribution Rule
 
@@ -46,10 +46,10 @@ There is a common case in DQ where you want to know the distribution of a column
 gender['Male'].$uniquePercent between 40 and 60
 ```
 
-| Column Value Level  | Rule                                                   |
-| ------------------- | ------------------------------------------------------ |
-| **.$uniqueCount**   | credit_rating\['FAIR'].$uniqueCount > 7                |
-| **.$uniquePercent** | credit_rating\['GOOD'].uniquePercent between 40 and 60 |
+| Column Value Level  | Rule                                                    |
+| ------------------- | ------------------------------------------------------- |
+| **.$uniqueCount**   | credit\_rating\['FAIR'].$uniqueCount > 7                |
+| **.$uniquePercent** | credit\_rating\['GOOD'].uniquePercent between 40 and 60 |
 
 ![](../../../../.gitbook/assets/screen-shot-2021-05-10-at-2.24.51-pm.png)
 

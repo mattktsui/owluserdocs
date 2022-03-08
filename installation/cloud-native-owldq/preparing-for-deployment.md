@@ -72,7 +72,7 @@ In order for Owl Agent and Spark driver to create and destroy compute containers
 
 In order to deploy anything to a Kubernetes cluster, the first step is to install the required client utilities and configure access.&#x20;
 
-* **kubectl **- the main method of communication with a Kubernetes cluster. All configuration or introspection tasks will be preformed using kubectl.
+* **kubectl** - the main method of communication with a Kubernetes cluster. All configuration or introspection tasks will be preformed using kubectl.
 * **helm** (V3) - used to deploy the OwlDQ helm chart without hand coding manifests.
 
 After utilities are installed, the next step is to configure a kube-context that points to and authenticates to the target platform. On cloud platforms like GKE and EKS, this process is completely automated through their respective CLI utilities.

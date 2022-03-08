@@ -542,7 +542,7 @@ This assumes you have created a dataset definition using the UI or from the temp
 
 #### Command Line instead of JSON dataset def
 
-You can run a similar job submission using the cmd line. Please note it is easiest to get the saved command line from the dataset-def-api **/v3/datasetDefs/{dataset}/cmdline **(with proper escaping) and passed to the **/v3/jobs/runCmdLine**.
+You can run a similar job submission using the cmd line. Please note it is easiest to get the saved command line from the dataset-def-api **/v3/datasetDefs/{dataset}/cmdline** (with proper escaping) and passed to the **/v3/jobs/runCmdLine**.
 
 ## Breaking Down The Sections
 
